@@ -7,7 +7,7 @@ function TestimonialThird() {
         <> 
                <div className="testimonialThird">
         <img src={image} alt="Ahmed AI-Balaghi" className="reviewerImage" />
-<div className='d-flex gap-50' style={{alignItems:'flex-start'}}>
+<div className=' sm-f-column' style={{alignItems:'flex-start'}}>
             <div className="reviewerContent">
                 <p className="reviewerName">Ahmed AI-Balaghi</p>
                 <p className="companyName">Biconomy</p>

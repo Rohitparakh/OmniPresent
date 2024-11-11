@@ -15,7 +15,7 @@ const Cases = () => {
     <PortfolioSingleLeft  />
     <PortfolioSingleThree  />
     <PortfolioSingleFour />
-    <PortfolioSingleFive />
+    {/* <PortfolioSingleFive /> */}
     <SectionCta text='see more cases'/>
     </div>
   )

@@ -12,9 +12,9 @@ function WhyUsThird() {
             </div>
 <div className='why-us-third-right'>
             <h1 className="why-us-third-title">
-                    we work <span className="fast-outlined"></span>
+                    we are<br/> omnipresent <span className="fast-outlined"></span>
                 </h1>
-                <img src={imgFast} className='fast'/>
+                {/* <img src={imgFast} className='fast'/> */}
      </div>
         </div>
     );

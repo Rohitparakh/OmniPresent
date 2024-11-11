@@ -2,6 +2,7 @@ import React from 'react';
 import headerLogo from '../../assets/images/headerLogo.png';
 import ScheduleCallButton from './ScheduleCallButton';
 import { NavLink } from "react-router-dom";
+import HeaderMobile from '../common/HeaderMobile';
 
 function Header() {
     return (
@@ -40,11 +41,14 @@ function Header() {
             <ScheduleCallButton/>
         </header>
 
+        <HeaderMobile/>
+
+
         <div className='headerBottom'>
             <hr/>
             <div className='headerExtras'>
                 <div className='leftDiv'>
-                    <span>INVCTS</span>
+                    <span>OMNIPRESENT</span>
                     <span>01</span>
                 </div>
                 <div className='rightDiv'>

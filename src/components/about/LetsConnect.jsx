@@ -28,7 +28,7 @@ const LetsConnect = () => {
         <div className='flex flex-col items-center justify-center lg:w-[90%] lg:ml-auto mr-auto'>
           <div className='flex sm:gap-0 lg:gap-20'>
             <img src={arrow} className='h-28 sm:hidden lg:block'/>
-            <p className='text-9xl font-nohemi-ext'>talk</p>
+            <p className='text-8xl font-nohemi-ext'>talk</p>
           </div>
         {/* <div className='w-full lg:hidden block'>
           <img src="/src/assets/about/forward.svg" alt="" className=' h-32 mb-10'/>

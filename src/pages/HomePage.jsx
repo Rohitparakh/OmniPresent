@@ -12,6 +12,7 @@ import Testimonials from '../components/home_project/Testimonials';
 import { LetsConnect } from '../components/about';
 import Header from '../components/home_project/Header';
 import LetsTalkContent from '../components/home_project/LetsTalkContent';
+import HeaderMobile from '../components/common/HeaderMobile';
 
 function HomePage() {
     return (

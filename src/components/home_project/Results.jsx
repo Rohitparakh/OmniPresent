@@ -18,7 +18,7 @@ const Results = () => {
     <div className='containerOld results'>
         <ResultsDisplay />
         <ScheduleButton />
-        <div className='d-flex gap-150 mt-50'>
+        <div className='d-flex gap-150 mt-50 sm-f-column'>
         <AbstractText />
         <p className='abstractRight'>
         In Web3, speed isn’t just an advantage—it’s essential. Partner with a team that understands the urgency and delivers with precision. Ready to disrupt?

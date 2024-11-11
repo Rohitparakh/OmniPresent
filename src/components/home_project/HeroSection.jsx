@@ -13,7 +13,7 @@ function HeroSection() {
                 </div>
                 </div>                
             </div>
-            <div class="w-screen px-48 flex items-center justify-end gap-4 mt-10">
+            <div class="w-screen px-48 flex items-center justify-end gap-4 mt-10 md-d-none">
                     <img src="/src/assets/about/telegram.svg" alt="" class="h-7"/>
                     <img src="/src/assets/about/x.svg" alt="" class="h-7"/>
                     <img src="/src/assets/about/insta.svg" alt="" class="h-7"/>

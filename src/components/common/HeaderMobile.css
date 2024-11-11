@@ -1,0 +1,84 @@
+@media(min-width:768px){
+.header-mobile {
+    display: none;
+}
+}
+.group-container {
+    display: flex;
+    align-items: center;
+    width: 354px;
+    height: 52px;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .logo-frame {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-globe {
+    width: 49.92px;
+    height: 49.92px;
+  }
+  
+  .frame-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 4px;
+  }
+  
+  .icon-frame {
+    width: 82.06px;
+    height: 42.06px;
+    background-color: #FFF;
+    border-radius: 80.24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-menu {
+    width: 18.06px;
+    height: 18.06px;
+  }
+  
+  .schedule-frame {
+    width: 127px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inner-frame {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 55.42px;
+    padding: 7.33px 5.5px;
+    border: 0.92px solid #000;
+  }
+  
+  .schedule-text {
+    color: yellow;
+    font-size: 17.91px;
+    font-family: Nohemi, sans-serif;
+    font-weight: 500;
+    margin-left: 35.17px;
+    line-height: 17.99px;
+  }
+  
+  .arrow-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 30.28px;
+    background-color: #000;
+    border: 1px solid #eefe05;
+    border-radius: 50%;
+    padding-top: 7px;
+  }
+  

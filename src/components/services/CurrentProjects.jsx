@@ -44,7 +44,7 @@ const MobileCard = ({data}) => {
   return(
     <div className=" w-[350px] bg-black  border border-[#EEFE05] flex flex-col items-start gap-2 p-6">
       
-      <img src="" alt="" className=" h-52 w-full border border-[#EEFE05]" />
+      <img src={data.image} alt="" className=" h-52 w-full border border-[#EEFE05]" />
 
       <p className=" font-nohemi-ext text-3xl w-full text-[#EEFE05]">{data.name}</p>
 

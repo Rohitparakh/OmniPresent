@@ -62,7 +62,7 @@ const OurWork = () => {
                 <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
             </div>
-            <div className='w-full min-h-[250px] flex flex-col gap-2'>
+            {/* <div className='w-full min-h-[250px] flex flex-col gap-2'>
                 <img src={p2p} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
@@ -79,7 +79,7 @@ const OurWork = () => {
                 <img src={seatlab} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
-            </div>
+            </div> */}
             
         </div>
 

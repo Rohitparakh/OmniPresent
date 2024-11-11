@@ -18,10 +18,10 @@ const Hero = () => {
         {/* Center text area start */}
       <div className={`flex flex-col leading-[6rem] w-[560px] items-center justify-center py-1 lg:scale-[1.25] scale-[.6] relative`}>
         <h1 className='text-[10rem] z-10 flex items-center font-nohemi-ext text-black relative'>
-         <span className='text-[10rem] flex items-center w-min pt-9'>~</span> k<span className=''>now</span>
+         <span className='text-[10rem] flex items-center w-min pt-9'>~</span> our<span className=''></span>
         </h1>
         <h1 className='text-[10rem] flexitems-center gap-2 font-nohemi-ext text-black pl-5'>
-          invcts
+          story
         </h1>
 
         {/* assets for text */}

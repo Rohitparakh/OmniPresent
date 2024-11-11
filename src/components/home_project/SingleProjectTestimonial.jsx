@@ -8,7 +8,7 @@ function SingleProjectTestimonial(){
     return(
         <div className='testimonial containerOld'>
             <div className='leftSection'>
-                <h2>INVCTS team knows <br/>how to <span className='text-yellow'>deliver.</span></h2>
+                <h2>OmniPresent team knows <br/>how to <span className='text-yellow'>deliver.</span></h2>
                 <p>Since engaging the team as our primary web developer and digital marketing partner we have solidified our Brand marketing and benefitted from continued growth in overall site traffic and lead generation. Our dedicated account rep takes the time to understand our unique business needs and continues to meet even the tightest of deadlines - and always on budget. Glad to have them as our digital partner!</p>
                 <div className='authorDetails'>
                     <img src={authorImage} />

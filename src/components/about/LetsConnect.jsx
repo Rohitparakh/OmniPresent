@@ -41,7 +41,9 @@ const LetsConnect = () => {
         </div>
 
         <div className=' h-48 py-5 border-t w-full mt-16 flex flex-col items-center justify-between' style={{borderTop:'1px solid #000'}}>
-            <img src={logo} alt="" className='h-20'/>
+        <NavLink to="/" target='_blank'>
+           <img src={logo} alt="" className='h-20'/>
+           </NavLink>
 
             <div className='flex items-center gap-4'>
                <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-7'/></NavLink>

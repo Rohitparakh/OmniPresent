@@ -40,11 +40,14 @@ const HeaderMobile = () => {
                     style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-evenly':'left', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px'}}
                     >
       <div className="logo-frame">
+      <NavLink to="/" target='_blank'>
         <img 
           src={logo}
           alt="globe icon" 
           className="icon-globe"
         />
+        </NavLink>
+        
       </div>
       <div className="frame-container">
         <div className="icon-frame" 

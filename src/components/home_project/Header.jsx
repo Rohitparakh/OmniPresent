@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
         <header className="header">
-            <img src={headerLogo} alt="Logo" className="logo" height={68} width={32}/>
+            <NavLink to="/" target='_blank'> <img src={headerLogo} alt="Logo" className="logo" height={68} width={32}/></NavLink>
             <nav className="navigation">
                 <NavLink to ="/home" 
                     className={({ isActive, isPending }) =>

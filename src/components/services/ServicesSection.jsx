@@ -1,5 +1,8 @@
 import React from 'react'
-
+import seatlab from "../../assets/services/seatlab.svg"
+import diff from "../../assets/services/diff.svg"
+import face from "../../assets/services/face.svg"
+import diffRev from "../../assets/services/diffRev.svg"
 const ServicesSection = () => {
   return (
     <div className="  bg-black text-white relative min-h-screen pb-16">
@@ -25,13 +28,13 @@ const ServicesSection = () => {
         </p>
 
         <div className=' w-full mt-10 flex lg:flex-row flex-col gap-4 justify-between '>
-            <img src="/src/assets/services/seatlab.svg" alt="" className=' w-[470px] lg:mx-0 mx-auto'/>
+            <img src={seatlab} alt="" className=' w-[470px] lg:mx-0 mx-auto'/>
 
             <div className='lg:w-[55%] flex flex-col justify-between items-start h-auto gap-8'>
-              <img src="/src/assets/services/diff.svg" alt="" className='h-20'/>
+              <img src={diff} alt="" className='h-20'/>
 
               <div className='flex flex-col gap-4 items-end w-full'>
-                <img src="/src/assets/services/face.svg" alt="" className='h-40 mr-10'/>
+                <img src={face} alt="" className='h-40 mr-10'/>
                 <div className='w-full flex flex-1  justify-between gap-10'>
                   <div className='flex flex-col text-sm font-nohemi'>
                     <p>Team Member</p>
@@ -50,7 +53,7 @@ const ServicesSection = () => {
                   </div>
 
                 </div>
-              <img src="/src/assets/services/diffRev.svg" alt="" className='h-12'/>
+              <img src={diffRev} alt="" className='h-12'/>
               </div>
             </div>
         </div>

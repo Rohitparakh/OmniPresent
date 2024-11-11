@@ -1,7 +1,8 @@
 import React from "react";
 import MarqueeSection from './../common/MarqueeSection';
 import { Button } from "../common";
-
+import share from "../../assets/services/share.svg"
+import card from "../../assets/services/card.svg"
 const Card = () => {
   return (
     <div className=" w-[700px] bg-black  border border-[#EEFE05] flex items-start p-6">
@@ -26,13 +27,13 @@ const Card = () => {
 
         <div className="mt-10">
           <p className="pb-2 w-44 cursor-pointer hover:scale-105 transition-all duration-300  border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-lg">
-            <img src="/src/assets/services/share.svg" alt="" className="h-4" />
+            <img src={share} alt="" className="h-4" />
             <span>inquire about</span>
           </p>
         </div>
       </div>
       <div className=" w-[40%]  flex flex-col">
-        <img src="/src/assets/services/card.svg" alt="" />
+        <img src={card} alt="" />
       </div>
     </div>
   );
@@ -48,7 +49,7 @@ const MobileCard = ({data}) => {
       <p className=" font-nohemi-ext text-3xl w-full text-[#EEFE05]">{data.name}</p>
 
       <p className="pb-2 w-36 mt-10 cursor-pointer hover:scale-105 transition-all duration-300  border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-md">
-            <img src="/src/assets/services/share.svg" alt="" className="h-4" />
+            <img src={share} alt="" className="h-4" />
             <span>show more</span>
           </p>
 

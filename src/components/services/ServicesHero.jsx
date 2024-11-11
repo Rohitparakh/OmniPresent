@@ -1,6 +1,9 @@
 import React from 'react'
 import { Button, MarqueeSection } from '../common'
-
+import line from "../../assets/about/line.svg"
+import heroImg from "../../assets/services/heroImg.svg"
+import marLogo from "../../assets/about/marLogo.svg"
+import marArrow from "../../assets/about/marArrow.svg"
 const ServicesHero = () => {
     return (
         <div className=' min-h-screen relative w-screen flex flex-col justify-between font-nohemi-ext bg-primary px-4'>
@@ -70,7 +73,7 @@ const ServicesHero = () => {
             </div>
     
             <div className='absolute lg:bottom-[75px] top-[-50px] left-[-65px]'>
-                <img src="/src/assets/about/line.svg" className='h-28' alt="" />
+                <img src={line} className='h-28' alt="" />
             </div>
         </div>
     
@@ -78,7 +81,7 @@ const ServicesHero = () => {
     
         </div>
 
-        <img src="/src/assets/services/heroImg.svg" alt="" className='absolute left-0 top-[-30px] h-96 z-0'/>
+        <img src={heroImg} alt="" className='absolute left-0 top-[-30px] h-96 z-0'/>
 
         {/* marquee start */}
         <div className=' w-full '>
@@ -90,9 +93,9 @@ const ServicesHero = () => {
                 <MarqueeSection>
                 <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
               <span className="text-black">partner with</span>
-              <img src="/src/assets/about/marLogo.svg" className="h-20" alt="" />
+              <img src={marLogo} className="h-20" alt="" />
               <span className="text-black">developed for ( web3 ) for the GROWTH/</span>
-              <img src="/src/assets/about/marArrow.svg" className="h-20" alt="" />
+              <img src={marArrow} className="h-20" alt="" />
     
             </h1>
                   </MarqueeSection>

@@ -1,4 +1,8 @@
 import React from 'react'
+import card1 from "../../assets/services/cardImg1.svg"
+import downImg from "../../assets/services/downImg.svg"
+import cardImg2 from "../../assets/services/cardImg2.svg"
+import circle from "../../assets/services/circle.svg"
 
 const HowWeWork = () => {
   return (
@@ -21,17 +25,17 @@ const HowWeWork = () => {
 
             <div className='grid lg:grid-cols-3 lg:gap-3 gap-16 w-full mt-10'>
                 <div className='w-full  h-full flex flex-col gap-1'>
-                        <img src="/src/assets/services/cardImg1.svg" alt="" />
+                        <img src={card1} alt="" />
                         <p className='text-lg font-nohemi-ext'>Get data. Research. Report.</p>
                         <p className='text-sm font-nohemi'>We use marketing analysis and accurate data to develop a project. Based on the information recieved, we will create an interaction strategy to steal the hart of your audience.</p>
                 </div>
                 <div className='w-full  mt-16 h-full flex flex-col gap-1'>
-                        <img src="/src/assets/services/downImg.svg" alt="" />
+                        <img src={downImg} alt="" />
                         <p className='text-lg font-nohemi-ext'>Be creative. Test wisely.</p>
                         <p className='text-sm font-nohemi'>Speak the same language as your clients. We will help you stand out from competitors with creative ideas and solutions. This way, you will definitely be noticed.</p>
                 </div>
                 <div className='w-full  h-full flex flex-col gap-1'>
-                        <img src="/src/assets/services/cardImg2.svg" className='h-52 object-cover' alt="" />
+                        <img src={cardImg2} className='h-52 object-cover' alt="" />
                         <p className='text-lg font-nohemi-ext'>Build strategy. Refine.</p>
                         <p className='text-sm font-nohemi'>Create a well-thought-out strategy for your product. We will guide you through the steps to achieving more than your competitors. </p>
                 </div>
@@ -40,9 +44,9 @@ const HowWeWork = () => {
             <div className='grid lg:grid-cols-3 '>
             <div className='w-full  h-full flex flex-col gap-3'>
                 <div className='flex items-center gap-9'>
-                        <img src="/src/assets/services/circle.svg" alt="" className='h-10' />
-                        <img src="/src/assets/services/circle.svg" alt="" className='h-20' />
-                        <img src="/src/assets/services/circle.svg" alt="" className='h-40' />
+                        <img src={circle} alt="" className='h-10' />
+                        <img src={circle} alt="" className='h-20' />
+                        <img src={circle} alt="" className='h-40' />
 
                 </div>
                         <p className='text-lg font-nohemi-ext'>Get data. Research. Report.</p>

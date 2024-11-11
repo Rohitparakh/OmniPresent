@@ -6,10 +6,14 @@
 .group-container {
     display: flex;
     align-items: center;
-    width: 75vw;
+    width: 100vw;
     height: 52px;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 20px;
+    padding: 20px;
     margin: 20px;
+    background-color: #eefe05 !important;
+    z-index: 99;
   }
   
   .logo-frame {
@@ -82,3 +86,39 @@
     padding-top: 7px;
   }
   
+  .mobile-menu{
+    background-color: #eefe05;
+    height: calc(100vh - 92px);
+    top:52px;
+    width: 100vh;
+    position: fixed;
+    z-index: 99;
+    overflow-y: scroll;
+  }
+
+  .mobile-menu ul{
+    padding: 20px;
+  }
+
+  .mobile-menu p{
+    font-weight: 900;
+
+  }
+  .mobile-menu h2{
+font-size: 40px;
+font-weight: 900;
+  }
+
+  .headerSocials{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .headerSocials .socialIcons{
+    display: flex;
+  }
+  .headerSocials p{
+    font-weight: 300;
+  }

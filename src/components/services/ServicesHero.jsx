@@ -19,10 +19,10 @@ const ServicesHero = () => {
             </p>
             
             <h1 className='text-[10rem] z-10 flex items-end font-nohemi-ext text-black relative'>
-             <span className='text-[10rem] flex items-end w-min pt-9'></span><span className=''>we</span>
+             <span className='text-[10rem] flex items-end w-min pt-9'></span><span className=''>our</span>
             </h1>
             <h1 className='text-[9rem] lg:w-auto w-full z-50 flex items-center gap-2 font-nohemi-ext text-black pl-5'>
-            got you
+            services
             </h1>
     
             {/* assets for text */}

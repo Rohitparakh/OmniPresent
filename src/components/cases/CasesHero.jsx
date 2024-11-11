@@ -15,12 +15,12 @@ const CasesHero = () => {
         </div>
         {/* Center text area start */}
       <div className={`flex flex-col leading-[6rem] max-w-[560px] w-full items-end justify-end py-1 lg:scale-[1.35] scale-[.6] relative`}>
-        <img src={pen} alt="" className='absolute top-[-28px] left-[-50px] lg:left-[88px] mix-blend-multiply h-36'/>
+        <img src={pen} alt="" className='absolute top-[-28px] left-[-100px] lg:left-[88px] mix-blend-multiply h-36'/>
         <h1 className='text-[10rem] z-10 flex items-end font-nohemi-ext text-black relative'>
-         <span className='text-[10rem] flex items-end w-min pt-9'></span><span className=''>our</span>
+         <span className='text-[10rem] flex items-end w-min pt-9 '></span><span className=''>case</span>
         </h1>
-        <h1 className='text-[10rem] flexitems-center gap-2 font-nohemi-ext text-black pl-5'>
-        cases
+        <h1 className='mt-2 text-[10rem] flexitems-center gap-2 font-nohemi-ext text-black pl-5'>
+        studies
         </h1>
 
         {/* assets for text */}

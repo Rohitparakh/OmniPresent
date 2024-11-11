@@ -1,12 +1,12 @@
 @media(min-width:768px){
 .header-mobile {
-    display: none;
+    display: none !important;
 }
 }
 .group-container {
     display: flex;
     align-items: center;
-    width: 354px;
+    width: 75vw;
     height: 52px;
     justify-content: space-between;
     margin: 20px;

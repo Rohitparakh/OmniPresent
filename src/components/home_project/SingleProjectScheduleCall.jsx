@@ -3,13 +3,17 @@ import './SingleProjectScheduleCall.css';
 import thisCanBeYou from '../../assets/images/thisCanBeYou.png';
 import ArrowBigRight from '../../assets/images/ArrowBigRight.png';
 import './ScheduleButton.css';
+import { NavLink } from 'react-router-dom';
 
 function ScheduleButton() {
     return (
+    <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
+
         <div className="scheduleButton" style={{color:'#000', backgroundColor:'#eefe05'}}>
             <span className="buttonText" style={{color:'#000', backgroundColor:'#eefe05'}}>schedule a call</span>
             <span className="arrowIcon" style={{color:'#000', backgroundColor:'#eefe05', border:'2px solid black'}}>➔</span>
         </div>
+        </NavLink>
     );
 }
 

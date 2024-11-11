@@ -8,7 +8,7 @@ const HowWeWork = () => {
   return (
     <div className=" min-h-screen w-full bg-primary px-4 relative">
       <div className="max-w-7xl mx-auto pt-16 flex flex-col items-center justify-start ">
-        <div className="border-b border-black pb-1 w-full flex items-center justify-between">
+        <div className="border-b pb-1 w-full flex items-center justify-between" style={{borderBottom:'1px solid black'}}>
           <p className="text-black font-bold text-[10px] tracking-widest ">
           how we work
           </p>

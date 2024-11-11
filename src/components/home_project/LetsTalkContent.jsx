@@ -1,13 +1,16 @@
 import React from 'react';
 import './LetsTalkContent.css';
 import letsTalkArrow from '../../assets/images/letsTalkArrow.png';
+import { NavLink } from 'react-router-dom';
 
 function ScheduleButton() {
     return (
+    <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
         <div className="scheduleButton" style={{width:'max-content',padding:'25px 50px'}}>
             <span className="buttonText">schedule a call</span>
             <span className="arrowIcon">➔</span>
         </div>
+        </NavLink>
     );
 }
 

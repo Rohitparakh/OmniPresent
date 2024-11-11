@@ -3,13 +3,17 @@ import ResultsDisplay from './ResultsDisplay';
 import './Results.css';
 import './ScheduleButton.css';
 import AbstractText from './AbstractText';
+import { NavLink } from 'react-router-dom';
 
 function ScheduleButton() {
     return (
+    <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
+
         <div className="scheduleButton">
             <span className="buttonText">schedule a call</span>
             <span className="arrowIcon">➔</span>
         </div>
+        </NavLink>
     );
 }
 

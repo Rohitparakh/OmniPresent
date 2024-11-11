@@ -5,6 +5,7 @@ import linkedin from '../../assets/about/linkedin.svg';
 import share from '../../assets/about/share.svg';
 import teamCardDiff from '../../assets/about/teamCardDiff.svg';
 import face1 from '../../assets/about/face1.svg';
+import { NavLink } from "react-router-dom";
 const TeamCard = ({ img, name, title }) => {
   return (
     <div className="flex items-center justify-center flex-col gap-4 min-w-[320px] min-h-[350px] ">
@@ -22,7 +23,7 @@ const TeamCard = ({ img, name, title }) => {
       </div>
 
       <div className="flex items-center justify-center gap-3">
-        <img src={x} alt="" className="h-6" />
+        <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className="h-6" /></NavLink>
         <img src={linkedin} alt="" className="h-6" />
       </div>
 

@@ -5,6 +5,7 @@ import x from '../../assets/about/x.svg';
 import telegram from '../../assets/about/telegram.svg';
 import insta from '../../assets/about/insta.svg';
 import logo from '../../assets/images/logoFooter.png';
+import { NavLink } from 'react-router-dom';
 const LetsConnect = () => {
   return (
     <div className=" w-full bg-primary px-4 ">
@@ -43,9 +44,9 @@ const LetsConnect = () => {
             <img src={logo} alt="" className='h-20'/>
 
             <div className='flex items-center gap-4'>
-                <img src={telegram} alt="" className='h-7'/>
-                <img src={x} alt="" className='h-7'/>
-                <img src={insta} alt="" className='h-7'/>
+               <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-7'/></NavLink>
+               <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className='h-7'/></NavLink>
+               <NavLink target="_blank" to=""><img src={insta} alt="" className='h-7'/></NavLink>
             </div>
         </div>
         </div>

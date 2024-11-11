@@ -3,6 +3,14 @@ import MarqueeSection from './../common/MarqueeSection';
 import { Button } from "../common";
 import share from "../../assets/services/share.svg"
 import card from "../../assets/services/card.svg"
+import one from "../../assets/services/1.svg";
+import two from "../../assets/services/2.svg";
+import three from "../../assets/services/3.svg";
+import four from "../../assets/services/4.svg";
+import five from "../../assets/services/5.svg";
+import six from "../../assets/services/6.svg";
+import seven from "../../assets/services/7.svg";
+
 const Card = () => {
   return (
     <div className=" w-[700px] bg-black  border border-[#EEFE05] flex items-start p-6">
@@ -75,31 +83,31 @@ const CurrentProjects = () => {
   const cardData = [
     {
      name: "Discord Management",   
-     image: "../../assets/services/1.svg"
+     image: one
     },
     {
       name: "Web3 GTM Strategy and Launch",
-      image: " ../../assets/services/2.svg"
+      image: two
     },
     {
       name: "Web2 to Web3 Transition",
-      image: "../../assets/services/3.svg"
+      image:three
     },
     {
       name: "Influencer/KOL Strategy and Management",
-      image: "../../assets/services/4.svg"
+      image:four
     },
     {
       name: "Community Growth Marketing",
-      image: " ../../assets/services/5.svg"
+      image: five
     },
     {
       name: "Content Strategy and Management",
-      image: " ../../assets/services/6.svg"
+      image: six
     },
     {
       name: "X (Twitter) Growth Hacking",
-      image: " ../../assets/services/7.svg"
+      image: seven
     }
   ];
 

@@ -21,7 +21,7 @@ const HeaderMobile = () => {
   return (
     <>
     <div className="header-mobile group-container"
-                    style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-evenly':'left', top:headerOpen?'-20px':'0'}}
+                    style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-evenly':'left', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px'}}
                     >
       <div className="logo-frame">
         <img 

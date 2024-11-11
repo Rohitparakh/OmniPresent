@@ -617,6 +617,7 @@ width: auto !important;
   }
 
   .textWeCover-text,
+  .textTheBases-highlight,
   .textTheBases-textContainer *{
     font-size: 35px !important;
     line-height: 40px !important;
@@ -785,7 +786,7 @@ width: auto !important;
   }
 
   .servicesHeader{
-    max-width: 100vw !important;
+    max-width: 75vw !important;
     flex-direction: column !important;
   }
 
@@ -926,9 +927,9 @@ width: auto !important;
   }
 }
 
-@media(min-width:768px){
+@media(min-width:767px){
   .lg-d-none{
-    display: none;
+    display: none !important;
   }
 
   .md-d-none{

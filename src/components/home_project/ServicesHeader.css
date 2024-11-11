@@ -46,8 +46,8 @@
 .textAll-text {
     font-family: 'Nohemi', sans-serif;
     font-weight: 900;
-    font-size: 205px;
-    line-height: 205px;
+    font-size: 85px;
+    line-height: 85px;
     color: #000;
     text-align: center;
 }
@@ -84,8 +84,8 @@
 .textWeCover-text {
     font-family: 'Nohemi';
     font-weight: 900;
-    font-size: 205px;
-    line-height: 205px;
+    font-size: 85px;
+    line-height: 85px;
     color: #fff;
 }
 
@@ -94,7 +94,7 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 410px;
+    /* height: 410px; */
 }
 
 .textTheBases-textContainer {
@@ -103,13 +103,13 @@
 }
 
 .textTheBases-highlight {
-    font-size: 205px;
+    font-size: 85px;
     color: #feff01;
     font-weight: 900;
     font-family: 'Nohemi';
-    line-height: 205px;
-    margin-right: 50px;
-    margin-top: 150px;
+    line-height: 85px;
+    /* margin-right: 50px; */
+    /* margin-top: 150px; */
 }
 
 .textTheBases-icon {
@@ -119,11 +119,11 @@
 }
 
 .textTheBases-baseText {
-    font-size: 205px;
+    font-size: 85px;
     color: white;
     font-weight: 900;
     font-family: 'Nohemi';
-    line-height: 205px;
+    line-height: 85px;
     position: relative;
 }
 
@@ -135,6 +135,6 @@
     line-height: 205px;
     color: #eefe05;
     position: absolute;
-    right: -10vw;
+    right: -15vw;
     bottom: 0;
 }

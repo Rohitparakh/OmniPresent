@@ -54,6 +54,7 @@ width: calc( 100vw - 136px);
     line-height: 35px;
     color: #bbbbbb;
     margin-bottom: 20px;
+    max-width: 450px;
 }
 
 .portfolio-single-left .details {

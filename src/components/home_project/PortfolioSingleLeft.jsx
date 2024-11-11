@@ -21,12 +21,13 @@ function PortfolioSingleLeft() {
             </div>
             <div className='content-center'>
             <div className="description">
-                    New, fairer, ticketing.
-                </div>
+            10K users gained in just seven days with a powerful product launch.
+
+</div>
             </div>
             <div className="content-right">                
                 <div className="details">
-                    <h1 className="title">SeatlabNFT</h1>
+                    <h1 className="title">RampX</h1>
                     <span className="index">02</span>
                 </div>
             </div>

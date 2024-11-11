@@ -15,7 +15,8 @@ const TextAll = () => {
 function TextWeCover() {
     return (
         <div className="textWeCover-container">
-            <span className="textWeCover-text">we cover</span>
+            <span className="textWeCover-text">full scale.</span> <span className="textTheBases-highlight"> &nbsp;web3</span>
+
         </div>
     );
 }
@@ -25,8 +26,7 @@ const TextTheBases = () => {
     return (
         <div className="textTheBases-container">
             <div className="textTheBases-textContainer">
-                <span className="textTheBases-highlight">all</span>
-                <span className="textTheBases-baseText">the bases</span>
+                <span className="textTheBases-baseText">marketing for your brand</span>
             </div>
         </div>
     );

@@ -7,13 +7,13 @@ function PortfolioSingle() {
     return (
         <div className="portfolio-single">
             <div className="content-left">
-                <h1 className="title">Rayls
+                <h1 className="title">Etihad Airways
                 <span className='index'>01</span>
                 </h1>
             </div>
             <div className='content-center'>
             <div className="description">
-                    Unifying the best of traditional & decentralized finance
+            A landmark Web3 debut for a global Web2 aviation leader
                 </div>
             </div>
             <div className="content-right">
@@ -28,11 +28,11 @@ function PortfolioSingle() {
                     className="graphic"
                 />
                 </div>
-                <div className="highlight-text">
-                    {/* <span>(</span> */}
+                {/* <div className="highlight-text">
+                    
                     Unifying the best of traditional & decentralized finance
-                    {/* <span>)</span> */}
-                </div>
+                    
+                </div> */}
             </div>
         </div>
     );

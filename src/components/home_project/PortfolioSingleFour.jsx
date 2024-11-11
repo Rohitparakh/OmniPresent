@@ -5,15 +5,15 @@ import image from '../../assets/images/PortfolioFourth.png';
 
 function PortfolioSingleFour() {
     return (
-        <div className="portfolio-single-four">
+        <div className="portfolio-single-four lg-d-none">
             <div className="content-left">
-                <h1 className="title">Hydro
-                <span className='index'>04</span>
+                <h1 className="title">CryptoKnights
+                <span className='index'>03</span>
                 </h1>
             </div>
             <div className='content-center'>
             <div className="description">
-                    A new economic engine for the internet
+            Web3 entertainment that fetched 15 million viewers.
                 </div>
             </div>
             <div className="content-right">

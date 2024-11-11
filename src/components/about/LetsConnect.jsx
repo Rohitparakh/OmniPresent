@@ -4,7 +4,7 @@ import arrow from '../../assets/images/letsConnectArrow.png';
 import x from '../../assets/about/x.svg';
 import telegram from '../../assets/about/telegram.svg';
 import insta from '../../assets/about/insta.svg';
-import logo from '../../assets/images/headerLogo.png';
+import logo from '../../assets/images/logoFooter.png';
 const LetsConnect = () => {
   return (
     <div className=" w-full bg-primary px-4 ">

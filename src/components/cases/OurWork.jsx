@@ -3,9 +3,7 @@ import { Button } from '../common'
 import p2p from "../../assets/about/p2p.svg"
 import rayls from "../../assets/cases/rayls.svg"
 import seatlab from "../../assets/about/seatlab.svg"
-import p2p from "../../assets/about/p2p.svg"
-import p2p from "../../assets/about/p2p.svg"
-import p2p from "../../assets/about/p2p.svg"
+
 const OurWork = () => {
     const [activeTab, setActiveTab] = React.useState(0)
 

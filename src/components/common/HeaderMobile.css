@@ -11,7 +11,7 @@
     justify-content: left;
     gap: 20px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0;
     background-color: #eefe05 !important;
     z-index: 100;
   }
@@ -88,7 +88,7 @@
   
   .mobile-menu{
     background-color: #eefe05;
-    height: calc(100vh - 92px);
+    height: calc(100vh - 52px);
     top:52px;
     width: 100vh;
     position: fixed;
@@ -96,6 +96,10 @@
     overflow-y: scroll;
   }
 
+  .mobile-menu li{
+    margin: 20px;
+  }
+  
   .mobile-menu ul{
     padding: 20px;
   }

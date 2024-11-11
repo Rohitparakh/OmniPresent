@@ -2,6 +2,7 @@ import React from 'react';
 import x from '../../assets/about/x.svg';
 import telegram from '../../assets/about/telegram.svg';
 import insta from '../../assets/about/insta.svg';
+import { NavLink } from 'react-router-dom';
 
 function HeroSection() {
     return (

@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Button = ({text}) => {
   return (
-    <button className=' flex items-center justify-center cursor-pointer transition-all duration-300 py-2 bg-primary border border-black rounded-full relative pl-6 pr-7 hover:bg-black text-black hover:text-primary tracking-wide hover:border-primary'>
+    <button className=' mt-5 flex items-center justify-center cursor-pointer transition-all duration-300 py-2 bg-primary border border-black rounded-full relative pl-6 pr-7 hover:bg-black text-black hover:text-primary tracking-wide hover:border-primary'>
         {/* inner text */}
         <p className=' font-nohemi font-[600]'>{text}</p>
         {/* outer part */}

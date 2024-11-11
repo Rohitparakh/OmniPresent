@@ -4,7 +4,7 @@ import arrow from '../../assets/images/letsConnectArrow.png';
 import x from '../../assets/about/x.svg';
 import telegram from '../../assets/about/telegram.svg';
 import insta from '../../assets/about/insta.svg';
-import lightning from '../../assets/about/lightning.svg';
+import logo from '../../assets/images/headerLogo.png';
 const LetsConnect = () => {
   return (
     <div className=" w-full bg-primary px-4 ">
@@ -40,7 +40,7 @@ const LetsConnect = () => {
         </div>
 
         <div className=' h-48 py-5 border-t w-full mt-16 flex flex-col items-center justify-between' style={{borderTop:'1px solid #000'}}>
-            <img src={lightning} alt="" className='h-20'/>
+            <img src={logo} alt="" className='h-20'/>
 
             <div className='flex items-center gap-4'>
                 <img src={telegram} alt="" className='h-7'/>

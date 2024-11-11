@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HeaderMobile.css';
 import logo from '../../assets/images/headerLogo.png'
 import arrow from '../../assets/images/arrowMobile.png'
@@ -12,6 +12,22 @@ import { NavLink } from 'react-router-dom';
 
 const HeaderMobile = () => {
     const [headerOpen, setHeaderOpen]= useState(false);
+
+        // Use effect to disable scrolling when isHeaderOpen is true
+        useEffect(() => {
+          if (headerOpen) {
+              // Disable body scroll
+              document.documentElement.style.overflow = 'hidden';
+          } else {
+              // Enable html scroll
+              document.documentElement.style.overflow = 'auto';
+          }
+  
+          // Cleanup to ensure scroll is re-enabled if component unmounts
+          return () => {
+              document.documentElement.style.overflow = 'auto';
+          };
+      }, [headerOpen]);
 
     // Handle the click event
   const handleClick = () => {

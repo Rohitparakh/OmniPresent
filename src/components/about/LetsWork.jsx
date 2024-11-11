@@ -1,5 +1,12 @@
 import React from "react";
 import { Button, MarqueeSection } from "../common";
+import letsWork from '../../assets/about/letsWork.svg';
+import letsWork1 from '../../assets/about/letsWork1.svg';
+import letsWork2 from '../../assets/about/letsWork2.svg';
+import letsWork3 from '../../assets/about/letsWork3.svg';
+import letsWork4 from '../../assets/about/letsWork4.svg';
+import letsWork5 from '../../assets/about/letsWork5.svg';
+import arrowRight from '../../assets/about/arrowRight.svg';
 
 const LetsWork = () => {
   return (
@@ -19,7 +26,7 @@ const LetsWork = () => {
         {/* Top divider end */}
         <div className="w-full flex items-center justify-end">
           <img
-            src="/src/assets/about/letsWork.svg"
+            src={letsWork}
             alt=""
             className="w-[50%]"
           />
@@ -32,7 +39,7 @@ const LetsWork = () => {
 
             {/* Card 1 */}
             <div className="flex flex-col justify-center items-center gap-1 lg:w-40 w-60  h-min ml-auto">
-                <img src="/src/assets/about/letsWork1.svg" alt="" />
+                <img src={letsWork1} alt="" />
                 <p className="lg:text-lg text-2xl font-nohemi font-">Tailored Solutions</p>
                 <p className="text-xs font-nohemi text-right text-[#AEAEAE]">
                 We customize our strategies to meet your specific needs, ensuring you get the most relevant and effective support.
@@ -41,7 +48,7 @@ const LetsWork = () => {
 
             {/* Card 2 */}
             <div className="flex flex-col-reverse justify-center items-start gap-1 lg:w-40 w-60 h-min lg:mt-40 mt-10">
-                <img src="/src/assets/about/letsWork2.svg" alt="" className="lg:h-[120px] h-[150px]"/>
+                <img src={letsWork2} alt="" className="lg:h-[120px] h-[150px]"/>
                 <p className="text-xs font-nohemi text-left text-[#AEAEAE]">
                 Our diverse team brings a wealth of experience in the crypto space, giving you access to top-tier expertise and insights.
                 </p>
@@ -50,7 +57,7 @@ const LetsWork = () => {
 
             {/* Card 3 */}
             <div className="flex lg:flex-row flex-col justify-center lg:items-center items-end lg:w-80 w-full h-min lg:mt-[276px] mt-10">
-                <img src="/src/assets/about/letsWork3.svg" alt="" className="h-[120px]"/>
+                <img src={letsWork3} alt="" className="h-[120px]"/>
                 <div className="flex flex-col justify-around pl-2 h-[120px] w-full">
                 <p className="lg:text-lg text-2xl font-nohemi leading-5 text-left lg:w-full w-40 ">Collaborative Partnership</p>
                 <p className="text-xs font-nohemi text-left text-[#AEAEAE] lg:pr-0 pr-20">
@@ -65,7 +72,7 @@ const LetsWork = () => {
             <div className="flex lg:flex-row flex-col-reverse gap-10 relative w-full">
             {/* Card 5 */}
             <div className="flex flex-col  justify-center items-end w-40 lg:ml-0 ml-auto">
-                <img src="/src/assets/about/letsWork4.svg" alt="" className="lg:w-20 w-72"/>
+                <img src={letsWork4} alt="" className="lg:w-20 w-72"/>
                 <p className="lg:text-lg text-2xl font-nohemi lg:text-start text-end w-64 lg:w-auto ">Tailored Solutions</p>
                 <p className="text-xs font-nohemi text-right">
                 We customize our strategies to meet your specific needs, ensuring you get the most relevant and effective support.
@@ -74,7 +81,7 @@ const LetsWork = () => {
 
             {/* Card 4 */}
             <div className="flex lg:flex-row flex-col lg:gap-0 gap-2 justify-center lg:items-end items-start lg:w-96 ">
-                <img src="/src/assets/about/letsWork5.svg" alt="" className="h-[180px]"/>
+                <img src={letsWork5} alt="" className="h-[180px]"/>
                 <div className="flex flex-col gap-2 justify-end lg:pl-2 items-end h-full">
                 <p className="lg:text-lg text-2xl font-nohemi leading-5 text-left w-full ">Agile Execution</p>
                 <p className="text-xs font-nohemi text-left w-full">
@@ -88,7 +95,7 @@ const LetsWork = () => {
         </div>
 
         <div className="w-full  lg:flex hidden items-start justify-end mx-auto pr-44 ">
-                <img src="/src/assets/about/arrowRight.svg" alt="" className=" h-44 " />
+                <img src={arrowRight} alt="" className=" h-44 " />
         </div>
 
 

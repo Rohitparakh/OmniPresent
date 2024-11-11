@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
+import x from '../../assets/about/x.svg';
+import linkedin from '../../assets/about/linkedin.svg';
+import share from '../../assets/about/share.svg';
+import teamCardDiff from '../../assets/about/teamCardDiff.svg';
+import face1 from '../../assets/about/face1.svg';
 const TeamCard = ({ img, name, title }) => {
   return (
     <div className="flex items-center justify-center flex-col gap-4 min-w-[320px] min-h-[350px] ">
@@ -18,19 +22,19 @@ const TeamCard = ({ img, name, title }) => {
       </div>
 
       <div className="flex items-center justify-center gap-3">
-        <img src="/src/assets/about/x.svg" alt="" className="h-6" />
-        <img src="/src/assets/about/linkedin.svg" alt="" className="h-6" />
+        <img src={x} alt="" className="h-6" />
+        <img src={linkedin} alt="" className="h-6" />
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <div className="border-b-2 border-black px-1 flex items-end cursor-pointer hover:scale-105 transition-all duration-500 w-20">
-          <img src="/src/assets/about/share.svg" alt="" className="h-4" />{" "}
+        <div className="border-b-2 px-1 flex items-end cursor-pointer hover:scale-105 transition-all duration-500 w-20" style={{borderBottom:'1px solid black'}}>
+          <img src={share} alt="" className="h-4" />{" "}
           <p className=" font-nohemi text-xs">see more</p>
         </div>
 
         <div className="w-full flex items-center justify-center mt-2">
           <img
-            src="/src/assets/about/teamCardDiff.svg"
+            src={teamCardDiff}
             alt=""
             className="h-12"
           />
@@ -60,7 +64,7 @@ const KnowUs = () => {
   return (
     <div className="min-h-screen w-full bg-primary px-4 pb-10">
       <div className="max-w-7xl mx-auto py-16 flex flex-col items-center justify-start min-h-screen">
-        <div className="border-b border-black pb-1 w-full flex items-center justify-between">
+        <div className="border-b pb-1 w-full flex items-center justify-between" style={{borderBottom:'1px solid black'}}>
           <p className="text-black font-bold text-[10px] tracking-widest ">
             know us
           </p>
@@ -121,27 +125,27 @@ const KnowUs = () => {
         <div className="min-w-[500px] min-h-[350px] lg:block hidden"></div>
 
         <TeamCard
-          img="/src/assets/about/face1.svg"
+          img={face1}
+          name="Team Member"
+          title="Creative Director"
+        />
+        <TeamCard
+          img={face1}
+          name="Team Member"
+          title="Creative Director"
+        />
+        <TeamCard
+          img={face1}
+          name="Team Member"
+          title="Creative Director"
+        />
+        <TeamCard
+          img={face1}
           name="Team Member"
           title="Creative Director"
         />
 
-        <TeamCard
-          img="/src/assets/about/face1.svg"
-          name="Team Member"
-          title="Creative Director"
-        />
-
-        <TeamCard
-          img="/src/assets/about/face1.svg"
-          name="Team Member"
-          title="Creative Director"
-        />
-        <TeamCard
-          img="/src/assets/about/face1.svg"
-          name="Team Member"
-          title="Creative Director"
-        />
+       
       </div>
     </div>
   );

@@ -1,11 +1,17 @@
 import { Button, MarqueeSection } from '../common'
+import face1 from '../../assets/about/face1.svg';
+import face2 from '../../assets/about/face2.svg';
+import face3 from '../../assets/about/face3.svg';
+import line from '../../assets/about/line.svg';
+import marLogo from '../../assets/about/marLogo.svg';
+import marArrow from '../../assets/about/marArrow.svg';
 
 const Hero = () => {
 
   return (
     <div className=' w-screen font-nohemi-ext bg-primary '>
     <div className=' max-w-7xl mx-auto flex flex-col items-center justify-center  relative px-4'>
-    <img src="/src/assets/about/face1.svg" alt=""  className='absolute top-0 lg:left-[100px] left-0 mix-blend-multiply lg:h-52 h-36'/>
+    <img src={face1} alt=""  className='absolute top-0 lg:left-[100px] left-0 mix-blend-multiply lg:h-52 h-36'/>
         <div className='py-20'>
 
         </div>
@@ -44,7 +50,7 @@ const Hero = () => {
 
         {/* Face 2 */}
   
-        <img src="/src/assets/about/face2.svg" alt="" className='mix-blend-multiply h-32 absolute top-[-80px] right-[60px] bg-primary z-50'/>
+        <img src={face2} alt="" className='mix-blend-multiply h-32 absolute top-[-80px] right-[60px] bg-primary z-50'/>
         </>
 
         <div className='bg-primary h-10 w-[38px] rotate-[15deg] absolute top-[2px] right-[125px] z-30 rounded-b-xl'>
@@ -57,7 +63,7 @@ const Hero = () => {
       {/* Bottom area start */}
     <div className='w-full lg:py-5 relative flex lg:flex-row flex-col  items-center justify-around gap-2'>
         <div className='flex lg:flex-row flex-col lg:items-center items-start gap-2'>
-        <img src="/src/assets/about/face3.svg" alt="" className='  mix-blend-multiply lg:h-52 h-32'/>
+        <img src={face3} alt="" className='  mix-blend-multiply lg:h-52 h-32'/>
         <p className=' lg:w-[24rem] leading-7 text-xl font-nohemi font-semibold'>
         ■ We’re a no-nonsense team helping Web3 projects scale with speed and precision. Let’s build, grow, and deliver—without the fluff."
         </p>
@@ -67,7 +73,7 @@ const Hero = () => {
         </div>
 
         <div className='absolute top-[-35px] left-52'>
-            <img src="/src/assets/about/line.svg" className='h-28' alt="" />
+            <img src={line} className='h-28' alt="" />
         </div>
     </div>
 
@@ -84,9 +90,9 @@ const Hero = () => {
             <MarqueeSection>
             <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
           <span className="text-black">partner with</span>
-          <img src="/src/assets/about/marLogo.svg" className="h-20" alt="" />
+          <img src={marLogo} className="h-20" alt="" />
           <span className="text-black">developed for ( web3 ) for the GROWTH/</span>
-          <img src="/src/assets/about/marArrow.svg" className="h-20" alt="" />
+          <img src={marArrow} className="h-20" alt="" />
 
         </h1>
             </MarqueeSection>

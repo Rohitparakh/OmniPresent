@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../common";
+import divider from '../../assets/about/divider.svg';
 
 const Manifesto = () => {
   return (
@@ -45,7 +46,7 @@ const Manifesto = () => {
         </div>
       </div>
       <div className=" relative w-full  flex items-center justify-center">
-        <img src="/src/assets/about/divider.svg" alt="" className=" " />
+        <img src={divider} alt="" className=" " />
         <div className="top-0 left-0 bottom-0 right-0 absolute flex items-center justify-center">
           <Button text={"schedule a call"} />
         </div>

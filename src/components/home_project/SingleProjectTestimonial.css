@@ -39,13 +39,13 @@ font-size: 60px;
 .testimonial .leftSection{
     border-right: 1px solid #fff;
     margin-right: 20px;
-    margin-left: 150px;
+    margin-left: 50px;
     padding: 150px 0;
-
+flex: 5;
 
 }
 
 .testimonial .rightSection{
     padding: 150px 40px;
-
+flex: 2;
 }

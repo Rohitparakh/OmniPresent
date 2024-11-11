@@ -75,31 +75,31 @@ const CurrentProjects = () => {
   const cardData = [
     {
      name: "Discord Management",   
-     image: "/src/assets/services/1.svg"
+     image: "../../assets/services/1.svg"
     },
     {
       name: "Web3 GTM Strategy and Launch",
-      image: " /src/assets/services/2.svg"
+      image: " ../../assets/services/2.svg"
     },
     {
       name: "Web2 to Web3 Transition",
-      image: "/src/assets/services/3.svg"
+      image: "../../assets/services/3.svg"
     },
     {
       name: "Influencer/KOL Strategy and Management",
-      image: "/src/assets/services/4.svg"
+      image: "../../assets/services/4.svg"
     },
     {
       name: "Community Growth Marketing",
-      image: " /src/assets/services/5.svg"
+      image: " ../../assets/services/5.svg"
     },
     {
       name: "Content Strategy and Management",
-      image: " /src/assets/services/6.svg"
+      image: " ../../assets/services/6.svg"
     },
     {
       name: "X (Twitter) Growth Hacking",
-      image: " /src/assets/services/7.svg"
+      image: " ../../assets/services/7.svg"
     }
   ];
 

@@ -57,7 +57,7 @@ const HowWeWork = () => {
         </div>
         </div>
 
-        <img src="/src/assets/services/hand.svg" alt="" className=' absolute right-0 bottom-[00px] lg:block hidden' />
+        <img src="../../assets/services/hand.svg" alt="" className=' absolute right-0 bottom-[00px] lg:block hidden' />
         </div>
   )
 }

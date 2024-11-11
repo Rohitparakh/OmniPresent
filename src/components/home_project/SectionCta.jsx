@@ -1,8 +1,9 @@
 import React from 'react';
 import './SectionCta.css';
 import ctaArrow from '../../assets/images/ctaArrow.png';
+import { NavLink } from 'react-router-dom';
 
-function SectionCta({text, position}) {
+function SectionCta({text, position, url}) {
     return (
         <div className={`section-cta-container ${position==='none'?'float-none':''}`}>
         <div className="section-cta">
@@ -12,7 +13,16 @@ function SectionCta({text, position}) {
                 className="arrow-icon" 
             />
             <div className="cta-text-container">
+            {url &&(<NavLink to={url} 
+                    className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                }>
                 <span className="cta-text">{text}</span>
+                </NavLink>
+                )}
+            {!url &&(
+                <span className="cta-text">{text}</span>
+                )}
             </div>
         </div>
         </div>

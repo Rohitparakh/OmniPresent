@@ -15,7 +15,7 @@ const WhyUs = () => {
     <WhyUsSecond />
     <WhyUsDots/>
     <WhyUsThird/>
-    <WhyUsCta text='read our manifesto' />
+    <WhyUsCta text='read our manifesto' url="/about" />
     {/* <SectionCta text='read our manifesto'/> */}
     </div>
   )

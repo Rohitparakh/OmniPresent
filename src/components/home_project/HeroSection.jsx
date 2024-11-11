@@ -1,4 +1,7 @@
 import React from 'react';
+import x from '../../assets/about/x.svg';
+import telegram from '../../assets/about/telegram.svg';
+import insta from '../../assets/about/insta.svg';
 
 function HeroSection() {
     return (
@@ -13,11 +16,12 @@ function HeroSection() {
                 </div>
                 </div>                
             </div>
-            <div class="w-screen px-48 flex items-center justify-end gap-4 mt-10 md-d-none">
-                    <img src="/src/assets/about/telegram.svg" alt="" class="h-7"/>
-                    <img src="/src/assets/about/x.svg" alt="" class="h-7"/>
-                    <img src="/src/assets/about/insta.svg" alt="" class="h-7"/>
-                </div>
+            {/* <div class="w-screen px-48 flex items-center justify-end gap-4 mt-10 md-d-none"> */}
+            <div className='justify-end w-screen px-48 mt-10 flex items-center gap-4 sm-justify-center'>
+                <img src={telegram} alt="" className='h-10'/>
+                <img src={x} alt="" className='h-10'/>
+                <img src={insta} alt="" className='h-10'/>
+            </div>
         </div>
     );
 }

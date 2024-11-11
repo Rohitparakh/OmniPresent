@@ -919,6 +919,10 @@ width: auto !important;
     padding: 0 !important;
     text-align: center !important;
   }
+
+  .sm-justify-center{
+    justify-content: center !important;
+  }
 }
 
 @media(min-width:768px){

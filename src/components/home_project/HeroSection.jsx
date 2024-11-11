@@ -18,7 +18,7 @@ function HeroSection() {
                 </div>                
             </div>
             {/* <div class="w-screen px-48 flex items-center justify-end gap-4 mt-10 md-d-none"> */}
-            <div className='justify-end w-screen px-48 mt-10 flex items-center gap-4 sm-justify-center'>
+            <div className='justify-end w-screen px-32 mt-10 flex items-center gap-4 sm-justify-center'>
                 <img src={telegram} alt="" className='h-10'/>
                 <NavLink to="https://x.com/Omnipresentcc" target="_blank"><img src={x} alt="" className='h-10'/></NavLink>
                 <img src={insta} alt="" className='h-10'/>

@@ -1,7 +1,10 @@
 import React from 'react'
 import { Button } from '../common'
 import arrow from '../../assets/images/letsConnectArrow.png';
-
+import x from '../../assets/about/x.svg';
+import telegram from '../../assets/about/telegram.svg';
+import insta from '../../assets/about/insta.svg';
+import insta from '../../assets/about/lightning.svg';
 const LetsConnect = () => {
   return (
     <div className=" w-full bg-primary px-4 ">
@@ -37,12 +40,12 @@ const LetsConnect = () => {
         </div>
 
         <div className=' h-48 py-5 border-t w-full mt-16 flex flex-col items-center justify-between' style={{borderTop:'1px solid #000'}}>
-            <img src="/src/assets/about/lightning.svg" alt="" className='h-20'/>
+            <img src={lightning} alt="" className='h-20'/>
 
             <div className='flex items-center gap-4'>
-                <img src="/src/assets/about/telegram.svg" alt="" className='h-7'/>
-                <img src="/src/assets/about/x.svg" alt="" className='h-7'/>
-                <img src="/src/assets/about/insta.svg" alt="" className='h-7'/>
+                <img src={telegram} alt="" className='h-7'/>
+                <img src={x} alt="" className='h-7'/>
+                <img src={insta} alt="" className='h-7'/>
             </div>
         </div>
         </div>

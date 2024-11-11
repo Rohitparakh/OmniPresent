@@ -1,5 +1,9 @@
 import React from 'react'
 import { Button, MarqueeSection } from '../common'
+import pen from "../../assets/cases/pen.svg";
+import line from "../../assets/cases/line.svg";
+import marLogo from "../../assets/cases/marLogo.svg";
+import marArrow from "../../assets/cases/marArrow.svg";
 
 const CasesHero = () => {
   return (
@@ -11,7 +15,7 @@ const CasesHero = () => {
         </div>
         {/* Center text area start */}
       <div className={`flex flex-col leading-[6rem] max-w-[560px] w-full items-end justify-end py-1 lg:scale-[1.35] scale-[.6] relative`}>
-        <img src="/src/assets/cases/pen.svg" alt="" className='absolute top-[-28px] left-[-50px] lg:left-[88px] mix-blend-multiply h-36'/>
+        <img src={pen} alt="" className='absolute top-[-28px] left-[-50px] lg:left-[88px] mix-blend-multiply h-36'/>
         <h1 className='text-[10rem] z-10 flex items-end font-nohemi-ext text-black relative'>
          <span className='text-[10rem] flex items-end w-min pt-9'></span><span className=''>our</span>
         </h1>
@@ -65,7 +69,7 @@ const CasesHero = () => {
         </div>
 
         <div className='absolute bottom-[-45px] left-[-100px]'>
-            <img src="/src/assets/about/line.svg" className='h-28' alt="" />
+            <img src={line} className='h-28' alt="" />
         </div>
     </div>
 
@@ -82,9 +86,9 @@ const CasesHero = () => {
             <MarqueeSection>
             <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
           <span className="text-black">partner with</span>
-          <img src="/src/assets/about/marLogo.svg" className="h-20" alt="" />
+          <img src={marLogo} className="h-20" alt="" />
           <span className="text-black">developed for ( web3 ) for the GROWTH/</span>
-          <img src="/src/assets/about/marArrow.svg" className="h-20" alt="" />
+          <img src={marArrow} className="h-20" alt="" />
 
         </h1>
               </MarqueeSection>

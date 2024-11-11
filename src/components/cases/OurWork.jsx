@@ -1,6 +1,11 @@
 import React from 'react'
 import { Button } from '../common'
-
+import p2p from "../../assets/about/p2p.svg"
+import rayls from "../../assets/cases/rayls.svg"
+import seatlab from "../../assets/about/seatlab.svg"
+import p2p from "../../assets/about/p2p.svg"
+import p2p from "../../assets/about/p2p.svg"
+import p2p from "../../assets/about/p2p.svg"
 const OurWork = () => {
     const [activeTab, setActiveTab] = React.useState(0)
 
@@ -42,38 +47,38 @@ const OurWork = () => {
 
         <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32'>
             <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src="/src/assets/about/p2p.svg" alt="" />
+                <img src={p2p} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
             </div>
 
             <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src="/src/assets/cases/rayls.svg" alt="" />
+                <img src={rayls} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Rayls - Unifying the best of traditional 
                 & decentralized finance</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
             </div>
 
             <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src="/src/assets/about/seatlab.svg" alt="" />
+                <img src={seatlab} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
             </div>
             <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src="/src/assets/about/p2p.svg" alt="" />
+                <img src={p2p} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
             </div>
 
             <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src="/src/assets/cases/rayls.svg" alt="" />
+                <img src={rayls} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Rayls - Unifying the best of traditional 
                 & decentralized finance</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
             </div>
 
             <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src="/src/assets/about/seatlab.svg" alt="" />
+                <img src={seatlab} alt="" />
                 <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
             </div>

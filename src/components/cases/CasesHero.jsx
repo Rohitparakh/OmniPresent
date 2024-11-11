@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button, MarqueeSection } from '../common'
 import pen from "../../assets/cases/pen.svg";
-import line from "../../assets/cases/line.svg";
-import marLogo from "../../assets/cases/marLogo.svg";
-import marArrow from "../../assets/cases/marArrow.svg";
+import line from "../../assets/about/line.svg";
+import marLogo from "../../assets/about/marLogo.svg";
+import marArrow from "../../assets/about/marArrow.svg";
 
 const CasesHero = () => {
   return (

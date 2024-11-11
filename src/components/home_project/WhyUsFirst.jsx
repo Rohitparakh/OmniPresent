@@ -18,7 +18,9 @@ function WhyUsFirst() {
                 </p>
             </div>
             <div className="content-right">
-            <h1 className="title">we talk web3</h1>
+            <h1 className="title">we are
+relationship
+driven</h1>
             </div>
         </div>
     );

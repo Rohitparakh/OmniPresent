@@ -6,7 +6,7 @@ function WhyUsThird() {
         <div className="why-us-third">
             <div className="why-us-third-content">
                 <p className="why-us-third-description">
-                    In a world that moves at lightning speed, so do we. We execute swiftly, adapt quickly, and make sure you’re always a step ahead in the market.
+                We’re everywhere your audience is. Our communities amplify your message, making sure you’re seen far and wide.
                 </p>
                
             </div>

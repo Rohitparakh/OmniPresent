@@ -9,8 +9,8 @@ function Footer() {
             <div className="footer-content">
             <Marquee speed={150}>
                 <div className='d-flex jcc aic'>
-            <p className='d-flex jcc aic px-15'>
-            community centred <img className='px-15' src={finger} /> marketing 
+            <p className='d-flex jcc aic px-15 fw-300'>
+             <img className='px-15' src={finger} /> <bold>1M+ &nbsp;</bold> community members &nbsp;<bold>($150M+&nbsp; </bold> in client value)
             </p>
             <img src={longArrow} className='d-flex jcc aic px-15'/>
             <p className='d-flex jcc aic'>
@@ -27,7 +27,8 @@ function Footer() {
                 
                 <div className='d-flex jcc aic'>
             <p className='d-flex jcc aic px-15'>
-            community centred <img className='px-15' src={finger} /> marketing 
+            <img className='px-15' src={finger} /> <bold>1M+ &nbsp;</bold> community members &nbsp;<bold>($150M+ &nbsp;</bold> in client value)
+
             </p>
             <img src={longArrow} className='d-flex jcc aic px-15'/>
             <p className='d-flex jcc aic'>

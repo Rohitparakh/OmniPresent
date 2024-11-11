@@ -18,8 +18,9 @@
 .why-us-second .title {
     font-family: 'Nohemi', sans-serif;
     font-weight: 900;
-    font-size: 125.58px;
-    line-height: 153.73px;
+    font-size: 100.58px;
+    line-height: 105.73px;
+    max-width: 600px;
     margin: 0;
     width: max-content;
 }

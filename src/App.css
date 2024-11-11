@@ -485,6 +485,7 @@ justify-content: space-between;
 
   .hero-content p{
     font-size: 14px;
+    max-width: 80vw;
   }
 
   .md-d-none{

@@ -115,6 +115,7 @@ font-weight: 900;
 
   .headerSocials{
     padding: 20px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: space-between;
     width: 100vw;

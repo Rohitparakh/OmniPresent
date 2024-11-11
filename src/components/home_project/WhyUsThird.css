@@ -1,0 +1,45 @@
+.why-us-third {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    background-color: #000000;
+    color: #fdfee8;
+}
+
+.why-us-third-description {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #fdfee8;
+    max-width: 439px;
+    margin: 0;
+    margin-right: 20px;
+
+}
+
+.why-us-third-title {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 147.58px;
+    line-height: 153.7px;
+    margin: 0;
+}
+
+.fast-outlined {
+    position: relative;
+    color: #fdfee8;
+    text-stroke: 4px #131313;
+}
+
+.why-us-third-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+img.fast{
+    width: 50%;
+}

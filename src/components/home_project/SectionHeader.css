@@ -1,0 +1,31 @@
+.containerOld{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    padding-top: 100px;
+}
+.section-header {
+    width: calc( 100vw - 136px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #fdfee8;
+    background-color: #000000;
+    color: #fdfee8;
+    font-family: 'Nohemi', sans-serif;    
+}
+
+.tagline {
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: lowercase;
+}
+
+.tagline:last-child {
+    text-transform: uppercase;
+}

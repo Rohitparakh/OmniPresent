@@ -1,0 +1,140 @@
+
+.servicesHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #000;
+    position: relative;
+    margin-top: 150px;
+}
+
+
+.headerRow {
+    display: flex;
+    align-items: center;
+}
+
+.handIcon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 365px;
+    height: 301px;
+    background-color: black;
+    margin: 0 20px;
+}
+
+.handIcon-icon {
+    font-family: 'Nohemi';
+    font-weight: 900;
+    font-size: 299.18px;
+    line-height: 300.52px;
+    color: #fff;
+}
+
+.textAll-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eefe05;
+    width: 232px;
+    height: 205px;
+    margin-bottom: 20px;
+}
+
+.textAll-text {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 205px;
+    line-height: 205px;
+    color: #000;
+    text-align: center;
+}
+
+.braces-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 205px;
+    background-color: #eefe05;
+}
+
+.braces-brace {
+    font-size: 205px;
+    font-weight: 900;
+    font-family: 'Nohemi';
+    line-height: 205px;
+    color: #000;
+}
+
+.headerRow img{
+    max-width: 30vw;
+}
+
+.textWeCover-container {
+    display: flex;
+    align-items: center;
+    height: 205px;
+    margin-left: 20px;
+    flex: 2;
+}
+
+.textWeCover-text {
+    font-family: 'Nohemi';
+    font-weight: 900;
+    font-size: 205px;
+    line-height: 205px;
+    color: #fff;
+}
+
+.textTheBases-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 410px;
+}
+
+.textTheBases-textContainer {
+    display: flex;
+    align-items: center;
+}
+
+.textTheBases-highlight {
+    font-size: 205px;
+    color: #feff01;
+    font-weight: 900;
+    font-family: 'Nohemi';
+    line-height: 205px;
+    margin-right: 50px;
+    margin-top: 150px;
+}
+
+.textTheBases-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.textTheBases-baseText {
+    font-size: 205px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Nohemi';
+    line-height: 205px;
+    position: relative;
+}
+
+.textTheBases-baseText::before{
+    content: '}';
+    font-size: 205px;
+    font-weight: 900;
+    font-family: 'Nohemi';
+    line-height: 205px;
+    color: #eefe05;
+    position: absolute;
+    right: -10vw;
+    bottom: 0;
+}

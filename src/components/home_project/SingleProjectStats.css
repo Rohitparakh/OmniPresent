@@ -1,0 +1,102 @@
+.singleProjectStats {
+    position: relative;
+    padding: 70px 68px;
+    background-color: #eefe05;
+    color: #000;
+}
+
+.singleProjectStats .tagContainer {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.singleProjectStats .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    border: 1px solid #000;
+    border-radius: 32px;
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.singleProjectStats .mainContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.singleProjectStats .leftSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.singleProjectStats .mainTitle {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 200.96px;
+    line-height: 209.33px;
+    margin: 0;
+}
+
+.singleProjectStats .subtitle {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    margin-top: 0;
+}
+
+.singleProjectStats .rightSection {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 12px;
+}
+
+.singleProjectStats .statistic {
+    text-align: center;
+    font-family: 'Nohemi', sans-serif;
+    color: #131313;
+    margin-top: 26px;
+}
+
+.singleProjectStats .statisticValue {
+    font-weight: 700;
+    font-size: 48px;
+    /* line-height: 30px; */
+    padding: 0;
+    margin: 0;
+}
+
+.singleProjectStats .statisticLabel {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #363635;
+}
+
+.singleProjectStats .brace {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 250.31px;
+    line-height: 262.82px;
+}
+
+.singleProjectStats .arrowImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 202.64px;
+    height: 94.68px;
+}
+
+.singleProjectStats .brace img{
+    max-height: 140px;
+}

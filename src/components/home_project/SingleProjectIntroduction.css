@@ -1,0 +1,74 @@
+.singleProjectIntroduction {
+    /* width: 1635px; */
+    /* height: 564px; */
+    color: #eaeaea;
+    padding: 70px 70px 100px 140px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap: 250px;
+}
+
+.topSection {
+    display: flex;
+    gap: 86px;
+}
+
+.verticalFrame {
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+}
+
+.sectionTitle {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7d7d7d;
+    margin: 0;
+}
+
+.sectionContent {
+    margin: 0;
+
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.middleSection {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mainContent {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.bottomSection {
+    /* display: flex; */
+    align-items: center;
+    gap: 20px;
+}
+
+.bigNumber {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 200px;
+    text-align: center;
+}
+
+.sectionTitleLarge {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: -1.28px;
+    line-height: 64px;
+    margin-top: 0;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+.why-us-first {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #fdfee8;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.why-us-first .graphic-element {
+    width: 30vw;
+    /* height: 615.69px; */
+    margin-right: 20px;
+}
+
+
+
+.why-us-first .title {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 175.41px;
+    line-height: 182.72px;
+    text-align: right;
+    margin: 0;
+    width: 700px;
+}
+
+.why-us-first .description {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #eaeaea;
+    opacity: 0.8;
+    margin-top: 20px;
+    width: 60%;
+    text-align: left;
+    float: right;
+    position: absolute;
+    top:100%;
+    left: 30%;
+    width: 70%;
+}
+
+.why-us-first .content-left{
+width: 30vw;
+margin-bottom: 50px;
+
+position: relative;
+}
+
+.why-us-first .content-right {
+    /* max-width: 700px; */
+    width: max-content;
+    flex-shrink: 1;
+}

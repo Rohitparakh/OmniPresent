@@ -1,0 +1,52 @@
+.testimonial-first {
+    display: flex;
+    align-items: flex-start;
+    max-width: 400px;
+    gap: 16px;
+}
+
+.testimonial-first .testimonial-image {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.testimonial-first .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.testimonial-first .testimonial-quote {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.96px;
+    line-height: 60px;
+}
+
+.testimonial-first .testimonial-text {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #bbbbbb;
+}
+
+.testimonial-first .testimonial-author {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.testimonial-first .testimonial-company {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+}

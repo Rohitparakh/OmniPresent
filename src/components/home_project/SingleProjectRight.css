@@ -1,0 +1,65 @@
+.singleProjectRight {
+    display: flex;
+    padding: 20px;
+    background-color: #000;
+    color: #eaeaea;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.singleProjectRight .bigNumberSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.singleProjectRight .bigNumber {
+    /* font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 286.32px;
+    line-height: 298.25px; */
+}
+
+.singleProjectRight .impressionTitle {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -1.28px;
+    line-height: 64px;
+}
+
+.singleProjectRight .contentSection {
+    flex: 2;
+    padding-right: 20px;
+    border-right: 1px solid #fff;
+}
+.singleProjectRight .headline,
+.singleProjectRight .description {
+padding-left: 150px;
+}
+
+.singleProjectRight .headline {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.4px;
+    line-height: 48px;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+.singleProjectRight .description {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 40px;
+    margin-bottom: 120px;
+    padding-right: 100px;
+}
+
+.singleProjectRight .designImage {
+    object-fit: cover;
+    max-width: 70vw;
+}

@@ -1,0 +1,72 @@
+.testimonialThird {
+    display: block;
+    align-items: flex-start;
+    justify-content: center;
+    width: 864px;
+    gap: 20px;
+    color: #fff;
+    max-width: 600px;
+    margin-top: 150px;
+}
+
+.testimonialThird .reviewerImage {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonialThird .reviewerContent {
+    display: flex;
+    flex-direction: column;
+    /* align-self: center;     */
+    padding: 10px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.testimonialThird .reviewerName {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    width: max-content;
+}
+
+.testimonialThird .companyName {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ababab;
+    margin-top: 0;
+}
+
+.testimonialThird .quoteContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonialThird .testimonialQuote {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.96px;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+
+.testimonialThird .testimonialText {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #bbbbbb;
+}
+
+.gap-50{
+    gap: 50px;
+}

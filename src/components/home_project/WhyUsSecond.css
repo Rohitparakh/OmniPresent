@@ -1,0 +1,61 @@
+.why-us-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #fdfee8;
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.why-us-second .content {
+    /* max-width: 844px; */
+    width: 40vw;
+    z-index: 3;
+}
+
+.why-us-second .title {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 125.58px;
+    line-height: 153.73px;
+    margin: 0;
+    width: max-content;
+}
+
+.why-us-second .description {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #fdfee8;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.why-us-second .card-image img {
+    /* width: 530px; */
+    /* height: 385.73px; */
+    margin-left: -200px;
+}
+
+.why-us-second .card-image{
+    position: relative;
+}
+
+.why-us-second .card-image .pos-r{
+    position: relative;
+    z-index: 2;
+}
+
+.why-us-second .card-image .pos-a {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+
+}

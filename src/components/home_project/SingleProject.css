@@ -1,0 +1,8 @@
+.headerBottom .headerExtras{
+    display: none;
+}
+
+.headerBottom hr{
+    margin-bottom: 0;
+    height: 2px;
+}

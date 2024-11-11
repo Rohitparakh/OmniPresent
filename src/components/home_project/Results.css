@@ -1,0 +1,23 @@
+.results{
+    background-color: #eefe05;
+    padding-top: 0;
+}
+
+.d-flex{
+    display: flex !important;
+}
+
+.gap-150{
+    gap: 150px !important;
+}
+
+.mt-50{
+    margin-top: 150px !important;
+}
+
+.abstractRight{
+    max-width: 300px;
+    font-size: 25px;
+    margin-top: -50px;
+}
+

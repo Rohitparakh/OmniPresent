@@ -1,0 +1,64 @@
+.singleProjectLeft {
+    display: flex;
+    padding: 20px;
+    background-color: #000;
+    color: #eaeaea;
+    margin-bottom: 100px;
+}
+
+.singleProjectLeft .bigNumberSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singleProjectLeft .bigNumber {
+    /* font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 286.32px;
+    line-height: 298.25px;
+    color: #eaeaea; */
+}
+
+.singleProjectLeft .approachTitle {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -1.28px;
+    line-height: 64px;
+    color: #eaeaea;
+}
+
+.singleProjectLeft .contentSection {
+    flex: 2;
+    padding-left: 50px;
+    border-left: 1px solid #fff;
+}
+
+.singleProjectLeft .headline {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.4px;
+    line-height: 48px;
+    color: #eaeaea;
+    margin-bottom: 20px;
+}
+
+.singleProjectLeft .description {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 40px;
+    color: #eaeaea;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+.singleProjectLeft .designImage {
+    width: 1248px;
+    height: 832px;
+    object-fit: cover;
+}

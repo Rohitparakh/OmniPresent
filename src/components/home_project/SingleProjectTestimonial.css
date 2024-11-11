@@ -1,0 +1,51 @@
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+.testimonial h2{
+font-size: 60px;
+}
+
+.testimonial .text-yellow{
+    color: #EEFE05;
+}
+
+.testimonial p{
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.authorDetails{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.authorDetails .fw-900{
+    font-weight: 900;
+}
+
+.authorDetails p{
+    margin: 0;
+}
+
+.authorDetailsRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.testimonial .leftSection{
+    border-right: 1px solid #fff;
+    margin-right: 20px;
+    margin-left: 150px;
+    padding: 150px 0;
+
+
+}
+
+.testimonial .rightSection{
+    padding: 150px 40px;
+
+}

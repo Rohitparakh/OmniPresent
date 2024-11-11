@@ -1,0 +1,11 @@
+@import url(https://db.onlinewebfonts.com/c/29ddb4605533a38e086b48fa105e0d12?family=Nohemi);
+@import url(https://db.onlinewebfonts.com/c/09d24ab8128407895e24e553498fae9b?family=Nohemi+ExtBd);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.scrollbarHidden::-webkit-scrollbar {
+   scrollbar-width: none;
+}

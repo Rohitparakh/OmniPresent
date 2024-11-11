@@ -1,0 +1,60 @@
+.more-cta-first {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000000;
+    /* padding: 20px; */
+    color: #ffffff;
+    flex-wrap: nowrap;
+    position: relative;
+    padding-top: 200px;
+}
+
+.more-cta-first .call-to-action{
+    width: max-content;
+}
+
+.more-cta-first .more-text {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 291.22px;
+    line-height: 238.57px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.more-cta-first .call-to-action {
+    display: flex;
+    align-items: center;
+    background-color: #eefe05;
+    color: #000000;
+    border-radius: 121.16px;
+    padding: 16px 44px;
+    margin-left: 20px;
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 500;
+    /* font-size: 39.16px; */
+    /* line-height: 39.34px; */
+}
+
+.more-cta-first .call-to-action img {
+    width: 64px;
+    height: 64px;
+    margin-left: 12px;
+}
+
+.more-cta-first button{
+    position: relative;
+}
+.more-cta-first button::before{
+    content:'more';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 110%;
+    color: #fff;
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 291.22px;
+    line-height: 238.57px;
+}

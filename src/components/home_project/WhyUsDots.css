@@ -1,0 +1,27 @@
+.why-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 150px;
+    gap: 40px;
+    position: relative;
+    float: left;
+}
+
+.dots-image {
+    /* width: 857px; */
+    /* height: 169px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dots-image.anim-complete{
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0,0); 
+}

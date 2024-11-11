@@ -14,7 +14,7 @@ function HeroSection() {
                 <div className='d-flex justify-center'>
                     <div className='subHeading'>
                 <p>The community-driven web3 super agency for the new internet.</p>
-                <button className="cta-button">schedule a call <span className='arrow'>➔</span></button>
+                <NavLink to="https://x.com/Omnipresentcc" target="_blank"><button className="cta-button">schedule a call <span className='arrow'>➔</span></button></NavLink>
                 </div>
                 </div>                
             </div>

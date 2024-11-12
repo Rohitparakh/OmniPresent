@@ -1,7 +1,7 @@
 import React from 'react';
 import './TestimonialSecond.css';
 import image1 from '../../assets/images/TestimonialTwoFirst.png';
-import image2 from '../../assets/images/TestimonialTwoSecond.png';
+import image2 from '../../assets/images/TestimonialTwoSecond.jpg';
 
 
 function TestimonialSecond() {

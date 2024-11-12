@@ -1,7 +1,7 @@
 import React from 'react';
 import './PortfolioSingle.css';
 import statusProgress from '../../assets/images/statusProgress.png';
-import image from '../../assets/images/PortfolioSingle.png';
+import image from '../../assets/images/Ethihad.png';
 
 function PortfolioSingle() {
     return (

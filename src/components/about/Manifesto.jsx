@@ -2,7 +2,42 @@ import React from "react";
 import { Button } from "../common";
 import divider from '../../assets/about/divider.svg';
 
+const Card = ({title, desc}) => {
+  return (
+    <div className="lg:w-[270px] min-h-[250px] flex flex-col gap-2">
+      <p className="text-white font-semibold text-2xl font-nohemi"><span className="text-[#EEFE05]">■ </span> 
+      {title}</p>
+      <p className="text-[#FFFFFF] font-nohemi text-sm">
+        {desc}
+      </p>
+    </div>
+  );
+};
+
 const Manifesto = () => {
+
+  const data = [
+    {
+      title: "Natively Web3",
+      desc: "Web3 is embedded in our DNA; we understand its potential, its pace, and its people. This lived knowledge empowers us to lead, showing others how to harness its potential to prosper and make the world a better place."
+    },
+    {
+      title: "Web3 that Respects Humanity",
+      desc: "In our pursuit of innovation, we never lose sight of being human. We swear by a Web3 that enriches lives, fosters connections, and builds bridges for everyone. Above all, it’s an internet that respects humanity and serves as a conduit for an interconnected world."
+    },
+    {
+      title: "Lasting Partnerships = Lasting Success",
+      desc: "In our pursuit of innovation, we never lose sight of being human. We swear by a Web3 that enriches lives, fosters connections, and builds bridges for everyone. Above all, it’s an internet that respects humanity and serves as a conduit for an interconnected world."
+    },
+    {
+      title: "Community is Everything",
+      desc: "Community is the beating heart of everything we do. Without it, there is no Web3—and without Web3, there is no us. It’s people that make ideas come to life, spread messages and add flavor to life."
+    },
+    {
+      title: "Relentlessly Pursuing Excellence",
+      desc: "Good is never enough. We’re relentlessly pursuing excellence, greeting challenges with vigor—each one, after all, is an invitation to break molds. We’ll never stop growing, and challenging what’s expected to light up hidden paths."
+    },
+  ]
   return (
     <div className="  bg-black text-white relative ">
       <div className="max-w-7xl mx-auto px-4 pt-16 flex flex-col items-center justify-start  h-full">
@@ -19,14 +54,12 @@ const Manifesto = () => {
         {/* Manifesto content */}
         <div className="w-full flex items-center justify-end pt-16">
           <p className="text-5xl font-nohemi font-bold lg:w-[70%] text-right leading-[3.2rem]">
-            To empower Web3 projects with strategic insights and execution
-            excellence, driving <span className="text-primary">innovation</span>{" "}
-            and <span className="text-primary">growth</span> in the{" "}
-            <span className="text-primary">evolving digital landscape.</span>
+          At the crux of our mission lies the conviction that our approach to how we <span className="text-primary">work</span>, <span className="text-primary">connect</span> and{" "}
+            <span className="text-primary">innovate</span> shapes our <span className="text-primary">identity</span>.
           </p>
         </div>
 
-        <div className="flex lg:flex-row flex-col items-start justify-start pt-20 gap-6 w-full">
+        {/* <div className="flex lg:flex-row flex-col items-start justify-start pt-20 gap-6 w-full">
           <p className=" lg:w-60">
             We aim to drive innovation and growth in the ever-evolving digital
             landscape, ensuring our clients not only navigate challenges but
@@ -43,16 +76,26 @@ const Manifesto = () => {
             to shape the future of Web3, creating lasting value for our partners
             and the community.
           </p>
+        </div> */}
+        <div className="w-full grid lg:grid-cols-3 gap-4 mt-20 lg:mb-0 mb-20">
+          {
+            data.map((item, index) => (
+              <Card title={item.title} desc={item.desc} key={index}/>
+            ))
+          }
+
         </div>
+
+
       </div>
       <div className=" relative w-full  flex items-center justify-center">
         <img src={divider} alt="" className=" " />
-        <div className="top-0 left-0 bottom-0 right-0 absolute flex items-center justify-center">
+        <div className="lg:top-0 top-[-400px] left-0 bottom-0 right-0 absolute flex items-center justify-center">
           <Button text={"schedule a call"} />
         </div>
       </div>
 
-      <div className="min-h-40 w-full flex px-4 flex-col gap-1 items-center justify-center  mx-auto mt-16 relative">
+      {/* <div className="min-h-40 w-full flex px-4 flex-col gap-1 items-center justify-center  mx-auto mt-16 relative">
         <div className=" lg:w-[48rem] tracking-wide flex flex-col items-start justify-center gap-1">
           <p className="lg:text-6xl text-5xl font-nohemi font-bold text-start lg:leading-[3.2rem]">
             At the heart of our agency
@@ -92,7 +135,7 @@ const Manifesto = () => {
     </div>
             
 
-      </div>
+      </div> */}
 
     </div>
   );

@@ -4,6 +4,7 @@ import pen from "../../assets/cases/pen.svg";
 import line from "../../assets/about/line.svg";
 import marLogo from "../../assets/about/marLogo.svg";
 import marArrow from "../../assets/about/marArrow.svg";
+import right from "../../assets/services/right.svg"
 
 const CasesHero = () => {
   return (
@@ -14,12 +15,12 @@ const CasesHero = () => {
 
         </div>
         {/* Center text area start */}
-      <div className={`flex flex-col leading-[6rem] max-w-[560px] w-full items-end justify-end py-1 lg:scale-[1.35] scale-[.6] relative`}>
-        <img src={pen} alt="" className='absolute top-[-28px] left-[-100px] lg:left-[88px] mix-blend-multiply h-36'/>
+      <div className={`flex flex-col leading-[6rem] max-w-[560px] w-auto items-end justify-end py-1 lg:scale-[1.35] scale-[.6] relative`}>
+        <img src={pen} alt="" className='absolute top-[-28px] left-[-50px] lg:left-[68px] mix-blend-multiply h-36'/>
         <h1 className='text-[10rem] z-10 flex items-end font-nohemi-ext text-black relative'>
-         <span className='text-[10rem] flex items-end w-min pt-9 '></span><span className=''>case</span>
+         <span className='text-[10rem] flex items-end w-min pt-9 '></span><span className='font-nohemi-ext'>case</span>
         </h1>
-        <h1 className='mt-2 text-[10rem] flexitems-center gap-2 font-nohemi-ext text-black pl-5'>
+        <h1 className='mt-10 text-[10rem] flex items-center gap-2 font-nohemi-ext text-black pl-5'>
         studies
         </h1>
 
@@ -61,7 +62,7 @@ const CasesHero = () => {
     <div className='w-full py-5 lg:mt-16 mt-10 relative flex lg:flex-row flex-col items-center justify-around gap-2'>
         <div className='flex items-center gap-2'>
         <p className=' lg:max-w-[34rem] leading-7 text-xl font-nohemi font-semibold'>
-        ■ We’re a no-nonsense team helping Web3 projects scale with speed and precision. Let’s build, grow, and deliver—without the fluff."
+        ■ We’ve fueled growth and built vibrant communities across Web3 for leading brands, including Tier 1 companies and Layer 1 blockchains, and our impact keeps building.
         </p>
         </div>
         <div className='  h-full pb-10 flex items-start lg:w-auto w-full'>
@@ -83,15 +84,20 @@ const CasesHero = () => {
         </div>
 
         <div className='py-6  w-full'>
-            <MarqueeSection>
-            <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
-          <span className="text-black">partner with</span>
-          <img src={marLogo} className="h-20" alt="" />
-          <span className="text-black">developed for ( web3 ) for the GROWTH/</span>
-          <img src={marArrow} className="h-20" alt="" />
-
-        </h1>
-              </MarqueeSection>
+        <MarqueeSection>
+                <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
+              <span className="text-black font-nohemi-ext">5M+</span> social followers
+              <img src={right} className="h-16" alt="" />
+              <span className="text-black font-nohemi-ext">1M+</span>
+              <span className="text-black">community members</span>
+              <span className="text-black font-nohemi-ext">(</span>
+                <span className="text-black font-nohemi-ext">$150M+</span>
+                <span className="text-black">in client venue</span>
+              <span className="text-black font-nohemi-ext">)</span>
+              <img src={marArrow} className="h-20" alt="" />
+    
+            </h1>
+                  </MarqueeSection>
         </div>
 
     </div>

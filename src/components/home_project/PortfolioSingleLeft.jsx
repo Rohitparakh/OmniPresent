@@ -1,7 +1,7 @@
 import React from 'react';
 import './PortfolioSingleLeft.css';
 import statusProgress from '../../assets/images/statusProgress.png';
-import image from '../../assets/images/PortfolioSecond.png';
+import image from '../../assets/images/RampX.png';
 
 function PortfolioSingleLeft() {
     return (

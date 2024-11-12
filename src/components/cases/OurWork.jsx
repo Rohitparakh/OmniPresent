@@ -2,13 +2,61 @@ import React from 'react'
 import { Button } from '../common'
 import p2p from "../../assets/about/p2p.svg"
 import rayls from "../../assets/cases/rayls.svg"
+import card1 from "../../assets/cases/card1.svg"
+import card2 from "../../assets/cases/card2.svg"
+import card3 from "../../assets/cases/card3.svg"
+import card4 from "../../assets/cases/card4.svg"
+import card5 from "../../assets/cases/card5.svg"
+import card6 from "../../assets/cases/card6.svg"
 import seatlab from "../../assets/about/seatlab.svg"
+
+const Card = ({img, title, para}) => {
+    
+    return (
+        <div className='w-full min-h-[250px] flex flex-col gap-2'>
+                <img src={img} alt="" className=' h-80'/>
+                <p className='text-white font-semibold text-2xl font-nohemi'>{title}</p>
+                <p className='text-[#FFFFFF] font-nohemi text-sm'>{para}</p>
+            </div>
+    )
+}
 
 const OurWork = () => {
     const [activeTab, setActiveTab] = React.useState(0)
 
     const menu = ["GTM", "Growth Strategy & Hacking", "KOL M&M", "Partnerships", "Merchandising", "Collabs & Alpha Calls", "Fundraising", "Branding & Design", "Advisory", "SMC Strategy and Management"]
-
+    const data =[
+        {
+            img: card1,
+            title: "Etihad Airways",
+            desc: "A landmark Web3 debut for a global Web2 aviation leader",
+        },
+        {
+            img: card2,
+            title: "RampX",
+            desc: "A powerful product launch that fetched 10K users in just seven days",
+        },
+        {
+            img: card3,
+            title: "CryptoKnights",
+            desc: "Building a global community for the Web3 Shark Tank",
+        },
+        {
+            img: card4,
+            title: "Deblock",
+            desc: " Go-to-Market success with 100K users and $100M in transactions",
+        },
+        {
+            img: card5,
+            title: "Elixr Games",
+            desc: "GTM Strategy Driving NFT Sellout in Web3 Gaming",
+        },
+        {
+            img: card6,
+            title: "Rayls - Unifying the best of traditional & decentralized finance",
+            desc: "We revived activity on the platform and increased the trading volume by 32%",
+        },
+    ]
   return (
     <div className="bg-black text-white relative ">
       <div className="max-w-7xl mx-auto pt-16 flex px-4 flex-col items-center justify-start  min-h-screen">
@@ -44,42 +92,13 @@ const OurWork = () => {
 
 
         <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32'>
-            <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={p2p} alt="" />
-                <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
-                <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
-            </div>
-
-            <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={rayls} alt="" />
-                <p className='text-white font-semibold text-2xl font-nohemi'>Rayls - Unifying the best of traditional 
-                & decentralized finance</p>
-                <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
-            </div>
-
-            <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={seatlab} alt="" />
-                <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
-                <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
-            </div>
-            {/* <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={p2p} alt="" />
-                <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
-                <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
-            </div>
-
-            <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={rayls} alt="" />
-                <p className='text-white font-semibold text-2xl font-nohemi'>Rayls - Unifying the best of traditional 
-                & decentralized finance</p>
-                <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
-            </div>
-
-            <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={seatlab} alt="" />
-                <p className='text-white font-semibold text-2xl font-nohemi'>Oh - Uncensored AI, unlimited potential</p>
-                <p className='text-[#FFFFFF] font-nohemi text-sm'>We revived activity on the platform and increased the trading volume by 32%</p>
-            </div> */}
+            {
+              data.map((i) => (
+                <Card img={i.img} title={i.title} para={i.desc} key={i.title}/>
+              ))
+            }
+            
+            
             
         </div>
 

@@ -5,6 +5,7 @@ import face3 from '../../assets/about/face3.svg';
 import line from '../../assets/about/line.svg';
 import marLogo from '../../assets/about/marLogo.svg';
 import marArrow from '../../assets/about/marArrow.svg';
+import right from "../../assets/services/right.svg"
 
 const Hero = () => {
 
@@ -64,8 +65,8 @@ const Hero = () => {
     <div className='w-full lg:py-5 relative flex lg:flex-row flex-col  items-center justify-around gap-2'>
         <div className='flex lg:flex-row flex-col lg:items-center items-start gap-2'>
         <img src={face3} alt="" className='  mix-blend-multiply lg:h-52 h-32'/>
-        <p className=' lg:w-[24rem] leading-7 text-xl font-nohemi font-semibold'>
-        ■ We’re a no-nonsense team helping Web3 projects scale with speed and precision. Let’s build, grow, and deliver—without the fluff."
+        <p className=' lg:w-[28rem] leading-7 text-xl font-nohemi font-semibold'>
+        ■ We live and breathe Web3 marketing with deep expertise and a human touch. From bringing brands to market to building connected communities, we help projects reach the audiences that matter.
         </p>
         </div>
         <div className=' lg:w-auto w-full  h-full lg:py-10 py-5 flex items-start'>
@@ -87,15 +88,20 @@ const Hero = () => {
         </div>
 
         <div className='lg:py-6 py-3  w-full'>
-            <MarqueeSection>
-            <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
-          <span className="text-black">partner with</span>
-          <img src={marLogo} className="h-20" alt="" />
-          <span className="text-black">developed for ( web3 ) for the GROWTH/</span>
-          <img src={marArrow} className="h-20" alt="" />
-
-        </h1>
-            </MarqueeSection>
+        <MarqueeSection>
+                <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
+              <span className="text-black font-nohemi-ext">5M+</span> social followers
+              <img src={right} className="h-16" alt="" />
+              <span className="text-black font-nohemi-ext">1M+</span>
+              <span className="text-black">community members</span>
+              <span className="text-black font-nohemi-ext">(</span>
+                <span className="text-black font-nohemi-ext">$150M+</span>
+                <span className="text-black">in client venue</span>
+              <span className="text-black font-nohemi-ext">)</span>
+              <img src={marArrow} className="h-20" alt="" />
+    
+            </h1>
+                  </MarqueeSection>
         </div>
 
     </div>

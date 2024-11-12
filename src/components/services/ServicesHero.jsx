@@ -2,11 +2,12 @@ import React from 'react'
 import { Button, MarqueeSection } from '../common'
 import line from "../../assets/about/line.svg"
 import heroImg from "../../assets/services/heroImg.svg"
+import right from "../../assets/services/right.svg"
 import marLogo from "../../assets/about/marLogo.svg"
 import marArrow from "../../assets/about/marArrow.svg"
 const ServicesHero = () => {
     return (
-        <div className=' min-h-screen relative w-screen flex flex-col justify-between font-nohemi-ext bg-primary px-4'>
+        <div className='relative w-screen flex flex-col justify-between font-nohemi-ext bg-primary px-4'>
         <div className=' max-w-7xl w-full z- mx-auto flex flex-col items-center justify-center  relative'>
        
             <div className='py-20'>
@@ -19,7 +20,7 @@ const ServicesHero = () => {
             </p>
             
             <h1 className='text-[10rem] z-10 flex items-end font-nohemi-ext text-black relative'>
-             <span className='text-[10rem] flex items-end w-min pt-9'></span><span className=''>our</span>
+             <span className='text-[10rem] flex items-end w-min pt-9'></span><span className='font-nohemi-ext'>our</span>
             </h1>
             <h1 className='text-[9rem] lg:w-auto w-full z-50 flex items-center gap-2 font-nohemi-ext text-black pl-5'>
             services
@@ -64,8 +65,8 @@ const ServicesHero = () => {
           {/* Bottom area start */}
         <div className='w-full py-5 lg:mt-20 mt-10 relative flex lg:flex-row flex-col items-center justify-around gap-2'>
             <div className='flex items-center gap-2'>
-            <p className='  lg:w-[24rem] leading-7 text-xl font-nohemi font-semibold'>
-            ■ Promote your brand effortlessly with top-tier Blockchain and Web3 services, backed by our expert team. Secure your free proposal now and watch your brand go viral!
+            <p className='  lg:w-[27rem] leading-7 text-xl font-nohemi font-semibold'>
+            ■ We cover everything you need to make an impact in Web3—from community building to full-scale marketing with your very own CMO.
             </p>
             </div>
             <div className='  h-full pb-10 flex items-start lg:w-auto w-full'>
@@ -92,9 +93,14 @@ const ServicesHero = () => {
             <div className='py-6  w-full'>
                 <MarqueeSection>
                 <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 font-semibold select-none">
-              <span className="text-black">partner with</span>
-              <img src={marLogo} className="h-20" alt="" />
-              <span className="text-black">developed for ( web3 ) for the GROWTH/</span>
+              <span className="text-black font-nohemi-ext">5M+</span> social followers
+              <img src={right} className="h-16" alt="" />
+              <span className="text-black font-nohemi-ext">1M+</span>
+              <span className="text-black">community members</span>
+              <span className="text-black font-nohemi-ext">(</span>
+                <span className="text-black font-nohemi-ext">$150M+</span>
+                <span className="text-black">in client venue</span>
+              <span className="text-black font-nohemi-ext">)</span>
               <img src={marArrow} className="h-20" alt="" />
     
             </h1>

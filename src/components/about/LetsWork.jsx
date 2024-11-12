@@ -42,7 +42,7 @@ const LetsWork = () => {
                 <img src={letsWork1} alt="" />
                 <p className="lg:text-lg text-2xl font-nohemi font-">Tailored Solutions</p>
                 <p className="text-xs font-nohemi text-right text-[#AEAEAE]">
-                We customize our strategies to meet your specific needs, ensuring you get the most relevant and effective support.
+                We design solutions to meet your unique needs, making sure every move we make is meaningful and impactful.
                 </p>
             </div>
 
@@ -73,9 +73,9 @@ const LetsWork = () => {
             {/* Card 5 */}
             <div className="flex flex-col  justify-center items-end w-40 lg:ml-0 ml-auto">
                 <img src={letsWork4} alt="" className="lg:w-20 w-72"/>
-                <p className="lg:text-lg text-2xl font-nohemi lg:text-start text-end w-64 lg:w-auto ">Tailored Solutions</p>
-                <p className="text-xs font-nohemi text-right">
-                We customize our strategies to meet your specific needs, ensuring you get the most relevant and effective support.
+                <p className="lg:text-lg text-2xl font-nohemi lg:text-start text-end w-64 lg:w-auto ">Results-Driven</p>
+                <p className="text-xs font-nohemi text-right text-[#AEAEAE]">
+                We focus on delivering measurable outcomes, ensuring that every action we take drives your success forward.
                 </p>
             </div>
 
@@ -84,7 +84,7 @@ const LetsWork = () => {
                 <img src={letsWork5} alt="" className="h-[180px]"/>
                 <div className="flex flex-col gap-2 justify-end lg:pl-2 items-end h-full">
                 <p className="lg:text-lg text-2xl font-nohemi leading-5 text-left w-full ">Agile Execution</p>
-                <p className="text-xs font-nohemi text-left w-full">
+                <p className="text-xs font-nohemi text-left w-full text-[#AEAEAE]">
                 Our fast-paced approach allows us to adapt quickly, making sure your project remains on the cutting edge of the ever-evolving Web3 landscape.
                 </p>
                 </div>
@@ -104,13 +104,13 @@ const LetsWork = () => {
       <div className="w-full py-16">
       <MarqueeSection>
            <div className="flex items-center gap-8  px-7 font-nohemi text-white">
-                <p className="text-9xl font-[1000] font-nohemi-ext">cases</p>
+                <p className="text-9xl font-[1000] font-nohemi-ext">sound good?</p>
                 <Button text="schedule a call" />
            </div>
               </MarqueeSection>
       <MarqueeSection speed={100}>
       <div className="flex items-center gap-8  px-7 font-nohemi text-white">
-                <p className="text-9xl font-bold font-nohemi-ext">cases</p>
+                <p className="text-9xl font-bold font-nohemi-ext">sound good?</p>
                 <Button text="schedule a call" />
            </div>
               </MarqueeSection>

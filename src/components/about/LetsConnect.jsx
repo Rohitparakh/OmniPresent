@@ -19,20 +19,20 @@ const LetsConnect = () => {
           </p>
         </div>
 
-        <div className='flex lg:flex-row flex-col lg:items-center justify-center gap-12 pt-20'>
+        <div className='flex lg:flex-row flex-col lg:items-center justify-center gap-12 pt-20 '>
           <p className='lg:w-80 font-nohemi'>
           Whether you’ve been building in Web3 for a while — or are just launching your brand into the space — let’s chat about how we can help you make an impact in Web3.
           </p>
 
-          <p className='text-9xl font-nohemi-ext'>
+          <p className='lg:text-9xl text-8xl font-nohemi-ext'>
             sound
           </p>
         </div>
         
         <div className='flex flex-col items-center justify-center lg:w-[90%] lg:ml-auto mr-auto'>
-          <div className='flex sm:gap-0 lg:gap-20'>
-            <img src={arrow} className='h-20 sm:hidden lg:block'/>
-            <p className='text-8xl font-nohemi-ext'>good?</p>
+          <div className='flex items-center sm:gap-0 lg:gap-20'>
+            <img src={arrow} className='lg:h-24 h-10 sm:hidden lg:block'/>
+            <p className='lg:text-9xl text-8xl font-nohemi-ext'>good?</p>
           </div>
         {/* <div className='w-full lg:hidden block'>
           <img src="/src/assets/about/forward.svg" alt="" className=' h-32 mb-10'/>

@@ -5,16 +5,15 @@ import image from '../../assets/images/TestimonialOne.png';
 function TestimonialFirst() {
     return (
         <div className="testimonial-first">
-            <div>            
+            <div style={{flex:2}}>            
                 <img src={image} alt="Andy Morris" className="testimonial-image" />
-                <p className="testimonial-author">Andy Morris</p>
-                <p className="testimonial-company">Skyscanner</p>
+                <p className="testimonial-author">Mohammed Salha</p>
+                <p className="testimonial-company">AXS Agency</p>
             </div>
             <div className="testimonial-content">
-                <h2 className="testimonial-quote">"Their Web3 expertise is unmatched."</h2>
+                <h2 className="testimonial-quote">"Diesel’s first Web3 activation"</h2>
                 <p className="testimonial-text">
-                    "Working with this team was a game-changer. They understand the crypto landscape
-                    inside and out and positioned our project perfectly. Highly recommend."
+                “Their team was instrumental in navigating the complexities of Web3, with a deep understanding of market dynamics and effective audience engagement.” 
                 </p>
             </div>
         </div>

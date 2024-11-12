@@ -8,7 +8,7 @@ import right from "../../assets/services/right.svg"
 
 const CasesHero = () => {
   return (
-    <div className=' min-h-screen w-screen flex flex-col justify-between font-nohemi-ext bg-primary px-4'>
+    <div className=' w-screen flex flex-col justify-between font-nohemi-ext bg-primary px-4'>
     <div className=' max-w-7xl w-full mx-auto flex flex-col items-center justify-center  relative'>
    
         <div className='py-20'>

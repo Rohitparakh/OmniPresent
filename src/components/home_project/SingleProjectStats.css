@@ -7,6 +7,8 @@
 
 .singleProjectStats .tagContainer {
     display: flex;
+    flex-wrap: wrap;
+    width: 800px;
     gap: 24px;
     margin-bottom: 50px;
 }
@@ -25,9 +27,9 @@
 }
 
 .singleProjectStats .mainContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 
 .singleProjectStats .leftSection {
@@ -39,16 +41,16 @@
 .singleProjectStats .mainTitle {
     font-family: 'Nohemi', sans-serif;
     font-weight: 900;
-    font-size: 200.96px;
-    line-height: 209.33px;
+    font-size: 150.96px;
+    line-height: 155.33px;
     margin: 0;
 }
 
 .singleProjectStats .subtitle {
     font-family: 'Nohemi', sans-serif;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 35px;
     letter-spacing: -0.4px;
     margin-top: 0;
 }
@@ -56,6 +58,7 @@
 .singleProjectStats .rightSection {
     display: flex;
     /* flex-direction: column; */
+    justify-content: end;
     align-items: center;
     gap: 12px;
 }
@@ -99,4 +102,55 @@
 
 .singleProjectStats .brace img{
     max-height: 140px;
+}
+
+.statisticContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+
+@media(max-width:768px){
+
+    .statisticContainer{     
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:10px !important;
+    }
+
+    .singleProjectStats{
+        padding: 30px !important;
+    }
+
+    .singleProjectStats .statisticValue{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .singleProjectStats .statisticLabel{
+        font-size: 14px;
+        text-align: left;
+
+    }
+
+    .singleProjectStats{
+        padding-left: 20px;
+    }
+    .singleProjectStats .tagContainer{
+        flex-wrap: nowrap;
+        overflow-x: scroll;     
+    }
+
+    .singleProjectStats .rightSection .brace img{
+        transform: rotate(90deg);
+    }
+
+    .singleProjectStats .rightSection{
+        flex-direction: column;
+    }
+
+    .singleProjectStats .tag{
+        white-space: nowrap;
+    }
 }

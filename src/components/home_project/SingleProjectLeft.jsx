@@ -2,7 +2,7 @@ import React from 'react';
 import './SingleProjectLeft.css';
 import imageApproach from '../../assets/images/imageApproach.png';
 
-function SingleProjectLeft({img, index, heading, subHeading, para}) {
+function SingleProjectLeft({index, heading, subHeading, objectives, objectiveImage}) {
     return (
         <div className="singleProjectLeft">
             <div className="bigNumberSection">
@@ -11,9 +11,12 @@ function SingleProjectLeft({img, index, heading, subHeading, para}) {
             </div>
             <div className="contentSection">
                 <h3 className="headline">{subHeading}</h3>
-                <p className="description">{para}
-                </p>
-                <img src={img} alt="Meltwater Design" className="designImage" />
+                <ul className="description">
+                {objectives?.map(obj=>{
+                    return <li>{obj}</li>
+                })}
+                </ul>
+                <img src={objectiveImage} alt="Meltwater Design" className="designImage" />
             </div>
         </div>
     );

@@ -2,33 +2,32 @@ import React from 'react';
 import './SingleProjectStats.css';
 import closingBracket from '../../assets/images/closingBracket.png';
 
-function SingleProjectStats() {
+function SingleProjectStats({tagList, title, description,stats}) {
     return (
         <div className="singleProjectStats">
            
             <div className="mainContent">
                 <div className="leftSection">
                 <div className="tagContainer">
-                <div className="tag">UX/UI design</div>
-                <div className="tag">web development</div>
-                <div className="tag">digital strategy</div>
-                <div className="tag">digital marketing</div>
+                    {tagList.map(tag => {
+                        return <div className="tag">{tag}</div>
+                    })}
             </div>
             <div>
-                    <h1 className="mainTitle">Meltwater</h1>
-                    <p className="subtitle">■ Unlocking a Competitive Edge</p>
+                    <h1 className="mainTitle">{title}</h1>
+                    <p className="subtitle">■ {description}</p>
                     </div>
                 </div>
-                <div className="rightSection">
-                    <div style={{display:'flex', flexDirection:'column', justifyContent:'space-between', gap:'30px'}}>
-                    <div className="statistic">
-                        <p className="statisticValue">+32%</p>
-                        <p className="statisticLabel">Trading Volume</p>
-                    </div>
-                    <div className="statistic">
-                        <p className="statisticValue">+44%</p>
-                        <p className="statisticLabel">Active Users</p>
-                    </div>
+                <div className="rightSection mt-10">
+                    <div class="statisticContainer"style={{display:'flex', justifyContent:'space-between', gap:'70px'}}>
+                        {stats.map(stat=>{
+                            return(
+                                <div className="statistic">
+                                    <p className="statisticValue">{stat.number}</p>
+                                    <p className="statisticLabel">{stat.text}</p>
+                                </div>
+                            )
+                        })}                   
                     </div>
                     <div className="brace">
                         <img src={closingBracket}/>

@@ -16,7 +16,7 @@ const Cases = () => {
     <PortfolioSingleThree  />
     <PortfolioSingleFour />
     {/* <PortfolioSingleFive /> */}
-    <SectionCta text='see more cases'/>
+    <SectionCta text='see more cases' url="/cases"/>
     </div>
   )
 }

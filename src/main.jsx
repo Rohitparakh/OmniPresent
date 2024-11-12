@@ -38,10 +38,12 @@ const router = createBrowserRouter([
         element: <Cases />,
        
       },
+      { path: "/cases/:id", 
+      element: <SingleProject /> }, // Dynamic route for individual case studies
       {
-        path: "/project",
-        element: <SingleProject/>,
-      }
+        path: "*", // Wildcard route to catch any undefined path
+        element: <HomePage />,
+      },
     ],
   },
 ])

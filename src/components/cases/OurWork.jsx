@@ -9,15 +9,18 @@ import card4 from "../../assets/cases/card4.svg"
 import card5 from "../../assets/cases/card5.svg"
 import card6 from "../../assets/cases/card6.svg"
 import seatlab from "../../assets/about/seatlab.svg"
+import { NavLink } from 'react-router-dom'
 
-const Card = ({img, title, para}) => {
+const Card = ({img, title, para, url}) => {
     
     return (
-        <div className='w-full min-h-[250px] flex flex-col gap-2'>
+        <NavLink to={url}>
+            <div className='w-full min-h-[250px] flex flex-col gap-2'>
                 <img src={img} alt="" className=' h-80'/>
                 <p className='text-white font-semibold text-2xl font-nohemi'>{title}</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>{para}</p>
             </div>
+            </NavLink>
     )
 }
 
@@ -30,31 +33,37 @@ const OurWork = () => {
             img: card1,
             title: "Etihad Airways",
             desc: "A landmark Web3 debut for a global Web2 aviation leader",
+            url: "/cases/ethihad"
         },
         {
             img: card2,
             title: "RampX",
             desc: "A powerful product launch that fetched 10K users in just seven days",
+            url: "/cases/rampx"
         },
         {
             img: card3,
             title: "CryptoKnights",
             desc: "Building a global community for the Web3 Shark Tank",
+            url: "/cases/cryptoknights"
         },
         {
             img: card4,
             title: "Deblock",
             desc: " Go-to-Market success with 100K users and $100M in transactions",
+            url: "/cases/deblock"
         },
         {
             img: card5,
             title: "Elixr Games",
             desc: "GTM Strategy Driving NFT Sellout in Web3 Gaming",
+            url: "/cases/elixir"
         },
         {
             img: card6,
             title: "Rayls - Unifying the best of traditional & decentralized finance",
             desc: "We revived activity on the platform and increased the trading volume by 32%",
+            url: "/cases/rayls"
         },
     ]
   return (
@@ -94,7 +103,7 @@ const OurWork = () => {
         <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32'>
             {
               data.map((i) => (
-                <Card img={i.img} title={i.title} para={i.desc} key={i.title}/>
+                <Card img={i.img} title={i.title} para={i.desc} key={i.title} url={i.url}/>
               ))
             }
             

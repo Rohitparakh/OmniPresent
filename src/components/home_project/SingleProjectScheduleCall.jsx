@@ -19,7 +19,7 @@ function ScheduleButton() {
 
 const SingleProjectScheduleCall = () => {
   return (
-    <div className='scheduleCall'>
+    <div className='scheduleCall mb-20 '>
         <div className='leftSection'>
             <div class="circle-section">
                 <img src={thisCanBeYou} alt="Circle" className="circle" height={250}/>

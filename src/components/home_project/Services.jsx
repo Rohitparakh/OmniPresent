@@ -14,7 +14,7 @@ const Services = () => {
         <ServiceCards/>
         <div className='ctaDiv'>
             <img src={swiggly} className='swiggly'/>
-            <WhyUsCta text='see more' />
+            <WhyUsCta text='see more' url="/services"/>
         </div>
 
     </div>

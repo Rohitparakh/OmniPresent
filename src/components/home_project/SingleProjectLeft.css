@@ -28,6 +28,7 @@
     letter-spacing: -1.28px;
     line-height: 64px;
     color: #eaeaea;
+    margin-bottom: 30px;
 }
 
 .singleProjectLeft .contentSection {
@@ -54,11 +55,11 @@
     line-height: 40px;
     color: #eaeaea;
     margin-bottom: 20px;
-    padding-right: 100px;
+    padding-right: 20px;
 }
 
 .singleProjectLeft .designImage {
-    width: 1248px;
-    height: 832px;
+    /* width: 1248px; */
+    /* height: 832px; */
     object-fit: cover;
 }

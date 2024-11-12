@@ -61,6 +61,10 @@
   font-style: normal;
 }
 
+.projectPage .schedule-services-page {
+  display: none !important
+}
+
 .rightSection *{
   /* border: 1px solid red; */
 }
@@ -879,7 +883,7 @@ width: auto !important;
 
   .singleProjectIntroduction{
     flex-direction: column-reverse !important;
-    padding: 70px !important;
+    padding: 25px !important;
     gap: 10px !important;
 
   }
@@ -941,3 +945,4 @@ width: auto !important;
   height: auto !important;
   padding: 10px;
 }
+

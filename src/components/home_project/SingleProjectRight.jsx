@@ -1,16 +1,16 @@
 import React from 'react';
 import './SingleProjectRight.css';
-import imageRight from '../../assets/images/imageApproach.png';
 
-function SingleProjectRight({img, index, heading, subHeading, para}) {
+function SingleProjectRight({approachImage, index, heading, subHeading, approachParagraph}) {
     return (
         <div className="singleProjectRight">
+
             <div className="contentSection">
                 <h3 className="headline">{subHeading}</h3>
                 <p className="description">
-                    {para}
+                    {approachParagraph}
                 </p>
-                <img src={img} alt="Meltwater Design" className="designImage" />
+                <img src={approachImage} alt="Meltwater Design" className="designImage" />
             </div>
             <div className="bigNumberSection">
                 <div className="bigNumber">{index}</div>

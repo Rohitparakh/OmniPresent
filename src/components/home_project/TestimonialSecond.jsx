@@ -8,10 +8,10 @@ function TestimonialSecond() {
     return (
         <div className="testimonialSecond">
             <img src={image2} alt="Artwork" className="artworkImage" />
-            <img src={image1} alt="Charles Read" className="reviewerImage" />
+            <img src={image1} alt="Laksh Bhalla" className="reviewerImage" />
             <div className="reviewerContent">
-                <p className="reviewerName">Charles Read</p>
-                <p className="companyName">Rarestone Capital</p>
+                <p className="reviewerName">Laksh Bhalla</p>
+                <p className="companyName">Director of Bytecode Labs/RampX Protocol</p>
             </div>
             <div className="quoteContent">
                 <h2 className="testimonialQuote">"Fast, efficient, and reliable."</h2>

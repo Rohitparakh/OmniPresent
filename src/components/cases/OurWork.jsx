@@ -4,10 +4,10 @@ import p2p from "../../assets/about/p2p.svg"
 import rayls from "../../assets/cases/rayls.svg"
 import card1 from "../../assets/cases/card1.svg"
 import card2 from "../../assets/cases/card2.svg"
-import card3 from "../../assets/cases/card3.svg"
+import card3 from "../../assets/images/ckBanner.jpeg"
 import card4 from "../../assets/cases/card4.svg"
 import card5 from "../../assets/cases/card5.svg"
-import card6 from "../../assets/cases/card6.svg"
+import card6 from "../../assets/images/PortfolioThirdTwo.png"
 import seatlab from "../../assets/about/seatlab.svg"
 import { NavLink } from 'react-router-dom'
 
@@ -16,7 +16,7 @@ const Card = ({img, title, para, url}) => {
     return (
         <NavLink to={url}>
             <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={img} alt="" className=' h-80'/>
+                <img src={img} alt="" className=' h-80 of-contain'/>
                 <p className='text-white font-semibold text-2xl font-nohemi'>{title}</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>{para}</p>
             </div>
@@ -57,13 +57,12 @@ const OurWork = () => {
             img: card5,
             title: "Elixr Games",
             desc: "GTM Strategy Driving NFT Sellout in Web3 Gaming",
-            url: "/cases/elixir"
+            url: "/cases/elixr"
         },
         {
             img: card6,
             title: "Rayls - Unifying the best of traditional & decentralized finance",
-            desc: "We revived activity on the platform and increased the trading volume by 32%",
-            url: "/cases/rayls"
+            desc: "We revived activity on the platform and increased the trading volume by 32%",            
         },
     ]
   return (

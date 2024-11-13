@@ -964,3 +964,6 @@ width: auto !important;
   left: 0;
   z-index:1;
 }
+.of-contain{
+  object-fit: contain !important;
+}

@@ -10,11 +10,13 @@ import Cases from './pages/Cases.jsx'
 import HomePage from './pages/HomePage.jsx';
 import Header from './components/home_project/Header.jsx';
 import SingleProject from './pages/SingleProject.jsx'
+import ScrollToTop from './components/common/ScrollToTop.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+        element: <ScrollToTop><App /></ScrollToTop>, // Wrap the main App component with ScrollToTop
+
     children: [
       {
         index: true,

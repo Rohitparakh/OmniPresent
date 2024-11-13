@@ -24,20 +24,20 @@ import ethihadObjective from '../assets/images/ethihadObjective.png'
 import ethihadApproach from '../assets/images/ethihadApproach.png'
 import ethihadResults from '../assets/images/ethihadResults.png'
 
-import ckBanner from '../assets/images/ethihadBanner.png';
-import ckObjective from '../assets/images/ethihadObjective.png'
-import ckApproach from '../assets/images/ethihadApproach.png'
-import ckResults from '../assets/images/ethihadResults.png'
+import ckBanner from '../assets/images/ckBanner.jpeg';
+import ckObjective from '../assets/images/ckObjective.jpeg';
+import ckApproach from '../assets/images/ckApproach.jpeg';
+import ckResults from '../assets/images/ckResults.png';
 
 import deblockBanner from '../assets/images/deblockBanner.png';
 import deblockObjective from '../assets/images/deblockObjective.png'
 import deblockApproach from '../assets/images/deblockApproach.png'
 import deblockResults from '../assets/images/deblockResults.png'
 
-import rampxBanner from '../assets/images/deblockBanner.png';
-import rampxObjective from '../assets/images/deblockObjective.png'
-import rampxApproach from '../assets/images/deblockApproach.png'
-import rampxResults from '../assets/images/deblockResults.png'
+import rampxBanner from '../assets/images/rampxBanner.jpeg';
+import rampxObjective from '../assets/images/RampX.png'
+import rampxApproach from '../assets/images/RampX.png'
+import rampxResults from '../assets/images/rampxResults.png'
 
 import elixrBanner from '../assets/images/elixrBanner.png';
 import elixrObjective from '../assets/images/elixrObjective.png'

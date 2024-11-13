@@ -1,7 +1,7 @@
 import React from 'react';
 import './PortfolioSingleThree.css';
 import thisCanBeYou from '../../assets/images/thisCanBeYou.png';
-import image1 from '../../assets/images/PortfolioThirdOne.png';
+import image1 from '../../assets/images/ckHomePage.png';
 import image2 from '../../assets/images/PortfolioThirdTwo.png';
 function PortfolioSingleThree() {
     return (

@@ -1,0 +1,83 @@
+.portfolio-single-five {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    width: calc(100vw - 136px);
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.portfolio-single-five .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.portfolio-single-five .title {
+    position: relative;
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 100.33px;
+    line-height: 112.87px;
+    margin-top: 100px;
+    width: max-content;
+    z-index:1;
+}
+
+.portfolio-single-five .title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    height: 1px;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.portfolio-single-five .title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    height: 1px;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.portfolio-single-five .index {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-weight: 400;
+    font-size: 31.46px;
+    line-height: 35.39px;
+}
+
+.portfolio-single-five .description {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #bbbbbb;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+/* 
+.portfolio-single-five .line {
+    width: 476px;
+    height: 0;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 20px;
+} */
+
+.portfolio-single-five .project-image {
+    width: 341px;
+    height: 196px;
+    margin-left: 30px;
+    z-index:2;
+
+}

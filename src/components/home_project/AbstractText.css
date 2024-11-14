@@ -1,0 +1,69 @@
+.abstractText {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.vectorImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 826px;
+    height: 1188.33px;
+}
+
+.futureMoves,
+.soDoWe {
+    position: relative;
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+.futureMoves {
+    font-size: 65.64px;
+    line-height: 66.23px;
+    text-align: left;
+}
+
+.soDoWe {
+    font-size: 214.5px;
+    line-height: 143.47px;
+    text-align: right;
+    position: relative;
+}
+
+.lineContainer {
+    position: absolute;
+    top: 491.81px;
+    left: 718.11px;
+    transform: translateY(-2844px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lineImage {
+    display: block;
+}
+
+.contactText {
+    position: absolute;
+    top: 3100px;
+    left: 718px;
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 900;
+    font-size: 39.08px;
+    color: #000;
+    transform: translateY(-2844px) rotate(90deg);
+}
+
+
+.abstractText .linesBg{
+    position: absolute;
+    top: -55%;
+    left: 20%;
+    height: 150%;
+    z-index: 2;
+}

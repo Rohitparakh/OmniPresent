@@ -1,0 +1,33 @@
+.testimonials{    
+}
+
+.testimonials .section-header{
+    margin: 0 auto;
+}
+
+.testi{
+    padding: 150px 50px 150px 50px;
+
+}
+
+.firstRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdRow{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.testimonials .ctaDiv{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.testimonials .why-us-cta{
+    margin-top: 0;
+}

@@ -1,0 +1,53 @@
+.letsTalkFooter {
+    width: 1920px;
+    height: 375px;
+    padding: 0 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.lineImage {
+    width: 1773px;
+    margin: 0 auto;
+}
+
+.letsTalkFooterContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 94px;
+}
+
+.lightningIcon {
+    width: 149px;
+    height: 149px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 44px;
+}
+
+.socialIcon {
+    width: 56px;
+    height: 56px;
+}
+
+.circleIcon {
+    width: 56px;
+    height: 56px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}

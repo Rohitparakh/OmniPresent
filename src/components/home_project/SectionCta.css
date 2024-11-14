@@ -1,0 +1,41 @@
+.section-cta-container{
+    width: calc(100vw - 136px);
+    /* background: red; */
+    float: right;
+}
+
+.section-cta-container.float-none{
+    float: none;
+    width: auto;
+}
+
+.section-cta {
+    float: right;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid #eefe05;
+    width: max-content;
+    background-color: #000000;
+}
+
+.arrow-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.cta-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-text {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 500;
+    font-size: 39.08px;
+    line-height: 39.26px;
+    color: #eefe05;
+}

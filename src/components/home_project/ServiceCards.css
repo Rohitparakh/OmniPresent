@@ -1,0 +1,47 @@
+
+
+.serviceCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px;
+    margin-left: 10vw;
+}
+
+.serviceCard {
+    padding: 20px;
+    /* background-color: #111; */
+    border-radius: 8px;
+}
+
+.yellowBoxBullet{
+    min-width: 15px;
+    min-height: 15px;
+    background: #eefe05;
+    display: block;
+    margin-top: 10px;
+}
+
+.serviceCard-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.serviceCard-description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #bbbbbb;
+}
+
+.serviceCards-arrow {
+    grid-column: span 3;
+    justify-self: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,39 @@
+.scheduleButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 741px; */
+    padding: 31px 43px 31px 23px;
+    border: 3.88px solid #000000;
+    border-radius: 234.54px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+.buttonText {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 500;
+    font-size: 30.81px;
+    color: #000000;
+    text-align: center;
+    /* margin-left: 85px; */
+}
+
+.arrowIcon {
+    font-family: 'Nohemi', sans-serif;
+    font-weight: 700;
+    font-size: 35.81px;
+    line-height: 36.15px;
+    color: #eefe05;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 10px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #eefe05;
+}

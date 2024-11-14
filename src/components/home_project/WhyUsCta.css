@@ -1,0 +1,35 @@
+.why-us-cta{
+    display: flex;
+    margin-top: 200px;
+}
+
+.why-us-cta .call-to-action {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #000000;
+    background-color: #eefe05;
+    padding: 0 30px 0 21.31px;
+    border: none;
+    border-radius: 58.56px;
+    cursor: pointer;
+    font-size: 18.93px;
+    line-height: 1px;
+    font-weight: 500;
+  }
+
+  
+.why-us-cta .call-to-action .arrow{
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(0,-50%);
+    background: #EEFE05;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 50%;
+    border: 1px solid #000000;
+  }

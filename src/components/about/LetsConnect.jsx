@@ -32,7 +32,7 @@ const LetsConnect = () => {
         <div className='flex flex-col items-center justify-center lg:w-[90%] lg:ml-auto mr-auto'>
           <div className='flex items-center sm:gap-0 lg:gap-20'>
             {/* <img src={arrow} className='lg:h-24 h-10 sm:hidden lg:block'/> */}
-            <video src={letsConnectArrow} autoPlay loop muted className='lg:h-24 h-10 sm:hidden lg:block'/>
+            <video src={letsConnectArrow} autoPlay loop muted playsinline className='lg:h-24 h-10 sm:hidden lg:block'/>
             <p className='lg:text-9xl text-8xl font-nohemi-ext'>good?</p>
           </div>
         {/* <div className='w-full lg:hidden block'>

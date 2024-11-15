@@ -106,7 +106,7 @@ const Manifesto = () => {
         animate={contentInView ? { scale: 1 } : {}}
         transition={{ duration: 1.5, ease: "easeInOut" }}
       >
-        <video autoPlay loop muted src={video} className="object-cover" />
+        <video autoPlay loop muted playsinline src={video} className="object-cover" />
 
         <motion.div
           className="lg:top-0 top-[-400px] left-0 bottom-0 right-0 absolute flex items-center justify-center"

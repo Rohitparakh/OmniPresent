@@ -88,7 +88,7 @@ const ServicesHero = () => {
       <img
         src={heroImg}
         alt=""
-        className="absolute left-0 top-[-30px] h-96 z-0"
+        className="absolute left-0 top-[-24px] h-96 z-0"
       />
 
       {/* video */}

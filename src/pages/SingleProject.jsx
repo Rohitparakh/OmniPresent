@@ -299,7 +299,8 @@ const SingleProject = () => {
             <SingleProjectLeft img={Project6} heading={'Responsive Design'} index={'06'} subHeading={'Empowering Insights Anywhere'} para="Catering to our audience's mobile preferences, we enable them to stay connected and informed, empowering them with accessible data-driven solutions anytime, anywhere."/> */}
             {/* <SingleProjectTestimonial/> */}
             <SingleProjectScheduleCall/>
-            <Cases/>
+            <Cases case1={caseStudiesData[caseStudy.relatedProject[0]]} case2={caseStudiesData[caseStudy.relatedProject[1]]}
+              case1URL={caseStudy.relatedProject[0]} case2URL={caseStudy.relatedProject[1]} />
             {/* first impression */}
             <LetsConnect/>
             </div>

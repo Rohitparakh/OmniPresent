@@ -1,122 +1,97 @@
-import React from 'react'
-import { Button } from '../common'
-import p2p from "../../assets/about/p2p.svg"
-import rayls from "../../assets/cases/rayls.svg"
-import card1 from "../../assets/cases/card1.svg"
-import card2 from "../../assets/cases/card2.svg"
-import card3 from "../../assets/images/ckBanner.jpeg"
-import card4 from "../../assets/cases/card4.svg"
-import card5 from "../../assets/cases/card5.svg"
-import card6 from "../../assets/images/PortfolioThirdTwo.png"
-import seatlab from "../../assets/about/seatlab.svg"
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { Button } from '../common';
+import card1 from "../../assets/cases/card1.svg";
+import card2 from "../../assets/cases/card2.svg";
+import card3 from "../../assets/images/ckBanner.jpeg";
+import card4 from "../../assets/cases/card4.svg";
+import card5 from "../../assets/cases/card5.svg";
+import card6 from "../../assets/images/PortfolioThirdTwo.png";
+import { NavLink } from 'react-router-dom';
 
-const Card = ({img, title, para, url}) => {
-    
+const Card = ({ img, title, para, url }) => {
     return (
         <NavLink to={url}>
-            <div className='w-full min-h-[250px] flex flex-col gap-2'>
-                <img src={img} alt="" className=' h-80 of-contain'/>
+            <div className='w-full min-h-[250px] flex flex-col gap-2 transform hover:scale-105 transition-transform duration-300'>
+                <img src={img} alt="" className='h-80 object-contain' />
                 <p className='text-white font-semibold text-2xl font-nohemi'>{title}</p>
                 <p className='text-[#FFFFFF] font-nohemi text-sm'>{para}</p>
             </div>
-            </NavLink>
-    )
-}
+        </NavLink>
+    );
+};
 
 const OurWork = () => {
-    const [activeTab, setActiveTab] = React.useState(0)
+    const [activeTab, setActiveTab] = React.useState(0);
 
-    const menu = ["GTM", "Growth Strategy & Hacking", "KOL M&M", "Partnerships", "Merchandising", "Collabs & Alpha Calls", "Fundraising", "Branding & Design", "Advisory", "SMC Strategy and Management"]
-    const data =[
-        {
-            img: card1,
-            title: "Etihad Airways",
-            desc: "A landmark Web3 debut for a global Web2 aviation leader",
-            url: "/cases/ethihad"
-        },
-        {
-            img: card2,
-            title: "RampX",
-            desc: "A powerful product launch that fetched 10K users in just seven days",
-            url: "/cases/rampx"
-        },
-        {
-            img: card3,
-            title: "CryptoKnights",
-            desc: "Building a global community for the Web3 Shark Tank",
-            url: "/cases/cryptoknights"
-        },
-        {
-            img: card4,
-            title: "Deblock",
-            desc: " Go-to-Market success with 100K users and $100M in transactions",
-            url: "/cases/deblock"
-        },
-        {
-            img: card5,
-            title: "Elixr Games",
-            desc: "GTM Strategy Driving NFT Sellout in Web3 Gaming",
-            url: "/cases/elixr"
-        },
-        {
-            img: card6,
-            title: "Rayls - Unifying the best of traditional & decentralized finance",
-            desc: "We revived activity on the platform and increased the trading volume by 32%",            
-        },
-    ]
-  return (
-    <div className="bg-black text-white relative ">
-      <div className="max-w-7xl mx-auto pt-16 flex px-4 flex-col items-center justify-start  min-h-screen">
+    const menu = [
+        "GTM", "Growth Strategy & Hacking", "KOL M&M", "Partnerships",
+        "Merchandising", "Collabs & Alpha Calls", "Fundraising", 
+        "Branding & Design", "Advisory", "SMC Strategy and Management"
+    ];
 
-        {/* Top divider */}
-        <div className="border-b border-white pb-1 w-full flex items-center justify-between">
-          <p className="text-white font-semibold text-[10px] tracking-widest">
-            OUR WORK
-          </p>
-          <p className="text-white font-semibold text-xs tracking-widest w-44 lg:text-center text-end">
-            ( 01 )
-          </p>
+    const data = [
+        { img: card1, title: "Etihad Airways", desc: "A landmark Web3 debut for a global Web2 aviation leader", url: "/cases/ethihad" },
+        { img: card2, title: "RampX", desc: "A powerful product launch that fetched 10K users in just seven days", url: "/cases/rampx" },
+        { img: card3, title: "CryptoKnights", desc: "Building a global community for the Web3 Shark Tank", url: "/cases/cryptoknights" },
+        { img: card4, title: "Deblock", desc: "Go-to-Market success with 100K users and $100M in transactions", url: "/cases/deblock" },
+        { img: card5, title: "Elixr Games", desc: "GTM Strategy Driving NFT Sellout in Web3 Gaming", url: "/cases/elixr" },
+        { img: card6, title: "Rayls", desc: "We revived activity on the platform and increased the trading volume by 32%" },
+    ];
+
+    const handleTabClick = (index) => {
+        setActiveTab(index);
+    };
+
+    return (
+        <div className="bg-black text-white relative">
+            <div className="max-w-7xl mx-auto pt-16 flex px-4 flex-col items-center justify-start min-h-screen">
+                {/* Top divider */}
+                <div className="border-b border-white pb-1 w-full flex items-center justify-between">
+                    <p className="text-white font-semibold text-[10px] tracking-widest">
+                        OUR WORK
+                    </p>
+                    <p className="text-white font-semibold text-xs tracking-widest w-44 lg:text-center text-end">
+                        ( 01 )
+                    </p>
+                </div>
+
+                {/* Animated Tab Menu */}
+                <div className='w-full h-14 mt-20 flex items-center gap-3 overflow-x-auto whitespace-nowrap'>
+                    <p
+                        onClick={() => handleTabClick(0)}
+                        className={`text-[11px] px-4 py-2 cursor-pointer border border-white rounded-full ${activeTab === 0 ? 'bg-white text-black' : 'text-white'}`}
+                    >
+                        All
+                    </p>
+
+                    {/* Vertical Line */}
+                    <div className='w-20 h-0.5 bg-white'></div>
+
+                    {menu.map((item, index) => (
+                        <p
+                            key={index}
+                            onClick={() => handleTabClick(index + 1)}
+                            className={`text-[11px] w-auto px-2 py-2 cursor-pointer border border-white rounded-full ${activeTab === index + 1 ? 'bg-white text-black' : 'text-white'}`}
+                        >
+                            {item}
+                        </p>
+                    ))}
+                </div>
+
+                {/* Cards */}
+                <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32'>
+                    {data.map((i) => (
+                        <Card img={i.img} title={i.title} para={i.desc} key={i.title} url={i.url} />
+                    ))}
+                </div>
+
+                {/* Schedule Call Button */}
+                <div className='w-full flex justify-center pb-32'>
+                    <Button text={"schedule a call"} />
+                </div>
+            </div>
         </div>
+    );
+};
 
-        {/* Our work content */}
-       
-    <div className='w-full h-14 mt-20 flex items-center gap-3 overflow-x-auto  whitespace-nowrap'>
-        <p className='text-[11px] px-4 py-2 cursor-pointer border border-white rounded-full'>
-            All
-        </p>
-        
-        <div className='w-20 h-0.5 bg-white'></div>
-
-        {menu.map((item, index) => (
-            <p
-                key={index}
-                className='text-[11px] w-auto px-2 py-2 cursor-pointer border border-white rounded-full'
-            >
-                {item}
-            </p>
-        ))}
-    </div>
-
-
-        <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32'>
-            {
-              data.map((i) => (
-                <Card img={i.img} title={i.title} para={i.desc} key={i.title} url={i.url}/>
-              ))
-            }
-            
-            
-            
-        </div>
-
-        <div className='w-full flex justify-center pb-32'>
-            <Button text={"schedule a call"}/>
-        </div>
-    
-    </div>
-    </div>
-  )
-}
-
-export default OurWork
+export default OurWork;

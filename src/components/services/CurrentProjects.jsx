@@ -11,44 +11,48 @@ import five from "../../assets/services/5.svg";
 import six from "../../assets/services/6.svg";
 import seven from "../../assets/services/7.svg";
 import { NavLink } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 const Card = ({ data }) => {
   return (
-    <div className="w-[700px] h-[620px] bg-black border border-[#EEFE05] flex items-start p-6">
+    <motion.div
+      className="w-[700px] h-[620px] bg-black border border-[#EEFE05] flex items-start p-6"
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="h-full w-[60%] flex flex-col justify-between gap-4">
         <div className="flex flex-col gap-6 w-full">
-        <div className="flex flex-col gap-1 w-full">
-          <p className="text-xl font-normal font-nohemi text-[#EEFE05]">01/</p>
-          <p className="text-4xl font-nohemi-ext text-[#EEFE05]">{data.name}</p>
+          <div className="flex flex-col gap-1 w-full">
+            <p className="text-xl font-normal font-nohemi text-[#EEFE05]">01/</p>
+            <p className="text-4xl font-nohemi-ext text-[#EEFE05]">{data.name}</p>
+          </div>
+          <p className="font-nohemi text-sm w-[85%] text-[#FFFFFF]">{data.desc}</p>
+          <div className="flex flex-col gap-2">
+            {data.points.map((point, index) => (
+              <p key={index} className="font-nohemi text-sm w-[85%] text-[#FFFFFF]">
+                <span className="text-[#EEFE05]">■</span> {point}
+              </p>
+            ))}
+          </div>
         </div>
-
-        <p className="font-nohemi text-sm w-[85%] text-[#FFFFFF]">{data.desc}</p>
-
-
-        <div className="flex flex-col gap-2">
-        {data.points.map((point, index) => (
-          <p key={index} className="font-nohemi text-sm w-[85%] text-[#FFFFFF]">
-            <span className="text-[#EEFE05]">■</span> {point}
-          </p>
-        ))}
-
-        </div>
-
-        </div>
-
         <div className="mt-10">
           <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank">
-            <p className="pb-2 w-72 cursor-pointer hover:scale-105 transition-all duration-300 border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-lg">
+            <motion.p
+              className="pb-2 w-72 cursor-pointer hover:scale-105 transition-all duration-300 border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
               <img src={share} alt="" className="h-4" />
               <span>schedule a call to learn more</span>
-            </p>
+            </motion.p>
           </NavLink>
         </div>
       </div>
       <div className="w-[40%] flex flex-col">
-        <img src={data.image} alt="" />
+        <motion.img src={data.image} alt="" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -65,9 +69,9 @@ const MobileCard = ({ data }) => {
         {data.name}
       </p>
 
-      <p className="pb-2 w-36 mt-10 cursor-pointer hover:scale-105 transition-all duration-300  border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-md">
+      <p className="pb-2 w-full mt-10 cursor-pointer hover:scale-105 transition-all duration-300  border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-md">
         <img src={share} alt="" className="h-4" />
-        <span>show more</span>
+        <span>schedule a call to learn more</span>
       </p>
     </div>
   );
@@ -172,12 +176,12 @@ const CurrentProjects = () => {
           </p>
         </div>
 
-        <div className="w-full mx-auto mt-16 lg:flex hidden justify-between gap-2 items-center">
+        <div className="w-full mx-auto mt-40 lg:flex hidden justify-between gap-2 items-center">
           <div className="h-full w-[30%]">
             {menuData.map((item, index) => (
               <p
                 key={index}
-                onClick={() => setSelectedCard(index)} // Updates selected card on click
+                onClick={() => setSelectedCard(index)} 
                 className={`border-b w-64 flex items-center gap-2 cursor-pointer active:scale-95 transition-all duration-300 border-white pb-2 mb-3 text-xs font-nohemi ${
                   selectedCard === index ? "text-[#EEFE05]" : "text-white"
                 }`}
@@ -186,9 +190,16 @@ const CurrentProjects = () => {
               </p>
             ))}
           </div>
-          <div className="h-full w-[70%]">
-            <Card data={cardData[selectedCard]} /> {/* Pass selected data to Card */}
-          </div>
+          <motion.div
+            className="h-full w-[70%]"
+            key={selectedCard}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            <Card data={cardData[selectedCard]} />
+          </motion.div>
         </div>
 
         <div className="w-full mx-auto mt-16 lg:hidden flex flex-col justify-between gap-10 items-center">

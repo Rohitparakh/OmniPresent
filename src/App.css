@@ -1082,6 +1082,10 @@ width: auto !important;
     font-weight: 900;
     line-height: 110px;
   }
+
+  .singleProjectStats .tagContainer{
+    width: auto !important;
+  }
 }
 
 @media(min-width:767px){

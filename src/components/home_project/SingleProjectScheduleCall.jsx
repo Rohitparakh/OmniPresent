@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 function ScheduleButton() {
     return (
-    <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
+        <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
 
         <div className="scheduleButton" style={{color:'#000', backgroundColor:'#eefe05'}}>
             <span className="buttonText" style={{color:'#000', backgroundColor:'#eefe05'}}>schedule a call</span>

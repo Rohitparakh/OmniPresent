@@ -5,7 +5,7 @@
     align-items: center;
     color: #000000;
     background-color: #eefe05;
-    padding: 12.5px 30px 12.5px 21.31px;
+    padding: 12.5px 40px 12.5px 21.31px;
     border: none;
     border-radius: 58.56px;
     cursor: pointer;
@@ -18,7 +18,7 @@
  .call-to-action.accent .arrow{
     position: absolute;
     top: 50%;
-    right: -30px;
+    right: -35px;
     transform: translate(0,-50%);
     background: #EEFE05;
     
@@ -28,4 +28,5 @@
   
     border-radius: 50%;
     border: 1px solid #000000;
+    padding: 20px;
   }

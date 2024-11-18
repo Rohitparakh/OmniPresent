@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div className=' w-screen font-nohemi-ext bg-primary '>
     <div className=' max-w-7xl mx-auto flex flex-col items-center justify-center  relative px-4'>
-    <img src={top} alt=""  className='absolute lg:top-[-170px] top-[0px] lg:left-[70px] left-0 mix-blend-multiply lg:h-96 h-36'/>
+    <img src={top} alt=""  className='absolute lg:top-[-170px] top-[0px] lg:left-[-70px] left-0 mix-blend-multiply lg:h-96 h-36'/>
         <div className='py-20'>
 
         </div>

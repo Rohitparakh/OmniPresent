@@ -118,7 +118,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 900;
+  /* font-weight: 900; */
+  font-weight: 700;
+  font-size: 14px;
 }
 
 hr{
@@ -130,6 +132,7 @@ hr{
   display: flex;
   justify-content: space-between;
   width: calc(100vw - 136px);
+  margin-top: 20px;
 
 }
 
@@ -171,7 +174,7 @@ justify-content: space-between;
 }
 
 .nav-item.active, .navigation a.active {
-  font-weight: 900;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -252,19 +255,23 @@ justify-content: space-between;
 
 }
 
-
+.hero-content .zero{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .hero-content .zero::before,
 .hero-content .zero::after {
-    content: "";
     position: absolute;
-    left: -20%;
-    right: 40%;
+    left: 10%;
+    right: 65%;
     height: 1px; /* Border thickness */
     background-color: black; /* Border color */
 }
 
 .hero-content .zero::before {
+  content: "";
     top: 0.23em; /* Border at the top, touching the letters */
 }
 
@@ -274,13 +281,14 @@ justify-content: space-between;
 
 .hero-content .swiggly{
   position: relative;
+  top:60px;
 }
 
 .hero-content .swiggly::before,
 .hero-content .swiggly::after {
     content: "";
     position: absolute;
-    top:20%;
+    top:-20%;
     bottom: -100%;
     height: 115%; /* Border thickness */
     width: 1px;
@@ -288,11 +296,11 @@ justify-content: space-between;
 }
 
 .hero-content .swiggly::before {
-    left: 50%;
+    left: -10%;
 }
 
 .hero-content .swiggly::after {
-    left: 150%;
+    left: 110%;
 }
 
 .hero-content .one{
@@ -300,7 +308,6 @@ justify-content: space-between;
 }
 .hero-content .one::before,
 .hero-content .one::after {
-    content: "";
     position: absolute;
     left: 0%;
     /* right: 0%; */
@@ -314,28 +321,36 @@ justify-content: space-between;
 }
 
 .hero-content .one::after {
+  content: "";
+
     bottom: .4em; /* Border at the bottom, touching the letters */
+}
+
+.hero-content .ampersand{
+  font-size: 170px;
 }
 
 .hero-content .to{
   position: relative;
 }
-.hero-content .to::before,
-.hero-content .to::after {
-    content: "";
+
+.hero-content .to.present::before,
+.hero-content .to.present::after {
     position: absolute;
     background-color: black; /* Border color */
 }
 
-.hero-content .to::before {
-  bottom: 30%;
-  left: -50%;
-  width: 50%;
+.hero-content .to.present::before {
+  content: "";
+
+  top: 80%;
+  left: -10%;
+  width: 110%;
   height: 1px; /* Border thickness */
 
 }
 
-.hero-content .to::after {
+.hero-content .to.present::after {
   bottom: 10%;
   left: -25%;
   height: 40%;
@@ -343,20 +358,45 @@ justify-content: space-between;
 
 }
 
+.hero-content .to.ampersand::before,
+.hero-content .to.ampersand::after {
+    /* content: ""; */
+    position: absolute;
+    background-color: black; /* Border color */
+}
+
+.hero-content .to.ampersand::before {
+  top: 80%;
+  left: -110%;
+  width: 110%;
+  height: 1px; /* Border thickness */
+
+}
+
+.hero-content .to.ampersand::after {
+  top: 40%;
+  left: -50%;
+  height: 90%;
+  width: 1px; /* Border thickness */
+
+}
+
 .hero-section .subHeading{
   display: flex;
-  margin-top: 30px;
+  margin-top: 0px;
   gap: 200px;
 }
 
 .hero-content p {
-  font-size: 24px;
+  /* font-size: 24px; */
   margin: 15px 0;
   position: relative;
+  max-width: 750px;
+  text-align: left;
 }
 
 .hero-content p::before{
-  content: '';
+  /* content: ''; */
   position: absolute;
   top: 50%;
   left: -20px;
@@ -401,7 +441,7 @@ justify-content: space-between;
 .cta-button {
   background-color: transparent;
   border: 2px solid black;
-  padding: 0 40px 0 20px;
+  padding: 10px 40px 10px 20px;
   font-size: 24px;
   cursor: pointer;
   border-radius: 120px;
@@ -503,6 +543,10 @@ justify-content: space-between;
 
   .why-us-first, .why-us-second{
     display: block !important;
+  }
+
+  .why-us-second{
+    margin-left: 40vw !important;
   }
 
   .why-us-first .content-right{
@@ -928,6 +972,14 @@ width: auto !important;
 
   .sm-justify-center{
     justify-content: center !important;
+  }
+
+  .hero-content .swiggly {
+    top: 20px !important;
+  }
+
+  .hero-content .ampersand{
+    font-size: 45px !important;
   }
 }
 

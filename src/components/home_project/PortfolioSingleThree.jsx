@@ -17,10 +17,10 @@ function PortfolioSingleThree() {
                 </p>
                 </div>
                 <div className='image'>
-                <div className="status">
+                {/* <div className="status">
                     <img src="https://placeholder.pics/svg/8.61x8.61" alt="Status" />
                     <span>in progress</span>
-                </div>
+                </div> */}
                 {/* <img src={image2} alt="Project screenshot" className="project-image" /> */}
                 </div>                
             </div>

@@ -1,7 +1,7 @@
 .testimonial-first {
     display: flex;
     align-items: flex-start;
-    max-width: 400px;
+    max-width: 600px;
     gap: 16px;
 }
 

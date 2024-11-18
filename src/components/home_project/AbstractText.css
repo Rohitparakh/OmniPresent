@@ -22,14 +22,17 @@
 }
 
 .futureMoves {
-    font-size: 65.64px;
-    line-height: 66.23px;
+    /* font-size: 65.64px;
+    line-height: 66.23px; */
+    font-size: 130px;
+    line-height: 130px;
     text-align: left;
 }
 
 .soDoWe {
-    font-size: 214.5px;
-    line-height: 143.47px;
+    margin-top: 30px;
+    font-size: 328px;
+    line-height: 250.47px;
     text-align: right;
     position: relative;
 }
@@ -62,8 +65,8 @@
 
 .abstractText .linesBg{
     position: absolute;
-    top: -55%;
-    left: 20%;
-    height: 150%;
+    top: -43%;
+    left: 27%;
+    height: 120%;
     z-index: 2;
 }

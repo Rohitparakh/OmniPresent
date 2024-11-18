@@ -6,12 +6,12 @@
     color: #fdfee8;
     padding: 20px;
     margin-top: 150px;
-    margin-left: 200px;
+    margin-left: 2vw;
 }
 
 .why-us-second .content {
     /* max-width: 844px; */
-    width: 40vw;
+    width: 50vw;
     z-index: 3;
 }
 
@@ -28,7 +28,7 @@
 .why-us-second .description {
     font-family: 'Nohemi', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 35px;
     color: #fdfee8;
     width: 60%;

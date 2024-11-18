@@ -96,7 +96,10 @@ const Manifesto = () => {
           {data.map((item, index) => (
             <Card title={item.title} desc={item.desc} key={index} />
           ))}
+          
         </div>
+        <Button text={"schedule a call"} />
+
       </motion.div>
 
       {/* Video background */}
@@ -123,7 +126,6 @@ const Manifesto = () => {
           animate={contentInView ? { opacity: 1 } : {}}
           transition={{ delay: 1, duration: 1 }}
         >
-          <Button text={"schedule a call"} />
         </motion.div>
       </motion.div>
     </div>

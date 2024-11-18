@@ -981,6 +981,20 @@ width: auto !important;
   .hero-content .ampersand{
     font-size: 45px !important;
   }
+
+  .futureMoves{
+    font-size: 60px !important;
+    line-height: 60px !important;
+  }
+
+  .soDoWe{
+    font-size: 75px !important;
+    line-height: 75px !important;
+  }
+
+  .scheduleButtonAnchor .buttonText{
+    font-size: 30px !important;
+  }
 }
 
 @media(min-width:767px){

@@ -13,8 +13,7 @@ function WhyUsFirst() {
                 />
             <h1 className="title-mobile lg-d-none">we are relationship driven</h1>                
                 <p className="description">
-                    With deep industry knowledge, we navigate the crypto space 
-                    like no other, ensuring you stay ahead of the curve.
+                We’re here for the long haul, building relationships that go beyond transactions and make a big impact.
                 </p>
             </div>
             <div className="content-right">

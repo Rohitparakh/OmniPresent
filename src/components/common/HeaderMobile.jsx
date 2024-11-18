@@ -9,6 +9,7 @@ import telegramIcon from '../../assets/images/hugeicons_telegram.png';
 import twitterIcon from '../../assets/images/hugeicons_twitter.png';
 import instagramIcon from '../../assets/images/hugeicons_instagram.png';
 import { NavLink } from 'react-router-dom';
+import headerContact from '../../assets/images/headerContact.png';
 
 const HeaderMobile = () => {
     const [headerOpen, setHeaderOpen]= useState(false);
@@ -37,7 +38,7 @@ const HeaderMobile = () => {
   return (
     <>
     <div className="header-mobile group-container"
-                    style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-evenly':'left', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px'}}
+                    style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-between':'space-between', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px'}}
                     >
       <div className="logo-frame">
       <NavLink to="/" >
@@ -52,7 +53,7 @@ const HeaderMobile = () => {
       <div className="frame-container">
         <div className="icon-frame" 
                     onClick={handleClick} 
-                    style={{backgroundColor:headerOpen?'#000':'#fff'}}
+                    style={{backgroundColor:headerOpen?'#000':'transparent'}}
             >
           <img 
             src={headerOpen?closeIcons:hamburger}
@@ -63,14 +64,17 @@ const HeaderMobile = () => {
         <div className="schedule-frame" 
                     style={{display:headerOpen?'none':'flex'}}
                     >
-          <div className="inner-frame">
+                      <NavLink target='_blank' to="https://calendly.com/admin-invictuslabs/30min">
+                      <img src={headerContact} height={44} width={44}/>
+                      </NavLink>
+          {/* <div className="inner-frame">
             <span className="schedule-text">schedule</span>
             <img 
               src={arrow}
               alt="arrow icon" 
               className="arrow-icon"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -121,15 +125,17 @@ const HeaderMobile = () => {
     </div>
     <hr/>
     <div className='headerSocials'>
-        <p>Follow our <br/>socials</p>
+        <p style={{fontSize:'14px', margin:'auto'}}>follow our <br/>socials</p>
         <div className="socialIcons">
-                    <img src={telegramIcon} alt="Telegram Icon" className="socialIcon" />
-                    <div className="circleIcon">
-                        <img src={twitterIcon} alt="Close Icon" className="icon" />
-                    </div>
-                    <div className="circleIcon">
-                        <img src={instagramIcon} alt="Instagram Icon" className="icon" />
-                    </div>
+          <div className="circleIcon">
+            <img src={telegramIcon} alt="Telegram Icon" className="icon" height={56} width={56}/>
+          </div>
+          <div className="circleIcon">
+              <img src={twitterIcon} alt="Close Icon" className="icon" height={56} width={56}/>
+          </div>
+          <div className="circleIcon">
+              <img src={instagramIcon} alt="Instagram Icon" className="icon" height={56} width={56}/>
+          </div>
                 </div>
     </div>
 

@@ -18,13 +18,13 @@ function HeroSection() {
   className="object-cover absolute bg-transparent z-50 w-100 h-100 top-[129px] left-[20%]"
 />
             <div className="hero-content z-10">
-                <h1 className='zero'><span className='swiggly'>~</span> <span><span className='z-50'>v</span>as<span className='z-50'>t</span></span></h1><br/>
+                <h1 className='zero'><span className='swiggly'>~</span> <span><span className='z-50'>v</span>as<span className='z-50'>t</span></span></h1>
                 <h1><span className='to present'>prese<span  className='z-50'>nt</span></span> <span className='one'></span></h1>
                 <h1><div class="absolute top-[50%] left-[-200px] lg:block hidden"><img src="/src/assets/about/line.svg" class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></h1>
                 <div className='d-flex justify-center'>
                     <div className='subHeading'>
                 <p className='font-[400] text-[36px]'>■ The community-driven web3 super agency for the new internet.</p>
-                <NavLink to="https://x.com/Omnipresentcc" target="_blank"><button className="cta-button">schedule a call <span className='arrow'>➔</span></button></NavLink>
+                <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank"><button className="cta-button">schedule a call <span className='arrow'>➔</span></button></NavLink>
                 </div>
                 </div>                
             </div>

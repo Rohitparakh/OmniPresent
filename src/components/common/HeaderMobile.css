@@ -8,7 +8,7 @@
     align-items: center;
     width: 100vw;
     height: 52px;
-    justify-content: left;
+    justify-content: space-between;
     gap: 20px;
     padding: 20px;
     margin: 20px 0;
@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
   }
   
   .icon-menu {
@@ -52,8 +53,8 @@
   }
   
   .schedule-frame {
-    width: 127px;
-    height: 44px;
+    /* width: 127px; */
+    /* height: 44px; */
     display: flex;
     align-items: center;
   }
@@ -105,12 +106,14 @@
   }
 
   .mobile-menu p{
-    font-weight: 900;
+    font-weight: 700;
 
   }
   .mobile-menu h2{
-font-size: 40px;
+font-size: 70px;
 font-weight: 900;
+line-height: 60px;
+margin-bottom: 50px;
   }
 
   .headerSocials{

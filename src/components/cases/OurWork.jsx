@@ -23,22 +23,49 @@ const Card = ({ img, title, para, url }) => {
 const OurWork = () => {
     const [activeTab, setActiveTab] = React.useState(0);
 
-    const menu = [
-        "GTM", "Growth Strategy & Hacking", "KOL M&M", "Partnerships",
-        "Merchandising", "Collabs & Alpha Calls", "Fundraising", 
-        "Branding & Design", "Advisory", "SMC Strategy and Management"
-    ];
+    const menu = ["GTM", "Growth Strategy & Hacking", "KOL M&M", "Partnerships", "Merchandising", "Collabs & Alpha Calls", "Fundraising", "Branding & Design", "Advisory", "SMC Strategy and Management"];
 
     const data = [
-        { img: card1, title: "Etihad Airways", desc: "A landmark Web3 debut for a global Web2 aviation leader", url: "/cases/ethihad" },
-        { img: card2, title: "RampX", desc: "A powerful product launch that fetched 10K users in just seven days", url: "/cases/rampx" },
-        { img: card3, title: "CryptoKnights", desc: "Building a global community for the Web3 Shark Tank", url: "/cases/cryptoknights" },
-        { img: card4, title: "Deblock", desc: "Go-to-Market success with 100K users and $100M in transactions", url: "/cases/deblock" },
-        { img: card5, title: "Elixr Games", desc: "GTM Strategy Driving NFT Sellout in Web3 Gaming", url: "/cases/elixr" },
+        { img: card1, title: "Etihad Airways", desc: "A landmark Web3 debut for a global Web2 aviation leader", url: "/cases/ethihad", 
+        tags: ["GTM", "Community Growth Marketing", "Discord Management", "Content Strategy", "KOL Management", "Loyalty Program Launch", "Collaboration and Partnerships"] },
+        { img: card2, title: "RampX", desc: "A powerful product launch that fetched 10K users in just seven days", url: "/cases/rampx", 
+        tags: ["Full Scale Marketing", "Growth Strategy", "Content Strategy", "Community Management", "KOL Management"] },
+        { img: card3, title: "CryptoKnights", desc: "Building a global community for the Web3 Shark Tank", url: "/cases/cryptoknights", 
+        tags: ["GTM", "Community Growth", "Social Media Strategy", "Discord Management", "Content Strategy"] },
+        { img: card4, title: "Deblock", desc: "Go-to-Market success with 100K users and $100M in transactions", url: "/cases/deblock", 
+        tags: ["GTM", "Discord Management", "Content Strategy", "KOL Management", "Performance Marketing", "Collaboration and Partnerships"] },
+        { img: card5, title: "Elixr Games", desc: "GTM Strategy Driving NFT Sellout in Web3 Gaming", url: "/cases/elixr", 
+        tags: ["GTM", "Discord Management", "Content Strategy", "NFT Launch & Token Generation Event", "KOL Management", "Collaboration and Partnerships"] },
         { img: card6, title: "Rayls", desc: "We revived activity on the platform and increased the trading volume by 32%" },
     ];
 
+    const filteredData = activeTab === 0 
+    ? data 
+    : data.filter((item) => {
+        console.log(`Filtering for menu[${activeTab - 1}]:`, menu[activeTab - 1]);
+        console.log("Checking item:", item);
+
+        if (!item.tags) {
+            console.log("No tags found for item:", item.title);
+            return false;
+        }
+
+        // Split the menu item into words
+        const menuWords = menu[activeTab - 1].toLowerCase().split(" ");
+
+        // Check if any word in any tag matches any word in the menu item
+        const matches = item.tags.some((tag) => {
+            const tagWords = tag.toLowerCase().split(" ");
+            return menuWords.some((menuWord) => tagWords.includes(menuWord));
+        });
+
+        console.log(`Result for item "${item.title}":`, matches);
+        return matches;
+    });
+
+
     const handleTabClick = (index) => {
+        console.log("Tab clicked:", index);
         setActiveTab(index);
     };
 
@@ -80,7 +107,7 @@ const OurWork = () => {
 
                 {/* Cards */}
                 <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32'>
-                    {data.map((i) => (
+                    {filteredData.map((i) => (
                         <Card img={i.img} title={i.title} para={i.desc} key={i.title} url={i.url} />
                     ))}
                 </div>

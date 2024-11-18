@@ -26,7 +26,7 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
         className='text-[10rem] z-10 flex items-center font-nohemi-ext text-black relative'>
-         <span className='text-[10rem] flex items-center w-min pt-9'>~</span> our<span className=''></span>
+         <span className='text-[10rem] flex items-center w-min pt-9 swiggly'>~</span> our<span className=''></span>
         </motion.h1>
         <motion.h1 variants={slideUpDelay}
          initial="hidden"

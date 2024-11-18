@@ -26,7 +26,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #7d7d7d;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .sectionContent {
@@ -46,8 +46,9 @@
 .mainContent {
     font-family: 'Nohemi', sans-serif;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 72px;
 }
 
 .bottomSection {
@@ -60,6 +61,7 @@
     font-family: 'Nohemi', sans-serif;
     font-weight: 900;
     font-size: 200px;
+    line-height: 180px;
     text-align: center;
 }
 

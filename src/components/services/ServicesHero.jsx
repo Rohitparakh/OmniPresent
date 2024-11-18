@@ -42,7 +42,7 @@ const ServicesHero = () => {
             <span className="font-nohemi-ext">our</span>
           </motion.h1>
           <motion.h1
-            className="text-[9rem] lg:w-auto w-full z-50 flex items-center gap-2 font-nohemi-ext text-black pl-5"
+            className="text-[9rem] lg:w-auto w-full z-50 flex items-center gap-2 font-nohemi-ext text-black pl-5 relative left-[-40px] md:left-0"
             variants={slideUpDelay}
             initial="hidden"
             animate="visible"
@@ -98,7 +98,7 @@ const ServicesHero = () => {
 
       {/* video */}
       {/* <video src={OurServices_Services_PNG} autoPlay loop muted className="'absolute left-0 top-[-30px] h-96 z-0"/> */}
-      <div className='flex items-center gap-4 max-w-7xl w-full mx-auto justify-end pb-4'>
+      <div className='items-center gap-4 max-w-7xl w-full mx-auto justify-end pb-4 hidden md:flex'>
             <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-7' /></NavLink>
             <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className='h-7' /></NavLink>
             <NavLink target="_blank" to=""><img src={insta} alt="" className='h-7' /></NavLink>

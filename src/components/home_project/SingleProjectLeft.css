@@ -47,6 +47,10 @@
     margin-bottom: 20px;
 }
 
+.singleProjectLeft .description li:not(:last-child){
+    margin-bottom: 24px;
+}
+
 .singleProjectLeft .description {
     font-family: 'Nohemi', sans-serif;
     font-weight: 400;
@@ -54,7 +58,7 @@
     letter-spacing: -0.24px;
     line-height: 40px;
     color: #eaeaea;
-    margin-bottom: 20px;
+    margin-bottom: 116px;
     padding-right: 20px;
 }
 

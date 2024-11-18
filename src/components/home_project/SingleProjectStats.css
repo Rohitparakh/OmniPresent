@@ -17,11 +17,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 16px;
+    padding: 8px 16px;
     border: 1px solid #000;
     border-radius: 32px;
     font-family: 'Nohemi', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
 }
@@ -49,8 +49,8 @@
 .singleProjectStats .subtitle {
     font-family: 'Nohemi', sans-serif;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 48px;
     letter-spacing: -0.4px;
     margin-top: 0;
 }
@@ -76,6 +76,7 @@
     /* line-height: 30px; */
     padding: 0;
     margin: 0;
+    margin-bottom: 24px;
 }
 
 .singleProjectStats .statisticLabel {
@@ -108,6 +109,7 @@
     display: flex;
     justify-content: space-between;
     gap: 70px;
+    margin-right: 70px;
 }
 
 

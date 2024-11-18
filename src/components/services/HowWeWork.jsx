@@ -42,22 +42,22 @@ const HowWeWork = () => {
           <div className="grid lg:grid-cols-3 lg:gap-3 gap-16 w-full mt-10">
             <motion.div className="w-full h-full flex flex-col gap-1" variants={slideUpDelay}>
               <img src={card1} alt="" />
-              <p className="lg:text-lg text-2xl font-nohemi-ext">Get to Know You</p>
-              <p className="text-sm font-nohemi">
+              <p className="lg:text-lg text-[28px] font-bold">Get to Know You</p>
+              <p className="text-xl font-normal">
                 We start by getting to know you and your brand. Understanding your unique challenges, goals, vision and nuances is key to an exceptional plan that echoes.
               </p>
             </motion.div>
             <motion.div className="w-full mt-16 h-full flex flex-col gap-1" variants={slideUp}>
               <img src={downImg} alt="" />
-              <p className="lg:text-lg text-2xl font-nohemi-ext">Dig Into the Data</p>
-              <p className="text-sm font-nohemi">
+              <p className="lg:text-lg text-[28px] font-bold">Dig Into the Data</p>
+              <p className="text-xl font-normal">
                 We dig into the data alongside our unique insights. Our analysis includes your position, strengths, and competitors, with your formula to succeed.
               </p>
             </motion.div>
             <motion.div className="w-full h-full flex flex-col gap-1" variants={slideUpDelay}>
               <img src={cardImg2} className="h-52 object-cover" alt="" />
-              <p className="lg:text-lg text-2xl font-nohemi-ext">Craft a Strategy Around Your Vision</p>
-              <p className="text-sm font-nohemi">Armed with the knowledge, we craft a strategy made for you and the market.</p>
+              <p className="lg:text-lg text-[28px] font-bold">Craft a Strategy Around Your Vision</p>
+              <p className="text-xl font-normal">Armed with the knowledge, we craft a strategy made for you and the market.</p>
             </motion.div>
           </div>
 
@@ -68,8 +68,8 @@ const HowWeWork = () => {
                 <img src={circle} alt="" className="h-20" />
                 <img src={circle} alt="" className="h-40" />
               </div>
-              <p className="lg:text-lg text-2xl font-nohemi-ext">Execute</p>
-              <p className="text-sm font-nohemi">
+              <p className="lg:text-lg text-[28px] font-bold">Execute</p>
+              <p className="text-xl font-normal">
                 We put your plan into action. Our execution will be agile, swift, and accurate. You’ll be with us along the way to make sure it resonates and stays ahead of moving parts.
               </p>
             </div>
@@ -81,8 +81,8 @@ const HowWeWork = () => {
               <div className="flex items-center gap-9">
                 <img src={star} alt="" className="h-40" />
               </div>
-              <p className="lg:text-lg text-2xl font-nohemi-ext">Measure Impact, Optimize Results</p>
-              <p className="text-sm font-nohemi">
+              <p className="lg:text-lg text-[28px] font-bold">Measure Impact, Optimize Results</p>
+              <p className="text-xl font-normal">
                 Our job doesn’t end with execution. We keep our fingers on the pulse, keeping you up to date. We continuously evaluate, adapt and refine to make sure your plan succeeds with flying colors.
               </p>
             </div>

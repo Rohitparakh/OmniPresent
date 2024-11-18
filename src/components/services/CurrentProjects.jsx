@@ -12,25 +12,26 @@ import six from "../../assets/services/6.svg";
 import seven from "../../assets/services/7.svg";
 import { NavLink } from "react-router-dom";
 import { motion } from 'framer-motion';
+import primaryBg from "../../assets/images/primaryBg.png";
 
 const Card = ({ data }) => {
   return (
     <motion.div
-      className="w-[700px] h-[620px] bg-black border border-[#EEFE05] flex items-start p-6"
+      className="w-full h-full bg-black border border-[#EEFE05] flex items-start p-6"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="h-full w-[60%] flex flex-col justify-between gap-4">
+      <div className="h-full w-[60%] flex flex-col justify-between gap-4 grow-0">
         <div className="flex flex-col gap-6 w-full">
           <div className="flex flex-col gap-1 w-full">
             <p className="text-xl font-normal font-nohemi text-[#EEFE05]">01/</p>
-            <p className="text-4xl font-nohemi-ext text-[#EEFE05]">{data.name}</p>
+            <p className="text-6xl font-nohemi-ext text-[#EEFE05]">{data.name}</p>
           </div>
-          <p className="font-nohemi text-sm w-[85%] text-[#FFFFFF]">{data.desc}</p>
-          <div className="flex flex-col gap-2">
+          <p className="font-nohemi text-[24px] leading-9 w-[85%] text-[#FFFFFF]">{data.desc}</p>
+          <div className="flex flex-col">
             {data.points.map((point, index) => (
-              <p key={index} className="font-nohemi text-sm w-[85%] text-[#FFFFFF]">
+              <p key={index} className={`font-nohemi text-[20px] leading-7 w-[85%] ${index==0?'':'mt-[32px]'} text-[#FFFFFF]`}>
                 <span className="text-[#EEFE05]">■</span> {point}
               </p>
             ))}
@@ -49,8 +50,8 @@ const Card = ({ data }) => {
           </NavLink>
         </div>
       </div>
-      <div className="w-[40%] flex flex-col">
-        <motion.img src={data.image} alt="" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} />
+      <div className="w-[40%] h-full flex flex-col grow justify-center bg-primary">
+        <motion.img src={data.image} alt="" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} className=""/>
       </div>
     </motion.div>
   );
@@ -62,7 +63,7 @@ const MobileCard = ({ data }) => {
       <img
         src={data.image}
         alt=""
-        className=" h-52 w-full border border-[#EEFE05]"
+        className=" h-52 w-full border border-[#EEFE05] bg-primary"
       />
 
       <p className=" font-nohemi-ext text-3xl w-full text-[#EEFE05]">
@@ -78,7 +79,7 @@ const MobileCard = ({ data }) => {
 };
 
 const CurrentProjects = () => {
-  const [selectedCard, setSelectedCard] = useState(0);
+  const [selectedCard, setSelectedCard] = useState(3);
 
 
   const menuData = [

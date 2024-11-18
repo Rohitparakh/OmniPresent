@@ -64,17 +64,17 @@ const CasesHero = () => {
       {/* Center text area end */}
 
       {/* Bottom area start */}
-    <div className='w-full py-5 lg:mt-16 mt-10 relative flex lg:flex-row flex-col items-center justify-around gap-2'>
+    <div className='max-w-4xl w-full md:py-5 lg:mt-16 md:mt-10 relative flex lg:flex-row flex-col items-center justify-around gap-2'>
         <div className='flex items-center gap-2'>
         <p className=' lg:max-w-[34rem] leading-7 text-xl font-nohemi font-normal'>
         ■ We’ve fueled growth and built vibrant communities across Web3 for leading brands, including Tier 1 companies and Layer 1 blockchains, and our impact keeps building.
         </p>
         </div>
-        <div className='  h-auto lg:pb-20 flex items-start lg:w-auto w-full'>
+        <div className='  h-auto lg:pb-20 flex items-start lg:w-auto w-full mb-5'>
             <Button text="Schedule a call"/>
         </div>
 
-        <div className='absolute bottom-[-25px] left-[10px] lg:block hidden'>
+        <div className='absolute bottom-[-25px] left-[-30px] lg:block hidden'>
             <img src={line} className='h-28' alt="" />
         </div>
     </div>
@@ -82,7 +82,7 @@ const CasesHero = () => {
     {/* Bottom area end */}
 
     </div>
-    <div className='flex items-center gap-4 max-w-7xl w-full mx-auto justify-end pb-4'>
+    <div className='flex items-center gap-4 max-w-7xl w-full mx-auto justify-end pb-4 hidden md:flex'>
             <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-7' /></NavLink>
             <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className='h-7' /></NavLink>
             <NavLink target="_blank" to=""><img src={insta} alt="" className='h-7' /></NavLink>

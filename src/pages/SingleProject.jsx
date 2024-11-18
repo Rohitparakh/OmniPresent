@@ -6,6 +6,7 @@ import SingleProjectIntroduction from '../components/home_project/SingleProjectI
 import SingleProjectLeft from '../components/home_project/SingleProjectLeft';
 import SingleProjectRight from '../components/home_project/SingleProjectRight';
 import '../components/home_project/SingleProject.css';
+import '../components/home_project/Cases.css';
 import SingleProjectTestimonial from '../components/home_project/SingleProjectTestimonial';
 import '../components/home_project/PortfolioSingleThree.css';
 import SingleProjectScheduleCall from '../components/home_project/SingleProjectScheduleCall';
@@ -17,7 +18,6 @@ import Project4 from '../assets/images/Project4.png';
 import Project5 from '../assets/images/Project5.png';
 import Project6 from '../assets/images/Project6.png';
 import { Navigate, useParams } from 'react-router-dom';
-
 
 import ethihadBanner from '../assets/images/EthihadBanner.png';
 import ethihadObjective from '../assets/images/ethihadObjective.png'

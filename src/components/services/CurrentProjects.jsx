@@ -3,13 +3,13 @@ import MarqueeSection from "./../common/MarqueeSection";
 import { Button } from "../common";
 import share from "../../assets/services/share.svg";
 import card from "../../assets/services/card.svg";
-import one from "../../assets/services/1.svg";
-import two from "../../assets/services/2.svg";
-import three from "../../assets/services/3.svg";
-import four from "../../assets/services/4.svg";
-import five from "../../assets/services/5.svg";
-import six from "../../assets/services/6.svg";
-import seven from "../../assets/services/7.svg";
+import one from "../../assets/services/1.png";
+import two from "../../assets/services/2.png";
+import three from "../../assets/services/3.png";
+import four from "../../assets/services/4.png";
+import five from "../../assets/services/5.png";
+import six from "../../assets/services/6.png";
+import seven from "../../assets/services/7.png";
 import { NavLink } from "react-router-dom";
 import { motion } from 'framer-motion';
 import primaryBg from "../../assets/images/primaryBg.png";
@@ -17,7 +17,7 @@ import primaryBg from "../../assets/images/primaryBg.png";
 const Card = ({ data }) => {
   return (
     <motion.div
-      className="w-full h-full bg-black border border-[#EEFE05] flex items-start p-6"
+      className="w-full h-[960px] bg-black border border-[#EEFE05] flex items-center p-6"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
@@ -51,7 +51,7 @@ const Card = ({ data }) => {
         </div>
       </div>
       <div className="w-[40%] h-full flex flex-col grow justify-center bg-primary">
-        <motion.img src={data.image} alt="" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} className=""/>
+        <motion.img src={data.image} alt="" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} className="object-contain p-8"/>
       </div>
     </motion.div>
   );
@@ -63,7 +63,7 @@ const MobileCard = ({ data }) => {
       <img
         src={data.image}
         alt=""
-        className=" h-52 w-full border border-[#EEFE05] bg-primary"
+        className=" h-52 w-full border border-[#EEFE05] bg-primary object-contain p-8"
       />
 
       <p className=" font-nohemi-ext text-3xl w-full text-[#EEFE05]">

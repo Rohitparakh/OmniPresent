@@ -28,10 +28,10 @@ const Card = ({ data }) => {
             <p className="text-xl font-normal font-nohemi text-[#EEFE05]">01/</p>
             <p className="text-6xl font-nohemi-ext text-[#EEFE05]">{data.name}</p>
           </div>
-          <p className="font-nohemi text-[24px] leading-9 w-[85%] text-[#FFFFFF]">{data.desc}</p>
+          <p className="font-nohemi text-[24px] leading-9 w-[85%] text-[#FFFFFF] font-[400]">{data.desc}</p>
           <div className="flex flex-col">
             {data.points.map((point, index) => (
-              <p key={index} className={`font-nohemi text-[20px] leading-7 w-[85%] ${index==0?'':'mt-[32px]'} text-[#FFFFFF]`}>
+              <p key={index} className={`font-nohemi text-[20px] leading-7 w-[85%] ${index==0?'':'mt-[32px]'} text-[#FFFFFF] font-[400]`}>
                 <span className="text-[#EEFE05]">■</span> {point}
               </p>
             ))}

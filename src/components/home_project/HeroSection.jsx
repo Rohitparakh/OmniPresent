@@ -3,7 +3,9 @@ import x from '../../assets/about/x.svg';
 import telegram from '../../assets/about/telegram.svg';
 import insta from '../../assets/about/insta.svg';
 import { NavLink } from 'react-router-dom';
-import video from '../../assets/videos/homeHero.gif';
+import gif from '../../assets/videos/homeHero.gif';
+import video from '../../assets/videos/homeHero.mov';
+import videoMP4 from '../../assets/videos/homeHero.mp4';
 
 function HeroSection() {
     return (
@@ -13,10 +15,15 @@ function HeroSection() {
   loop 
   muted 
   playsInline
+//   src={videoMP4}
   controls={false}
-  src={video} 
   className="object-cover absolute bg-transparent z-50 w-100 h-100 top-[129px] left-[20%]"
-/>
+>
+    {/* <source src={videoMP4} type="video/quicktime"></source> */}
+Your browser does not support the video tag.
+</video>
+{/* <img className="object-cover absolute bg-transparent z-50 w-100 h-100 top-[129px] left-[20%]" src={gif}/> */}
+
             <div className="hero-content z-10">
                 <h1 className='zero'><span className='swiggly'>~</span> <span><span className='z-50'>v</span>as<span className='z-50'>t</span></span></h1>
                 <h1><span className='to present'>prese<span  className='z-50'>nt</span></span> <span className='one'></span></h1>

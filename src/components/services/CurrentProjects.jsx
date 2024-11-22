@@ -70,10 +70,13 @@ const MobileCard = ({ data }) => {
         {data.name}
       </p>
 
-      <p className="pb-2 w-full mt-10 cursor-pointer hover:scale-105 transition-all duration-300  border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-md">
-        <img src={share} alt="" className="h-4" />
-        <span>schedule a call to learn more</span>
-      </p>
+      <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank">
+        <p className="pb-2 w-full mt-10 cursor-pointer hover:scale-105 transition-all duration-300  border-b border-[#EEFE05] flex items-center gap-3 text-[#EEFE05] font-nohemi text-md">
+          <img src={share} alt="" className="h-4" />
+          <span>schedule a call to learn more</span>
+        </p>
+      </NavLink>
+
     </div>
   );
 };

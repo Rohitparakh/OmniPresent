@@ -511,6 +511,13 @@ justify-content: space-between;
   font-size: 25px !important;
 }
 
+.sm-text-center{
+  text-align: center !important;
+}
+
+.sm-hidden{
+  display: none !important;
+}
 
 
 .headerExtras {
@@ -521,6 +528,22 @@ justify-content: space-between;
 
 .headerExtras .rightDiv{
   display: none;
+}
+
+.sm-tar{
+  text-align: right !important;
+}
+
+.relatedCase::before{
+  content: '';
+  width: 200%;
+  height: 1px;
+  background-color: #000;
+  left: -50%;
+  top: 20px;
+  position: absolute;
+  z-index: 2;
+mix-blend-mode: color;
 }
 }
 
@@ -673,11 +696,23 @@ width: auto !important;
 
   .why-us-cta .call-to-action.accent{
     /* width: max-content; */
-    width: 85vw !important;
+    width: 70vw !important;
     font-size: 2rem !important;
     justify-content: center !important;
   }
 
+  .call-to-action{
+    padding-right: 40px !important;
+  }
+
+  .services .ctaDiv{
+    padding-bottom: 400px !important;
+  }
+
+  .services .swiggly{
+    top: 100px !important;
+  }
+  
   .portfolio-single,
   .portfolio-single-left,
   .portfolio-single-three,  
@@ -791,10 +826,18 @@ width: auto !important;
   }
 
   .description{
-    font-size: 15px !important;
-    line-height: 20px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
   }
 
+  .singleProjectLeft .description li{
+    font-size: 24px !important;
+    line-height: 40px !important;
+  }
+
+  .sectionTitleLarge{
+    font-size: 64px !important;
+  }
   .portfolio-single .title::before{
     height: 0 !important;
   }
@@ -895,7 +938,7 @@ width: auto !important;
   .testimonials::before{
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     content: '';
     position: absolute;
     top: 0;
@@ -951,6 +994,10 @@ width: auto !important;
     flex-direction: column !important;
   }
 
+  .mainContent{
+    margin-top: 15px !important;
+  }
+
   .singleProjectRight{
     flex-direction: column-reverse !important;
     max-width: 100vw !important;
@@ -976,9 +1023,18 @@ width: auto !important;
     height: auto !important;
   }
 
+  .singleProjectLeft .bigNumberSection{
+    margin-bottom: 170px !important;
+  }
+
+  .singleProjectLeft{
+    margin-bottom: 250px !important;
+  }
+
   .singleProjectRight .impressionTitle,
   .singleProjectRight .bigNumberSection{
     font-size: 40px !important;
+    align-items: center !important;
   }
 
   .singleProjectRight .bigNumber{
@@ -1003,6 +1059,7 @@ width: auto !important;
 
   .singleProjectIntroduction .bottomSection{
     margin-bottom: 140px;
+    margin-top: 50px;
   }
 
   .singleProjectRight .designImage{
@@ -1083,6 +1140,24 @@ width: auto !important;
   .scheduleButtonAnchor .buttonText{
     font-size: 30px !important;
   }
+  .scheduleButtonAnchor{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .scheduleButtonAnchor .scheduleButton{
+    padding: 10px 40px !important;
+  }
+
+  .scheduleButton .arrowIcon{
+    padding: 12px !important;
+    right: -40px;
+  }
+
+  .scheduleButton .arrowIcon img{
+    height: 20px !important;
+    width: 20px !important;
+  }
 
   .swiggly{
     font-size: 140px;
@@ -1095,7 +1170,7 @@ width: auto !important;
   }
 }
 
-@media(min-width:767px){
+@media(min-width:769px){
   .lg-d-none{
     display: none !important;
   }
@@ -1121,7 +1196,7 @@ width: auto !important;
 .testimonials::before{
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.9);
   content: '';
   position: absolute;
   top: 0;

@@ -25,7 +25,7 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
 </div>
 
             <div className='flex flex-col items-center justify-center h-full w-full  mt-8'>
-                <div className=' w-full h-96  flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-betwen px-2'
+                <div className=' w-full h-96  flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-betwen px-2 mb-40 lg:mb-0'
                  onClick={() => navigate(`/cases/${case1URL}`)}
                  style={{ cursor: 'pointer' }}>
                     <div className='flex flex-col lg:gap-3 gap-1'>
@@ -39,27 +39,13 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
                      </div>
 
                       })}
-                      {/* <div className="flex flex-col gap-0">
-                           <p className=' font-nohemi-ext lg:text-3xl text-xl lg:text-left text-center'>+44%</p>
-                           <p className=' font-nohemi text-xs font-medium'>Active Users</p>
-                        </div>
-                        <div className="flex flex-col gap-0 lg:text-left text-center">
-                           <p className=' font-nohemi-ext lg:text-3xl text-xl'>+32%</p>
-                           <p className=' font-nohemi text-xs font-medium'>Trading Volume</p>
-                        </div>
-                        <div className="flex flex-col gap-0 lg:text-left text-center">
-                           <p className=' font-nohemi-ext lg:text-3xl text-xl'>+31%</p>
-                           <p className=' font-nohemi text-xs font-medium'>Number of mentios</p>
-                        </div> */}
+                    
                     </div>
                     </div>
 
-                    <div className=' lg:w-[65%] h-full flex flex-col items-center justify-center relative'>
-                      <div className='mx-auto flex flex-col'>
-                        {/* <h3 className=' font-nohemi-ext px-2 text-2xl'>
-                        {case1.title}
-                        </h3> */}
-                        <h2 className=' px-2 font-nohemi-ext text-4xl bg-primary z-40 w-fit relative top-2'>
+                    <div className='w-full overflow-hidden lg:w-[65%] h-full flex flex-col items-center justify-center relative'>
+                      <div className='lg:mx-auto flex flex-col w-full lg:w-[65%] '>
+                        <h2 className='relatedCase w-fit sm-tar lg:w-min px-2 font-nohemi-ext text-4xl bg-primary z-50 w-fit self-end lg:self-auto relative top-2'>
                         {case1.title}
                         </h2>
                         <p className=' mt-2 px-2 lg:w-96 text-xs z-50 font-nohemi'>
@@ -87,30 +73,15 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
                      </div>
 
                       })}
-                        {/* <div className="flex flex-col gap-0">
-                           <p className='font-nohemi-ext lg:text-3xl text-xl'>x3</p>
-                           <p className=' font-nohemi text-xs font-medium'>Number of users</p>
-                        </div>
-                        <div className="flex flex-col gap-0">
-                           <p className='font-nohemi-ext lg:text-3xl text-xl'>x4</p>
-                           <p className=' font-nohemi text-xs font-medium'>Trading Volume</p>
-                        </div>
-                        <div className="flex flex-col gap-0">
-                           <p className=' font-nohemi-ext lg:text-3xl text-xl'>+32</p>
-                           <p className=' font-nohemi text-xs font-medium'>Platform’s revenue</p>
-                        </div> */}
                     </div>
                     </div>
 
-                    <div className=' lg:w-[65%] h-full flex flex-col items-center justify-center relative'>
-                      <div className='mx-auto flex flex-col'>
-                        {/* <h3 className=' font-nohemi-ext lg:px-2 text-2xl'>
-                        Virtual in-game 
-                        </h3> */}
-                        <h3 className=' w-min lg:px-2 font-nohemi-ext text-4xl bg-primary z-50'>
+                    <div className=' w-full lg:w-[65%] h-full flex flex-col items-center justify-center relative overflow-hidden'>
+                      <div className='w-full lg:w-[65%] lg:mx-auto flex flex-col'>
+                        <h3 className='relatedCase w-fit bg-primary lg:w-min lg:px-2 font-nohemi-ext text-4xl bg-primary z-50 sm-tar self-end lg:self-auto'>
                         {case2.title}
                         </h3>
-                        <p className=' lg:px-2 lg:w-96 text-xs font-nohemi'>
+                        <p className=' lg:px-2 lg:w-96 text-base lg:text-xs font-nohemi font-[400]'>
                         {case2.description}
                         </p>
                       </div>

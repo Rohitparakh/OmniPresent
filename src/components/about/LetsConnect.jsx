@@ -25,12 +25,12 @@ const LetsConnect = () => {
             Whether you’ve been building in Web3 for a while — or are just launching your brand into the space — let’s chat about how we can help you make an impact in Web3.
           </p>
 
-          <p className='lg:text-[13rem] text-8xl font-nohemi-ext'>
+          <p className='lg:text-[13rem] text-8xl font-nohemi-ext sm-text-center'>
             sound
           </p>
         </div>
 
-        <div className='flex flex-col items-center justify-center lg:w-[90%] lg:ml-auto mr-auto'>
+        <div className='flex flex-col items-center justify-center lg:w-[90%] lg:ml-auto md:mr-auto'>
           <div className='flex items-center sm:gap-0 lg:gap-20'>
             <video 
               src={letsConnectArrow} 
@@ -39,11 +39,20 @@ const LetsConnect = () => {
               muted 
               playsInline
               controls={false}
-              className='lg:h-48 h-10 w-auto max-w-full max-h-48 sm:hidden lg:block'
+              className='lg:h-48 h-10 w-auto max-w-full max-h-48 sm-hidden lg:block'
             />
             <p className='lg:text-[13rem] text-8xl font-nohemi-ext'>good?</p>
+            
           </div>
-      
+          <video 
+              src={letsConnectArrow} 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              controls={false}
+              className='h-24 w-auto max-w-full max-h-48 lg-d-none block'
+            />
           <Button text={"schedule a call"} />
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import arrowPrimary from '../../assets/images/arrowPrimary.png';
 
 function ScheduleCallButton({theme}) {
 
@@ -11,7 +12,7 @@ function ScheduleCallButton({theme}) {
     <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
 
         <button className={"call-to-action "+classNames}>
-        schedule a call <span className="arrow">➔</span>
+        schedule a call <span className="arrow"><img src={arrowPrimary} width={13} height={13}/></span>
     </button>            
     </NavLink>
     );

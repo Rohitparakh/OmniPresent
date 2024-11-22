@@ -4,6 +4,7 @@ import './Results.css';
 import './ScheduleButton.css';
 import AbstractText from './AbstractText';
 import { NavLink } from 'react-router-dom';
+import arrowPrimary from  '../../assets/images/arrowPrimary.png';
 
 function ScheduleButton() {
     return (
@@ -11,7 +12,7 @@ function ScheduleButton() {
 
         <div className="scheduleButton">
             <span className="buttonText">schedule a call</span>
-            <span className="arrowIcon">➔</span>
+            <span className="arrowIcon"><img src={arrowPrimary} /></span>
         </div>
         </NavLink>
     );

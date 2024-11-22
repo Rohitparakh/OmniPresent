@@ -52,8 +52,8 @@ function Header() {
                     <span>01</span>
                 </div>
                 <div className='rightDiv'>
-                    <span>GRAPHIC DESIGN</span>
-                    <span>WEB 3 AGENCY</span>
+                    <span>WEB3</span>
+                    <span>SUPER AGENCY</span>
                     <span className='plus'>+</span>
                 </div>
             </div>

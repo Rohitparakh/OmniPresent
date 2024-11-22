@@ -25,7 +25,7 @@ const LetsConnect = () => {
             Whether you’ve been building in Web3 for a while — or are just launching your brand into the space — let’s chat about how we can help you make an impact in Web3.
           </p>
 
-          <p className='lg:text-9xl text-8xl font-nohemi-ext'>
+          <p className='lg:text-[13rem] text-8xl font-nohemi-ext'>
             sound
           </p>
         </div>
@@ -39,9 +39,9 @@ const LetsConnect = () => {
               muted 
               playsInline
               controls={false}
-              className='lg:h-24 h-10 w-auto max-w-full max-h-24 sm:hidden lg:block'
+              className='lg:h-48 h-10 w-auto max-w-full max-h-48 sm:hidden lg:block'
             />
-            <p className='lg:text-9xl text-8xl font-nohemi-ext'>good?</p>
+            <p className='lg:text-[13rem] text-8xl font-nohemi-ext'>good?</p>
           </div>
       
           <Button text={"schedule a call"} />

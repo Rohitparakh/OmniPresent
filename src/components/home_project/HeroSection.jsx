@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import gif from '../../assets/videos/homeHero.gif';
 import video from '../../assets/videos/homeHero.mov';
 import videoMP4 from '../../assets/videos/homeHero.mp4';
+import arrowPrimary from '../../assets/images/arrowPrimary.png';
 
 function HeroSection() {
     return (
@@ -22,7 +23,7 @@ function HeroSection() {
     {/* <source src={videoMP4} type="video/quicktime"></source> */}
 Your browser does not support the video tag.
 </video>
-{/* <img className="object-cover absolute bg-transparent z-50 w-100 h-100 top-[129px] left-[20%]" src={gif}/> */}
+{/* <img className="object-cover absolute bg-transparent z-40 w-100 h-100 top-[12px] left-[3%]" src={gif}/> */}
 
             <div className="hero-content z-10">
                 <h1 className='zero'><span className='swiggly'>~</span> <span><span className='z-50'>v</span>as<span className='z-50'>t</span></span></h1>
@@ -31,7 +32,7 @@ Your browser does not support the video tag.
                 <div className='d-flex justify-center'>
                     <div className='subHeading'>
                 <p className='font-[400] text-[36px]'>■ The community-driven web3 super agency for the new internet.</p>
-                <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank"><button className="cta-button">schedule a call <span className='arrow'>➔</span></button></NavLink>
+                <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank"><button className="cta-button">schedule a call <span className='arrow'><img src={arrowPrimary} width={20} height={20}/></span></button></NavLink>
                 </div>
                 </div>                
             </div>

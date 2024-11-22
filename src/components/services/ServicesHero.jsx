@@ -4,7 +4,8 @@ import line from "../../assets/about/line.svg";
 import OurServices_Services_PNG from "../../assets/videos/OurServices_Services_PNG.mov";
 import heroImg from "../../assets/services/heroImg.svg";
 import right from "../../assets/services/right.svg";
-import HeroStar from "../../assets/services/heroStar.svg";
+// import HeroStar from "../../assets/services/heroStar.svg";
+import HeroStar from "../../assets/services/heroStar.png";
 import marLogo from "../../assets/about/marLogo.svg";
 import marArrow from "../../assets/about/marArrow.svg";
 import { motion } from "framer-motion";
@@ -71,9 +72,9 @@ const ServicesHero = () => {
         {/* Center text area end */}
 
         {/* Bottom area start */}
-        <div className="w-full py-5 lg:mt-20 mt-10 relative flex lg:flex-row flex-col items-center justify-around gap-2">
+        <div className="w-full py-5 lg:mt-20 mt-10 relative flex lg:flex-row flex-col items-center justify-center gap-14">
           <div className="flex items-center gap-2">
-            <p className="  lg:w-[27rem] leading-7 text-xl font-nohemi font-normal">
+            <p className="  lg:w-[30rem] leading-7 text-xl font-nohemi font-normal">
               ■ We cover everything you need to make an impact in Web3—from
               community building to full-scale marketing with your very own CMO.
             </p>

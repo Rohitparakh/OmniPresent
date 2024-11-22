@@ -10,7 +10,7 @@ function SectionCta({text, position, url}) {
             <img 
                 src={ctaArrow}
                 alt="Arrow Icon" 
-                className="arrow-icon" 
+                className="mr-2" 
             />
             <div className="cta-text-container">
             {url &&(<NavLink to={url} 

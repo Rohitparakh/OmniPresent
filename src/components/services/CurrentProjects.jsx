@@ -79,7 +79,7 @@ const MobileCard = ({ data }) => {
 };
 
 const CurrentProjects = () => {
-  const [selectedCard, setSelectedCard] = useState(3);
+  const [selectedCard, setSelectedCard] = useState(0);
 
 
   const menuData = [
@@ -177,7 +177,7 @@ const CurrentProjects = () => {
           </p>
         </div>
 
-        <div className="w-full mx-auto mt-40 lg:flex hidden justify-between gap-2 items-center">
+        <div className="w-full mx-auto mt-80 lg:flex hidden justify-between gap-2 items-center">
           <div className="h-full w-[30%]">
             {menuData.map((item, index) => (
               <p

@@ -1,6 +1,7 @@
 import { Button, MarqueeSection } from '../common'
 import face1 from '../../assets/about/face1.svg';
-import face2 from '../../assets/about/face2.svg';
+// import face2 from '../../assets/about/face2.svg';
+import face2 from '../../assets/about/face2.png';
 import face4 from '../../assets/about/face4.svg'
 import top from '../../assets/about/1.svg';
 import line from '../../assets/about/line.svg';
@@ -15,7 +16,7 @@ const Hero = () => {
   return (
     <div className=' w-screen font-nohemi-ext bg-primary '>
     <div className=' max-w-7xl mx-auto flex flex-col items-center justify-center  relative px-4'>
-    <img src={top} alt=""  className='absolute lg:top-[-170px] top-[0px] lg:left-[-70px] left-0 mix-blend-multiply lg:h-96 h-36'/>
+    <img src={top} alt=""  className='absolute lg:top-[-170px] top-[0px] lg:left-[100PX] left-0 mix-blend-multiply lg:h-72 h-36'/>
         <div className='py-20'>
 
         </div>
@@ -25,8 +26,8 @@ const Hero = () => {
         variants={slideUp}
         initial="hidden"
         animate="visible"
-        className='text-[10rem] z-10 flex items-center font-nohemi-ext text-black relative'>
-         <span className='text-[10rem] flex items-center w-min pt-9 swiggly'>~</span> our<span className=''></span>
+        className='text-[10rem] flex items-center font-nohemi-ext text-black relative'>
+         <span className='text-[10rem] font-[900] flex items-center w-min pt-9 swiggly'>~</span> o<span className='font-[900] z-10'>u</span><span className='font-[900] z-30'>r</span><span className=''></span>
         </motion.h1>
         <motion.h1 variants={slideUpDelay}
          initial="hidden"
@@ -51,21 +52,21 @@ const Hero = () => {
     <div className="absolute left-[170px] bottom-[8px] w-[22rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
 
     {/* Face 2 */}
-    <img src={face2} alt="" className="mix-blend-multiply h-32 absolute top-[-80px] right-[60px] bg-primary z-50 animate-fadeIn" />
+    <img src={face2} alt="" className=" h-32 absolute top-[-80px] right-[60px] z-20 animate-fadeIn" />
 </>
 
 
-        <div className='bg-primary h-10 w-[38px] rotate-[15deg] absolute top-[2px] right-[125px] z-30 rounded-b-xl'>
+        {/* <div className='bg-primary h-10 w-[38px] rotate-[15deg] absolute top-[2px] right-[125px] z-30 rounded-b-xl'>
 
-        </div>
+        </div> */}
 
       </div>
       {/* Center text area end */}
 
       {/* Bottom area start */}
-    <div className='w-full lg:py-5 relative flex lg:flex-row flex-col  items-center justify-around gap-2'>
+    <div className='w-full lg:py-10 relative flex lg:flex-row flex-col  items-baseline justify-center gap-2'>
         <div className='flex lg:flex-row flex-col lg:items-center items-start gap-2'>
-        <img src={face1} alt="" className='  mix-blend-multiply lg:h-52 h-32'/>
+        {/* <img src={face1} alt="" className='mix-blend-multiply lg:h-52 h-32 absolute top-[0px] left-[0px]'/> */}
         <p className=' lg:w-[28rem] leading-7 text-xl font-nohemi font-normal'>
         ■ We live and breathe Web3 marketing with deep expertise and a human touch. From bringing brands to market to building connected communities, we help projects reach the audiences that matter.
         </p>
@@ -76,6 +77,8 @@ const Hero = () => {
 
         <div className='absolute top-[-35px] left-52 lg:block hidden'>
             <img src={line} className='h-28' alt="" />
+    <img src={face1} alt="" className=" h-32 absolute top-[-100%] left-[50%] z-20 animate-fadeIn mix-blend-multiply" />
+
         </div>
         <div className='absolute top-[-155px] right-12 lg:block hidden'>
             <img src={face4} className=' h-64 mix-blend-multiply' alt="" />

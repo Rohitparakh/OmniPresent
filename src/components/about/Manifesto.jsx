@@ -11,7 +11,7 @@ const Card = ({ title, desc }) => {
   return (
     <motion.div
       ref={ref}
-      className="lg:w-[290px] min-h-[250px] flex flex-col gap-2"
+      className="lg:w-[290px] min-h-[250px] flex flex-col gap-2 justify-between"
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -20,7 +20,7 @@ const Card = ({ title, desc }) => {
         <span className="text-[#EEFE05] text-4xl">■ </span>
         {title}
       </p>
-      <p className="text-[#FFFFFF] font-nohemi text-sm leading-6">
+      <p className="text-[#FFFFFF] font-nohemi text-base leading-6">
         {desc}
       </p>
     </motion.div>
@@ -85,7 +85,7 @@ const Manifesto = () => {
           animate={contentInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <p className="text-5xl font-nohemi-ext font-bold lg:w-[70%] text-right leading-[3.2rem]">
+          <p className="text-5xl font-nohemi-ext font-bold lg:w-[80%] text-right leading-[3.2rem]">
             At the crux of our mission lies the conviction that our approach to how we <span className="text-primary">work</span>, <span className="text-primary">connect</span> and{" "}
             <span className="text-primary">innovate</span> shapes our <span className="text-primary">identity</span>.
           </p>

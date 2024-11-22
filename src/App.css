@@ -178,6 +178,11 @@ justify-content: space-between;
   text-decoration: underline;
 }
 
+.header .call-to-action .arrow{
+  width: 30px;
+  height: 30px;
+}
+
 .call-to-action {
   display: flex;
   position: relative;
@@ -231,8 +236,8 @@ justify-content: space-between;
 .arrow {
   display: inline-block;
   margin-left: 10px;
-  width: 30.99px;
-  height: 30.99px;
+  width: 40px;
+  height: 40px;
 }
 
 .hero-section {
@@ -505,6 +510,8 @@ justify-content: space-between;
 .title{
   font-size: 25px !important;
 }
+
+
 
 .headerExtras {
   width: 100% !important;

@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import card1 from "../../assets/services/cardImg1.svg";
+import card1Mobile from "../../assets/services/cardImg1Mobile.png";
 import downImg from "../../assets/services/downImg.svg";
 import cardImg2 from "../../assets/services/cardImg2.svg";
+import card2Mobile from "../../assets/services/cardImg2Mobile.png";
 import circle from "../../assets/services/circle.svg";
 import star from "../../assets/services/start.svg";
 import { slideUp, slideUpDelay } from '../../animations';
@@ -35,13 +37,14 @@ const HowWeWork = () => {
           viewport={{ once: true }}
           variants={slideUp}
         >
-          <p className="text-6xl font-nohemi-ext lg:w-[70%] text-right">
+          <p className="text-5xl leading-[64px] font-nohemi-ext lg:w-[70%] text-right">
             We treat every project as if it’s our own. Knowing that one size doesn't fit all, we take vital steps to identify what works best for you.
           </p>
 
           <div className="grid lg:grid-cols-3 lg:gap-3 gap-16 w-full mt-10">
             <motion.div className="w-full h-full flex flex-col gap-1" variants={slideUpDelay}>
-              <img src={card1} alt="" />
+              <img src={card1} alt="" className='hidden lg:block'/>
+              <img src={card1Mobile} alt="" className='block lg:hidden'/>
               <p className="text-[32px] font-[600]">Get to Know You</p>
               <p className="text-xl font-normal">
                 We start by getting to know you and your brand. Understanding your unique challenges, goals, vision and nuances is key to an exceptional plan that echoes.
@@ -55,7 +58,8 @@ const HowWeWork = () => {
               </p>
             </motion.div>
             <motion.div className="w-full h-full flex flex-col gap-1" variants={slideUpDelay}>
-              <img src={cardImg2} className="h-52 object-cover" alt="" />
+            <img src={cardImg2} alt="" className='hidden lg:block'/>
+              <img src={card2Mobile} alt="" className='block lg:hidden'/>
               <p className="text-[32px] font-[600]">Craft a Strategy Around Your Vision</p>
               <p className="text-xl font-normal">Armed with the knowledge, we craft a strategy made for you and the market.</p>
             </motion.div>

@@ -548,6 +548,10 @@ mix-blend-mode: color;
 }
 
 @media (max-width:768px) {
+
+  .section-header{
+    width: calc( 100vw - 40px) !important
+  }
   .hero-content h1{
     font-size: 80px;
     line-height: 70px;
@@ -763,6 +767,30 @@ width: auto !important;
     margin-top: 25px;
   }
 
+
+  .portfolio-single .title::before,
+  .portfolio-single-left .title::before,
+  .portfolio-single-four .title::before{
+    content:'';
+    position: absolute;
+    height: 1px !important;
+    width: 200% !important;
+    background-color: #fff;
+    bottom: 0 !important;
+  }
+
+  .portfolio-single .title::before{
+    left: 100%;
+  }
+
+  .portfolio-single-left .title::before{
+    right: 100%;
+  }
+
+  .portfolio-single-left .content-right{
+    justify-content: flex-end;
+    margin-right: 40px;
+  }
   .textWeCover-container{
     height: auto !important;
   }
@@ -815,9 +843,14 @@ width: auto !important;
 
   .portfolio-single .index,
   .portfolio-single-left .index{  
-    font-size: 15px !important;
-    top: -100% !important;
+    font-size: 18px !important;
+    top: -50% !important;
 
+  }
+
+  .portfolio-single-left .index.rampx{  
+    /* top: -100% !important; */
+    /* right: -30px !important; */
   }
   .portfolio-single-four .index{
     font-size: 15px !important;
@@ -825,9 +858,23 @@ width: auto !important;
 
   }
 
+.portfolio-single-left .description {
+margin-bottom: 40px !important;
+}
+
+.portfolio-single-four .description{
+  text-align: left !important;
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
+}
+
+.portfolio-single-three{
+  margin-top: 50px !important;
+}
+
   .description{
-    font-size: 16px !important;
-    line-height: 24px !important;
+    font-size: 24px !important;
+    line-height: 36px !important;
   }
 
   .singleProjectLeft .description li{
@@ -840,12 +887,18 @@ width: auto !important;
     text-align: left !important;
   }
   .portfolio-single .title::before{
-    height: 0 !important;
+    /* height: 0 !important; */
+  }
+  .portfolio-single{
+    overflow: visible !important;
   }
 
   .portfolio-single .title,
-  .portfolio-single-left .title{
-    line-height: 25px !important;
+  .portfolio-single-left .title,
+  .portfolio-single-four .title{
+    font-size: 40px !important;
+    line-height: 48px !important;
+    font-weight: 900 !important;
   }
 
   .portfolio-single .content-center{
@@ -866,7 +919,7 @@ width: auto !important;
   }
   .portfolio-single-four{
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start !important;
   }
 
   .portfolio-single-four .title, .portfolio-single-three .title{

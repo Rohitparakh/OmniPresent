@@ -17,7 +17,7 @@ function PortfolioSingle() {
                 </div>
             </div>
             <div className="content-right">
-            <div className='image'>
+            <div className='image mt-10'>
                 {/* <div className="status-tag">
                         <img src={statusProgress} alt="status icon" />
                         <span>in progress</span>

@@ -20,15 +20,16 @@ function PortfolioSingleLeft() {
                 </div>
             </div>
             <div className='content-center'>
-            <div className="description">
+            <div className="description mt-10 mb-20 lg:mb-10 lg:mt-0">
             10K users gained in just seven days with a powerful product launch.
 
 </div>
             </div>
             <div className="content-right">                
                 <div className="details">
-                    <h1 className="title">RampX</h1>
-                    <span className="index">02</span>
+                    <h1 className="title">RampX
+                    <span className="index rampx">02</span>
+                    </h1>
                 </div>
             </div>
         </div>

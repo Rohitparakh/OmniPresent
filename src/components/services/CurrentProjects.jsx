@@ -213,7 +213,7 @@ const CurrentProjects = () => {
         </div>
       </div>
 
-      <div className="w-full py-16">
+      <div className="w-full py-16 mt-52">
       <MarqueeSection>
            <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                 <p className="text-9xl font-[1000] font-nohemi-ext">sounds good?</p>
@@ -221,7 +221,7 @@ const CurrentProjects = () => {
            </div>
               </MarqueeSection>
       <MarqueeSection speed={100}>
-      <div className="flex items-center gap-8  px-7 font-nohemi text-white">
+      <div className="mt-16 flex items-center gap-8  px-7 font-nohemi text-white">
                 <p className="text-9xl font-bold font-nohemi-ext">sounds good?</p>
                 <Button text="schedule a call" />
            </div>

@@ -65,8 +65,8 @@
   display: none !important
 }
 
-.rightSection *{
-  /* border: 1px solid red; */
+.rightSection {
+  text-align: right;
 }
 html, body, .app {
   width: 100vw;
@@ -536,10 +536,10 @@ justify-content: space-between;
 
 .relatedCase::before{
   content: '';
-  width: 200%;
+  width: 200vw;
   height: 1px;
   background-color: #000;
-  left: -50%;
+  left: -100vw;
   top: 20px;
   position: absolute;
   z-index: 2;
@@ -837,6 +837,7 @@ width: auto !important;
 
   .sectionTitleLarge{
     font-size: 64px !important;
+    text-align: left !important;
   }
   .portfolio-single .title::before{
     height: 0 !important;
@@ -996,6 +997,8 @@ width: auto !important;
 
   .mainContent{
     margin-top: 15px !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
   }
 
   .singleProjectRight{
@@ -1039,6 +1042,15 @@ width: auto !important;
 
   .singleProjectRight .bigNumber{
     font-style: 80px;
+  }
+
+  .bigNumber{
+    font-size: calc(70vw - 20px) !important;
+  }
+
+  .singleProjectRight .headline{
+    font-size: 32px !important;
+    line-height: 40px !important;
   }
 
   .singleProjectRight .headline,
@@ -1085,6 +1097,17 @@ width: auto !important;
 
   .scheduleCall{
     flex-direction: column !important;
+  }
+
+  .scheduleCall .rightSection{
+    align-self: stretch;
+
+  }
+
+  .scheduleCall .rightSection h2{
+    line-height: 60px !important;
+    font-size: 60px !important;
+    margin-bottom: 40px;
   }
 
   .scheduleCall .leftSection{
@@ -1168,6 +1191,8 @@ width: auto !important;
   .singleProjectStats .tagContainer{
     width: auto !important;
   }
+
+ 
 }
 
 @media(min-width:769px){
@@ -1178,6 +1203,11 @@ width: auto !important;
   .md-d-none{
     
   }
+
+  .rightSection{
+    margin-top: 400px;
+  }
+
 }
 .arrow-icon{
   width: auto !important;
@@ -1205,4 +1235,16 @@ width: auto !important;
 }
 .of-contain{
   object-fit: contain !important;
+}
+.projectPage .header{
+  position: relative;
+}
+.projectPage .header::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 4vw;
+  width: calc(100% - 8vw);
+  height: 1px;
+  background-color: #000;
 }

@@ -51,6 +51,24 @@
     margin-bottom: 24px;
 }
 
+.singleProjectLeft ul.description{
+    list-style: none;
+    margin: 0; /* Remove outer margin */
+    padding: 0; /* Remove inner padding */
+    list-style-position: inside; /* Place the marker inside the list item content */
+}
+.singleProjectLeft ul.description li{
+    margin: 0; /* Remove outer margin */
+    padding: 0; /* Remove inner padding */
+}
+
+.singleProjectLeft ul.description li::marker{
+font-size: 40px;
+margin: 0;
+margin-right: -40px;
+padding: 0;
+}
+
 .singleProjectLeft .description {
     font-family: 'Nohemi', sans-serif;
     font-weight: 400;

@@ -4,14 +4,16 @@ import thisCanBeYou from '../../assets/images/thisCanBeYou.png';
 import ArrowBigRight from '../../assets/images/ArrowBigRight.png';
 import './ScheduleButton.css';
 import { NavLink } from 'react-router-dom';
+import arrowBlack from '../../assets/images/arrowBlack.png';
+import arrowDown from '../../assets/images/arrowDown.png';
 
 function ScheduleButton() {
     return (
         <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
 
-        <div className="scheduleButton" style={{color:'#000', backgroundColor:'#eefe05'}}>
+        <div className="scheduleButton" style={{color:'#000', backgroundColor:'#eefe05', padding:'16px 44px 16px 16px', width:'max-content'}}>
             <span className="buttonText" style={{color:'#000', backgroundColor:'#eefe05'}}>schedule a call</span>
-            <span className="arrowIcon" style={{color:'#000', backgroundColor:'#eefe05', border:'2px solid black'}}>➔</span>
+            <span className="arrowIcon" style={{color:'#000', backgroundColor:'#eefe05', border:'2px solid black', padding:'10px', right:'-44px'}}><img src={arrowBlack} /></span>
         </div>
         </NavLink>
     );
@@ -24,13 +26,15 @@ const SingleProjectScheduleCall = () => {
             <div class="circle-section">
                 <img src={thisCanBeYou} alt="Circle" className="circle" height={250}/>
             </div>
-            <img className='mx-auto' src={ArrowBigRight} width={350}/>
+            <img className='mx-auto lg:mt-20 hidden lg:block' src={ArrowBigRight} width={350}/>
 
             {/* arrow image  */}
         </div>
 
         <div className='rightSection'>
             <h2>we can<br/><span className='secondLine'><span className='mt--50'>be</span> <span className='text-yellow'>great</span></span><br/>together</h2>
+            <img className='mx-auto lg:mt-20 block lg:hidden h-[120px]' src={arrowDown} height={120}/>
+
             {/* schedule call button  */}
             <ScheduleButton/>
         </div>

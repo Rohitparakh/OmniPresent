@@ -73,10 +73,10 @@ const caseStudiesData = {
     about: "Etihad Airways is the national airline of the UAE, servicing flights to 120+ destinations. Etihad sought to engage loyal customers with a new digital experience in Web3. This included a Go-To-Market Strategy and NFT launch with exclusive benefits such as F1 access, flight upgrades, and Manchester City FC merchandise.",
     objectivesHeading:"Etihad partnered with us to:",
     objectives:[
-      "■ Have a seamless entry into Web3 with a new digital experience for fans.",
-      "■ Deliver an impactful Go-To-Market strategy that would sell out their NFT collection “EY-ZERO1”, and establish the brand in the space..",
-      "■ Spotlight their key partners such as Manchester City and Formula 1.",
-      "■ Build and manage an active community across Discord and X."
+      "Have a seamless entry into Web3 with a new digital experience for fans.",
+      "Deliver an impactful Go-To-Market strategy that would sell out their NFT collection “EY-ZERO1”, and establish the brand in the space..",
+      "Spotlight their key partners such as Manchester City and Formula 1.",
+      "Build and manage an active community across Discord and X."
     ],
     objectiveImage: ethihadObjective,
     approachHeading: "To bring Etihad’s Web3 vision to life, we rolled out a strategy designed to generate buzz and build an engaged community.",
@@ -84,10 +84,10 @@ const caseStudiesData = {
     approachImage: ethihadApproach,
     resultsHeading:'Our efforts led to impressive outcomes:',
     results:[
-      "■ Generated over $1 million in revenue with two sold-out NFT collections.",
-      "■ Established one of the first successful Web3 loyalty programs by a Web2 brand.",
-      "■ Hosted an exclusive NFT holders’ event at Yas Marina Circuit, reinforcing Etihad’s position as a Web3 pioneer.",
-      "■ Gained over 10 million impressions, resulting in a community of over 60,000 members across platforms."
+      "Generated over $1 million in revenue with two sold-out NFT collections.",
+      "Established one of the first successful Web3 loyalty programs by a Web2 brand.",
+      "Hosted an exclusive NFT holders’ event at Yas Marina Circuit, reinforcing Etihad’s position as a Web3 pioneer.",
+      "Gained over 10 million impressions, resulting in a community of over 60,000 members across platforms."
     ],
     resultsImage: ethihadResults,
     relatedProject:["cryptoknights", "rampx"]
@@ -116,8 +116,8 @@ const caseStudiesData = {
     about: "CryptoKnights is a globally acclaimed Web3 TV show that lets viewers invest in top Web3 projects as entrepreneurs pitch to a live audience. Produced by an Emmy-nominated team and inspired by Shark Tank, the show reaches over 300 million viewers worldwide. They approached us to expand their presence in the Web3 space.",
     objectivesHeading:"CryptoKnights goals were to build visibility before launch, aiming to:",
     objectives:[
-      "■ Establish a global audience on X.",
-      "■ Build an engaged crypto-native community.",
+      "Establish a global audience on X.",
+      "Build an engaged crypto-native community.",
     ],
     objectiveImage: ckObjective,
     approachHeading: "With CryptoKnights’ goal of reaching a large global audience, we delivered a GTM strategy focused on maximizing brand visibility and community engagement.",
@@ -125,10 +125,10 @@ const caseStudiesData = {
     approachImage: ckApproach,
     resultsHeading:'Within less than two months, our strategy resulted in the following outcomes:',
     results:[
-      "■ 50,000 X followers with sustained high engagement levels.",
-      "■ 3,000 new Discord members within one day of launch.",
-      "■ Organic growth in token price.",
-      "■ 15 million+ views for the project and judges' introduction videos, significantly expanding global awareness."
+      "50,000 X followers with sustained high engagement levels.",
+      "3,000 new Discord members within one day of launch.",
+      "Organic growth in token price.",
+      "15 million+ views for the project and judges' introduction videos, significantly expanding global awareness."
     ],
     resultsImage: ckResults,
     relatedProject:["ethihad", "rampx"]
@@ -169,10 +169,10 @@ const caseStudiesData = {
     about: "Deblock is a secure financial platform offering multi-currency accounts and a crypto wallet. Licensed in France, Deblock is a trusted name in Web3. Recently, it raised $12 million from investors like 20VC, Headline, The Chainsmokers and Kraken, and formed partnerships with major companies, including Ledger, Visa, and Blockdaemon.",
     objectivesHeading:"Deblock partnered with us to:",
     objectives:[
-      "■ Establish a strong Web3 presence.",
-      "■ Drive user acquisition and community engagement within the French market.",
-      "■ Showcase product utility and increase brand awareness across Web2 and Web3 audiences.",
-      "■ Successfully go to market and launch their NFT initiatives."
+      "Establish a strong Web3 presence.",
+      "Drive user acquisition and community engagement within the French market.",
+      "Showcase product utility and increase brand awareness across Web2 and Web3 audiences.",
+      "Successfully go to market and launch their NFT initiatives."
     ],
     objectiveImage: deblockObjective,
     approachHeading: "We launched a free NFT collection packed with valuable utilities to attract and engage users.",
@@ -180,11 +180,11 @@ const caseStudiesData = {
     approachImage: deblockApproach,
     resultsHeading:'Our efforts led to successful results:',
     results:[
-      "■ Grew Deblock’s X following from 0 to 76,000.",
-      "■ Built a 9,000-member, French-centered Discord community.",
-      "■ Achieved 40 million+ impressions over two years.",
-      "■ Launched two sold-out free NFT mints, with floor prices reaching 0.65 ETH and 0.25 ETH.",
-      "■ Verified users surged to over 100,000, and transaction volume exceeded $100 million."
+      "Grew Deblock’s X following from 0 to 76,000.",
+      "Built a 9,000-member, French-centered Discord community.",
+      "Achieved 40 million+ impressions over two years.",
+      "Launched two sold-out free NFT mints, with floor prices reaching 0.65 ETH and 0.25 ETH.",
+      "Verified users surged to over 100,000, and transaction volume exceeded $100 million."
     ],
     resultsImage: deblockResults,
     relatedProject:["cryptoknights", "ethihad"]
@@ -209,9 +209,9 @@ const caseStudiesData = {
     about: "RampX is a one-stop platform designed to make crypto trading and onboarding easy for everyone. RampX aimed to attract and engage new users with a targeted Go-To Market strategy that offered a user-friendly experience for those entering the crypto space.",
     objectivesHeading:"RampX partnered with us to:",
     objectives:[
-      "■ Drive a high number of platform sign-ups with a targeted Go-To-Market strategy within three months.",
-      "■ Develop and execute a content strategy, appealing to cryptocurrency enthusiasts and traders.",
-      "■ Build a strong social media and community that strengthened the brand’s image and fostered engagement.",
+      "Drive a high number of platform sign-ups with a targeted Go-To-Market strategy within three months.",
+      "Develop and execute a content strategy, appealing to cryptocurrency enthusiasts and traders.",
+      "Build a strong social media and community that strengthened the brand’s image and fostered engagement.",
     ],
     objectiveImage: rampxObjective,
     approachHeading: "To set RampX up for an impactful launch, we crafted a GTM strategy that would build a trusting and supportive community.",
@@ -219,9 +219,9 @@ const caseStudiesData = {
     approachImage: rampxApproach,
     resultsHeading:'Our efforts produced outstanding results:',
     results:[
-      "■ Generated 10,000+ platform sign-ups within just one week of the website launch.",
-      "■ Achieved over 50,000 X followers in just three months.",
-      "■ Gained thousands of impressions, strengthening brand visibility and ongoing organic sign-ups.",
+      "Generated 10,000+ platform sign-ups within just one week of the website launch.",
+      "Achieved over 50,000 X followers in just three months.",
+      "Gained thousands of impressions, strengthening brand visibility and ongoing organic sign-ups.",
     ],
     resultsImage: rampxResults,
     relatedProject:["cryptoknights", "ethihad"]
@@ -250,10 +250,10 @@ const caseStudiesData = {
     about: "Elixir Games is the largest Web3 gaming platform, offering distribution and fintech solutions. Backed by investors like Square Enix and Shima Capital, and partnered with GameStop, Elixir has generated over $6.9 million in revenue. It supports 130+ games across Windows, Mac OS, and mobile, operating on multiple blockchains, including Solana and AVAX.",
     objectivesHeading:"Elixir partnered with us to:",
     objectives:[
-      "■ Generate hype for their NFT launch, IDO, and Token Generation Event (TGE).",
-      "■ Expand their community of Web3 gamers.",
-      "■ Drive user acquisition and grow their brand presence.",
-      "■ Strengthen social proof and credibility in the gaming and Web3 spaces."
+      "Generate hype for their NFT launch, IDO, and Token Generation Event (TGE).",
+      "Expand their community of Web3 gamers.",
+      "Drive user acquisition and grow their brand presence.",
+      "Strengthen social proof and credibility in the gaming and Web3 spaces."
     ],
     objectiveImage: elixrObjective,
     approachHeading: "We launched a free NFT collection packed with utilities to attract interest and drive engagement.",
@@ -261,9 +261,9 @@ const caseStudiesData = {
     approachImage: elixrApproach,
     resultsHeading:'Our efforts led to significant growth and impact:',
     results:[
-      "■ Increased X following from 40,000 to 243,800.",
-      "■ Built a thriving Discord community with 24,000 engaged gamers.",
-      "■ Successfully launched two sold-out free NFT mints, reaching floor prices of $800.",
+      "Increased X following from 40,000 to 243,800.",
+      "Built a thriving Discord community with 24,000 engaged gamers.",
+      "Successfully launched two sold-out free NFT mints, reaching floor prices of $800.",
     ],
     resultsImage: elixrResults,
     relatedProject:["cryptoknights", "deblock"]

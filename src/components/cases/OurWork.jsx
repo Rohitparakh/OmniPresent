@@ -103,7 +103,7 @@ const OurWork = () => {
                     {/* Display active filters */}
                     <p
                         onClick={() => handleClear()}
-                        className={` text-[11px] px-4 py-2 cursor-pointer border border-white rounded-full ${activeFilters.length === 0 ? 'bg-white text-black' : 'text-white'}`}
+                        className={` text-[11px] px-4 py-2 cursor-pointer border rounded-full ${activeFilters.length === 0 ? 'bg-primary text-black border-black' : 'border-white text-white'}`}
                     >
                         All
                     </p>
@@ -111,7 +111,7 @@ const OurWork = () => {
                         <p
                             key={`active-${index}`}
                             onClick={() => toggleFilter(filter, true)}
-                            className=' text-[11px] px-4 py-2 cursor-pointer bg-white text-black border border-white rounded-full'
+                            className=' text-[11px] px-4 py-2 cursor-pointer bg-primary text-black border border-black rounded-full'
                         >
                             {filter}
                         </p>

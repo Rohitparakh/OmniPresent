@@ -60,7 +60,7 @@ const ServicesSection = () => {
           />
 
           <motion.div 
-            className='lg:w-[55%] flex flex-col justify-between items-start h-auto gap-8'
+            className='lg:w-[41%] flex flex-col justify-between items-start h-auto gap-8'
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}

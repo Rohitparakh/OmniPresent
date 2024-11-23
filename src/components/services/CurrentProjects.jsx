@@ -17,12 +17,12 @@ import primaryBg from "../../assets/images/primaryBg.png";
 const Card = ({ data }) => {
   return (
     <motion.div
-      className="w-full h-[960px] bg-black border border-[#EEFE05] flex items-center p-6"
+      className="w-full h-max bg-black border border-[#EEFE05] flex items-center p-6 xl:grid grid-rows-1 grid-cols-[60%_40%]"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="h-full w-[60%] flex flex-col justify-between gap-4 grow-0">
+      <div className="h-full w-[100%] flex flex-col justify-between gap-4 grow-0">
         <div className="flex flex-col gap-6 w-full">
           <div className="flex flex-col gap-1 w-full">
             <p className="text-xl font-normal font-nohemi text-[#EEFE05]">01/</p>
@@ -50,7 +50,7 @@ const Card = ({ data }) => {
           </NavLink>
         </div>
       </div>
-      <div className="w-[40%] h-full flex flex-col grow justify-center bg-primary">
+      <div className="w-[100%] h-full flex flex-col grow justify-center bg-primary">
         <motion.img src={data.image} alt="" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} className="object-contain p-8"/>
       </div>
     </motion.div>
@@ -169,7 +169,7 @@ const CurrentProjects = () => {
 
   return (
     <div className="bg-black text-white relative pb-16">
-      <div className="max-w-7xl mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full">
+      <div className="max-w-[90vw] mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full">
         {/* Top divider */}
         <div className="border-b border-white pb-1 w-full flex items-center justify-between">
           <p className="text-white font-semibold text-xs tracking-widest">
@@ -180,8 +180,8 @@ const CurrentProjects = () => {
           </p>
         </div>
 
-        <div className="w-full mx-auto mt-80 lg:flex hidden justify-between gap-2 items-center">
-          <div className="h-full w-[30%]">
+        <div className="w-full mx-auto mt-80 xl:flex hidden justify-between gap-16 items-center">
+          <div className="h-full w-max">
             {menuData.map((item, index) => (
               <p
                 key={index}
@@ -195,7 +195,7 @@ const CurrentProjects = () => {
             ))}
           </div>
           <motion.div
-            className="h-full w-[70%]"
+            className="h-full w-max"
             key={selectedCard}
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -206,7 +206,7 @@ const CurrentProjects = () => {
           </motion.div>
         </div>
 
-        <div className="w-full mx-auto mt-16 lg:hidden flex flex-col justify-between gap-10 items-center">
+        <div className="w-full mx-auto mt-16 xl:hidden flex flex-col justify-between gap-10 items-center">
           {cardData.map((data, index) => (
             <MobileCard key={index} data={data} />
           ))}

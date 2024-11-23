@@ -14,6 +14,7 @@ import x from '../../assets/about/x.svg';
 import telegram from '../../assets/about/telegram.svg';
 import insta from '../../assets/about/insta.svg';
 import { NavLink } from "react-router-dom";
+import blackSquare from '../../assets/images/blackSquare.png';
 
 const ServicesHero = () => {
   return (
@@ -22,7 +23,7 @@ const ServicesHero = () => {
         <div className="py-20"></div>
         {/* Center text area start */}
         <div
-          className={`flex flex-col z-50 leading-[6rem] w-[565px] items-end justify-end py-1 lg:scale-[1.55] scale-[.6] relative`}
+          className={`flex flex-col z-50 leading-[7rem] w-[600px] items-end justify-end py-1 lg:scale-[1.55] scale-[.6] relative`}
         >
           <motion.p
             variants={slideUp}
@@ -43,7 +44,7 @@ const ServicesHero = () => {
             <span className="font-nohemi-ext">our</span>
           </motion.h1>
           <motion.h1
-            className="text-[9rem] lg:w-auto w-full z-50 flex items-center gap-2 font-nohemi-ext text-black pl-5 relative left-[-40px] md:left-0"
+            className="text-[10em] lg:w-auto w-full z-50 flex items-center gap-2 font-nohemi-ext text-black pl-5 relative left-[-40px] md:left-0"
             variants={slideUpDelay}
             initial="hidden"
             animate="visible"
@@ -63,7 +64,7 @@ const ServicesHero = () => {
 
     <div className="absolute left-[96px] top-[6px] w-[8rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute left-[96px] bottom-[105px] w-[8rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-[96px] bottom-[125px] w-[8rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
 
     <div className="absolute left-[240px] bottom-[13px] w-[20rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
 </>
@@ -75,12 +76,12 @@ const ServicesHero = () => {
         <div className="w-full py-5 lg:mt-20 mt-10 relative flex lg:flex-row flex-col items-center justify-center gap-14">
           <div className="flex items-center gap-2">
             <p className="  lg:w-[30rem] leading-7 text-xl font-nohemi font-normal">
-              ■ We cover everything you need to make an impact in Web3—from
+            <img src={blackSquare} height={20} width={20} style={{display: 'inline-block', marginRight:'5px', marginTop:'-3px'}} /> We cover everything you need to make an impact in Web3—from
               community building to full-scale marketing with your very own CMO.
             </p>
           </div>
           <div className="  h-full pb-10 flex items-start lg:w-auto w-full">
-            <Button text="Schedule a call" />
+            <Button text="Schedule a call" arrowBlack={true}/>
           </div>
 
           {/* <div className="absolute lg:bottom-[75px] top-[-50px] left-[-65px]">

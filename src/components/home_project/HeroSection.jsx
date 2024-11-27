@@ -13,11 +13,11 @@ import { Button } from '../common';
 function HeroSection() {
     return (
         <div className="hero-section">            
-{/* <img className="object-cover absolute bg-transparent z-40 w-100 h-100 top-[128px] left-[3%]" src={gif}/> */}
+<img className="object-cover absolute bg-transparent z-1 lg:z-40 w-screen lg:w-[calc(100vw_-_3%)] top-[250px] scale-[2.2] lg:scale-100 lg:top-[130px] left-[-34%] lg:left-[3%]" src={gif}/>
 
-            <div className="hero-content z-10">
-                <h1 className='zero'><span className='swiggly'>~</span> <span className='vast'><span className='z-50'>v</span>as<span className='z-50'>t</span></span></h1>
-                <h1><span className='to present'>prese<span  className='z-50'>nt</span></span> <span className='one'></span></h1>
+            <div className="hero-content">
+                <h1 className='zero'><span className='swiggly'>~</span> <span className='vast'><span className='z-50 relative'>v</span>as<span className='z-50 relative'>t</span></span></h1>
+                <h1><span className='to present'>prese<span  className='z-50 relative'>nt</span></span> <span className='one'></span></h1>
                 <h1><div class="absolute top-[50%] left-[-200px] lg:block hidden"><img src="/src/assets/about/line.svg" class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></h1>
                 <div className='d-flex justify-center'>
                     <div className='subHeading'>

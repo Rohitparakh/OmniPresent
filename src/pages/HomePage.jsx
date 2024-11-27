@@ -16,7 +16,7 @@ import HeaderMobile from '../components/common/HeaderMobile';
 
 function HomePage() {
     return (
-        <div>
+        <div className='relative'>
             <Header/>
             <HeroSection />
             <hr className='mt-60'/>

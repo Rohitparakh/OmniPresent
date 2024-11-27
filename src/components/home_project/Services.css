@@ -16,3 +16,12 @@
     height: 800px;
     z-index: 0;
 }
+
+@media (max-width:768px) {
+    .services .swiggly{
+     height: 200px;
+     top:300px !important;
+     transform: scale(2);   
+     left: 180px;
+    }
+}

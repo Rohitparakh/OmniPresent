@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader';
 import ServicesHeader from './ServicesHeader';
 import ServiceCards from './ServiceCards';
 import WhyUsCta from './WhyUsCta';
-import swiggly from '../../assets/images/Our Services Contact Swiggly.png';
+import swiggly from '../../assets/gif/SchduleaCall_1.gif';
 
 const Services = () => {
   return (

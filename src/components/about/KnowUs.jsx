@@ -16,7 +16,7 @@ const TeamCard = ({ img, name, title, desc, x }) => {
   const [isSeeMore, setIsSeeMore] = React.useState(false);
 
   return (
-    <div className="flex items-center justify-center flex-col gap-4 min-w-[320px] min-h-[450px] ">
+    <div className="flex items-center justify-center flex-col gap-4 min-w-[320px] ">
       {!isSeeMore && (
         <>
           <div className="flex lg:flex-col items-center justify-center gap-4">
@@ -158,7 +158,7 @@ const KnowUs = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={isContainerInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="lg:text-7xl text-4xl font-nohemi-ext font-bold text-start px-1"
+            className="lg:text-7xl text-5xl leading-[64px] lg:leading-[72px] font-nohemi-ext font-bold text-start px-1"
           >
             Our team is a collective of Web3 natives, community experts, and
             marketing specialists. We keep our fingers firmly on the pulse of
@@ -190,7 +190,7 @@ const KnowUs = () => {
       {/* horizontal scroll */}
       <div
         ref={scrollContainerRef}
-        className="w-full flex lg:flex-row flex-col items-center justify-center lg:gap-0 gap-10 lg:overflow-x-auto space-x-4 scrollbarHidden"
+        className="w-full flex lg:flex-row flex-col items-center justify-center lg:gap-0 gap-24 lg:overflow-x-auto space-x-4 scrollbarHidden"
       >
         <div className="min-w-[300px] min-h-[350px] lg:block hidden"></div>
 

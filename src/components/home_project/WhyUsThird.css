@@ -1,8 +1,10 @@
 .why-us-third {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     gap: 50px;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 150px;
     background-color: #000000;
     color: #fdfee8;
 }
@@ -13,10 +15,14 @@
     font-size: 20px;
     line-height: 35px;
     color: #fdfee8;
-    max-width: 439px;
+    max-width: 200px;
     margin: 0;
     margin-right: 20px;
+    margin-top: 50px;
+}
 
+.why-us-third-description p{
+    width: 400px;
 }
 
 .why-us-third-title {

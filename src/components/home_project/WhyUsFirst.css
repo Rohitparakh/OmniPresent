@@ -34,16 +34,15 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 35px;
-    color: #ffffff;
+    color: #eaeaea;
     opacity: 1;
     margin-top: 20px;
-    width: 60%;
     text-align: left;
     float: right;
     position: absolute;
     top:100%;
     left: 10%;
-    width: 70%;
+    /* width: 70%; */
 }
 
 .why-us-first .content-left{

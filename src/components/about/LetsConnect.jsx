@@ -25,7 +25,7 @@ const LetsConnect = () => {
             Whether you’ve been building in Web3 for a while — or are just launching your brand into the space — let’s chat about how we can help you make an impact in Web3.
           </p>
 
-          <p className='lg:text-[13rem] text-8xl font-nohemi-ext sm-text-center'>
+          <p className='lg:text-[13rem] xl:text-[16rem] text-8xl font-nohemi-ext sm-text-center'>
             sound
           </p>
         </div>

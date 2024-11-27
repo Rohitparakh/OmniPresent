@@ -5,9 +5,9 @@ function WhyUsThird() {
     return (
         <div className="why-us-third">
             <div className="why-us-third-content">
-                <p className="why-us-third-description">
-                We’re everywhere your audience is. Our communities amplify your message, making sure you’re seen far and wide.
-                </p>
+                <div className="why-us-third-description">
+                    <p>We’re everywhere your audience is. Our communities amplify your message, making sure you’re seen far and wide.</p>                
+                </div>
                
             </div>
 <div className='why-us-third-right'>

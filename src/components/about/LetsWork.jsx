@@ -8,6 +8,7 @@ import letsWork3 from '../../assets/about/letsWork3.svg';
 import letsWork4 from '../../assets/about/letsWork4.svg';
 import letsWork5 from '../../assets/about/letsWork5.svg';
 import arrowRight from '../../assets/about/arrowRight.svg';
+import bracketOpen from '../../assets/about/bracketOpen.png';
 
 const LetsWork = () => {
   const containerRef = React.useRef(null);
@@ -20,7 +21,7 @@ const LetsWork = () => {
         {/* Top divider */}
         <div className="border-b border-white pb-1 w-full flex items-center justify-between">
           <p className="text-white font-semibold text-[10px] tracking-widest">
-            WHY WE ARE RIGHT FOR YOU
+            our blueprint
           </p>
           <p className="text-white font-semibold text-xs tracking-widest w-44 lg:text-center text-end">
             ( 02 )
@@ -38,12 +39,14 @@ const LetsWork = () => {
         </motion.div>
 
         {/* Content cards */}
+        <div className='flex items-center gap-20'>
+        <img src={bracketOpen} className="h-full hidden lg:block"/>
         <div ref={containerRef} className="flex items-center flex-col justify-start pt-20 max-w-3xl gap-4 w-full h-full">
-          <div className="flex lg:flex-row flex-col gap-3">
+          <div className="flex lg:flex-row flex-col gap-3 lg:gap-5">
             
             {/* Card 1 */}
             <motion.div
-              className="flex flex-col justify-center items-center gap-1 lg:w-40 w-60 h-min ml-auto"
+              className="flex flex-col justify-center items-center gap-1 lg:w-48 w-60 h-min ml-auto"
               initial={{ opacity: 0, y: 50 }}
               animate={isContainerInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3, duration: 0.6 }}
@@ -57,21 +60,21 @@ const LetsWork = () => {
 
             {/* Card 2 */}
             <motion.div
-              className="flex flex-col-reverse justify-center items-start gap-1 lg:w-40 w-60 h-min lg:mt-40 mt-10"
+              className="flex flex-col-reverse justify-center items-start gap-1 lg:w-40 w-60 h-min lg:mt-[11rem] mt-10"
               initial={{ opacity: 0, y: 50 }}
               animate={isContainerInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
               <img src={letsWork2} alt="" className="lg:h-[120px] h-[150px]" />
-              <p className="text-xs font-nohemi text-left text-[#AEAEAE]">
-                Our diverse team brings a wealth of experience in the crypto space, giving you access to top-tier expertise and insights.
+              <p className="text-xs font-nohemi text-left text-[#AEAEAE] lg:mb-2">
+              Our diverse team brings a wealth of experience in the web3 space, giving you access to top-tier expertise and insights.
               </p>
-              <p className="lg:text-lg text-2xl font-nohemi text-left w-full">Expert Team</p>
+              <p className="lg:text-lg text-2xl font-nohemi text-left w-full">Expert Knowledge</p>
             </motion.div>
 
             {/* Card 3 */}
             <motion.div
-              className="flex lg:flex-row  flex-col justify-center lg:items-center items-end lg:w-80 w-full h-min lg:mt-[276px] mt-10"
+              className="flex lg:flex-row  flex-col justify-center lg:items-center items-end lg:w-80 w-full h-min lg:mt-[300px] mt-10"
               initial={{ opacity: 0, y: 50 }}
               animate={isContainerInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.7, duration: 0.6 }}
@@ -86,7 +89,7 @@ const LetsWork = () => {
             </motion.div>
           </div>
 
-          <div className="flex lg:flex-row-reverse flex-col-reverse gap-10 relative w-full lg:mt-0 mt-10">
+          <div className="flex lg:flex-row-reverse flex-col-reverse gap-10 relative w-full lg:mt-0 mt-10 justify-end lg:ml-[-200px]">
             
             {/* Card 4 */}
             <motion.div
@@ -112,12 +115,13 @@ const LetsWork = () => {
               transition={{ delay: 1.1, duration: 0.6 }}
             >
               <img src={letsWork4} alt="" className="lg:w-20 w-72" />
-              <p className="lg:text-lg text-2xl font-nohemi lg:text-start text-end w-64 lg:w-auto">Results-Driven</p>
+              <p className="lg:text-lg text-2xl font-nohemi lg:text-start text-end w-64 lg:w-auto lg:py-2">Results-Driven</p>
               <p className="text-xs font-nohemi text-right text-[#AEAEAE]">
                 We focus on delivering measurable outcomes, ensuring that every action we take drives your success forward.
               </p>
             </motion.div>
           </div>
+        </div>
         </div>
 
         {/* Arrow */}
@@ -132,7 +136,7 @@ const LetsWork = () => {
       </div>
 
       {/* Marquee sections */}
-      <div className="w-full py-16">
+      <div className="w-full py-48">
         <MarqueeSection>
           <div className="flex items-center gap-8 px-7 font-nohemi text-white">
             <p className="text-9xl font-[1000] font-nohemi-ext">sound good?</p>

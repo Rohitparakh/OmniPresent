@@ -15,7 +15,7 @@ const TextAll = () => {
 function TextWeCover() {
     return (
         <div className="textWeCover-container">
-            <span className="textWeCover-text">full scale.</span> <span className="textTheBases-highlight"> &nbsp;web3</span>
+            <span className="textWeCover-text">full scale.</span> <span className="textTheBases-highlight hidden lg:block"> &nbsp;web3</span>
 
         </div>
     );
@@ -26,7 +26,7 @@ const TextTheBases = () => {
     return (
         <div className="textTheBases-container">
             <div className="textTheBases-textContainer">
-                <span className="textTheBases-baseText">marketing for your brand</span>
+                <span className="textTheBases-baseText"><span className="textTheBases-highlight inline-block mr-5 lg:hidden"> &nbsp;web3&nbsp;</span>marketing for your brand</span>
             </div>
         </div>
     );
@@ -34,9 +34,9 @@ const TextTheBases = () => {
 
 function ServicesHeader() {
     return (
-        <div className="servicesHeader">
+        <div className="servicesHeader mb-16 lg:mb-32">
             <div className="headerRow">
-                <img src={servicesFinger} />
+                <img className="lg:mt-[-60px] xl:mt-[-120px]" src={servicesFinger} />
                 <TextWeCover />
             </div>
             <TextTheBases />

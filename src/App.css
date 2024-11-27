@@ -61,6 +61,8 @@
   font-style: normal;
 }
 
+
+
 .projectPage .schedule-services-page {
   display: none !important
 }
@@ -250,6 +252,21 @@ justify-content: space-between;
   text-align: center;
 }
 
+.hero-section .cta-button{
+  font-size: 39px;
+  line-height: 39px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-right: 50px;
+}
+
+.hero-section .cta-button .arrow{
+  height: 64px;
+  width: 64px;
+  right: -40px;
+}
+.hero-section .arrow img{}
+
 .hero-content h1 {
   font-size: 300px;
   line-height: 250px;
@@ -293,7 +310,7 @@ justify-content: space-between;
 .hero-content .swiggly::after {
     content: "";
     position: absolute;
-    top:-20%;
+    top:-40%;
     bottom: -100%;
     height: 115%; /* Border thickness */
     width: 1px;
@@ -389,7 +406,8 @@ justify-content: space-between;
 .hero-section .subHeading{
   display: flex;
   margin-top: 0px;
-  gap: 200px;
+  /* gap: 200px; */
+  gap: 0;
 }
 
 .hero-content p {
@@ -507,6 +525,41 @@ justify-content: space-between;
 }
 
 @media(max-width:768px){
+  .hero-content .zero::before {
+top: .15em;
+right: 63.5%;
+  }
+
+  .vast{
+    position: relative;
+    left: -30px;
+  }
+.hero-section .subHeading{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-section .subHeading p{
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 100px;
+}
+
+.hero-section .cta-button{
+  font-size: 22px;
+  line-height: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 30px;
+  font-weight: 500;
+}
+
+.hero-section .cta-button .arrow{
+  width: 35px;
+  height: 35px;
+  right: -33px;
+
+}
 .title{
   font-size: 25px !important;
 }
@@ -519,6 +572,9 @@ justify-content: space-between;
   display: none !important;
 }
 
+.headerRow img{
+  max-width: 100% !important;
+}
 
 .headerExtras {
   width: 100% !important;
@@ -555,10 +611,6 @@ mix-blend-mode: color;
   .hero-content h1{
     font-size: 80px;
     line-height: 70px;
-  }
-
-  .hero-section .subHeading{
-    display: block;
   }
 
   .hero-content p{
@@ -603,6 +655,7 @@ mix-blend-mode: color;
   .why-us-second{
     margin:auto !important;
     margin-top: 150px !important;
+    width: calc(100vw - 63px) !important;
   }
 
   .why-us-first .content-right{
@@ -634,12 +687,12 @@ mix-blend-mode: color;
   }
 
   .why-us-second .content{
-    width: 100vw !important;
+    width: 100% !important;
   }
 
   .why-us-second .card-image img.go-left,
   .why-us-second .card-image img.go-right{
-  display: none;
+  /* display: none; */
   }
   .why-us-second .card-image img{
     width: 200px;
@@ -650,8 +703,12 @@ mix-blend-mode: color;
   .why-us-second .title{
     line-height: normal !important;
     margin-top: 50px !important;
-    line-height: 48px !important;
-    font-size: 40px !important;
+    line-height: 46px !important;
+    font-size: 38px !important;
+  }
+
+  .why-dots{
+    margin-left: 0 !important;
   }
 
   .why-us-third-title{
@@ -661,7 +718,10 @@ mix-blend-mode: color;
 
   .why-us-third{
     flex-direction: column-reverse !important;
+    max-width: calc(100vw - 63px) !important;
   }
+
+  
 
   .why-us-third-description{
     font-size: 25px !important;
@@ -949,7 +1009,12 @@ margin-bottom: 40px !important;
   }
 
   .results{
-    margin-top: 400px !important;
+    margin-top: 250px !important;
+  }
+
+  .testimonial-first .testimonial-quote{
+    font-size: 34px !important;
+    line-height: 40px !important;
   }
 
   .sm-f-column{
@@ -980,8 +1045,15 @@ margin-bottom: 40px !important;
 
   .testi{
     padding-bottom: 50px !important;
+    padding-top: 150px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 
+  .testimonialSecond .quoteContent{
+    margin-left: 0 !important;
+  }
+  
   .testimonials {
     position: relative;
   }
@@ -1035,6 +1107,22 @@ margin-bottom: 40px !important;
     margin-top: 0 !important;
   }
 
+  .why-us-third{
+    padding: 20px !important;
+    align-items: flex-end !important;
+    gap: 0 !important;
+  }
+
+  .why-us-third-description{
+    margin-top: 10px !important;
+  }
+
+  .why-us-third-description,
+  .why-us-third-description p{
+    width: 100% !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
 
   .soDoWe{
     font-size: 100px !important;
@@ -1077,10 +1165,22 @@ margin-bottom: 40px !important;
   .singleProjectLeft .designImage{
     width: 90vw !important;
     height: auto !important;
+    position: relative;
+  }
+
+  .singleProjectLeft .designImage::before{
+    content: 'rrrrr';
+    position: absolute;
+    width: 100%;
+    height: 1px;    
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    z-index: 1;
   }
 
   .singleProjectLeft .bigNumberSection{
-    margin-bottom: 170px !important;
+    margin-bottom: 170px;
   }
 
   .singleProjectLeft{
@@ -1196,7 +1296,8 @@ margin-bottom: 40px !important;
   }
 
   .hero-content .swiggly {
-    top: 15px !important;
+    top: 25px !important;
+    line-height: 70px !important;
   }
 
   .hero-content .ampersand{
@@ -1243,6 +1344,7 @@ margin-bottom: 40px !important;
 
   .singleProjectStats .tagContainer{
     width: auto !important;
+    padding-bottom: 15px;
   }
 
  
@@ -1260,6 +1362,27 @@ margin-bottom: 40px !important;
   .rightSection{
     margin-top: 400px;
   }
+
+  .portfolio-single-three .content-left{
+    margin-top: -36px;
+    margin-right: 20px;
+  }
+
+  .portfolio-single-three .content-left img{
+    height: 150px;
+  }
+
+  
+.portfolio-single-left .content-left::before{
+  content:'';
+  position: absolute;
+  left: 10%;
+  top:60%;
+  width: 60%;
+  height:1px;
+  background-color: #fff;
+  z-index:1;
+}
 
 }
 .arrow-icon{
@@ -1300,4 +1423,21 @@ margin-bottom: 40px !important;
   width: calc(100% - 8vw);
   height: 1px;
   background-color: #000;
+}
+
+.manifestoSchedule .w-\[2rem\].h-\[2rem\]{
+  
+}
+
+.rotatedText{
+  position: absolute;
+  right: 0; /* Align the text to the right */
+  top: 80%; /* Position at the vertical center */
+  transform: translateY(-50%) rotate(270deg); /* Rotate 90 degrees and align vertically */
+  transform-origin: right center; /* Ensure the rotation happens from the right edge */
+  white-space: nowrap; /* Prevent text wrapping */
+  font-size: 150px; /* Example font size */
+  background-color: transparent; /* Optional: Make the background transparent */
+  color: #FDFEE8;
+  font-weight: 900;
 }

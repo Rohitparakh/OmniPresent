@@ -1,27 +1,110 @@
 .why-dots {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    /* align-self: start; */
     background-color: #000000;
     padding: 20px;
+    margin-left: 140px;
     margin-top: 150px;
     gap: 40px;
     position: relative;
     float: left;
+    transition: margin-left 5s ease, align-self 5s ease;
 }
 
 .dots-image {
     /* width: 857px; */
     /* height: 169px; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position: relative;
+    top: auto;
+    transition: left 5s ease; /* Transition the 'left' property */
+    /* left: auto; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* transition: 
+        position 0.1s ease, 
+        left 10s ease, 
+        top 0.1s ease;  */
+        
 }
+
+.dots-image:nth-child(2){
+    left: -60px;
+}
+
+.dots-image:nth-child(3){
+    left: -120px;
+}
+
+.dots-image:nth-child(4){
+    left: -200px;
+}
+
+.dots-image:nth-child(5){
+    left: -270px;
+}
+
 
 .dots-image.anim-complete{
     position: relative;
     top: auto;
     left: auto;
-    transform: translate(0,0); 
+    /* transform: translate(0,0);  */
 }
+
+
+/* Main container for the dots */
+.why-dots {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    margin-left: 140px;
+    margin-top: 150px;
+    gap: 40px;
+    position: relative;
+    float: left;
+    transition: margin-left 5s ease, align-self 5s ease;
+  }
+  
+  /* Style for individual dot images */
+  .dots-image {
+    position: relative; /* Ensure position is relative so 'left' can be transitioned */
+    top: auto;
+    left: 0%; /* Start off-screen (you can adjust based on your requirement) */
+    transition: left 5s ease; /* Transition the 'left' property for smooth movement */
+    transition-delay: 5s;
+  }
+  
+  /* Override specific dots with different starting 'left' values */
+  .dots-image:nth-child(2) {
+    left: -60px; /* Adjust the starting position */
+  }
+  
+  .dots-image:nth-child(3) {
+    left: -120px;
+  }
+  
+  .dots-image:nth-child(4) {
+    left: -200px;
+  }
+  
+  .dots-image:nth-child(5) {
+    left: -270px;
+  }
+  
+  /* The class added when animation is complete */
+  .dots-image.anim-complete {
+    left: 0 !important; /* Bring the image into view */
+    transition: left 2s ease; /* Smooth transition when it moves into the viewport */
+  }
+  
+  /* Optional: Visibility styles for the 'why-dots' container */
+  .why-dots.visible {
+    margin-left: 0px; /* When in view, move the whole container */
+    align-self: center; /* Center the container */
+  }
+  

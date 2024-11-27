@@ -11,7 +11,7 @@ const Card = ({ title, desc }) => {
   return (
     <motion.div
       ref={ref}
-      className="lg:w-[290px] min-h-[250px] flex flex-col gap-2 justify-between"
+      className=" flex flex-col justify-between gap-2"
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -58,7 +58,7 @@ const Manifesto = () => {
     <div className="bg-black text-white relative">
       <motion.div
         ref={contentRef}
-        className="max-w-7xl mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full"
+        className="max-w-7xl mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full lg:relative"
         initial={{ opacity: 0 }}
         animate={contentInView ? { opacity: 1 } : {}}
         transition={{ duration: 1.2, ease: "easeOut" }}
@@ -92,19 +92,19 @@ const Manifesto = () => {
         </motion.div>
 
         {/* Cards */}
-        <div className="w-full grid lg:grid-cols-3 gap-4 mt-20 lg:mb-0 mb-20">
+        <div className="w-full grid lg:grid-cols-3 gap-4 mt-20 lg:mb-0 mb-20 lg:gap-x-12 lg:gap-y-24 max-w-[80vw]">
           {data.map((item, index) => (
             <Card title={item.title} desc={item.desc} key={index} />
           ))}
           
         </div>
-        <Button text={"schedule a call"} />
+        <Button text={"schedule a call"} className="lg:absolute lg:left-[50%] lg:bottom-[-250px] lg:-translate-x-1/2 z-20 manifestoSchedule"/>
 
       </motion.div>
 
       {/* Video background */}
       <motion.div
-        className="relative w-full flex items-center justify-center"
+        className="relative w-[250%] lg:w-full flex items-center justify-center"
         initial={{ scale: 1.05 }}
         animate={contentInView ? { scale: 1 } : {}}
         transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -116,12 +116,12 @@ const Manifesto = () => {
   playsInline
   controls={false}
   src={video} 
-  className="object-cover "
+  className="object-cover ml-[-85%] lg:ml-0 "
 />
 
 
         <motion.div
-          className="lg:top-0 top-[-400px] left-0 bottom-0 right-0 absolute flex items-center justify-center"
+          className="lg:top-0 top-[-400px] left-0 bottom-0 right-0 absolute flex items-center justify-center z-10"
           initial={{ opacity: 0 }}
           animate={contentInView ? { opacity: 1 } : {}}
           transition={{ delay: 1, duration: 1 }}

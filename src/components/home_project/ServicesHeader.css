@@ -76,7 +76,7 @@
 .textWeCover-container {
     display: flex;
     align-items: center;
-    height: 205px;
+    /* height: 205px; */
     margin-left: 20px;
     flex: 2;
 }

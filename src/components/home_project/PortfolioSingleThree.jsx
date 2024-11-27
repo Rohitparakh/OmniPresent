@@ -3,10 +3,20 @@ import './PortfolioSingleThree.css';
 import thisCanBeYou from '../../assets/images/thisCanBeYou.png';
 import image1 from '../../assets/images/ckHomePage.png';
 import image2 from '../../assets/images/PortfolioThirdTwo.png';
+import { useInView } from "react-intersection-observer";
+import { useNavigate } from 'react-router-dom';
+
 function PortfolioSingleThree() {
+    const { ref, inView } = useInView({
+        threshold: 0.3, // Element is considered in view when 50% of it is visible
+        triggerOnce: false, // Trigger the `inView` state only once
+      });
+
+      const navigate = useNavigate();
+
     return (
         <div className="portfolio-single-three">
-            <div className="circle-section">
+            <div ref={ref} className={`circle-section ${ inView ? 'inView' : ''}`} onClick={()=>window.open('https://calendly.com/admin-invictuslabs/30min', '_blank')}>
                 <img src={thisCanBeYou} alt="Circle" className="circle" />
             </div>
             <div className="content-section">

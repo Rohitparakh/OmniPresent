@@ -17,8 +17,9 @@
     position: relative;
     z-index:3;
     margin-top: 30px;
-
+    cursor: pointer;
 }
+
 .portfolio-single-three .circle-section img{
     position: relative;
     z-index: 3;
@@ -27,24 +28,37 @@
 .portfolio-single-three .circle-section::before{
     content: '';
     position: absolute;
-    top: -50%;
+    top: 0%;
     left: 0;
     width: 100%;
     height: 100%;
     border: 2px solid #fff;
     border-radius: 50%;
+    transition: top 1s ease;
 }
 
 .portfolio-single-three .circle-section::after{
     content: '';
     position: absolute;
-    top: -100%;
+    top: 0%;
     left: 0;
     width: 100%;
     height: 100%;
     border: 2px solid #fff;
     border-radius: 50%;
     z-index: 2;
+    transition: top 1s ease;
+
+}
+
+.circle-section.inView::before{
+    top: -50%;
+
+}
+
+.circle-section.inView::after{
+    top: -100%;
+    
 }
 
 .portfolio-single-three .circle {

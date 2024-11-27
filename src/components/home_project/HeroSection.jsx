@@ -27,7 +27,7 @@ function HeroSection() {
                 <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank">
                     <button class="cta-button">
                         schedule a call <span class="arrow">
-                            <img src="/src/assets/images/arrowPrimary.png" width="26" height="26"/>
+                            <img src={arrowPrimary} width="26" height="26"/>
 
                             </span>
                         </button>

@@ -1,14 +1,16 @@
 import React from 'react';
 import './ServiceCards.css';
 import arrowLeft from '../../assets/images/arrow-left.png';
+import { motion } from 'framer-motion';
+import { growFromRight, slideUp, slideUpDelay } from '../../animations';
 
 // ServiceCard component for each text block
 function ServiceCard({ title, description }) {
     return (
-        <div className="serviceCard">
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible" className="serviceCard">
             {title && (<h3 className="serviceCard-title"><span className='yellowBoxBullet'></span>{title}</h3>)}
             <p className="serviceCard-description">{description}</p>
-        </div>
+        </motion.div>
     );
 }
 
@@ -42,10 +44,10 @@ function ServiceCards() {
                 <React.Fragment key={index}>
                     <ServiceCard title={service.title} description={service.description} />
                     {index === 7 && (
-                        <>
+                        <motion.div variants={growFromRight} initial="hidden" whileInView="visible">
                         <Arrow imgSrc={arrowLeft}/>
                         <ServiceCard/>
-                        </>
+                        </motion.div>
                     )}
                 </React.Fragment>
             ))}

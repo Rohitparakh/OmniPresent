@@ -1,6 +1,8 @@
 import React from 'react';
 import './ServicesHeader.css';
 import servicesFinger from '../../assets/images/servicesFinger.png'
+import { motion } from 'framer-motion';
+import { growFromLeft, slideUp, slideUpDelay } from '../../animations';
 
 // TextAll component
 const TextAll = () => {
@@ -34,13 +36,13 @@ const TextTheBases = () => {
 
 function ServicesHeader() {
     return (
-        <div className="servicesHeader mb-16 lg:mb-32">
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible" className="servicesHeader mb-16 lg:mb-32">
             <div className="headerRow">
-                <img className="lg:mt-[-60px] xl:mt-[-120px]" src={servicesFinger} />
+                <motion.img variants={growFromLeft} initial="hidden" whileInView="visible" className="lg:mt-[-60px] xl:mt-[-120px]" src={servicesFinger} />
                 <TextWeCover />
             </div>
             <TextTheBases />
-        </div>
+        </motion.div>
     );
 }
 

@@ -18,7 +18,6 @@ width: calc( 100vw - 136px);
     flex-direction: column;
     align-items: center;
     margin-right: 30px;
-    z-index: 1;
 }
 
 .portfolio-single-left .status-tag {

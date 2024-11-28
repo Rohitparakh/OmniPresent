@@ -853,6 +853,7 @@ width: auto !important;
   }
   .textWeCover-container{
     height: auto !important;
+    align-self: flex-end;
   }
 
   .textWeCover-text,
@@ -1373,12 +1374,12 @@ margin-bottom: 40px !important;
   }
 
   
-.portfolio-single-left .content-left::before{
+.portfolio-single-left .content-center .description::before{
   content:'';
   position: absolute;
-  left: 10%;
-  top:60%;
-  width: 60%;
+  left: -30%;
+  top:100%;
+  width: 150%;
   height:1px;
   background-color: #fff;
   z-index:1;

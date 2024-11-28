@@ -1,18 +1,25 @@
 export const slideUp = {
-  hidden: { y: 50 },
-  visible: { y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  hidden: { y: 50, opacity:0 },
+  visible: { y: 0, opacity:1, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
+
 export const slideUpDelay = {
-  hidden: { y: 50 },
+  hidden: { y: 50, opacity:0 },
   visible: {
     y: 0,
+    opacity:1,
     transition: {
       duration: 0.8,
       ease: "easeOut",
       delay: 0.2,
     },
   },
+};
+
+export const slideRight = {
+  hidden: { x: -50 },
+  visible: { x: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
 export const growFromTop = {

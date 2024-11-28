@@ -2,10 +2,12 @@ import React from 'react';
 import './PortfolioSingleFour.css';
 import statusProgress from '../../assets/images/statusProgress.png';
 import image from '../../assets/images/PortfolioFourth.png';
+import { motion } from 'framer-motion';
+import { slideUp, slideUpDelay } from '../../animations';
 
 function PortfolioSingleFour() {
     return (
-        <div className="portfolio-single-four lg-d-none">
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible"  className="portfolio-single-four lg-d-none">
             <div className="content-left">
                 <h1 className="title">CryptoKnights
                 <span className='index'>03</span>
@@ -29,7 +31,7 @@ function PortfolioSingleFour() {
                 />
                 </div>             
             </div>
-        </div>
+        </motion.div>
     );
 }
 

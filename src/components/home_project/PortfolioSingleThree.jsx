@@ -5,6 +5,8 @@ import image1 from '../../assets/images/ckHomePage.png';
 import image2 from '../../assets/images/PortfolioThirdTwo.png';
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { slideUp, slideUpDelay } from '../../animations';
 
 function PortfolioSingleThree() {
     const { ref, inView } = useInView({
@@ -15,7 +17,7 @@ function PortfolioSingleThree() {
       const navigate = useNavigate();
 
     return (
-        <div className="portfolio-single-three">
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible"  className="portfolio-single-three">
             <div ref={ref} className={`circle-section ${ inView ? 'inView' : ''}`} onClick={()=>window.open('https://calendly.com/admin-invictuslabs/30min', '_blank')}>
                 <img src={thisCanBeYou} alt="Circle" className="circle" />
             </div>
@@ -40,7 +42,7 @@ function PortfolioSingleThree() {
             </h1>
            
             </div>
-        </div>
+        </motion.div>
     );
 }
 

@@ -5,6 +5,9 @@ import seatlab from "../../assets/about/seatlab.svg";
 import share from "../../assets/about/share.svg";
 import { useNavigate } from 'react-router-dom';
 import gif from '../../assets/gif/SeeMoreCaseStudies.gif';
+import { motion } from 'framer-motion';
+import { slideRight,slideUp, slideLeft, slideRightDelay1, slideRightDelay2, slideLeftDelay } from '../../animations';
+
 const Cases = ({case1, case2, case1URL, case2URL}) => {
   const navigate = useNavigate();
 
@@ -26,7 +29,7 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
 </div>
 
             <div className='flex flex-col items-center justify-center h-full w-full mt-40 lg:mt-96'>
-                <div className=' w-full flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-betwen px-2 mb-40 lg:mb-0'
+                <motion.div  variants={slideLeft} initial="hidden" whileInView="visible"  className=' w-full flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-betwen px-2 mb-40 lg:mb-0'
                  onClick={() => navigate(`/cases/${case1URL}`)}
                  style={{ cursor: 'pointer' }}>
                     <div className='flex flex-col lg:gap-3 gap-1'>
@@ -57,10 +60,10 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
 
                       </div>
                     </div>
-                </div>
+                </motion.div>
 
 
-                <div className=' mt-10 lg:mt-[33rem] lg:mb-[45rem] w-full flex lg:flex-row-reverse flex-col lg:gap-0 gap-12 items-center justify-betwen px-2'
+                <motion.div  variants={slideRight} initial="hidden" whileInView="visible" className=' mt-10 lg:mt-[33rem] lg:mb-[45rem] w-full flex lg:flex-row-reverse flex-col lg:gap-0 gap-12 items-center justify-betwen px-2'
                  onClick={() => navigate(`/cases/${case2URL}`)}
                  style={{ cursor: 'pointer' }}>
                     <div className='flex flex-col gap-3'>
@@ -98,7 +101,7 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
                     </div>
                       </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             <div className=' schedule-services-page h-40 w-full flex lg:flex-row flex-col items-center justify-center gap-10 lg:mt-0 mt-20'>

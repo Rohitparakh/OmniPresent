@@ -1,6 +1,8 @@
 import React from 'react';
 import './SingleProjectStats.css';
 import closingBracket from '../../assets/images/closingBracket.png';
+import { motion } from 'framer-motion';
+import { slideRight, slideRightDelay1, slideRightDelay2, slideLeftDelay } from '../../animations';
 
 function SingleProjectStats({tagList, title, description,stats}) {
     return (
@@ -8,17 +10,17 @@ function SingleProjectStats({tagList, title, description,stats}) {
            
             <div className="mainContent">
                 <div className="leftSection">
-                <div className="tagContainer">
+                <motion.div variants={slideRight} initial="hidden" whileInView="visible" className="tagContainer">
                     {tagList.map(tag => {
                         return <div className="tag">{tag}</div>
                     })}
-            </div>
+            </motion.div>
             <div>
-                    <h1 className="mainTitle">{title}</h1>
-                    <p className="subtitle">■ {description}</p>
+                    <motion.h1 variants={slideRightDelay1} initial="hidden" whileInView="visible" className="mainTitle">{title}</motion.h1>
+                    <motion.p variants={slideRightDelay2} initial="hidden" whileInView="visible" className="subtitle">■ {description}</motion.p>
                     </div>
                 </div>
-                <div className="rightSection mt-10">
+                <motion.div variants={slideLeftDelay} initial="hidden" whileInView="visible" className="rightSection !mt-10">
                     <div class="statisticContainer"style={{display:'flex', justifyContent:'space-between', gap:'70px'}}>
                         {stats.map(stat=>{
                             return(
@@ -32,7 +34,7 @@ function SingleProjectStats({tagList, title, description,stats}) {
                     <div className="brace">
                         <img src={closingBracket}/>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

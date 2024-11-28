@@ -1,5 +1,10 @@
+export const slideDown = {
+  hidden: { y: -150, opacity:0 },
+  visible: { y: 0, opacity:1, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
 export const slideUp = {
-  hidden: { y: 50, opacity:0 },
+  hidden: { y: 150, opacity:0 },
   visible: { y: 0, opacity:1, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
@@ -17,9 +22,29 @@ export const slideUpDelay = {
   },
 };
 
+export const slideLeft = {
+  hidden: { x: '100%' },
+  visible: { x: 0, transition: { duration: 0.8, ease: "easeOut"} },
+};
+
+export const slideLeftDelay = {
+  hidden: { x: '100%' },
+  visible: { x: 0, transition: { duration: 0.8, ease: "easeOut", delay:0.6 } },
+};
+
 export const slideRight = {
-  hidden: { x: -50 },
+  hidden: { x: '-100%' },
   visible: { x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+export const slideRightDelay1 = {
+  hidden: { x: '-100%' },
+  visible: { x: 0, transition: { duration: 0.8, ease: "easeOut", delay:0.2 } },
+};
+
+export const slideRightDelay2 = {
+  hidden: { x: '-100%' },
+  visible: { x: 0, transition: { duration: 0.8, ease: "easeOut", delay:0.4 } },
 };
 
 export const growFromTop = {

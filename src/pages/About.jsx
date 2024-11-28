@@ -10,7 +10,7 @@ const About = () => {
     <Manifesto/>
     <LetsWork/>
     {/* <Cases/> */}
-    <KnowUs/>
+    {/* <KnowUs/> */}
     <LetsConnect/>
     </div>
   )

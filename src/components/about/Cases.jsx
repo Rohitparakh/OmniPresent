@@ -4,15 +4,16 @@ import p2p from "../../assets/about/p2p.svg";
 import seatlab from "../../assets/about/seatlab.svg";
 import share from "../../assets/about/share.svg";
 import { useNavigate } from 'react-router-dom';
-
+import gif from '../../assets/gif/SeeMoreCaseStudies.gif';
 const Cases = ({case1, case2, case1URL, case2URL}) => {
   const navigate = useNavigate();
 
   console.log(case1)
   console.log(case2)
   return (
-    <div className='min-h-screen w-full bg-primary lg:px-4 px-2'>
-        <div className="max-w-7xl mx-auto py-16 flex flex-col items-center justify-start  min-h-screen">
+    <div className='min-h-screen w-full bg-primary lg:px-4 px-2 relative'>
+      <img src={gif} className='absolute top-0 right-[0%] w-full h-full object-cover object-top z-20 hidden lg:block'/>
+        <div className="max-w-[90rem] mx-auto py-16 flex flex-col items-center justify-start  min-h-screen">
 
 {/* Top divider */}
 <div className="border-b pb-1 w-full flex items-center justify-between" style={{borderBottom:'1px solid black'}}>
@@ -24,7 +25,7 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
   </p>
 </div>
 
-            <div className='flex flex-col items-center justify-center h-full w-full  mt-40'>
+            <div className='flex flex-col items-center justify-center h-full w-full mt-40 lg:mt-96'>
                 <div className=' w-full flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-betwen px-2 mb-40 lg:mb-0'
                  onClick={() => navigate(`/cases/${case1URL}`)}
                  style={{ cursor: 'pointer' }}>
@@ -59,11 +60,11 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
                 </div>
 
 
-                <div className=' mt-32 w-full flex lg:flex-row-reverse flex-col lg:gap-0 gap-12 items-center justify-betwen px-2'
+                <div className=' mt-10 lg:mt-[33rem] lg:mb-[45rem] w-full flex lg:flex-row-reverse flex-col lg:gap-0 gap-12 items-center justify-betwen px-2'
                  onClick={() => navigate(`/cases/${case2URL}`)}
                  style={{ cursor: 'pointer' }}>
                     <div className='flex flex-col gap-3'>
-                    <img src={case2.mainBanner} alt="" className=' h-80'/>
+                    <img src={case2.mainBanner} alt="" className='z-30 h-80'/>
                     <div className='pt-5 w-full lg:mt-10 flex lg:gap-20 gap-16 items-center justify-start lg:p-1 lg:hidden'>
                       {case2.stats.map((stat, index)=>{
                         if(index==3) return;

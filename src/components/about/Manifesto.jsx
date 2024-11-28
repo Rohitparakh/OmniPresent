@@ -2,7 +2,7 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import { Button } from "../common";
 import divider from '../../assets/about/divider.svg';
-import video from '../../assets/about/video1.mp4';
+import gif from '../../assets/gif/OurManifesto.gif';
 
 const Card = ({ title, desc }) => {
   const ref = React.useRef(null);
@@ -109,13 +109,8 @@ const Manifesto = () => {
         animate={contentInView ? { scale: 1 } : {}}
         transition={{ duration: 1.5, ease: "easeInOut" }}
       >
-        <video 
-  autoPlay 
-  loop 
-  muted 
-  playsInline
-  controls={false}
-  src={video} 
+        <img 
+  src={gif} 
   className="object-cover ml-[-85%] lg:ml-0 "
 />
 

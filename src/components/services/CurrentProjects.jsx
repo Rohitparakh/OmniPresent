@@ -13,11 +13,12 @@ import seven from "../../assets/services/7.png";
 import { NavLink } from "react-router-dom";
 import { motion } from 'framer-motion';
 import primaryBg from "../../assets/images/primaryBg.png";
+import gif from '../../assets/gif/OurServices.gif';
 
 const Card = ({ data }) => {
   return (
     <motion.div
-      className="w-full h-max bg-black border border-[#EEFE05] flex items-center p-6 xl:grid grid-rows-1 grid-cols-[60%_40%]"
+      className="w-full h-max bg-black border border-[#EEFE05] flex items-center p-6 xl:grid grid-rows-1 grid-cols-[60%_40%] z-30 relative"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
@@ -180,14 +181,17 @@ const CurrentProjects = () => {
           </p>
         </div>
 
-        <div className="w-full mx-auto mt-80 xl:flex hidden justify-between gap-16 items-center">
-          <div className="h-full w-max">
+        <div className="w-full mx-auto mt-80 mb-96 xl:flex hidden justify-between gap-16 items-center">
+          <img src={gif} className="absolute left-0 top-[30%] z-20 hidden lg:block"/>
+          <div className="h-full w-max bg-black z-30">
             {menuData.map((item, index) => (
               <p
                 key={index}
                 onClick={() => setSelectedCard(index)} 
-                className={`border-b w-64 flex items-center gap-2 cursor-pointer active:scale-95 transition-all duration-300 border-white pb-2 mb-3 text-xs font-nohemi ${
+                className={`border-b w-64 flex items-center gap-2 pb-2 cursor-pointer active:scale-95 transition-all duration-300 border-white  text-xs font-nohemi ${
                   selectedCard === index ? "text-[#EEFE05]" : "text-white"
+                } ${
+                  menuData.length === index+1 ? '' : 'mb-3'
                 }`}
               >
                 0{index + 1}/ <span>{item}</span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeader from './SectionHeader';
-import testimonialsBG from '../../assets/images/TestimonialsBG.png';
+import testimonialsBG from '../../assets/gif/SeeMoreCaseStudies_Yellow.gif';
 import './Testimonials.css';
 import TestimonialFirst from './TestimonialFirst';
 import TestimonialSecond from './TestimonialSecond';

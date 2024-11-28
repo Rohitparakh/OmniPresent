@@ -6,6 +6,7 @@ import './ScheduleButton.css';
 import { NavLink } from 'react-router-dom';
 import arrowBlack from '../../assets/images/arrowBlack.png';
 import arrowDown from '../../assets/images/arrowDown.png';
+import { useInView } from "react-intersection-observer";
 
 function ScheduleButton() {
     return (
@@ -20,10 +21,14 @@ function ScheduleButton() {
 }
 
 const SingleProjectScheduleCall = () => {
+    const { ref, inView } = useInView({
+        threshold: 0.3, // Element is considered in view when 50% of it is visible
+        triggerOnce: false, // Trigger the `inView` state only once
+      });
   return (
     <div className='scheduleCall mb-20 '>
         <div className='leftSection'>
-            <div class="circle-section">
+            <div ref={ref} class={`circle-section ${ inView ? 'inView': ''}`} onClick={()=>window.open('https://calendly.com/admin-invictuslabs/30min', '_blank')}>
                 <img src={thisCanBeYou} alt="Circle" className="circle" height={250}/>
             </div>
             <img className='mx-auto lg:mt-20 hidden lg:block' src={ArrowBigRight} width={350}/>

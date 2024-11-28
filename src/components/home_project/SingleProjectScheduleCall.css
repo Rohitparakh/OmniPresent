@@ -59,9 +59,10 @@ span.mt--50{
     height: 100%;
     border-radius: 50%;
     border: 2px solid #fff;
-    top:-50%;
+    top: 0%;
     left: 0;
     z-index:1;
+    transition: top 1s ease;
 }
 
 .scheduleCall .circle-section::after{
@@ -71,10 +72,22 @@ span.mt--50{
     height: 100%;
     border-radius: 50%;
     border: 2px solid #fff;
-    top:-80%;
+    top:0%;
     left: 0;
     z-index:1;
+    transition: top 1s ease;
+
 }
+
+
+
+.scheduleCall .circle-section.inView::before{
+    top: -50%;
+}
+.scheduleCall .circle-section.inView::after{
+    top: -80%;
+}
+
 
 .scheduleCall .circle-section{
     position: relative;

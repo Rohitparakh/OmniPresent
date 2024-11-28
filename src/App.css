@@ -761,7 +761,7 @@ width: auto !important;
   .why-us-cta .call-to-action.accent{
     /* width: max-content; */
     width: 70vw !important;
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
     justify-content: center !important;
   }
 

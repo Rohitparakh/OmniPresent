@@ -871,7 +871,7 @@ width: auto !important;
 
   .textTheBases-highlight{
     margin: 0 !important;
-    margin-right: 10px !important;
+    /* margin-right: 10px !important; */
   }
 
   .textTheBases-baseText::before{
@@ -1036,12 +1036,20 @@ margin-bottom: 40px !important;
   }
 
   .testimonialThird{
-    width: 100vw !important;
-    margin-left: -10vw !important;
+    width: 100% !important;
+    /* margin-left: -10vw !important; */
   }
 
   .testimonialFourth{
-    max-width: 100vw !important;
+    max-width: 100% !important;
+  }
+
+  .testimonialFourth .reviewerImage{
+    margin-right: 0 !important;
+  }
+
+  .testimonialThird .reviewerImage{
+    max-width: 100% !important;
   }
 
   .testi{
@@ -1074,7 +1082,7 @@ margin-bottom: 40px !important;
   }
 
   .servicesHeader{
-    max-width: 75vw !important;
+    max-width: 80vw !important;
     flex-direction: column !important;
   }
 

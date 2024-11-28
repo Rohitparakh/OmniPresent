@@ -28,7 +28,7 @@ const TextTheBases = () => {
     return (
         <div className="textTheBases-container">
             <div className="textTheBases-textContainer">
-                <span className="textTheBases-baseText"><span className="textTheBases-highlight inline-block mr-5 lg:hidden"> &nbsp;web3&nbsp;</span>marketing for your brand</span>
+                <span className="textTheBases-baseText"><span className="textTheBases-highlight inline-block lg:mr-5 lg:hidden"> &nbsp;web3&nbsp;</span>marketing for your brand</span>
             </div>
         </div>
     );

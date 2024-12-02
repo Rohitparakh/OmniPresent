@@ -35,10 +35,29 @@ const HeaderMobile = () => {
     setHeaderOpen(!headerOpen); // Toggle state on click
   };
 
+  const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          // Check if the horizontal scroll position is greater than 50vw
+          if (window.scrollY > window.innerWidth / 2) {
+            setIsFixed(true);
+          } else {
+            setIsFixed(false);
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        // Cleanup listener on unmount
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);      
   return (
     <>
     <div className="header-mobile group-container"
-                    style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-between':'space-between', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px'}}
+                    style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-between':'space-between', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px',position:isFixed?"fixed":"relative", boxShadow: isFixed && !headerOpen ? "0 2px 5px rgba(0, 0, 0, 0.1)" : "none", margin:isFixed?0:"20px 0", padding:isFixed?"40px 20px":"20px"}}
                     >
       <div className="logo-frame">
       <NavLink to="/" >

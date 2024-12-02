@@ -53,7 +53,7 @@ const CasesHero = () => {
     <div className="lg:hidden absolute right-[-10px] top-[7px] w-[19.3rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
 
     <div className="absolute lg:right-[10px] lg:top-[40px] left-[-50px] top-[7px] w-[33rem] border-b-[0.5px] border-black opacity-50  animate-growX"></div>
-    <div className="absolute lg:right-[10px] lg:top-[40px] left-[-40px] top-[100px] w-[300px] border-b-[0.5px] border-black opacity-50  animate-growX"></div>
+    {/* <div className="absolute lg:right-[10px] lg:top-[40px] left-[-40px] top-[100px] w-[300px] border-b-[0.5px] border-black opacity-50  animate-growX"></div> */}
 
     <div className="absolute lg:left-[-50px] left-[-55px] bottom-[105px] w-[35rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
 

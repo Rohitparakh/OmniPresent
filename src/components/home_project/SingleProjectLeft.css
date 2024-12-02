@@ -7,9 +7,10 @@
 }
 
 .singleProjectLeft .bigNumberSection {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
+    margin: 0 40px;
     /* align-items: center; */
 }
 
@@ -32,7 +33,7 @@
 }
 
 .singleProjectLeft .contentSection {
-    flex: 2;
+    /* flex: 2; */
     padding-left: 50px;
     border-left: 1px solid #fff;
 }
@@ -47,7 +48,8 @@
     margin-bottom: 20px;
 }
 
-.singleProjectLeft .description li:not(:last-child){
+/* .singleProjectLeft .description li:not(:last-child){ */
+.singleProjectLeft .description li{
     margin-bottom: 24px;
 }
 
@@ -60,6 +62,8 @@
 .singleProjectLeft ul.description li{
     margin: 0; /* Remove outer margin */
     padding: 0; /* Remove inner padding */
+    margin-bottom: 24px;
+
 }
 
 .singleProjectLeft ul.description li::marker{

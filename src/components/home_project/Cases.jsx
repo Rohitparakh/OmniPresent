@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState , useEffect } from 'react'
 import SectionHeader from './SectionHeader'
 import PortfolioSingle from './PortfolioSingle'
 import PortfolioSingleLeft from './PortfolioSingleLeft'
@@ -8,15 +8,51 @@ import PortfolioSingleFive from './PortfolioSingleFive'
 import SectionCta from './SectionCta'
 
 const Cases = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [isCursorVisible, setCursorVisible] = useState(false);
+
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+    console.log(cursorPosition)
+  };
+
+  const handleMouseEnter = () => {
+    setCursorVisible(true);
+    console.log(isCursorVisible)
+  };
+
+  const handleMouseLeave = () => {
+    setCursorVisible(false);
+  };
+
+  useEffect(() => {
+    // Attach mousemove listener to update cursor position
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
-    <div className='containerOld'>
+    <div className='containerOld relative'>
     <SectionHeader heading='Current Projects' index='02'/>
-    <PortfolioSingle/>
-    <PortfolioSingleLeft  />
-    <PortfolioSingleThree  />
-    <PortfolioSingleFour />
+    <PortfolioSingle  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+    <PortfolioSingleLeft  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+    <PortfolioSingleThree  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+    <PortfolioSingleFour onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
     {/* <PortfolioSingleFive /> */}
     <SectionCta text='see more cases' url="/cases"/>
+    {isCursorVisible && (
+        <div
+          className="custom-cursor font-[24px] leading-[34px] font-[400] font-nohemi"
+          style={{
+            top: `${cursorPosition.y}px`,
+            left: `${cursorPosition.x}px`,
+          }}
+        >
+          VIEW MORE
+        </div>
+      )}
     </div>
   )
 }

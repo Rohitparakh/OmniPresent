@@ -36,7 +36,7 @@ const Hero = () => {
          initial="hidden"
          animate="visible" className='text-[10rem] font-[900] flexitems-center gap-2 font-nohemi-ext text-black pl-5 relative'>
           story
-    <img src={face1Mobile} alt="" className=" h-40 absolute top-[50%] left-[-10%] z-20 animate-fadeIn mix-blend-multiply lg:hidden" />
+    <img src={face1Mobile} alt="" className=" h-40 absolute top-[40%] left-[-6%] z-20 animate-fadeIn mix-blend-multiply lg:hidden" />
 
         </motion.h1>
 

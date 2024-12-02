@@ -2,7 +2,8 @@ import React from "react";
 import { Button, MarqueeSection } from "../common";
 import line from "../../assets/about/line.svg";
 import OurServices_Services_PNG from "../../assets/videos/OurServices_Services_PNG.mov";
-import heroImg from "../../assets/services/heroImg.svg";
+// import heroImg from "../../assets/services/heroImg.svg";
+import heroImg from "../../assets/gif/web3SuperAgency.gif";
 import right from "../../assets/services/right.svg";
 // import HeroStar from "../../assets/services/heroStar.svg";
 import HeroStar from "../../assets/services/heroStar.png";
@@ -95,7 +96,7 @@ const ServicesHero = () => {
       <img
         src={heroImg}
         alt=""
-        className="absolute left-0 top-[-30px] h-96 z-0"
+        className="absolute left-[-10%] lg:left-[-5%] top-[-75px] lg:top-[-43px] h-[250px] -rotate-45 lg:rotate-0 lg:h-[45%] lg:z-0 z-[101]"
       />
 
       {/* video */}

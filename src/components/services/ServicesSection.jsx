@@ -48,19 +48,19 @@ const ServicesSection = () => {
           Communities are our superpower. Working alongside innovators, we co-create value that drives Web3 adoption that opens doors to new opportunities for everyone.
         </motion.p>
 
-        <div className='w-full mt-10 flex lg:flex-row flex-col gap-4 justify-between'>
+        <div className='w-full mt-10 flex lg:flex-row flex-col gap-4 justify-start'>
           {/* Animate each image */}
           <motion.img 
             src={seatlab} 
             alt="seatlab" 
-            className='w-[470px] lg:mx-0 mx-auto'
+            className='w-[470px] lg:mx-0 mx-auto grow'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           />
 
           <motion.div 
-            className='lg:w-[41%] flex flex-col justify-between items-start h-auto gap-8'
+            className='lg:w-[41%] flex flex-col justify-between items-start h-auto gap-8 grow'
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -94,14 +94,14 @@ const ServicesSection = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
               />
 </div>
-              <div className='w-full flex  justify-between gap-10'>
+              <div className='w-full flex  justify-between'>
                 <div className='hidden lg:flex flex-col text-sm font-nohemi'>
-                  <p>Liz</p>
-                  <p className='text-gray-400'>Omnipresent Founder/CEO</p>
+                  <p className='font-[600] text-[24px] leading-[40px]'>Liz</p>
+                  <p className='text-gray-400 font-[400] text-[20px] leading-[24px]'>Omnipresent Founder/CEO</p>
                 </div>
 
-                <div className='flex flex-col gap-4  lg:w-96 lg:pr-12 text-2xl leading-[40px] font-[400]'>
-                  <p>
+                <div className='flex flex-col gap-4 lg:w-96 lg:pr-12 text-2xl leading-[40px] font-[400]'>
+                  <p className='lg:min-w-[350px]'>
                     “We envision a world where web3 technology creates equanimity, abundance and consensus, and the powerful thing we can contribute to this is amplify that message and mobilize communities towards this future. That is what Omnipresent does.”
                   </p>
                 </div>

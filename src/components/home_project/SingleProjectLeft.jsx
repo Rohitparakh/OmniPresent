@@ -12,7 +12,7 @@ function SingleProjectLeft({index, heading, subHeading, objectives, objectiveIma
                 <div className="bigNumber">{index}</div>
                 <h2 className="approachTitle text-center">{heading}</h2>
             </motion.div>
-            <motion.div  variants={slideUp} initial="hidden" whileInView="visible" className="contentSection relative">
+            <motion.div  variants={slideUp} initial="hidden" whileInView="visible" className="contentSection relative max-w-full px-10">
                 <motion.h3 variants={slideLeft} initial="hidden" whileInView="visible" className="headline">{subHeading}</motion.h3>
                 <motion.ul variants={slideLeft} initial="hidden" whileInView="visible" className="description">
                 {objectives?.map(obj=>{

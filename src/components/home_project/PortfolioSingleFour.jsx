@@ -4,10 +4,13 @@ import statusProgress from '../../assets/images/statusProgress.png';
 import image from '../../assets/images/PortfolioFourth.png';
 import { motion } from 'framer-motion';
 import { slideUp, slideUpDelay } from '../../animations';
+import { useNavigate } from 'react-router-dom';
 
-function PortfolioSingleFour() {
+function PortfolioSingleFour({onMouseEnter, onMouseLeave}) {
+    const navigate = useNavigate();
+    
     return (
-        <motion.div variants={slideUp} initial="hidden" whileInView="visible"  className="portfolio-single-four lg-d-none">
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible"  className="portfolio-single-four lg-d-none" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/cryptoknights')}>
             <div className="content-left">
                 <h1 className="title">CryptoKnights
                 <span className='index'>03</span>

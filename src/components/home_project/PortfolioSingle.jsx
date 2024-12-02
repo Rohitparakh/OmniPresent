@@ -4,10 +4,12 @@ import statusProgress from '../../assets/images/statusProgress.png';
 import image from '../../assets/images/Ethihad.png';
 import { motion } from 'framer-motion';
 import { slideUp, slideUpDelay } from '../../animations';
+import { useNavigate } from 'react-router-dom';
 
-function PortfolioSingle() {
+function PortfolioSingle({onMouseEnter, onMouseLeave}) {
+    const navigate = useNavigate();
     return (
-        <motion.div variants={slideUp} initial="hidden" whileInView="visible" className="portfolio-single">
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible" className="portfolio-single"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/ethihad')}>
             <div className="content-left">
                 <h1 className="title">Etihad Airways
                 <span className='index'>01</span>

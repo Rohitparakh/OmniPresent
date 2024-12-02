@@ -49,6 +49,10 @@ function ServiceCards() {
                         <ServiceCard/>
                         </motion.div>
                     )}
+                    {index === 7 && (
+                        <motion.div variants={growFromRight} initial="hidden" whileInView="visible">
+                        </motion.div>
+                    )}
                 </React.Fragment>
             ))}
             {/* <img src="https://placeholder.pics/svg/417x195" alt="Arrow" className="serviceCards-arrow" /> */}

@@ -9,23 +9,48 @@ import videoMP4 from '../../assets/videos/homeHero.mp4';
 import arrowPrimary from '../../assets/images/arrowPrimary.png';
 import blackSquare from '../../assets/images/blackSquare.png';
 import { motion } from 'framer-motion';
-import { slideUp, slideUpDelay,slideRight } from '../../animations';
+import { slideUp, slideUpDelay,slideRight, slideUp40, slideUp50 } from '../../animations';
 
 function HeroSection() {
     return (
         <div className="hero-section">            
-<img className="object-cover absolute bg-transparent z-1 lg:z-40 w-screen lg:w-[calc(100vw_-_3%)] top-[250px] scale-[2.2] lg:scale-100 lg:top-[130px] left-[-34%] lg:left-[3%]" src={gif}/>
+<img className="lg:z-40 object-cover absolute bg-transparent z-1 w-screen lg:w-[calc(100vw_-_3%)] top-[250px] scale-[2.2] lg:scale-100 lg:top-[130px] left-[-34%] lg:left-[3%]" src={gif}/>
 
             <div className="hero-content">
-                <motion.h1  variants={slideUp}
+               <h1 variants={slideUp} initial="hidden" whileInView="visible" className='zero'>
+                    <motion.span variants={slideRight}
+                        initial="hidden"
+                        whileInView="visible" 
+                        className='swiggly'>~
+                    </motion.span> 
+                    <span className='vast'>
+                        <motion.span
+                            variants={slideUp50}
+                            initial="hidden"
+                            whileInView="visible"
+                         className='will-change-[opacity,x,y,transform] z-50 relative'>
+                            v
+                        </motion.span>
+                        <motion.span
+                            variants={slideUp40}
+                            initial="hidden"
+                            whileInView="visible"
+                        >
+                            as
+                        </motion.span>
+                        <motion.span
+                            variants={slideUp50}
+                            initial="hidden"
+                            whileInView="visible"
+                         className='z-50 relative'>
+                            t
+                        </motion.span>
+                    </span>
+                </h1>
+                <h1  variants={slideUpDelay}
         initial="hidden"
-        whileInView="visible"
-         className='zero'><motion.span variants={slideRight}
-         initial="hidden"
-         whileInView="visible" className='swiggly'>~</motion.span> <span className='vast'><span className='z-50 relative'>v</span>as<span className='z-50 relative'>t</span></span></motion.h1>
-                <motion.h1  variants={slideUpDelay}
-        initial="hidden"
-        whileInView="visible"><span className='to present'>prese<span  className='z-50 relative'>nt</span></span> <span className='one'></span></motion.h1>
+        whileInView="visible">
+            <motion.span className='to present'>prese<span  className='z-50 relative'>nt</span></motion.span> <span className='one'></span></h1>
                 <motion.h1  variants={slideUpDelay}
         initial="hidden"
         whileInView="visible"><div class="absolute top-[50%] left-[-200px] lg:block hidden"><img src="/src/assets/about/line.svg" class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></motion.h1>

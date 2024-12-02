@@ -3,8 +3,14 @@
     padding: 20px;
     background-color: #000;
     color: #eaeaea;
-    gap: 100px;
+    gap: 20px;
     margin-bottom: 100px;
+}
+
+@media(max-width:768px){
+    .singleProjectRight {
+        gap: 100px;
+    }
 }
 
 .singleProjectRight .bigNumberSection {

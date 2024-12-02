@@ -4,8 +4,18 @@ export const slideDown = {
 };
 
 export const slideUp = {
-  hidden: { y: 150, opacity:0 },
+  hidden: { y: 250, opacity:0},
   visible: { y: 0, opacity:1, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+export const slideUp40 = {
+  hidden: { y: 250, opacity:0, zIndex: 40},
+  visible: { y: 0, opacity:1, zIndex: 40, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+export const slideUp50 = {
+  hidden: { y: 250, opacity:0, zIndex: 50},
+  visible: { y: 0, opacity:1, zIndex: 50, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
 

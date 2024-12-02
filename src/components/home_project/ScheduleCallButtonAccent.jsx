@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import arrowBlack from  '../../assets/images/arrowBlack.png';
 
 const ScheduleCallButtonAccent = ({style}) => {
-    console.log(style)
+    // console.log(style)
   return (
     <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
 

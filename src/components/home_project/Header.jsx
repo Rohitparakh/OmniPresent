@@ -1,13 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import headerLogo from '../../assets/images/headerLogo.png';
 import ScheduleCallButton from './ScheduleCallButton';
 import { NavLink } from "react-router-dom";
 import HeaderMobile from '../common/HeaderMobile';
 
 function Header() {
+    const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          // Check if the horizontal scroll position is greater than 50vw
+          if (window.scrollY > window.innerWidth / 2) {
+            setIsFixed(true);
+          } else {
+            setIsFixed(false);
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        // Cleanup listener on unmount
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+
+      
     return (
-        <>
-        <header className="header">
+        <>  
+        <header className="header" style={{position:isFixed?"fixed":"relative", boxShadow: isFixed ? "0 2px 5px rgba(0, 0, 0, 0.1)" : "none"}}>
             <NavLink to="/" > <img src={headerLogo} alt="Logo" className="logo" height={68} width={32}/></NavLink>
             <nav className="navigation">
                 <NavLink to ="/home" 

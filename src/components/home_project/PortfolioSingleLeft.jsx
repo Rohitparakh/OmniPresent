@@ -4,10 +4,13 @@ import statusProgress from '../../assets/images/statusProgress.png';
 import image from '../../assets/images/RampX.png';
 import { motion } from 'framer-motion';
 import { slideUp, slideUpDelay } from '../../animations';
+import { useNavigate } from 'react-router-dom';
 
-function PortfolioSingleLeft() {
+function PortfolioSingleLeft({onMouseEnter, onMouseLeave}) {
+    const navigate = useNavigate();
+    
     return (
-        <motion.div variants={slideUpDelay} initial="hidden" whileInView="visible" className="portfolio-single-left">
+        <motion.div variants={slideUpDelay} initial="hidden" whileInView="visible" className="portfolio-single-left"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/rampx')}>
             <div className="content-left z-50 relative">
                 <div className='image'>
                 {/* <div className="status-tag">

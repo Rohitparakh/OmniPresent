@@ -99,7 +99,7 @@ const OurWork = () => {
                 </div>
 
                 {/* Filters Section */}
-                <div className='w-full h-14 mt-20 flex items-center gap-3 overflow-x-auto whitespace-nowrap'>
+                <div style={{scrollbarWidth:'none', WebkitOverflowScrolling:'touch'}} className='w-full h-14 mt-20 flex items-center gap-3 overflow-x-auto whitespace-nowrap'>
                     {/* Display active filters */}
                     <p
                         onClick={() => handleClear()}

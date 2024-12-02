@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { slideUp, slideUpDelay } from '../../animations';
 
-function PortfolioSingleThree() {
+function PortfolioSingleThree({onMouseEnter, onMouseLeave}) {
     const { ref, inView } = useInView({
         threshold: 0.3, // Element is considered in view when 50% of it is visible
         triggerOnce: false, // Trigger the `inView` state only once
@@ -22,7 +22,7 @@ function PortfolioSingleThree() {
                 <img src={thisCanBeYou} alt="Circle" className="circle" />
             </div>
             <div className="content-section">
-                <div className='content-left'>
+                <div className='content-left'  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/cryptoknights')}>
                 <img src={image1} alt="Status" />
                 <p className="description">
                 Web3 entertainment <br/>that fetched <br/>15 million viewers.
@@ -36,7 +36,7 @@ function PortfolioSingleThree() {
                 {/* <img src={image2} alt="Project screenshot" className="project-image" /> */}
                 </div>                
             </div>
-            <div className="index-section">
+            <div className="index-section"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/cryptoknights')}>
             <h1 className="title">CryptoKnights
                 <span className="index">03</span>
             </h1>

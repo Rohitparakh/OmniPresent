@@ -14,7 +14,8 @@ function WhyUsSecond() {
                 <motion.p
             initial={{ x: -80, y: -50, rotate: 20 }}
             whileInView={{ x: -200, y: -200, rotate: 0 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+             viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
             className="pos-a go-left z-[-1]"
 
           >
@@ -23,7 +24,8 @@ function WhyUsSecond() {
           <motion.p
            initial={{ x: -100, y: -125, rotate: 0 }}
            whileInView={{ x: 0, y: 0, rotate: 20 }}
-           transition={{ duration: 1, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.5 }}
+           transition={{ duration: 2, ease: "easeInOut" }}
            className="pos-a go-right z-[-1]"
           >
             <img src={ImageGoRight} alt="" className="h-[140px] !w-auto"/>
@@ -39,7 +41,8 @@ function WhyUsSecond() {
                 <motion.p
             initial={{ x: -80, y: -50, rotate: 20 }}
             whileInView={{ x: -250, y: -250, rotate: 0 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+             viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
             className="pos-a go-left z-[-1]"
 
           >
@@ -48,7 +51,8 @@ function WhyUsSecond() {
           <motion.p
            initial={{ x: -100, y: -125, rotate: 0 }}
            whileInView={{ x: 100, y: 100, rotate: 20 }}
-           transition={{ duration: 1, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.5 }}
+           transition={{ duration: 2, ease: "easeInOut" }}
            className="pos-a go-right z-[-1]"
           >
             <img src={ImageGoRight} alt="" className=" "/>

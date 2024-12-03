@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 import primaryBg from "../../assets/images/primaryBg.png";
 import gif from '../../assets/gif/OurServices.gif';
 
-const Card = ({ data }) => {
+const Card = ({ data, index }) => {
   return (
     <motion.div
       className="w-full h-max bg-black border border-[#EEFE05] flex items-center p-6 xl:grid grid-rows-1 grid-cols-[60%_40%] z-30 relative"
@@ -26,7 +26,7 @@ const Card = ({ data }) => {
       <div className="h-full w-[100%] flex flex-col justify-between gap-4 grow-0">
         <div className="flex flex-col gap-6 w-full">
           <div className="flex flex-col gap-1 w-full">
-            <p className="text-xl font-normal font-nohemi text-[#EEFE05]">01/</p>
+            <p className="text-xl font-normal font-nohemi text-[#EEFE05]">0{index+1}/</p>
             <p className="text-6xl font-nohemi-ext text-[#EEFE05]">{data.name}</p>
           </div>
           <p className="font-nohemi text-[24px] leading-9 w-[85%] text-[#FFFFFF] font-[400]">{data.desc}</p>
@@ -168,6 +168,17 @@ const CurrentProjects = () => {
     },
   ];
 
+   // Calculate visible cards based on the selected card
+   const visibleCards = cardData.map((_, index) => {
+    const offset = (index - selectedCard + cardData.length) % cardData.length;
+    if (offset === 0) return "active"; // The current card
+    if (offset === 1 ) return "below"; // Below the active card
+    if (offset === cardData.length - 1 ) return "above"; // Above the active card
+    // if (offset === 1 || offset === 2) return "below"; // Below the active card
+    // if (offset === cardData.length - 1 || offset === cardData.length - 2) return "above"; // Above the active card
+    return null; // Not visible
+  });
+
   return (
     <div className="bg-black text-white relative pb-16">
       <div className="max-w-[90vw] mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full">
@@ -181,7 +192,7 @@ const CurrentProjects = () => {
           </p>
         </div>
 
-        <div className="w-full mx-auto mt-80 mb-96 xl:flex hidden justify-between gap-16 items-center">
+        <div className="w-full mx-auto mt-80 mb-96 xl:flex hidden justify-stretch gap-16 items-center">
           <img src={gif} className="absolute left-0 top-[30%] z-20 hidden lg:block"/>
           <div className="h-full w-max bg-black z-30">
             {menuData.map((item, index) => (
@@ -198,15 +209,32 @@ const CurrentProjects = () => {
               </p>
             ))}
           </div>
+         
           <motion.div
-            className="h-full w-max"
-            key={selectedCard}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="h-full w-max min-h-[500px] min-w-[500px] "
           >
-            <Card data={cardData[selectedCard]} />
+             {cardData.map((card, index) => {
+       
+        const visibility = visibleCards[index];
+        if (!visibility) return null;
+
+        return (
+          <motion.div
+            key={card.id}
+            className={`absolute xl:w-[60vw] min-[1400px]:w-[70vw] transition-transform ${
+              visibility === "active"
+                ? "z-50 scale-100"
+                : visibility === "above"
+                ? "z-40 scale-90 -translate-y-[150px] opacity-50 blur-[2px]"
+                : "z-40 scale-90 translate-y-[150px] opacity-50 blur-[2px]"
+            }`}
+            animate={{ opacity: visibility === "active" ? 1 : 0.5 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Card data={card} index={index} />
+          </motion.div>
+        );
+      })}
           </motion.div>
         </div>
 

@@ -1,3 +1,6 @@
+body{
+  background-color: #eefe05;
+}  
 @font-face {
   font-family: 'Nohemi';
   src: url('./assets/fonts/Nohemi-Thin-BF6438cc57e2011.woff') format('woff');

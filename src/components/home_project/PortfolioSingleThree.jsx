@@ -18,7 +18,7 @@ function PortfolioSingleThree({onMouseEnter, onMouseLeave}) {
 
     return (
         <motion.div variants={slideUp} initial="hidden" whileInView="visible"  className="portfolio-single-three">
-            <div ref={ref} className={`circle-section ${ inView ? 'inView' : ''}`} onClick={()=>window.open('https://calendly.com/admin-invictuslabs/30min', '_blank')}>
+            <div ref={ref} className={`circle-section ${ inView ? 'inView' : ''}`} onClick={()=>window.open('https://calendly.com/admin-omnipresent/30min', '_blank')}>
                 <img src={thisCanBeYou} alt="Circle" className="circle" />
             </div>
             <div className="content-section">

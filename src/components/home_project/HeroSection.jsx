@@ -58,8 +58,9 @@ function HeroSection() {
                     <div className='subHeading'>
                 <p className='font-[400] text-[36px] leading-[52px]'>
                 <img style={{display: 'inline-block', marginRight:'5px', marginTop:'-3px'}} src={blackSquare} height={20} width={20}/> The community-driven web3 super agency for the new internet.</p>
-                {/* <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank"><button className="cta-button">schedule a call <span className='arrow'><img src={arrowPrimary} width={20} height={20}/></span></button></NavLink> */}
-                <NavLink to="https://calendly.com/admin-invictuslabs/30min" target="_blank">
+                {/* <NavLink to="https://calendly.com/admin-omnipresent/30min
+" target="_blank"><button className="cta-button">schedule a call <span className='arrow'><img src={arrowPrimary} width={20} height={20}/></span></button></NavLink> */}
+                <NavLink to="https://calendly.com/admin-omnipresent/30min" target="_blank">
                     <button class="cta-button">
                         schedule a call <span class="arrow">
                             <img src={arrowPrimary} width="26" height="26"/>

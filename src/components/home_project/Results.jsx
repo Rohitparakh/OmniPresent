@@ -8,7 +8,7 @@ import arrowPrimary from  '../../assets/images/arrowPrimary.png';
 
 function ScheduleButton() {
     return (
-      <NavLink className="scheduleButtonAnchor" target="_blank" to="https://calendly.com/admin-invictuslabs/30min">
+      <NavLink className="scheduleButtonAnchor" target="_blank" to="https://calendly.com/admin-omnipresent/30min">
 
         <div className="scheduleButton">
             <span className="buttonText">schedule a call</span>

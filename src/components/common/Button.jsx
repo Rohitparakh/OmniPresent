@@ -11,7 +11,7 @@ const Button = ({text, arrowBlack, className}) => {
   if(className?.includes("manifestoSchedule")) bigArrow = true;
 
   return (
-    <NavLink target="_blank" to="https://calendly.com/admin-invictuslabs/30min" className={className}>
+    <NavLink target="_blank" to="https://calendly.com/admin-omnipresent/30min" className={className}>
     <button className=' mt-5 flex items-center justify-center cursor-pointer transition-all duration-300 py-3 bg-primary border border-black rounded-full relative pl-6 pr-7 hover:bg-black text-black hover:text-primary tracking-wide hover:border-primary'>
         {/* inner text */}
         <p className={` font-nohemi font-[500] text-2xl ${arrowBlack||bigArrow?'mr-2':''}`}>{text}</p>

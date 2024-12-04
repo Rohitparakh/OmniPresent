@@ -83,7 +83,7 @@ const HeaderMobile = () => {
         <div className="schedule-frame" 
                     style={{display:headerOpen?'none':'flex'}}
                     >
-                      <NavLink target='_blank' to="https://calendly.com/admin-invictuslabs/30min">
+                      <NavLink target='_blank' to="https://calendly.com/admin-omnipresent/30min">
                       <img src={headerContact} height={44} width={44}/>
                       </NavLink>
           {/* <div className="inner-frame">

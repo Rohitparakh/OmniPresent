@@ -138,3 +138,9 @@
     right: -15vw;
     bottom: 0;
 }
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+    .textTheBases-baseText::before {
+        right: -10vw;
+    }
+}

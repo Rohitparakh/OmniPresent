@@ -17,12 +17,12 @@ function PortfolioSingleThree({onMouseEnter, onMouseLeave}) {
       const navigate = useNavigate();
 
     return (
-        <motion.div variants={slideUp} initial="hidden" whileInView="visible"  className="portfolio-single-three">
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible"  className="portfolio-single-three"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             <div ref={ref} className={`circle-section ${ inView ? 'inView' : ''}`} onClick={()=>window.open('https://calendly.com/admin-omnipresent/30min', '_blank')}>
                 <img src={thisCanBeYou} alt="Circle" className="circle" />
             </div>
             <div className="content-section">
-                <div className='content-left'  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/cryptoknights')}>
+                <div className='content-left' onClick={()=>navigate('/cases/cryptoknights')}>
                 <img src={image1} alt="Status" />
                 <p className="description">
                 Web3 entertainment <br/>that fetched <br/>15 million viewers.

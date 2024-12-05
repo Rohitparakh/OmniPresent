@@ -64,6 +64,8 @@
 .portfolio-single-three .circle {
     width: 350px;
     height: 350px;
+    min-width: 350px;
+    min-height: 350px;
 }
 
 .portfolio-single-three .center-circle {
@@ -173,7 +175,7 @@
 }
 .portfolio-single-three .content-section, 
 .portfolio-single-three .index-section {
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 .portfolio-single-three .index-section::before{

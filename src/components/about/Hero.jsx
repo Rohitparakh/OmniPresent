@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <div className=' w-screen font-nohemi-ext bg-primary '>
-    <img src={top} alt=""  className='absolute lg:top-[0px] top-[0px] lg:left-[10vw] left-0 mix-blend-multiply lg:h-72 h-36 hidden lg:block'/>
+    <img src={top} alt=""  className='absolute lg:top-[0px] top-[0px] lg:left-[10vw] left-0 mix-blend-multiply lg:h-72 h-36 hidden lg:block' style={{zIndex:1001}}/>
     <div className=' max-w-7xl mx-auto flex flex-col items-center justify-center  relative px-4'>
     <img src={top} alt=""  className='absolute top-[-90px] left-[20px] z-50 mix-blend-multiply h-48 block lg:hidden'/>
         <div className='py-20'>

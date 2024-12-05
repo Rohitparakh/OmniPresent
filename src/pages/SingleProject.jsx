@@ -45,8 +45,8 @@ import elixrApproach from '../assets/images/elixrApproach.png'
 import elixrResults from '../assets/images/elixrResults.png'
 
 const caseStudiesData = {
-  "ethihad": { 
-    title: "Ethihad Airways", 
+  "etihad": { 
+    title: "Etihad Airways", 
     description: "A landmark Web3 debut for a global Web2 leader", 
     mainBanner: ethihadBanner,
     tags:["GTM Strategy", "Community Growth Marketing","Discord Management","Content Strategy", "KOL Management", "Loyalty Program Launch", "Collaboration and Partnerships"],
@@ -131,7 +131,7 @@ const caseStudiesData = {
       "15 million+ views for the project and judges' introduction videos, significantly expanding global awareness."
     ],
     resultsImage: ckResults,
-    relatedProject:["ethihad", "rampx"]
+    relatedProject:["etihad", "rampx"]
   },
   "deblock": { 
     title: "Deblock", 
@@ -187,7 +187,7 @@ const caseStudiesData = {
       "Verified users surged to over 100,000, and transaction volume exceeded $100 million."
     ],
     resultsImage: deblockResults,
-    relatedProject:["cryptoknights", "ethihad"]
+    relatedProject:["cryptoknights", "etihad"]
   },
   "rampx": { 
     title: "RampX", 
@@ -224,7 +224,7 @@ const caseStudiesData = {
       "Gained thousands of impressions, strengthening brand visibility and ongoing organic sign-ups.",
     ],
     resultsImage: rampxResults,
-    relatedProject:["cryptoknights", "ethihad"]
+    relatedProject:["cryptoknights", "etihad"]
   },
   "elixr": { 
     title: "Elixr Games", 

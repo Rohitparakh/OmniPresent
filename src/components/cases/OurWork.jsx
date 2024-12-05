@@ -39,7 +39,7 @@ const OurWork = () => {
     const [inactiveFilters, setInactiveFilters] = useState(menu);
 
     const data = [
-        { img: card1, title: "Etihad Airways", desc: "A landmark Web3 debut for a global Web2 aviation leader", url: "/cases/ethihad", 
+        { img: card1, title: "Etihad Airways", desc: "A landmark Web3 debut for a global Web2 aviation leader", url: "/cases/etihad", 
         tags: ["GTM", "Community Growth Marketing", "Discord Management", "Content Strategy", "KOL Management", "Loyalty Program Launch", "Collaboration and Partnerships"] },
         { img: card2, title: "RampX", desc: "A powerful product launch that fetched 10K users in just seven days", url: "/cases/rampx", 
         tags: ["Full Scale Marketing", "Growth Strategy", "Content Strategy", "Community Management", "KOL Management"] },

@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 function PortfolioSingle({onMouseEnter, onMouseLeave}) {
     const navigate = useNavigate();
     return (
-        <motion.div variants={slideUp} initial="hidden" whileInView="visible" className="portfolio-single"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/ethihad')}>
+        <motion.div variants={slideUp} initial="hidden" whileInView="visible" className="portfolio-single"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={()=>navigate('/cases/etihad')}>
             <div className="content-left">
                 <h1 className="title">Etihad Airways
                 <span className='index'>01</span>

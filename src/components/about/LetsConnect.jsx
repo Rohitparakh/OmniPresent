@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from "react";
 import { Button } from '../common'
 import letsConnectArrow from '../../assets/videos/letsConnectArrow.mp4';
 import x from '../../assets/about/x.svg';
@@ -8,6 +8,37 @@ import logo from '../../assets/images/logoFooter.png';
 import { NavLink } from 'react-router-dom';
 
 const LetsConnect = () => {
+  const videoRef = useRef(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.5 } // Trigger when 50% of the video is visible
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isInView) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isInView]);
   return (
     <div className="w-full bg-primary px-4">
       <div className="max-w-7xl mx-auto pt-16 flex flex-col items-center justify-start">
@@ -33,6 +64,7 @@ const LetsConnect = () => {
         <div className='flex flex-col items-center justify-center lg:w-[90%] lg:ml-auto md:mr-auto'>
           <div className='flex items-center sm:gap-0 lg:gap-20'>
             <video 
+             ref={videoRef}
               src={letsConnectArrow} 
               autoPlay 
               loop 
@@ -45,6 +77,7 @@ const LetsConnect = () => {
             
           </div>
           <video 
+              ref={videoRef}
               src={letsConnectArrow} 
               autoPlay 
               loop 

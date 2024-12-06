@@ -21,6 +21,17 @@
     margin-right: 200px;
 }
 
+.scheduleButton:hover{
+    border: 3.88px solid #eefe05;
+    background-color: #000;
+}
+
+.scheduleButton:hover .buttonText{
+    color: #eefe05;
+
+}
+
+
 .buttonText {
     font-family: 'Nohemi', sans-serif;
     font-weight: 500;

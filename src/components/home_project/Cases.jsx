@@ -48,6 +48,7 @@ const Cases = () => {
           style={{
             top: `${cursorPosition.y}px`,
             left: `${cursorPosition.x}px`,
+            zIndex:9999
           }}
         >
           VIEW MORE

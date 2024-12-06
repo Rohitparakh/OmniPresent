@@ -15,7 +15,7 @@ function WhyUsSecond() {
             initial={{ x: -80, y: -50, rotate: 20 }}
             whileInView={{ x: -200, y: -200, rotate: 0 }}
              viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            transition={{ duration: .6, ease: "easeInOut" }}
             className="pos-a go-left z-[-1]"
 
           >
@@ -25,7 +25,7 @@ function WhyUsSecond() {
            initial={{ x: -100, y: -125, rotate: 0 }}
            whileInView={{ x: 0, y: 0, rotate: 20 }}
             viewport={{ once: true, amount: 0.5 }}
-           transition={{ duration: 2, ease: "easeInOut" }}
+           transition={{ duration: .6, ease: "easeInOut" }}
            className="pos-a go-right z-[-1]"
           >
             <img src={ImageGoRight} alt="" className="h-[140px] !w-auto"/>
@@ -42,7 +42,7 @@ function WhyUsSecond() {
             initial={{ x: -80, y: -50, rotate: 20 }}
             whileInView={{ x: -250, y: -250, rotate: 0 }}
              viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            transition={{ duration: .6, ease: "easeInOut" }}
             className="pos-a go-left z-[-1]"
 
           >
@@ -52,7 +52,7 @@ function WhyUsSecond() {
            initial={{ x: -100, y: -125, rotate: 0 }}
            whileInView={{ x: 100, y: 100, rotate: 20 }}
             viewport={{ once: true, amount: 0.5 }}
-           transition={{ duration: 2, ease: "easeInOut" }}
+           transition={{ duration: .6, ease: "easeInOut" }}
            className="pos-a go-right z-[-1]"
           >
             <img src={ImageGoRight} alt="" className=" "/>

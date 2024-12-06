@@ -1,6 +1,12 @@
 body{
   background-color: #eefe05;
 }  
+
+header .call-to-action:hover{
+  background-color: #EEFE05;
+  color: #000;
+  border: 1px solid #000;
+}
 @font-face {
   font-family: 'Nohemi';
   src: url('./assets/fonts/Nohemi-Thin-BF6438cc57e2011.woff') format('woff');
@@ -200,7 +206,7 @@ justify-content: space-between;
   background-color: #000000;
   color: #eefe05;
   padding: 7.75px 30px 7.75px 21.31px;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 58.56px;
   cursor: pointer;
   font-size: 18.93px;
@@ -1490,8 +1496,9 @@ margin-bottom: 40px !important;
   /* Elements to trigger custom cursor */
   .portfolio-single:hover,
   .portfolio-single-left:hover,
-  .portfolio-single-three .content-left:hover,
-  .portfolio-single-three .index-section:hover,
+  .portfolio-single-three,
+  /* .portfolio-single-three .content-left:hover, */
+  /* .portfolio-single-three .index-section:hover, */
   .portfolio-single-four:hover,
   .see-more-cursor:hover {
     cursor: none; /* Hide default cursor */

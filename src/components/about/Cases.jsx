@@ -160,6 +160,7 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
           style={{
             top: `${cursorPosition.y}px`,
             left: `${cursorPosition.x}px`,
+            zIndex:9999
           }}
         >
           VIEW MORE

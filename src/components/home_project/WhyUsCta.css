@@ -10,13 +10,19 @@
     color: #000000;
     background-color: #eefe05;
     padding: 0 30px 0 21.31px;
-    border: none;
+    border: 1px solid #000;
     border-radius: 58.56px;
     cursor: pointer;
     font-size: 18.93px;
     line-height: 1px;
     font-weight: 500;
   }
+
+.why-us-cta .call-to-action:hover{
+  border: 1px solid #eefe05;
+  color:#eefe05;
+  background-color: #000;
+}
 
   
 .why-us-cta .call-to-action .arrow{

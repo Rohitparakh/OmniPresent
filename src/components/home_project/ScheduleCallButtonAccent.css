@@ -6,7 +6,7 @@
     color: #000000;
     background-color: #eefe05;
     padding: 12.5px 40px 12.5px 21.31px;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 58.56px;
     cursor: pointer;
     font-size: 25px;

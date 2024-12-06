@@ -13,8 +13,8 @@ function ScheduleButton() {
     return (
         <NavLink target="_blank" to="https://calendly.com/admin-omnipresent/30min">
 
-        <div className="scheduleButton" style={{color:'#000', backgroundColor:'#eefe05', padding:'16px 44px 16px 16px', width:'max-content'}}>
-            <span className="buttonText" style={{color:'#000', backgroundColor:'#eefe05'}}>schedule a call</span>
+        <div className="scheduleButton" >
+            <span className="buttonText">schedule a call</span>
             <span className="arrowIcon" style={{color:'#000', backgroundColor:'#eefe05', border:'2px solid black', padding:'10px', right:'-44px'}}><img src={arrowBlack} /></span>
         </div>
         </NavLink>

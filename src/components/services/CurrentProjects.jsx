@@ -246,7 +246,7 @@ const CurrentProjects = () => {
         </div>
       </div>
 
-      <div className="w-full py-16 mt-52">
+      <div className="w-full py-16 mt-52 lg:mt-96 z-30 relative">
       <MarqueeSection>
            <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                 <p className="text-9xl font-[1000] font-nohemi-ext">sounds good?</p>

@@ -5,12 +5,12 @@
     padding: 20px;
     margin-left: 68px;
     margin-right: 68px;
-    margin-top: 300px;
+    margin-top: 485px;
     /* margin-top: 150px; */
     background-color: #000000;
     color: #ffffff;
     overflow: hidden;
-    width: calc(100vw - 136px);
+    width: calc(100vw - 140px);
 }
 
 .portfolio-single .content-left {

@@ -20,7 +20,7 @@ function SingleProjectLeft({index, heading, subHeading, objectives, objectiveIma
                 })}
                 </motion.ul>
                 <img src={objectiveImage} alt="Meltwater Design" className="designImage" />
-    <div className="absolute left-0 top-[105%] w-[100%] border-b-[2px] border-white opacity-50 animate-growX"></div>
+    <div className="absolute left-0 top-[105%] w-[100%] border-b-[2px] border-white opacity-50 animate-growX md:hidden"></div>
 
             </motion.div>
         </div>

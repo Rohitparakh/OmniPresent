@@ -5,11 +5,11 @@
     padding: 150px 0 0 0;
     /* background-color: #ffffff; */
     color: #fff;
-    width: calc( 100vw - 136px);
+    width: calc( 100vw - 140px);
     z-index: 51;
     /* overflow-x: hidden; */
     /* overflow-y: visible; */
-    padding-top: 150px;
+    padding-top: 114px;
     position: relative;
 }
 

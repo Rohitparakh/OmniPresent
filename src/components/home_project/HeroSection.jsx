@@ -14,7 +14,7 @@ import { slideUp, slideUpDelay,slideRight, slideUp40, slideUp50 } from '../../an
 function HeroSection() {
     return (
         <div className="hero-section">            
-<img className="lg:z-40 object-cover absolute bg-transparent z-1 w-screen lg:w-[calc(100vw_-_3%)] top-[250px] scale-[2.2] lg:scale-100 lg:top-[130px] left-[-34%] lg:left-[3%]" src={gif}/>
+<img className="lg:z-40 object-cover absolute bg-transparent z-1 w-screen lg:w-[calc(100vw_-_10%)] top-[250px] scale-[2.2] lg:scale-100 lg:top-[130px] left-[-34%] lg:left-[6%]" src={gif}/>
 
             <div className="hero-content">
                <h1 variants={slideUp} initial="hidden" whileInView="visible" className='zero'>

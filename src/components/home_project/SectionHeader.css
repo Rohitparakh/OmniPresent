@@ -4,10 +4,10 @@
     align-items: center;
     flex-direction: column;
     background-color: #000;
-    padding-top: 100px;
+    padding-top: 101px;
 }
 .section-header {
-    width: calc( 100vw - 136px);
+    width: calc( 100vw - 140px);
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -137,17 +137,19 @@ body {
   /* font-weight: 900; */
   font-weight: 700;
   font-size: 14px;
+  position: relative;
+  z-index: 51;
 }
 
 hr{
-  width: calc(100vw - 136px);
+  width: calc(100vw - 140px);
   border: 1px solid #000;  
 }
 
 .headerBottom .headerExtras{
   display: flex;
   justify-content: space-between;
-  width: calc(100vw - 136px);
+  width: calc(100vw - 140px);
   margin-top: 20px;
 
 }
@@ -166,8 +168,10 @@ justify-content: space-between;
 }
 
 .headerExtras .plus{
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 38px;
+  line-height: 22px;
+  font-weight: 200;
+  margin-left: -20px;
 }
 
 .logo {
@@ -1502,4 +1506,12 @@ margin-bottom: 40px !important;
   .portfolio-single-four:hover,
   .see-more-cursor:hover {
     cursor: none; /* Hide default cursor */
+  }
+
+  .text-39px{
+    font-size:39px;
+  }
+
+  .leading-39px{
+    line-height: 39px;
   }

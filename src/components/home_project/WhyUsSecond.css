@@ -5,7 +5,7 @@
     background-color: transparent;
     color: #fdfee8;
     padding: 20px;
-    margin-top: 300px;
+    margin-top: 400px;
     margin-left: 2vw;
 }
 
@@ -38,7 +38,8 @@
 .why-us-second .card-image img {
     /* width: 530px; */
     /* height: 385.73px; */
-    margin-left: -100px;
+    margin-left: -220px;
+    margin-top: -200px;
 }
 
 .why-us-second .card-image{

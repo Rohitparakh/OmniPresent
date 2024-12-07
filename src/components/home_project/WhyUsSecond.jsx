@@ -39,9 +39,9 @@ function WhyUsSecond() {
             <div className="card-image md-d-none">
                 <img src={Card1} alt="Playing Card" className='pos-r'/>
                 <motion.p
-            initial={{ x: -80, y: -50, rotate: 20 }}
-            whileInView={{ x: -250, y: -250, rotate: 0 }}
-             viewport={{ once: true, amount: 0.5 }}
+            initial={{ x: -120, y: 30, rotate: 20 }}
+            whileInView={{ x: -250, y: -170, rotate: 0 }}
+             viewport={{ amount: 0.5 }}
             transition={{ duration: .6, ease: "easeInOut" }}
             className="pos-a go-left z-[-1]"
 
@@ -49,9 +49,9 @@ function WhyUsSecond() {
             <img src={ImageGoLeft} alt="" className=" "/>
           </motion.p>
           <motion.p
-           initial={{ x: -100, y: -125, rotate: 0 }}
-           whileInView={{ x: 100, y: 100, rotate: 20 }}
-            viewport={{ once: true, amount: 0.5 }}
+           initial={{ x: -100, y: 30, rotate: 0 }}
+           whileInView={{ x: 50, y: 200, rotate: 20 }}
+            viewport={{  amount: 0.5 }}
            transition={{ duration: .6, ease: "easeInOut" }}
            className="pos-a go-right z-[-1]"
           >

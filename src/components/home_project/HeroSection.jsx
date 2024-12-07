@@ -57,7 +57,7 @@ function HeroSection() {
         whileInView="visible"><div class="absolute top-[50%] left-[-130px] lg:block hidden"><img src={line} class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></motion.h1>
                 <div className='d-flex justify-center'>
                     <div className='subHeading'>
-                <p className='font-[400] text-[36px] leading-[52px]'>
+                <p className='font-[400] text-[36px] leading-[35px]'>
                 <img style={{display: 'inline-block', marginRight:'5px', marginTop:'-3px'}} src={blackSquare} height={20} width={20}/> The community-driven web3 super agency for the new internet.</p>
                 {/* <NavLink to="https://calendly.com/admin-omnipresent/30min
 " target="_blank"><button className="cta-button">schedule a call <span className='arrow'><img src={arrowPrimary} width={20} height={20}/></span></button></NavLink> */}
@@ -75,9 +75,9 @@ function HeroSection() {
             </div>
             {/* <div class="w-screen px-48 flex items-center justify-end gap-4 mt-10 md-d-none"> */}
             <div className='justify-end w-screen px-32 mt-10 items-center gap-4 sm-justify-center hidden md:flex'>
-                <img src={telegram} alt="" className='h-10'/>
-                <NavLink to="https://x.com/Omnipresentcc" target="_blank"><img src={x} alt="" className='h-10'/></NavLink>
-                <img src={insta} alt="" className='h-10'/>
+                <img src={telegram} alt="" className='h-14'/>
+                <NavLink to="https://x.com/Omnipresentcc" target="_blank"><img src={x} alt="" className='h-14'/></NavLink>
+                <img src={insta} alt="" className='h-14'/>
             </div>
         </div>
     );

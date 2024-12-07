@@ -12,18 +12,19 @@
 
 .why-us-third-description {
     font-family: 'Nohemi', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
-    line-height: 35px;
+    line-height: 30px;
     color: #fdfee8;
     max-width: 200px;
     margin: 0;
     margin-right: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .why-us-third-description p{
-    width: 400px;
+    width: 440px;
+    font-size: 24px;
 }
 
 .why-us-third-title {

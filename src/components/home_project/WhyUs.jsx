@@ -9,7 +9,7 @@ import WhyUsCta from './WhyUsCta'
 
 const WhyUs = () => {
   return (
-    <div className='containerOld relative'>
+    <div className='containerOld relative whyUsContainer'>
     <SectionHeader heading='why us' index='01'/>
     <WhyUsFirst/>
     <WhyUsSecond />

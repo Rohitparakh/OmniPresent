@@ -29,11 +29,23 @@
     top: 100px;
 }
 
+@media (min-width:1700px) {
+    .why-us-first .title{
+        margin-top: 74px;
+    }
+}
+
+@media (min-width:2000px) {
+    .why-us-first .title{
+        margin-top: 125px;
+    }
+}
+
 .why-us-first .description {
     font-family: 'Nohemi', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 35px;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 28px;
     color: #eaeaea;
     opacity: 1;
     margin-top: 20px;
@@ -41,7 +53,7 @@
     float: right;
     position: absolute;
     top:100%;
-    left: 10%;
+    left: 7%;
     /* width: 70%; */
 }
 

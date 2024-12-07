@@ -10,6 +10,7 @@ import arrowPrimary from '../../assets/images/arrowPrimary.png';
 import blackSquare from '../../assets/images/blackSquare.png';
 import { motion } from 'framer-motion';
 import { slideUp, slideUpDelay,slideRight, slideUp40, slideUp50 } from '../../animations';
+import line from '../../assets/about/line.svg';
 
 function HeroSection() {
     return (
@@ -17,7 +18,7 @@ function HeroSection() {
 <img className="lg:z-40 object-cover absolute bg-transparent z-1 w-screen lg:w-[calc(100vw_-_10%)] top-[250px] scale-[2.2] lg:scale-100 lg:top-[130px] left-[-34%] lg:left-[6%]" src={gif}/>
 
             <div className="hero-content">
-               <h1 variants={slideUp} initial="hidden" whileInView="visible" className='zero'>
+               <h1 variants={slideUp} initial="hidden" whileInView="visible" className='zero overflow-hidden'>
                     <motion.span variants={slideRight}
                         initial="hidden"
                         whileInView="visible" 
@@ -53,7 +54,7 @@ function HeroSection() {
             <motion.span className='to present'>prese<span  className='z-50 relative'>nt</span></motion.span> <span className='one'></span></h1>
                 <motion.h1  variants={slideUpDelay}
         initial="hidden"
-        whileInView="visible"><div class="absolute top-[50%] left-[-130px] lg:block hidden"><img src="/src/assets/about/line.svg" class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></motion.h1>
+        whileInView="visible"><div class="absolute top-[50%] left-[-130px] lg:block hidden"><img src={line} class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></motion.h1>
                 <div className='d-flex justify-center'>
                     <div className='subHeading'>
                 <p className='font-[400] text-[36px] leading-[52px]'>

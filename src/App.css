@@ -155,7 +155,7 @@ hr{
 }
 
 .headerExtras .leftDiv{
-gap: 200px;
+gap: 150px;
 display: flex;
 justify-content: space-between;
 }
@@ -304,15 +304,42 @@ justify-content: space-between;
 .hero-content .zero::before,
 .hero-content .zero::after {
     position: absolute;
-    left: 10%;
-    right: 65%;
+    left: 8%;
+    right: 68%;
     height: 1px; /* Border thickness */
     background-color: black; /* Border color */
 }
+@media(min-width:1000px) and (max-width:1350px){
+
+.hero-content .zero::before,
+.hero-content .zero::after {
+  left: 8%;
+  right: 69%;
+}
+}
+
+@media(min-width:1450px) and (max-width:2000px){
+
+.hero-content .zero::before,
+.hero-content .zero::after {
+  left: 10%;
+  right: 65%;
+}
+}
+
+@media(min-width:2100px){
+
+.hero-content .zero::before,
+.hero-content .zero::after {
+  left: 14%;
+  right: 65%;
+}
+}
+
 
 .hero-content .zero::before {
   content: "";
-    top: 0.23em; /* Border at the top, touching the letters */
+    top: 0.15em; /* Border at the top, touching the letters */
 }
 
 .hero-content .zero::after {

@@ -6,9 +6,9 @@ import AbstractText from './AbstractText';
 import { NavLink } from 'react-router-dom';
 import arrowPrimary from  '../../assets/images/arrowPrimary.png';
 
-function ScheduleButton() {
+function ScheduleButton({className}) {
     return (
-      <NavLink className="scheduleButtonAnchor" target="_blank" to="https://calendly.com/admin-omnipresent/30min">
+      <NavLink className={`scheduleButtonAnchor ${className}`} target="_blank" to="https://calendly.com/admin-omnipresent/30min">
 
         <div className="scheduleButton">
             <span className="buttonText">schedule a call</span>
@@ -22,12 +22,13 @@ const Results = () => {
   return (
     <div className='containerOld results'>
         <ResultsDisplay />
-        <ScheduleButton />
-        <div className='d-flex gap-150 mt-50 sm-f-column'>
+        <ScheduleButton className={'hide-mobile'}/>
+        <div className='d-flex gap-90 mt-50 sm-f-column futureSection'>
         <AbstractText />
         <p className='abstractRight'>
         In Web3, speed isn’t just an advantage—it’s essential. Partner with a team that understands the urgency and delivers with precision. Ready to disrupt?
         </p>
+        <ScheduleButton className={'hide-desktop'}/>
         </div>
     </div>
   )

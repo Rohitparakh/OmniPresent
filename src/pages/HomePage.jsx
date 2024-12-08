@@ -19,7 +19,7 @@ function HomePage() {
         <div className='relative'>
             <Header/>
             <HeroSection />
-            <hr className='mt-60'/>
+            <hr className='mt-60 mx-auto'/>
             <Footer />
             <WhyUs />
             <Cases/>

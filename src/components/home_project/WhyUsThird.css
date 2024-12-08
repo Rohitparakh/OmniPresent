@@ -52,3 +52,9 @@
 img.fast{
     width: 50%;
 }
+
+@media(min-width:1000px) and (max-width:1550px){
+   .why-us-third-title{
+    font-size:  121.58px;
+   }
+}

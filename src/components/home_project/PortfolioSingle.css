@@ -49,10 +49,10 @@
 
 .portfolio-single .index {
     position: absolute;
-    top: 0;
+    top: -20px;
     right: -2rem;
     font-weight: 400;
-    font-size: 31.46px;
+    font-size: 24px;
     line-height: 35.39px;
 }
 
@@ -145,3 +145,42 @@
 .portfolio-single .image .status-tag img{
     margin-right: 5px;
 }
+
+@media(min-width:1999px){
+    .portfolio-single .content-center{
+        margin-top: 50px;
+    }
+}
+
+
+@media(min-width:1200px){
+    .portfolio-single .title::before{
+        width: 50vw;
+    }
+}
+
+@media(min-width:1400px){
+    .portfolio-single .title::before{
+        width: 35vw;
+    }
+}
+@media(min-width:1499px){
+    .portfolio-single .title::before{
+        width: 37vw;
+    }
+}
+
+
+
+@media(min-width:1400px){
+.portfolio-single .description {
+    max-width: 300px;
+}
+}
+
+@media(max-width:1499px){
+    .portfolio-single .title{
+        font-size: 70px;
+    }
+}
+

@@ -85,7 +85,7 @@ export const growFromLeft = {
 export const growFromLeftDelay = {
   hidden: { width: 0 },
   visible: {
-    width: "20rem",
+    width: "100%",
     transition: { duration: 0.8, ease: "easeOut", delay: 0.1 },
   },
 };
@@ -93,7 +93,7 @@ export const growFromLeftDelay = {
 export const growFromRight = {
   hidden: { width: 0, originX: 1 },
   visible: {
-    width: "20rem",
+    width: "100%",
     originX: 1,
     transition: { duration: 0.8, ease: "easeOut" },
   },

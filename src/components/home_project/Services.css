@@ -7,9 +7,11 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding-bottom: 400px;
+    padding-bottom: 370px;
     margin-top: 100px;
 }
+
+
 
 .services .swiggly{
     position: absolute;
@@ -25,4 +27,22 @@
      transform: scale(2);   
      left: 180px;
     }
+}
+
+@media(min-width:1200px){
+    .services .ctaDiv{
+        margin-top: 0;
+    }
+
+    .services .swiggly{
+        top: -40%;
+    }
+    
+}
+
+@media(min-width:1800px){
+    .services .swiggly{
+        height: 1000px;
+    }
+    
 }

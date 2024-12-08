@@ -51,7 +51,7 @@ function HeroSection() {
                 </h1>
                 <h1  >
             <motion.span 
-            variants={slideUpDelay}
+            variants={slideUp50}
             initial="hidden"
             whileInView="visible"
             className='to present will-change-[opacity,x,y,transform]'>prese<span  className='z-50 relative'>nt</span></motion.span> <span className='one'></span></h1>

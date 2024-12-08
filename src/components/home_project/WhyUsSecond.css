@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    color: #fdfee8;
+    color: #eaeaea;
     padding: 20px;
     margin-top: 400px;
     margin-left: 2vw;
@@ -27,10 +27,10 @@
 
 .why-us-second .description {
     font-family: 'Nohemi', sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 35px;
-    color: #fdfee8;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #eaeaea;
     width: 60%;
     margin-top: 20px;
 }
@@ -61,3 +61,52 @@
     z-index: 1;
 
 }
+
+
+
+
+  
+
+
+  
+  @media(max-width:800px){
+  .why-us-second .description{
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+  }
+}
+@media(min-width:1000px){
+    .why-us-second {
+        margin-top:475px;
+    }
+}
+
+@media(min-width:1600px){
+    .why-us-second .description{
+      font-size: 23px !important;
+    }
+
+    .why-us-second .title{
+        font-size: 120px;
+        max-width: 700px;
+    }
+
+    .why-us-second .card-image{
+        margin-left: -50px;
+    }
+  }
+
+  
+@media(min-width:1750px){
+    .why-us-second .card-image{
+        margin-left: -80px;
+    }
+}
+
+@media(min-width:1999px){
+    .why-us-second .card-image{
+        margin-left: -180px;
+    }
+}
+

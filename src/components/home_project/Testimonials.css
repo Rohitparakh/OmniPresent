@@ -16,9 +16,10 @@
 }
 @media(min-width:1300px) and (max-width:1700px){
     .firstRow{
-        gap:5vw
+        gap: 7vw;
     }
 }
+
 
 @media(min-width:1701px) and (max-width:1999px){
     .firstRow{
@@ -27,6 +28,12 @@
     }
 }
 
+@media(min-width:2000px){
+    .firstRow{
+        justify-content: space-around;
+    }
+    
+}
 .thirdRow{
     display: flex;
     justify-content: flex-end;

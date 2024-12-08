@@ -15,7 +15,7 @@ function Footer() {
         </div>
 
         <div className='lg:py-6 py-3  w-full'>
-        <MarqueeSection>
+        <MarqueeSection direction="left">
                 <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 select-none">
               <span className="text-black font-nohemi-ext">5M+</span> social followers
               <img src={right} className="h-16" alt="" />

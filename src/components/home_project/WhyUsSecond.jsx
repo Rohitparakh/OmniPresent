@@ -13,7 +13,7 @@ function WhyUsSecond() {
                 <img src={Card1} alt="Playing Card" className='pos-r'/>
                 <motion.p
             initial={{ x: -80, y: -50, rotate: 20 }}
-            whileInView={{ x: -200, y: -200, rotate: 0 }}
+            whileInView={{ x: -170, y: -170, rotate: 0 }}
              viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: .6, ease: "easeInOut" }}
             className="pos-a go-left z-[-1]"
@@ -50,7 +50,7 @@ function WhyUsSecond() {
           </motion.p>
           <motion.p
            initial={{ x: -100, y: 30, rotate: 0 }}
-           whileInView={{ x: 50, y: 200, rotate: 20 }}
+           whileInView={{ x: 50, y: 185, rotate: 20 }}
             viewport={{  amount: 0.5 }}
            transition={{ duration: .6, ease: "easeInOut" }}
            className="pos-a go-right z-[-1]"

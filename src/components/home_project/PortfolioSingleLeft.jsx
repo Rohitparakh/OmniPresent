@@ -30,9 +30,9 @@ function PortfolioSingleLeft({onMouseEnter, onMouseLeave}) {
 
 </div>
             </div>
-            <div className="content-right z-50 relative bg-black">                
+            <div className="content-right relative bg-black">                
                 <div className="details">
-                    <h1 className="title">RampX
+                    <h1 className="title  z-50 relative bg-black">RampX
                     <span className="index rampx">02</span>
                     </h1>
                 </div>

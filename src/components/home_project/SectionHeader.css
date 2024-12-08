@@ -29,3 +29,9 @@
 .tagline:last-child {
     text-transform: uppercase;
 }
+
+@media(min-width:1200px){
+.section-header .index{
+    margin-right: 20vw;
+}
+}

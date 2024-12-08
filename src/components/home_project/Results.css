@@ -26,6 +26,18 @@
 .abstractRight{
     max-width: 300px;
     font-size: 25px;
-    margin-top: -50px;
+    margin-top: -70px;
 }
 
+
+@media(min-width:1700px){
+    .futureSection {
+        gap: 250px;
+    }
+}
+
+@media(min-width:1800px){
+    .futureSection {
+        gap: 550px;
+    }
+}

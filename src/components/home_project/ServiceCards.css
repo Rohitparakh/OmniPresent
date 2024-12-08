@@ -3,7 +3,7 @@
 .serviceCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 38px;
+    /* gap: 38px; */
     margin: 40px;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -13,6 +13,7 @@
     padding: 20px;
     /* background-color: #111; */
     border-radius: 8px;
+    margin-bottom: 70px;
 }
 
 .yellowBoxBullet{
@@ -32,10 +33,10 @@
 }
 
 .serviceCard-title {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 35px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 20px;
     color: #fff;
     display: block;
     align-items: flex-start;
@@ -43,8 +44,8 @@
 }
 
 .serviceCard-description {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
     line-height: 40px;
     color: #bbbbbb;
 }
@@ -53,4 +54,42 @@
     grid-column: span 3;
     justify-self: center;
     margin-top: 20px;
+}
+
+@media(min-width:1200px) {
+.services-arrow{
+    margin-left: 20%;
+    margin-top: 20px;
+    width: 275px;
+}
+.serviceCards{
+    margin-bottom: 0;
+}
+}
+
+@media(min-width:1900px) {
+.services-arrow{
+    margin-left: 20%;
+    margin-top: 20px;
+}
+}
+
+@media(min-width:1699px) {
+    .serviceCard-title {
+        font-size: 32px;
+    }
+
+.serviceCard-description {
+font-size: 22px;
+}
+}
+
+@media(min-width:1999px) {
+    .serviceCard-title {
+        font-size: 36px;
+    }
+
+.serviceCard-description {
+font-size: 24px;
+}
 }

@@ -46,6 +46,7 @@
     line-height: 26px;
     color: #fff;
     margin-top: 15px;
+    margin-left: 15px;
 }
 
 .testimonial-first .testimonial-company {
@@ -54,6 +55,7 @@
     font-size: 18px;
     line-height: 26px;
     color: #ababab;
+    margin-left: 15px;
 }
 
 
@@ -66,10 +68,11 @@
     @media(min-width:1300px) and (max-width:1700px){
     .testimonial-first{
     max-width: 40vw;
+    margin-left: 3vw;
     }
     
     .testimonial-quote{
-        font-size: 38px !important;
+        font-size: 44px !important;
         line-height: 50px !important;
         margin-top: 120px !important;
     }

@@ -141,13 +141,29 @@
 .portfolio-single-three .description {
     font-family: 'Nohemi', sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 25px;
+    line-height: 35px;
     color: #bbbbbb;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
 }
+
+@media(min-width:1200px){
+    .portfolio-single-three{
+        overflow-x: clip;
+    }
+    .portfolio-single-four .title, .portfolio-single-three .title{
+        margin-top: 15px !important;
+    }
+}
+@media(max-width:1500px){
+    .portfolio-single-three .description {
+        font-size: 20px;
+        max-width: 350px;
+    }
+}
+
 
 .portfolio-single-three .portfolio-single-three .description::before{
     content:'';
@@ -190,10 +206,10 @@
 .portfolio-single-three .index-section::before{
     content:'';
     position: absolute;
-    bottom: 5px;
+    bottom: 20px;
     right: 100%;
     height: 1px;
-    width: 120%;
+    width: 200%;
     background-color: #fff;
 }
 
@@ -208,24 +224,14 @@
     /* margin-top: 20px; */
 }
 
-.portfolio-single-three .index-section::before{
-    /* content:'';
-    position: absolute;
-    right: 100%;
-    bottom:0px;
-    width: calc( 100vw - 23vw );
-    height:1px;
-    background-color: #fff;
-    z-index:1; */
-}
 
 .portfolio-single-three .index {
     color: #ffffff;
     font-weight: 400;
-    font-size: 31.46px;
+    font-size: 24px;
     line-height: 35.39px;
     position: absolute;
     right: -30px;
-    top: 0;
+    top: -20px;
 }
 

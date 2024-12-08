@@ -8,7 +8,7 @@ const WhyUsCta = ({text, url}) => {
   const[textSecondary, setTextSecondary] = useState(text);
   
   return (
-    <div className='why-us-cta'>
+    <div className=' hidden lg:flex'>
         <SectionCta text={text} position='none' url={url}/>
         <ScheduleCallButtonAccent />
     </div>  

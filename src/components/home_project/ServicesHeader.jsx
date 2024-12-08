@@ -38,7 +38,7 @@ function ServicesHeader() {
     return (
         <motion.div variants={slideUp} initial="hidden" whileInView="visible" className="servicesHeader mb-16 lg:mb-32">
             <div className="headerRow">
-                <motion.img variants={growFromLeft} initial="hidden" whileInView="visible" className="lg:mt-[-60px] xl:mt-[-120px]" src={servicesFinger} />
+                <motion.img variants={growFromLeft} initial="hidden" whileInView="visible" className="lg:mt-[-60px] " src={servicesFinger} />
                 <TextWeCover />
             </div>
             <TextTheBases />

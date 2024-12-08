@@ -14,11 +14,11 @@ function ServiceCard({ title, description }) {
     );
 }
 
-function Arrow({imgSrc}){
+function Arrow({imgSrc, imgClass, divClass}){
     return(
-        <div className="serviceCard">
+        <div className={`serviceCard ${divClass}`}>
 
-        <img src={imgSrc}/>
+        <img src={imgSrc} className={imgClass}/>
         </div>
     )
 }
@@ -45,7 +45,7 @@ function ServiceCards() {
                     <ServiceCard title={service.title} description={service.description} />
                     {index === 7 && (
                         <motion.div variants={growFromRight} initial="hidden" whileInView="visible">
-                        <Arrow imgSrc={arrowLeft}/>
+                        <Arrow imgSrc={arrowLeft} imgClass="services-arrow" divClass="serviceArrow" />
                         <ServiceCard/>
                         </motion.div>
                     )}

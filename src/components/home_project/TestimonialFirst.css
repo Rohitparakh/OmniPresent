@@ -5,6 +5,9 @@
     gap: 16px;
 }
 
+
+
+
 .testimonial-first .testimonial-image {
     max-width: 250px;
     /* width: 190px;
@@ -42,6 +45,7 @@
     font-size: 18px;
     line-height: 26px;
     color: #fff;
+    margin-top: 15px;
 }
 
 .testimonial-first .testimonial-company {
@@ -51,3 +55,31 @@
     line-height: 26px;
     color: #ababab;
 }
+
+
+@media(min-width:1000px){
+    .testimonial-first{
+    max-width: 600px;
+    }
+    }
+    
+    @media(min-width:1300px) and (max-width:1700px){
+    .testimonial-first{
+    max-width: 40vw;
+    }
+    
+    .testimonial-quote{
+        font-size: 38px !important;
+        line-height: 50px !important;
+        margin-top: 120px !important;
+    }
+.testimonial-first .testimonial-text {
+    font-size: 14px !important;
+}
+    }
+    
+    @media(min-width:1701px){
+    .testimonial-first{
+    max-width: 600px;
+    }
+    }

@@ -12,7 +12,19 @@
 
 .firstRow{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+@media(min-width:1300px) and (max-width:1700px){
+    .firstRow{
+        gap:5vw
+    }
+}
+
+@media(min-width:1701px) and (max-width:1999px){
+    .firstRow{
+        gap:10vw;
+        padding: 5vw;
+    }
 }
 
 .thirdRow{

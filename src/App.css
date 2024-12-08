@@ -579,6 +579,7 @@ right: 63.5%;
   .vast{
     position: relative;
     left: -30px;
+    overflow: visible;
   }
 .hero-section .subHeading{
   display: flex;
@@ -1045,18 +1046,14 @@ margin-bottom: 40px !important;
   .parenthesis, .dash{
     font-size: 100px !important;
     line-height: 100px !important;
-    margin-top: -50% !important;
-    font-weight: 600 !important;
+    /* margin-top: -150px !important; */
+    font-weight: 400 !important;
   }
 
-  .resultsText{
-    font-size: 20px !important;
-    line-height: 30px !important;
-    max-width: 65vw !important;
-  }
+
 
   .results{
-    margin-top: 250px !important;
+    /* margin-top: 250px !important; */
   }
 
   .testimonial-first .testimonial-quote{
@@ -1429,6 +1426,8 @@ margin-bottom: 40px !important;
 
   .portfolio-single-three .content-left img{
     height: 150px;
+    margin-bottom: 10px;
+    margin-top: -5px;
   }
 
   
@@ -1455,7 +1454,7 @@ margin-bottom: 40px !important;
 }
 
 .testimonials *{
-  z-index: 2 !important;
+  z-index: 2 ;
 }
 
 .testimonials::before{

@@ -76,9 +76,9 @@ export const growFromTopDelay = {
 export const growFromLeft = {
   hidden: { width: 0, originX: 0 },
   visible: {
-    width: "20rem",
+    width: "auto",
     originX: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 8, ease: "easeOut" },
   },
 };
 

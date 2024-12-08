@@ -1,6 +1,6 @@
 .testimonialSecond {
     display: grid;
-    grid-template-columns: 140px 280px 280px;
+    grid-template-columns: 100px 200px 250px;
     grid-template-rows: auto auto;
     gap: 20px;    
     color: #fff;
@@ -75,3 +75,31 @@
     color: #bbbbbb;
     margin-top: 10px;
 }
+
+
+
+@media(min-width:1000px){
+    .testimonialSecond{
+    max-width: 600px;
+    }
+    }
+    
+    @media(min-width:1300px) and (max-width:1800px){
+    .testimonialSecond{
+    max-width: 40vw;
+    }
+    
+    .testimonialSecond .testimonialQuote{
+        font-size: 38px !important;
+        line-height: 50px !important;
+    }
+    .testimonialSecond .companyName {
+    font-size: 16px !important;
+}
+    }
+    
+    @media(min-width:1200px){
+    .testimonialSecond{
+    max-width: 40vw;
+    }
+    }

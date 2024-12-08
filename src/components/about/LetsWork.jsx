@@ -137,13 +137,13 @@ const LetsWork = () => {
 
       {/* Marquee sections */}
       <div className="w-full py-48">
-        <MarqueeSection>
+        <MarqueeSection speed={200}>
           <div className="flex items-center gap-8 px-7 font-nohemi text-white">
             <p className="text-9xl font-[1000] font-nohemi-ext">sound good?</p>
             <Button text="schedule a call" />
           </div>
         </MarqueeSection>
-        <MarqueeSection speed={100}>
+        <MarqueeSection speed={200} direction="left">
           <div className="flex items-center gap-8 px-7 font-nohemi text-white">
             <p className="text-9xl font-bold font-nohemi-ext">sound good?</p>
             <Button text="schedule a call" />

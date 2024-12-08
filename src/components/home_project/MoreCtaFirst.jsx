@@ -8,13 +8,13 @@ import MarqueeSection from './../common/MarqueeSection';
 function MoreCTAFirst() {
     return (
         <div className="w-full pt-60 bg-black">
-        <MarqueeSection>
+        <MarqueeSection speed={200}>
              <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                   <p className="text-[291px] font-[1000] font-nohemi-ext">sound good?</p>
                   <Button text="schedule a call" fontSize="39"/>
              </div>
                 </MarqueeSection>
-        <MarqueeSection speed={100}>
+        <MarqueeSection speed={200} direction="left">
         <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                   <p className="text-[291px] font-bold font-nohemi-ext">sound good?</p>
                   <Button text="schedule a call" fontSize="39"/>

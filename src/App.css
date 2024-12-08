@@ -79,10 +79,10 @@ header .call-to-action:hover{
 .rightSection {
   text-align: right;
 }
-html, body, .app {
+/* html, body {
   width: 100vw;
   overflow-x: hidden;
-}
+} */
 
 
 *, *::before, *::after, html, body {

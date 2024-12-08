@@ -78,7 +78,7 @@ export const growFromLeft = {
   visible: {
     width: "auto",
     originX: 0,
-    transition: { duration: 8, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 

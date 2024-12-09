@@ -5,7 +5,7 @@ import Header from '../components/home_project/Header';
 const About = () => {
   return (
     <div className='relative overflow-hidden aboutPage'>
-    <Header/>
+    <Header index="02"/>
     <Hero/>
     <Manifesto/>
     <LetsWork/>

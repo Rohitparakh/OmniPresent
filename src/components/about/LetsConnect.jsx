@@ -51,12 +51,12 @@ const LetsConnect = ({index}) => {
           </p>
         </div>
 
-        <div className='flex lg:flex-row flex-col lg:items-center justify-center gap-12 pt-20'>
-          <p className='lg:w-1/3 font-nohemi font-[300] text-2xl lg:text-xl leading-8 lg:leading-10 lg:text-3xl'>
+        <div className='max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] flex lg:flex-row flex-col lg:items-center justify-center gap-12 pt-20'>
+          <p className='lg:w-1/3 font-nohemi font-[300] text-xl lg:text-xl leading-8 lg:leading-10 lg:text-3xl'>
             Whether you’ve been building in Web3 for a while — or are just launching your brand into the space — let’s chat about how we can help you make an impact in Web3.
           </p>
 
-          <p className='lg:text-[13rem] min-[1800px]:text-[18rem] xl:text-[16rem] text-9xl font-nohemi-ext sm-text-center'>
+          <p className='lg:text-[13rem] min-[1800px]:text-[18rem] xl:text-[16rem] text-8xl font-nohemi-ext sm-text-center'>
             sound
           </p>
         </div>
@@ -73,7 +73,7 @@ const LetsConnect = ({index}) => {
               controls={false}
               className='lg:h-80 h-10 w-auto max-w-full max-h-96 sm-hidden lg:block min-[1800px]:max-h-64 min-[1800px]:h-64'
             />
-            <p className='lg:text-[13rem] min-[1800px]:text-[18rem]  xl:text-[16rem] text-9xl font-nohemi-ext'>good?</p>
+            <p className='lg:text-[13rem] min-[1800px]:text-[18rem]  xl:text-[16rem] text-8xl font-nohemi-ext'>good?</p>
             
           </div>
           <video 
@@ -89,7 +89,7 @@ const LetsConnect = ({index}) => {
           <Button text={"schedule a call"} isFooter={true} arrowBlack={true} className={"manifestoSchedule"}/>
         </div>
 
-        <div className='py-5 border-t w-full mt-16 flex flex-col items-center justify-between' style={{ borderTop: '1px solid #000' }}>
+        <div className='py-5 border-t w-full mt-40 lg:mt-16 flex flex-col items-center justify-between' style={{ borderTop: '1px solid #000' }}>
           <NavLink to="/">
             <img src={logo} alt="" className='h-28 mb-12 mt-7' />
           </NavLink>

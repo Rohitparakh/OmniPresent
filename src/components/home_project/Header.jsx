@@ -4,7 +4,7 @@ import ScheduleCallButton from './ScheduleCallButton';
 import { NavLink } from "react-router-dom";
 import HeaderMobile from '../common/HeaderMobile';
 
-function Header() {
+function Header({index}) {
     const [isFixed, setIsFixed] = useState(false);
 
     useEffect(() => {
@@ -71,7 +71,7 @@ function Header() {
             <div className='headerExtras'>
                 <div className='leftDiv'>
                     <span>OMNIPRESENT</span>
-                    <span className='index'>01</span>
+                    <span className='index'>{index?index:'01'}</span>
                 </div>
                 <div className='rightDiv'>
                     <span>WEB3</span>

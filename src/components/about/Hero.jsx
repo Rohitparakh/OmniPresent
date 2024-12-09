@@ -18,9 +18,9 @@ const Hero = () => {
   return (
     <div className=' w-screen font-nohemi-ext bg-primary '>
     <img src={top} alt=""  className='absolute lg:top-[-30px] top-[0px] lg:left-[14vw] left-0 lg:h-72 min-[1900px]:h-[320px] min-[1900px]:left-[16vw] h-36 hidden lg:block' style={{zIndex:1001}}/>
-    <div className=' max-w-7xl mx-auto flex flex-col items-center justify-center  relative px-4'>
-    <img src={top} alt=""  className='absolute top-[-90px] left-[20px] z-50 h-48 block lg:hidden'/>
-        <div className='py-20'>
+    <div className=' max-w-[calc(100vw-20px)] lg:max-w-7xl overflow-x-clip mx-auto flex flex-col items-center justify-center  relative px-4'>
+    <img src={top} alt=""  className='absolute top-[-70px] left-[40px] z-[9999] h-48 block lg:hidden'/>
+        <div className='py-12 lg:py-20'>
 
         </div>
         {/* Center text area start */}
@@ -49,13 +49,13 @@ const Hero = () => {
 
     <div className="absolute top-0 lg:top-[-30px] left-[89px] lg:left-[195px]  h-32 lg:h-52 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute right-[-5px] lg:right-[30px] top-[113px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute right-[-5px] lg:right-[30px] top-[119px] lg:top-[113px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
 
-    <div className="absolute right-[-5px] lg:right-[30px] top-[26px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute right-[-5px] lg:right-[30px] top-[32px] lg:top-[26px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
 
   
 
-    <div className="absolute left-0 lg:left-[190px] bottom-[105px] w-[30rem] lg:w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-0 lg:left-[190px] bottom-[96px] lg:bottom-[105px] w-[30rem] lg:w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
 
     <div className="absolute left-[170px] bottom-[8px] w-[30rem] lg:w-[22rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
 
@@ -75,12 +75,12 @@ const Hero = () => {
     <div className='w-full lg:py-10 relative flex lg:flex-row flex-col pt-16 items-baseline justify-center gap-2'>
         <div className='flex lg:flex-row flex-col lg:items-center items-start gap-2'>
         {/* <img src={face1} alt="" className='mix-blend-multiply lg:h-52 h-32 absolute top-[0px] left-[0px]'/> */}
-        <p className=' lg:w-[28rem] leading-7 text-xl font-nohemi font-normal'>
+        <p className=' lg:w-[28rem] leading-8 lg:leading-7 text-2xl font-[300] lg:text-xl font-nohemi lg:font-normal'>
         <img src={blackSquare} height={20} width={20} style={{display: 'inline-block', marginRight:'5px', marginTop:'-3px'}} />  We live and breathe Web3 marketing with deep expertise and a human touch. From bringing brands to market to building connected communities, we help projects reach the audiences that matter.
         </p>
         </div>
         <div className=' lg:w-auto w-full  h-full lg:py-10 py-5 flex items-start'>
-            <Button text="Schedule a call" arrowBlack={true} className="mt-2"/>
+            <Button text="Schedule a call" arrowBlack={true} className="mt-[-40px] lg:mt-2"/>
         </div>
 
         <div className='absolute top-[0] left-[7rem] xl:top-[30px] lg:block hidden'>

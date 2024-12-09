@@ -12,10 +12,10 @@ const Button = ({text, arrowBlack, className, fontSize, isFooter,buttonBig}) => 
 
   return (
     <NavLink target="_blank" to="https://calendly.com/admin-omnipresent/30min" className={className}>
-    <button className={`mt-10 flex items-center justify-center cursor-pointer transition-all duration-300 ${fontSize?"py-7 !pl-11 !pr-16": "py-3"} bg-primary border border-black rounded-full relative pl-6 pr-7 hover:bg-black text-black hover:text-primary tracking-wide hover:border-primary`}>
+    <button className={`mt-10 flex items-center justify-center cursor-pointer transition-all duration-300 ${fontSize && buttonBig?"py-4 !pl-6 !pr-8":fontSize?"py-7 !pl-11 !pr-16": "py-3"} bg-primary border border-black rounded-full relative pl-6 pr-7 hover:bg-black text-black hover:text-primary tracking-wide hover:border-primary`}>
         {/* inner text */}
         {isFooter?<p className={` font-nohemi font-[400] py-1 px-3 ${fontSize?`text-${fontSize}px leading-${fontSize}px`:'text-[32px] lg:text-[42px]'} ${arrowBlack||bigArrow?'mr-2':''}`}>{text}</p>:
-         <p className={` font-nohemi font-[500] ${fontSize?`text-${fontSize}px leading-${fontSize}px`:'text-2xl'} ${arrowBlack||bigArrow?'mr-2':''} ${buttonBig?"min-[1900px]:!text-4xl":""}`}>{text}</p> 
+         <p className={` font-nohemi font-[500] ${fontSize?`text-${fontSize}px leading-${fontSize}px`:'text-2xl'} ${arrowBlack||bigArrow?'mr-2':''} ${buttonBig?"text-[24px] lg:text-4xl":""}`}>{text}</p> 
         }
        
         {/* outer part */}

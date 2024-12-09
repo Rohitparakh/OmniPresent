@@ -19,14 +19,14 @@ const LetsWork = () => {
   return (
     <div className="bg-black text-white relative">
       {/* <div className="max-w-7xl mx-auto pt-16 flex px-4 flex-col items-center justify-start min-h-screen"> */}
-      <div className="max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] mx-auto pt-16 flex px-4 flex-col items-center justify-start min-h-screen">
+      <div className="max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] mx-auto pt-16 flex lg:px-4 flex-col items-center justify-start min-h-screen">
 
         {/* Top divider */}
         {/* <div className="border-b border-white pb-1 w-full flex items-center justify-between">
           <p className="text-white font-semibold text-[10px] tracking-widest">
             our blueprint
           </p>
-          <p className="text-white font-semibold text-xs tracking-widest w-44 lg:text-center text-end">
+          <p className="text-white font-semibold text-sm lg:text-xs tracking-widest w-44 lg:text-center text-end">
             ( 02 )
           </p>
         </div> */}
@@ -39,7 +39,7 @@ const LetsWork = () => {
           animate={isContainerInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-          <img src={letsWork} alt="" className="w-[50%] lg:w-[63%]" />
+          <img src={letsWork} alt="" className="w-[80%] lg:w-[63%]" />
         </motion.div>
 
         {/* Content cards */}
@@ -57,7 +57,7 @@ const LetsWork = () => {
             >
               <img src={letsWork1} alt="" />
               <p className="lg:text-lg text-2xl min-[1700px]:text-[22px] font-nohemi">Tailored Solutions</p>
-              <p className="text-xs min-[1700px]:text-sm font-nohemi text-right text-[#AEAEAE]">
+              <p className="text-sm lg:text-xs min-[1700px]:text-sm font-nohemi text-right text-[#AEAEAE]">
                 We design solutions to meet your unique needs, making sure every move we make is meaningful and impactful.
               </p>
             </motion.div>
@@ -70,7 +70,7 @@ const LetsWork = () => {
               transition={{ delay: 0.5, duration: 0.6 }}
             >
               <img src={letsWork2} alt="" className="lg:h-[120px] h-[150px]" />
-              <p className="text-xs min-[1700px]:text-sm font-nohemi text-left text-[#AEAEAE] lg:mb-2">
+              <p className="text-sm lg:text-xs min-[1700px]:text-sm font-nohemi text-left text-[#AEAEAE] lg:mb-2">
               Our diverse team brings a wealth of experience in the web3 space, giving you access to top-tier expertise and insights.
               </p>
               <p className="lg:text-lg text-2xl min-[1700px]:text-[22px] font-nohemi text-left w-full">Expert Knowledge</p>
@@ -78,22 +78,22 @@ const LetsWork = () => {
 
             {/* Card 3 */}
             <motion.div
-              className="flex lg:flex-row  flex-col justify-center lg:items-center items-end lg:w-80 w-full h-min lg:mt-[300px] min-[1700px]:mt-[350px] mt-10 xl:gap-2 2xl:w-[28rem]"
+              className="flex lg:flex-row  flex-col justify-center lg:items-center items-end lg:w-80 w-full h-min lg:mt-[300px] min-[1700px]:mt-[350px] mt-10 xl:gap-2 2xl:w-[28rem] pb-10 lg:pb-0"
               initial={{ opacity: 0, y: 50 }}
               animate={isContainerInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.7, duration: 0.6 }}
             >
               <img src={letsWork3} alt="" className="lg:h-[120px] h-[200px]" />
-              <div className="flex flex-col justify-around pl-2 h-[120px] w-full  2xl:justify-end">
-                <p className="lg:text-lg text-2xl min-[1700px]:text-[22px] font-nohemi leading-5 text-left lg:w-full w-40 2xl:w-[15rem]">Collaborative Partnership</p>
-                <p className="text-xs min-[1700px]:text-sm font-nohemi text-left text-[#AEAEAE] lg:pr-0 pr-20">
+              <div className="pt-5 lg:pt-0 flex flex-col justify-around pl-2 h-[120px] w-full  2xl:justify-end">
+                <p className="lg:text-lg text-2xl min-[1700px]:text-[22px] font-nohemi leading-7 text-left lg:w-full w-40 2xl:w-[15rem]">Collaborative Partnership</p>
+                <p className="text-sm lg:text-xs min-[1700px]:text-sm font-nohemi text-left text-[#AEAEAE] lg:pr-0 pr-0 lg:pr-20">
                   We prioritize open communication and collaboration, working closely with you to align our efforts with your vision and goals.
                 </p>
               </div>
             </motion.div>
           </div>
 
-          <div className="flex lg:flex-row-reverse flex-col-reverse gap-10 relative w-full lg:mt-0 mt-10 justify-end lg:ml-[-200px]">
+          <div className="flex lg:flex-row-reverse flex-col gap-10 relative w-full lg:mt-0 mt-10 justify-end lg:ml-[-200px]">
             
             {/* Card 4 */}
             <motion.div
@@ -103,9 +103,9 @@ const LetsWork = () => {
               transition={{ delay: 0.9, duration: 0.6 }}
             >
               <img src={letsWork5} alt="" className="h-[180px]" />
-              <div className="flex flex-col gap-2 justify-end lg:pl-2 items-end h-full">
+              <div className="pt-2 lg:pt-0 flex flex-col gap-2 justify-end lg:pl-2 items-end h-full">
                 <p className="lg:text-lg text-2xl min-[1700px]:text-[22px] font-nohemi leading-5 text-left w-full">Agile Execution</p>
-                <p className="text-xs min-[1700px]:text-sm font-nohemi text-left w-full text-[#AEAEAE]">
+                <p className="text-sm lg:text-xs min-[1700px]:text-sm font-nohemi text-left w-full text-[#AEAEAE]">
                   Our fast-paced approach allows us to adapt quickly, making sure your project remains on the cutting edge of the ever-evolving Web3 landscape.
                 </p>
               </div>
@@ -113,14 +113,14 @@ const LetsWork = () => {
 
             {/* Card 5 */}
             <motion.div
-              className="flex flex-col justify-center items-end w-40 lg:ml-0 ml-auto"
+              className="flex flex-col justify-center items-end w-80 lg:w-40 lg:ml-0 ml-auto"
               initial={{ opacity: 0, y: 50 }}
               animate={isContainerInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 1.1, duration: 0.6 }}
             >
-              <img src={letsWork4} alt="" className="lg:w-20 w-72" />
-              <p className="lg:text-lg text-2xl min-[1700px]:text-[22px] font-nohemi lg:text-start text-end w-64 lg:w-auto lg:py-2">Results-Driven</p>
-              <p className="text-xs min-[1700px]:text-sm font-nohemi text-right text-[#AEAEAE]">
+              <img src={letsWork4} alt="" className="lg:w-20 w-40" />
+              <p className="pt-2 lg:pt-0 lg:text-lg text-2xl min-[1700px]:text-[22px] font-nohemi lg:text-start text-end w-64 lg:w-auto lg:py-2">Results-Driven</p>
+              <p className="text-sm lg:text-xs min-[1700px]:text-sm font-nohemi text-right text-[#AEAEAE]">
                 We focus on delivering measurable outcomes, ensuring that every action we take drives your success forward.
               </p>
             </motion.div>

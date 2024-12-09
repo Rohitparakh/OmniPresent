@@ -21,7 +21,7 @@ const Card = ({ title, desc }) => {
         <span className="text-[#EEFE05] text-5xl">■ </span>
         {title}
       </p>
-      <p className="text-[#FFFFFF] font-nohemi text-lg leading-6 font-[300]">
+      <p className="text-[#FFFFFF] font-nohemi text-lg leading-8 lg:leading-6 font-[300]">
         {desc}
       </p>
     </motion.div>
@@ -88,20 +88,20 @@ const Manifesto = () => {
           animate={contentInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <p className="text-6xl 2xl:text-7xl font-nohemi-ext font-bold lg:w-[69%] text-right mb-20 ">
+          <p className="text-5xl lg:text-6xl 2xl:text-7xl font-nohemi-ext font-bold lg:w-[69%] text-right mb-10 lg:mb-20 ">
             At the crux of our mission lies the conviction that our approach to how we <span className="text-primary">work</span>, <span className="text-primary">connect</span> and{" "}
             <span className="text-primary">innovate</span> shapes our <span className="text-primary">identity</span>.
           </p>
         </motion.div>
 
         {/* Cards */}
-        <div className="w-full grid lg:grid-cols-3 gap-4 mt-20 lg:mb-0 mb-20 lg:gap-x-12 lg:gap-y-24 max-w-[80vw]">
+        <div className="w-full grid lg:grid-cols-3 gap-16 lg:gap-4 mt-20 lg:mb-0 mb-20 lg:gap-x-12 lg:gap-y-24 max-w-[80vw]">
           {data.map((item, index) => (
             <Card title={item.title} desc={item.desc} key={index} />
           ))}
           
         </div>
-        <Button fontSize={true} buttonBig={true} text={"schedule a call"} className="lg:absolute lg:left-[50%] lg:bottom-[-250px] min-[1900px]:bottom-[-350px] lg:-translate-x-1/2 z-20 manifestoSchedule "/>
+        <Button fontSize={"20"} buttonBig={true} text={"schedule a call"} className="lg:absolute lg:left-[50%] relative bottom-[50px] lg:bottom-[-250px] min-[1900px]:bottom-[-350px] lg:-translate-x-1/2 z-20 manifestoSchedule "/>
 
       </motion.div>
 

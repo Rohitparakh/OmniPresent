@@ -4,11 +4,11 @@ import SectionCta from './SectionCta';
 import ScheduleCallButton from './ScheduleCallButton';
 import ScheduleCallButtonAccent from './ScheduleCallButtonAccent';
 
-const WhyUsCta = ({text, url}) => {
+const WhyUsCta = ({text, url, desktopOnly}) => {
   const[textSecondary, setTextSecondary] = useState(text);
   
   return (
-    <div className=' hidden lg:flex'>
+    <div className={`${desktopOnly?"hidden lg:flex":"block lg:flex "}`}>
         <SectionCta text={text} position='none' url={url}/>
         <ScheduleCallButtonAccent />
     </div>  

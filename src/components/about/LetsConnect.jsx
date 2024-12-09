@@ -52,11 +52,11 @@ const LetsConnect = () => {
         </div>
 
         <div className='flex lg:flex-row flex-col lg:items-center justify-center gap-12 pt-20'>
-          <p className='lg:w-1/3 font-nohemi text-xl leading-8 lg:leading-10 lg:text-3xl'>
+          <p className='lg:w-1/3 font-nohemi font-[300] text-2xl lg:text-xl leading-8 lg:leading-10 lg:text-3xl'>
             Whether you’ve been building in Web3 for a while — or are just launching your brand into the space — let’s chat about how we can help you make an impact in Web3.
           </p>
 
-          <p className='lg:text-[13rem] min-[1800px]:text-[18rem] xl:text-[16rem] text-8xl font-nohemi-ext sm-text-center'>
+          <p className='lg:text-[13rem] min-[1800px]:text-[18rem] xl:text-[16rem] text-9xl font-nohemi-ext sm-text-center'>
             sound
           </p>
         </div>
@@ -73,7 +73,7 @@ const LetsConnect = () => {
               controls={false}
               className='lg:h-48 h-10 w-auto max-w-full max-h-48 sm-hidden lg:block min-[1800px]:max-h-64 min-[1800px]:h-64'
             />
-            <p className='lg:text-[13rem] min-[1800px]:text-[18rem] text-8xl font-nohemi-ext'>good?</p>
+            <p className='lg:text-[13rem] min-[1800px]:text-[18rem] text-9xl font-nohemi-ext'>good?</p>
             
           </div>
           <video 

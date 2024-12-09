@@ -23,7 +23,7 @@
 @media (max-width:768px) {
     .services .swiggly{
      height: 200px;
-     top:300px !important;
+     top:350px !important;
      transform: scale(2);   
      left: 180px;
     }

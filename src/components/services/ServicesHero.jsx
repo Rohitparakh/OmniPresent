@@ -121,7 +121,7 @@ const ServicesHero = () => {
               <span className="text-black">community members</span>
               <span className="text-black font-nohemi-ext">(</span>
               <span className="text-black font-nohemi-ext">$150M+</span>
-              <span className="text-black">in client venue</span>
+              <span className="text-black">in client revenue</span>
               <span className="text-black font-nohemi-ext">)</span>
               <img src={marArrow} className="h-20" alt="" />
             </h1>

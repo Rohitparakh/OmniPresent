@@ -137,6 +137,13 @@ body {
       display: none;
   }
 
+  .why-us-first{
+    padding: 20px 0 !important;
+  }
+
+  .why-us-first .graphic-element{
+    padding: 0 50px !important;
+  }
   
   }
 
@@ -168,6 +175,8 @@ hr{
 gap: 150px;
 display: flex;
 justify-content: space-between;
+font-weight: 500;
+width: 100%;
 }
 .headerExtras .rightDiv{
   /* width: 25vw; */
@@ -634,8 +643,8 @@ right: 63.5%;
 }
 
 .headerExtras {
-  width: 100% !important;
-  justify-content: center !important;
+  width: calc(100vw - 40px) !important;
+  justify-content: stretch !important;
   
 }
 
@@ -680,11 +689,11 @@ mix-blend-mode: color;
   }
 
   hr{
-    width: 90vw !important;
-    margin-left: 5vw !important;
+    width: calc(100vw - 40px) !important;
+    /* margin-left: 5vw !important; */
   }
  .why-us-first{
-  width: calc(100vw - 63px) !important;
+  width: calc(100vw - 40px) !important;
   /* margin-bottom: 100px !important; */
  }
 
@@ -704,15 +713,18 @@ mix-blend-mode: color;
 
   .why-us-second .description{
     width: 100% !important;
-    font-size: 19px !important;
+    font-size: 22px !important;
     line-height: 30px !important;
     white-space: break-spaces !important;
+    /* margin-top: 20px !important; */
   }
 
   .why-us-second{
     margin:auto !important;
     margin-top: 150px !important;
-    width: calc(100vw - 63px) !important;
+    width: calc(100vw - 40px) !important;
+    padding: 0 !important;
+    
   }
 
   .why-us-first .content-right{
@@ -722,14 +734,14 @@ mix-blend-mode: color;
   .why-us-first p{
     width: 100% !important;
     /* left: -25% !important; */
-    font-size: 19px !important;
+    font-size: 22px !important;
     line-height: 30px !important;
     color: #eaeaea !important;
   }
 
   .why-us-first .title-mobile{
     color: #fff;
-    font-size: 31px;
+    font-size: 38px;
     font-weight: 900;
     width: 100%;
     position: relative;
@@ -759,11 +771,17 @@ mix-blend-mode: color;
     margin-top: 50px;
   }
 
+  .why-us-second .card-image{
+    margin-bottom: 7rem;
+  }
+
   .why-us-second .title{
     line-height: normal !important;
-    margin-top: 50px !important;
-    line-height: 40px !important;
-    font-size: 31px !important;
+    /* margin-top: 50px !important; */
+    line-height: 48px !important;
+    font-size: 38px !important;
+    float: right;
+    margin-bottom: 10px !important;
   }
 
   .why-dots{
@@ -771,13 +789,13 @@ mix-blend-mode: color;
   }
 
   .why-us-third-title{
-    font-size: 31px !important;
-    line-height: 40px !important;
+    font-size: 38px !important;
+    line-height: 48px !important;
   }
 
   .why-us-third{
     flex-direction: column-reverse !important;
-    max-width: calc(100vw - 63px) !important;
+    max-width: calc(100vw - 40px) !important;
   }
 
   
@@ -801,17 +819,23 @@ mix-blend-mode: color;
   }
 
   .cta-text{
-    font-size: 25px !important;
+    font-size: 30px !important;
   }
 
   .section-cta-container{
 width: auto !important;
+display: flex;
   }
 
   .section-cta{
-    margin-bottom: 30px;
-    margin-right: 0 !important;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
     justify-content: center;
+    padding: 10px 0 !important;
+
 
   }
 
@@ -824,7 +848,7 @@ width: auto !important;
   .why-us-cta .call-to-action.accent{
     /* width: max-content; */
     width: 70vw !important;
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     justify-content: center !important;
   }
 
@@ -840,6 +864,15 @@ width: auto !important;
   .services .swiggly{
     top: 100px !important;
   }
+
+  .abstractText .linesBg {
+    position: absolute !important;
+    top: -6% !important;
+    left: 5px !important;
+    height: 86% !important;
+    width: 97% !important;
+    object-fit: cover;
+}
   
   .portfolio-single,
   .portfolio-single-left,
@@ -921,8 +954,12 @@ width: auto !important;
   }
 
   .portfolio-single .title::before{
-    left: 100%;
+    left: 102% !important;
+    top: 68%;
+    width: 15vw !important;
   }
+
+  
 
   .portfolio-single-left .title::before{
     right: 102%;
@@ -963,6 +1000,8 @@ width: auto !important;
   .serviceCards{
     display: block !important;
     margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .servicesHeader *{
@@ -992,7 +1031,8 @@ width: auto !important;
   .portfolio-single .index,
   .portfolio-single-left .index{  
     font-size: 18px !important;
-    top: -50% !important;
+    top: -40% !important;
+    left: 100% !important;
 
   }
 
@@ -1002,8 +1042,8 @@ width: auto !important;
   }
   .portfolio-single-four .index{
     font-size: 15px !important;
-    top: -80% !important;
-
+    top: -50% !important;
+    left: 100% !important;
   }
 
 .portfolio-single-left .description {
@@ -1038,7 +1078,7 @@ margin-bottom: 40px !important;
     /* height: 0 !important; */
   }
   .portfolio-single{
-    overflow: visible !important;
+    overflow: hidden !important;
   }
 
   .portfolio-single .title,
@@ -1102,7 +1142,11 @@ margin-bottom: 40px !important;
   .testimonialThird .testimonialQuote,
   .testimonialFourth .testimonialQuote{
     font-size: 34px !important;
-    line-height: 40px !important;
+    line-height: 48px !important;
+  }
+
+  .testimonialSecond .testimonialQuote{
+    margin-top: 20px !important;
   }
 
   .testimonialThird .companyName{
@@ -1128,6 +1172,7 @@ margin-bottom: 40px !important;
 
   .testimonialSecond{
     display: block !important;
+    padding: 0 !important;
   }
 
   .testimonialThird{
@@ -1213,7 +1258,7 @@ margin-bottom: 40px !important;
   }
 
   .why-us-third{
-    padding: 20px !important;
+    padding: 20px 0 !important;
     align-items: flex-end !important;
     gap: 0 !important;
   }
@@ -1227,8 +1272,8 @@ margin-bottom: 40px !important;
     width: 100% !important;
     margin-right: 0 !important;
     max-width: 100% !important;
-    font-size: 19px !important;
-    line-height: 30px !important;
+    font-size: 22px !important;
+    line-height: 38px !important;
   }
 
   .soDoWe{
@@ -1417,8 +1462,8 @@ margin-bottom: 40px !important;
   }
 
   .soDoWe{
-    font-size: 75px !important;
-    line-height: 75px !important;
+    font-size: 128px !important;
+    line-height: 128px !important;
   }
 
   .scheduleButtonAnchor .buttonText{
@@ -1459,6 +1504,8 @@ margin-bottom: 40px !important;
   }
   .abstractRight{
     margin-top: 70px !important;
+    font-size: 28px !important;
+    font-weight: 300 !important;
   }
 
   .futureSection{
@@ -1632,8 +1679,12 @@ margin-bottom: 40px !important;
 
   @media(min-width:1700px){
     .why-us-first .description{
-      font-size: 23px !important;
+      font-size: 25px !important;
     }
   }
 
-  
+  @media (min-width:400px) and (max-width:500px) {
+    .portfolio-single .title::before{
+     width: 20vw !important; 
+    }
+    }

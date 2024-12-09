@@ -34,7 +34,7 @@ const Testimonials = () => {
           </div>
         </div>
 <div className='ctaDiv'>
-        <WhyUsCta text='see more' />
+        <WhyUsCta text='see more'  desktopOnly={true}/>
         </div>
     </div>
   )

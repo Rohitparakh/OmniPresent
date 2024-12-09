@@ -58,7 +58,7 @@ function HeroSection() {
                 <motion.h1  variants={slideUpDelay}
         initial="hidden"
         whileInView="visible"><div class="absolute top-[50%] left-[-130px] lg:block hidden"><img src={line} class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></motion.h1>
-                <div className='d-flex justify-center'>
+                <div className='d-flex justify-center w-[90vw]'>
                     <div className='subHeading'>
                 <p className='font-[400] text-[36px] leading-[35px]'>
                 <img style={{display: 'inline-block', marginRight:'5px', marginTop:'-3px'}} src={blackSquare} height={20} width={20}/> The community-driven web3 super agency for the new internet.</p>

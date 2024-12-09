@@ -35,7 +35,7 @@ const Cases = () => {
 
   return (
     <div className='containerOld relative !pt-[200px] casesContainer'>
-    <SectionHeader heading='Current Projects' index='02'/>
+    <SectionHeader heading='case studies' index='02'/>
     <PortfolioSingle  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
     <PortfolioSingleLeft  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
     <PortfolioSingleThree  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>

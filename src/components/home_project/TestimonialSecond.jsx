@@ -19,7 +19,7 @@ function TestimonialSecond() {
                     “Omnipresent has been instrumental in the growth of RampX, and has been an absolute pleasure to work with.”
                 </p>
             </div>
-            <div className='lg:hidden flex mt-20 gap-3 '>
+            <div className='lg:hidden flex mt-10 lg:mt-20 gap-3 '>
             <img src={image1} alt="Laksh Bhalla" className="h-[130px]" />
             <div className="reviewerContent text-right">
                 <p className="reviewerName">Laksh Bhalla</p>

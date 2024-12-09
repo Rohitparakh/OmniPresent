@@ -85,14 +85,15 @@ const CasesHero = () => {
     {/* Bottom area end */}
 
     </div>
-    <div className='flex items-center gap-4 max-w-7xl w-full mx-auto justify-end pb-4 hidden md:flex'>
-            <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-7' /></NavLink>
-            <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className='h-7' /></NavLink>
-            <NavLink target="_blank" to=""><img src={insta} alt="" className='h-7' /></NavLink>
+    <div className='flex items-center gap-5 max-w-7xl w-full mx-auto justify-end pb-12 hidden md:flex'>
+            <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-12' /></NavLink>
+            <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className='h-12' /></NavLink>
+            <NavLink target="_blank" to=""><img src={insta} alt="" className='h-12' /></NavLink>
           </div>
     {/* marquee start */}
     <div className=' w-full '>
-        <div className='max-w-7xl mx-auto border border-black'>
+        {/* <div className='max-w-7xl mx-auto border border-black'> */}
+        <div className='max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] mx-auto border border-black'>
 
         </div>
 

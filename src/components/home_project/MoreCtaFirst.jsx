@@ -7,7 +7,7 @@ import MarqueeSection from './../common/MarqueeSection';
 
 function MoreCTAFirst() {
     return (
-        <div className="w-full pt-60 bg-black">
+        <div className="w-full pt-40 bg-black">
         <MarqueeSection speed={200}>
              <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                   <p className=" text-[150px] lg:text-[230px] font-[1000] font-nohemi-ext">sound good?</p>

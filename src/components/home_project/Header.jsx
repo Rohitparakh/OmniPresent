@@ -10,7 +10,8 @@ function Header() {
     useEffect(() => {
         const handleScroll = () => {
           // Check if the horizontal scroll position is greater than 50vw
-          if (window.scrollY > window.innerWidth / 2) {
+          // if (window.scrollY > window.innerWidth / 2) {
+          if (window.scrollY > 0) {
             setIsFixed(true);
           } else {
             setIsFixed(false);
@@ -70,7 +71,7 @@ function Header() {
             <div className='headerExtras'>
                 <div className='leftDiv'>
                     <span>OMNIPRESENT</span>
-                    <span>01</span>
+                    <span className='index'>01</span>
                 </div>
                 <div className='rightDiv'>
                     <span>WEB3</span>

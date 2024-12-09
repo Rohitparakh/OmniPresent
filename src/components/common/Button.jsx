@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import arrowPrimary from '../../assets/images/arrowPrimary.png'
 import arrowBlackImg from '../../assets/images/arrowBlack.png'
 
-const Button = ({text, arrowBlack, className, fontSize, isFooter}) => {
+const Button = ({text, arrowBlack, className, fontSize, isFooter,buttonBig}) => {
   
   let bigArrow=false;
 
@@ -15,7 +15,7 @@ const Button = ({text, arrowBlack, className, fontSize, isFooter}) => {
     <button className={`mt-10 flex items-center justify-center cursor-pointer transition-all duration-300 ${fontSize?"py-7 !pl-11 !pr-16": "py-3"} bg-primary border border-black rounded-full relative pl-6 pr-7 hover:bg-black text-black hover:text-primary tracking-wide hover:border-primary`}>
         {/* inner text */}
         {isFooter?<p className={` font-nohemi font-[400] py-1 px-3 ${fontSize?`text-${fontSize}px leading-${fontSize}px`:'text-[32px] lg:text-[42px]'} ${arrowBlack||bigArrow?'mr-2':''}`}>{text}</p>:
-         <p className={` font-nohemi font-[500] ${fontSize?`text-${fontSize}px leading-${fontSize}px`:'text-2xl'} ${arrowBlack||bigArrow?'mr-2':''}`}>{text}</p> 
+         <p className={` font-nohemi font-[500] ${fontSize?`text-${fontSize}px leading-${fontSize}px`:'text-2xl'} ${arrowBlack||bigArrow?'mr-2':''} ${buttonBig?"min-[1900px]:!text-4xl":""}`}>{text}</p> 
         }
        
         {/* outer part */}
@@ -32,9 +32,9 @@ const Button = ({text, arrowBlack, className, fontSize, isFooter}) => {
             <img src={arrowPrimary} height={20}/>
         </p>
     </div>
-        : bigArrow && !isFooter?<div className='w-[2.5rem] h-[2.5rem] border-2 border-black rounded-full absolute right-[-12px] bg-primary flex items-center justify-center p-2 hover:border hover:border-primary'>
+        : bigArrow && !isFooter?<div className={`${buttonBig?"min-[1900px]:w-[3.5rem] min-[1900px]:h-[3.5rem]":"w-[2.5rem] h-[2.5rem]"} border-2 border-black rounded-full absolute right-[-12px] bg-primary flex items-center justify-center p-2 hover:border hover:border-primary`}>
         <p className='text-black font-nohemi font-semibold'>
-        <img src={arrowBlackImg} height={12} className='max-h-[18px]'/>
+        <img src={arrowBlackImg} height={buttonBig?24:12} className={`${buttonBig?"max-h-[18px] min-[1900px]:max-h-[25px]":"max-h-[18px]"}`}/>
         </p>
     </div>
 

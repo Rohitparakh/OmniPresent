@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { Button } from "../common";
 import divider from '../../assets/about/divider.svg';
 import gif from '../../assets/gif/OurManifesto.gif';
+import SectionHeader from "../home_project/SectionHeader";
 
 const Card = ({ title, desc }) => {
   const ref = React.useRef(null);
@@ -11,16 +12,16 @@ const Card = ({ title, desc }) => {
   return (
     <motion.div
       ref={ref}
-      className=" flex flex-col justify-between gap-2"
+      className=" flex flex-col justify-between gap-2 lg:gap-0 lg:justify-start"
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <p className="text-white font-semibold text-2xl font-nohemi">
-        <span className="text-[#EEFE05] text-4xl">■ </span>
+      <p className="text-white font-semibold text-3xl font-nohemi lg:h-[110px]">
+        <span className="text-[#EEFE05] text-5xl">■ </span>
         {title}
       </p>
-      <p className="text-[#FFFFFF] font-nohemi text-base leading-6">
+      <p className="text-[#FFFFFF] font-nohemi text-lg leading-6 font-[300]">
         {desc}
       </p>
     </motion.div>
@@ -58,13 +59,14 @@ const Manifesto = () => {
     <div className="bg-black text-white relative">
       <motion.div
         ref={contentRef}
-        className="max-w-7xl mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full lg:relative"
+        className="max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full lg:relative"
+        // className="max-w-7xl mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full lg:relative"
         initial={{ opacity: 0 }}
         animate={contentInView ? { opacity: 1 } : {}}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         {/* Top divider */}
-        <div
+        {/* <div
           className="border-b border-white pb-1 w-full flex items-center justify-between"
           initial={{ opacity: 0, y: -20 }}
           animate={contentInView ? { opacity: 1, y: 0 } : {}}
@@ -76,7 +78,8 @@ const Manifesto = () => {
           <p className="text-white font-semibold text-xs tracking-widest w-44 lg:text-center text-end">
             ( 01 )
           </p>
-        </div>
+        </div> */}
+        <SectionHeader heading="our manifesto" index="01"/>
 
         {/* Manifesto content */}
         <motion.div
@@ -85,7 +88,7 @@ const Manifesto = () => {
           animate={contentInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <p className="text-5xl font-nohemi-ext font-bold lg:w-[80%] text-right leading-[3.2rem]">
+          <p className="text-6xl 2xl:text-7xl font-nohemi-ext font-bold lg:w-[69%] text-right mb-20 ">
             At the crux of our mission lies the conviction that our approach to how we <span className="text-primary">work</span>, <span className="text-primary">connect</span> and{" "}
             <span className="text-primary">innovate</span> shapes our <span className="text-primary">identity</span>.
           </p>
@@ -98,7 +101,7 @@ const Manifesto = () => {
           ))}
           
         </div>
-        <Button text={"schedule a call"} className="lg:absolute lg:left-[50%] lg:bottom-[-250px] lg:-translate-x-1/2 z-20 manifestoSchedule"/>
+        <Button fontSize={true} buttonBig={true} text={"schedule a call"} className="lg:absolute lg:left-[50%] lg:bottom-[-250px] min-[1900px]:bottom-[-350px] lg:-translate-x-1/2 z-20 manifestoSchedule "/>
 
       </motion.div>
 

@@ -7,7 +7,7 @@ import insta from '../../assets/about/insta.svg';
 import logo from '../../assets/images/logoFooter.png';
 import { NavLink } from 'react-router-dom';
 
-const LetsConnect = () => {
+const LetsConnect = ({index}) => {
   const videoRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
 
@@ -47,7 +47,7 @@ const LetsConnect = () => {
             let’s connect
           </p>
           <p className="text-black font-bold text-xs tracking-widest w-44 md:mr-[250px] lg:text-center text-end">
-            ( 05 )
+            ( {index?index:'05'} )
           </p>
         </div>
 
@@ -71,9 +71,9 @@ const LetsConnect = () => {
               muted 
               playsInline
               controls={false}
-              className='lg:h-48 h-10 w-auto max-w-full max-h-48 sm-hidden lg:block min-[1800px]:max-h-64 min-[1800px]:h-64'
+              className='lg:h-80 h-10 w-auto max-w-full max-h-96 sm-hidden lg:block min-[1800px]:max-h-64 min-[1800px]:h-64'
             />
-            <p className='lg:text-[13rem] min-[1800px]:text-[18rem] text-9xl font-nohemi-ext'>good?</p>
+            <p className='lg:text-[13rem] min-[1800px]:text-[18rem]  xl:text-[16rem] text-9xl font-nohemi-ext'>good?</p>
             
           </div>
           <video 
@@ -89,15 +89,15 @@ const LetsConnect = () => {
           <Button text={"schedule a call"} isFooter={true} arrowBlack={true} className={"manifestoSchedule"}/>
         </div>
 
-        <div className='h-48 py-5 border-t w-full mt-16 flex flex-col items-center justify-between' style={{ borderTop: '1px solid #000' }}>
+        <div className='py-5 border-t w-full mt-16 flex flex-col items-center justify-between' style={{ borderTop: '1px solid #000' }}>
           <NavLink to="/">
             <img src={logo} alt="" className='h-28 mb-12 mt-7' />
           </NavLink>
 
           <div className='flex items-center gap-4 mb-10'>
-            <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-10 mb-16' /></NavLink>
-            <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className='h-10 mb-16' /></NavLink>
-            <NavLink target="_blank" to=""><img src={insta} alt="" className='h-10 mb-16' /></NavLink>
+            <NavLink target="_blank" to=""> <img src={telegram} alt="" className='h-10' /></NavLink>
+            <NavLink target="_blank" to="https://x.com/Omnipresentcc"><img src={x} alt="" className='h-10' /></NavLink>
+            <NavLink target="_blank" to=""><img src={insta} alt="" className='h-10' /></NavLink>
           </div>
         </div>
       </div>

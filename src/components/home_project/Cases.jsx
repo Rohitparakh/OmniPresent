@@ -44,7 +44,7 @@ const Cases = () => {
     <SectionCta text='see more cases' url="/cases"/>
     {isCursorVisible && (
         <div
-          className="custom-cursor font-[24px] leading-[34px] font-[400] font-nohemi"
+          className="custom-cursor font-nohemi"
           style={{
             top: `${cursorPosition.y}px`,
             left: `${cursorPosition.x}px`,

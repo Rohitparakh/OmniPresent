@@ -4,7 +4,7 @@ import face1Mobile from '../../assets/about/face1Mobile.png';
 // import face2 from '../../assets/about/face2.svg';
 import face2 from '../../assets/about/face2.png';
 import face4 from '../../assets/about/face4.svg'
-import top from '../../assets/about/1.svg';
+import top from '../../assets/about/1.png';
 import line from '../../assets/about/line.svg';
 import marLogo from '../../assets/about/marLogo.svg';
 import marArrow from '../../assets/about/marArrow.svg';
@@ -17,20 +17,23 @@ const Hero = () => {
 
   return (
     <div className=' w-screen font-nohemi-ext bg-primary '>
-    <img src={top} alt=""  className='absolute lg:top-[0px] top-[0px] lg:left-[10vw] left-0 mix-blend-multiply lg:h-72 h-36 hidden lg:block' style={{zIndex:1001}}/>
+    <img src={top} alt=""  className='absolute lg:top-[-30px] top-[0px] lg:left-[14vw] left-0 lg:h-72 min-[1900px]:h-[320px] min-[1900px]:left-[16vw] h-36 hidden lg:block' style={{zIndex:1001}}/>
     <div className=' max-w-7xl mx-auto flex flex-col items-center justify-center  relative px-4'>
-    <img src={top} alt=""  className='absolute top-[-90px] left-[20px] z-50 mix-blend-multiply h-48 block lg:hidden'/>
+    <img src={top} alt=""  className='absolute top-[-90px] left-[20px] z-50 h-48 block lg:hidden'/>
         <div className='py-20'>
 
         </div>
         {/* Center text area start */}
-      <div className={`flex flex-col leading-[6rem] w-[560px] items-center justify-center py-1 lg:scale-[1.6] scale-[.8] relative`}>
+      <div className={`flex flex-col leading-[6rem] lg:w-[560px] items-center justify-center py-1 lg:scale-[1.6] scale-[.8] relative`}>
         <motion.h1 
         variants={slideUp}
         initial="hidden"
         animate="visible"
-        className='text-[10rem] flex items-center font-nohemi-ext text-black relative lg:ml-[50px]'>
-         <span className='text-[10rem] font-[900] flex items-center w-min pt-9 swiggly lg:mr-[72px]'>~</span> o<span className='font-[900] z-10'>u</span><span className='font-[900] z-30'>r</span><span className=''></span>
+        className='text-[10rem] flex items-center font-nohemi-ext text-black relative lg:ml-[50px] w-full lg:w-auto justify-between lg:justify-normal'>
+         <span className='text-[10rem] font-[900] flex items-center w-min pt-9 swiggly lg:mr-6'>~</span>
+         <div className='text-[10rem] flex items-center font-nohemi-ext text-black relative lg:ml-[50px]'> o<span className='font-[900] z-10'>u</span><span className='font-[900] z-30'>r</span></div>
+         <span className=''></span>
+         
         </motion.h1>
         <motion.h1 variants={slideUpDelay}
          initial="hidden"
@@ -42,22 +45,22 @@ const Hero = () => {
 
         {/* assets for text */}
         <>
-    <div className="absolute top-[-30px] left-[113px] lg:left-[77px]  h-52 border-r-[0.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute top-0 lg:top-[-30px] left-[7px]  lg:left-[77px] h-32 lg:h-52 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute top-[-30px] left-[195px] h-52 border-r-[0.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute top-0 lg:top-[-30px] left-[89px] lg:left-[195px]  h-32 lg:h-52 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute right-[-5px] lg:right-[30px] top-[113px] w-[30rem] border-b-[0.5px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute right-[-5px] lg:right-[30px] top-[113px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
 
-    <div className="absolute right-[-5px] lg:right-[30px] top-[26px] w-[30rem] border-b-[0.5px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute right-[-5px] lg:right-[30px] top-[26px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
 
   
 
-    <div className="absolute left-[190px] bottom-[105px] w-[20rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-0 lg:left-[190px] bottom-[105px] w-[30rem] lg:w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute left-[170px] bottom-[8px] w-[22rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-[170px] bottom-[8px] w-[30rem] lg:w-[22rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
 
     {/* Face 2 */}
-    <img src={face2} alt="" className=" h-32 absolute top-[-80px] right-[60px] z-20 animate-fadeIn" />
+    <img src={face2} alt="" className=" h-32 absolute top-[-80px] right-[60px] z-50 animate-fadeIn xl:h-24 xl:top-[-45px]" />
 </>
 
 
@@ -77,15 +80,15 @@ const Hero = () => {
         </p>
         </div>
         <div className=' lg:w-auto w-full  h-full lg:py-10 py-5 flex items-start'>
-            <Button text="Schedule a call" arrowBlack={true}/>
+            <Button text="Schedule a call" arrowBlack={true} className="mt-2"/>
         </div>
 
-        <div className='absolute top-[0] left-[7rem] lg:block hidden'>
+        <div className='absolute top-[0] left-[7rem] xl:top-[30px] lg:block hidden'>
             <img src={line} className='h-28' alt="" />
-    <img src={face1} alt="" className=" h-32 absolute top-[-100%] left-[50%] z-20 animate-fadeIn mix-blend-multiply" />
+    <img src={face1} alt="" className=" h-32 xl:h-44 absolute top-[-100%] left-[50%] z-20 animate-fadeIn mix-blend-multiply" />
 
         </div>
-        <div className='absolute top-[-155px] right-12 lg:block hidden'>
+        <div className='absolute top-[-155px] xl:top-[-100px] right-12 lg:right-0 lg:block hidden'>
             <img src={face4} className=' h-64 mix-blend-multiply' alt="" />
         </div>
     </div>
@@ -100,7 +103,7 @@ const Hero = () => {
         </div>
 
         <div className='lg:py-6 py-3  w-full'>
-        <MarqueeSection>
+        <MarqueeSection direction="left">
                 <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 select-none">
               <span className="text-black font-nohemi-ext">5M+</span> social followers
               <img src={right} className="h-16" alt="" />

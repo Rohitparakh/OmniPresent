@@ -7,6 +7,7 @@ import card4 from "../../assets/cases/card4.svg";
 import card5 from "../../assets/cases/card5.svg";
 import card6 from "../../assets/images/PortfolioThirdTwo.png";
 import { NavLink } from 'react-router-dom';
+import SectionHeader from '../home_project/SectionHeader';
 
 const Card = ({ img, title, para, url }) => {
     return (
@@ -93,14 +94,15 @@ const filteredData = activeTab === null
         <div className="bg-black text-white relative">
             <div className="max-w-7xl mx-auto pt-16 flex px-4 flex-col items-center justify-start min-h-screen">
                 {/* Top divider */}
-                <div className="border-b border-white pb-1 w-full flex items-center justify-between">
+                {/* <div className="border-b border-white pb-1 w-full flex items-center justify-between">
                     <p className="text-white font-semibold text-[10px] tracking-widest">
                         OUR WORK
                     </p>
                     <p className="text-white font-semibold text-xs tracking-widest w-44 lg:text-center text-end">
                         ( 01 )
                     </p>
-                </div>
+                </div> */}
+                <SectionHeader heading="case studies" index="01" />
 
                 {/* Filters Section */}
                 <div style={{scrollbarWidth:'none', WebkitOverflowScrolling:'touch'}} className='relative w-full h-14 mt-20 flex items-center gap-0 overflow-x-auto whitespace-nowrap '>

@@ -16,7 +16,7 @@ import HeaderMobile from '../components/common/HeaderMobile';
 
 function HomePage() {
     return (
-        <div className='relative'>
+        <div className='relative overflow-hidden'>
             <Header/>
             <HeroSection />
             <hr className='mt-60 mx-auto'/>

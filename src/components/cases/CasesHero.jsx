@@ -59,10 +59,10 @@ const CasesHero = () => {
     {/* <div className="absolute lg:right-[10px] lg:top-[40px] left-0 lg:left-[-50px] top-[7px] w-[33rem] border-b-[1.5px] border-black opacity-50  animate-growX"></div> */}
     
 
-    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[10px] 2xl:w-[90%] bottom-[100px] lg:bottom-[125px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
-    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[40%] 2xl:w-[50%] bottom-[100px] lg:bottom-[110px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[10px] 2xl:w-[90%] xl:left-[30px] xl:w-[90%] bottom-[100px] lg:bottom-[125px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[40%] 2xl:w-[50%] xl:left-[40%] xl:w-[50%] bottom-[100px] lg:bottom-[110px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute left-[170px] 2xl:left-[370px] 2xl:w-[25rem] bottom-[8px] 2xl:bottom-[-10px] w-[22rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-[170px] 2xl:left-[370px] 2xl:w-[25rem] xl:left-[300px] xl:w-[25rem] bottom-[8px] 2xl:bottom-[-10px] xl:bottom-[-3px] w-[22rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
 </>
 
 

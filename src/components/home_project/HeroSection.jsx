@@ -57,7 +57,7 @@ function HeroSection() {
             className='to present will-change-[opacity,x,y,transform]'>prese<span  className='z-50 relative'>nt</span></motion.span> <span className='one'></span></h1>
                 <motion.h1  variants={slideUpDelay}
         initial="hidden"
-        whileInView="visible"><div class="absolute top-[50%] left-[-130px] lg:block hidden"><img src={line} class="h-28" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></motion.h1>
+        whileInView="visible"><div class="absolute top-[50%] left-[-130px] lg:block hidden"><img src={line} class="h-28 heroPlusImage" alt=""/></div><span className='to ampersand'>&</span> <span className='one'>future</span></motion.h1>
                 <div className='d-flex justify-center w-[90vw]'>
                     <div className='subHeading'>
                 <p className='font-[400] text-[36px] leading-[35px]'>

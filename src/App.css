@@ -1693,3 +1693,71 @@ margin-bottom: 40px !important;
      width: 20vw !important; 
     }
     }
+
+
+    .hero-content .zero::before{
+      animation: growWidth 2s ease-in-out;
+    }
+    @keyframes growWidth {
+      from {
+        left: 100%;
+      }
+      to {
+        left: 10%;
+      }
+    }
+
+    .hero-content .swiggly::before,
+    .hero-content .swiggly::after{
+      animation: growHeight 2s ease-in;
+    }
+    @keyframes growHeight {
+      from {
+        top: 100%;
+      }
+      to {
+        top: 10%;
+      }
+    }
+    
+    .hero-content .to.present::before{
+      animation: growPresent 2s ease-in;
+    }
+    @keyframes growPresent {
+      from {
+        left:100%;
+        width:0%;
+      }
+      to {
+        left:-7%;
+        width:110%;
+      }
+    }
+    
+    .hero-content .one::after{
+      animation: growFuture 2s ease-in;
+    }
+    @keyframes growFuture {
+      from {
+        left:100%;
+        width:0%;
+      }
+      to {
+        left:0%;
+        width:100%;
+      }
+    }
+
+    .heroPlusImage{
+      animation: heroPlusImage 2s ease-in;
+
+    }
+
+    @keyframes heroPlusImage {
+      from {
+        clip-path: inset(-11% 111% 0 11%);
+      }
+      to {
+        clip-path: inset(-11% -11% 0px);
+      }
+    }

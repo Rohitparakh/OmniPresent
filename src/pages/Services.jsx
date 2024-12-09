@@ -10,7 +10,7 @@ import { Button, MarqueeSection } from '../components/common';
 
 const Services = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='related overflow-x-hidden'>
       <Header/>
       <ServicesHero/>
       <ServicesSection/>

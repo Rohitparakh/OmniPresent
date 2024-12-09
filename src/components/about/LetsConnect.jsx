@@ -52,7 +52,7 @@ const LetsConnect = ({index}) => {
         </div>
 
         <div className='max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] flex lg:flex-row flex-col lg:items-center justify-center gap-12 pt-20'>
-          <p className='lg:w-1/3 font-nohemi font-[300] text-xl lg:text-xl leading-8 lg:leading-10 lg:text-3xl'>
+          <p className='lg:w-1/3 font-nohemi font-[400] text-xl lg:text-2xl leading-8 lg:leading-10 lg:text-3xl'>
             Whether you’ve been building in Web3 for a while — or are just launching your brand into the space — let’s chat about how we can help you make an impact in Web3.
           </p>
 

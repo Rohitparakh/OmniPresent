@@ -15,49 +15,54 @@ import blackSquare from '../../assets/images/blackSquare.png'
 const CasesHero = () => {
   return (
     <div className=' w-screen flex flex-col justify-between font-nohemi-ext bg-primary px-4'>
-    <div className=' max-w-7xl w-full mx-auto flex flex-col items-center justify-center  relative'>
+    <div className='lg:mt-10 max-w-7xl w-full mx-auto flex flex-col items-center justify-center  relative'>
    
         <div className='py-20'>
 
         </div>
         {/* Center text area start */}
-      <div className={`flex flex-col leading-[6rem] max-w-[560px] w-auto items-end justify-end py-1 lg:scale-[1.55] scale-[.6] relative`}>
+      {/* <div className={`flex flex-col leading-[6rem] max-w-[560px] w-auto items-end justify-end py-1 lg:scale-[1.55] scale-[.6] relative`}> */}
+      <div className={`flex flex-col leading-[6rem] w-auto items-end justify-end py-1 lg:scale-[1.55] scale-[.6] relative xl:gap-10 2xl:gap-14 2xl:mb-14`}>
         <motion.img variants={slideUpDelay}
          initial="hidden"
-         animate="visible" src={pen} alt="" className='absolute top-[-28px] left-[30px] lg:top-[-24px] lg:left-[-40px] mix-blend-multiply h-36'/>
+         animate="visible" src={pen} alt="" className='absolute top-[-28px] left-[30px] lg:top-[-24px] lg:left-[-40px] mix-blend-multiply h-36 xl:left-[30px] xl:lg:top-[-50px] xl:h-44     2xl:left-[70px] 2xl:lg:top-[-50px] 2xl:h-44'/>
+                                                                            
         <motion.h1 
          variants={slideUp}
          initial="hidden"
          animate="visible"
-        className='text-[10rem] z-10 flex items-end font-nohemi-ext text-black relative mb-5 lg:mb-0'>
-         <span className='text-[10rem] flex items-end w-min pt-9 '></span><span className='font-nohemi-ext'>case</span>
+        className='text-[10rem] xl:text-[12.5rem] 2xl:text-[14rem] z-10 flex items-end font-nohemi-ext text-black relative mb-5 lg:mb-0'>
+         <span className='text-[10rem] xl:text-[12.5rem] 2xl:text-[14rem] flex items-end w-min pt-9 '></span><span className='font-nohemi-ext'>case</span>
         </motion.h1>
         <motion.h1 
          variants={slideUpDelay}
          initial="hidden"
          animate="visible"
-        className='mt-10 text-[10rem] flex items-center gap-2 font-nohemi-ext text-black pl-5'>
+        className='mt-10 text-[10rem] xl:text-[12.5rem] 2xl:text-[14rem] flex items-center gap-2 font-nohemi-ext text-black pl-5'>
         studies
         </motion.h1>
 
         {/* assets for text */}
         <>
-    <div className="absolute top-[-30px] lg:left-[10px] left-[-40px] h-60 border-r-[0.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="hidden lg:block absolute top-[-30px] 2xl:left-[130px]  xl:left-[90px] lg:left-[10px] left-[-40px] h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute top-[-30px] lg:left-[185px] left-[35px] h-40 lg:h-60 border-r-[0.5px] border-black opacity-50 z-50 animate-growY"></div>
-    <div className="absolute top-[-30px] lg:left-[185px] left-[240px] h-40 lg:h-60 border-r-[0.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute top-[-30px] lg:left-[185px] 2xl:left-[306px] xl:left-[275px] xl:h-[calc(100%_+_30px)] 2xl:h-[calc(100%_+_30px)] left-[35px] h-40 lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
+    {/* <div className="absolute top-[-30px] lg:left-[185px] left-[240px] h-40 lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div> */}
 
 
-    <div className="lg:hidden absolute lg:right-[-10px] top-[103px] w-[19rem] border-b-[0.5px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="lg:hidden absolute left-0 top-[97px] lg:top-[103px] w-[16rem] lg:w-[19rem] border-b-[1.5px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="lg:hidden absolute lg:right-[-10px] top-[97px] lg:top-[103px] w-[16rem] lg:w-[19rem] border-b-[1.5px] border-black opacity-50 z-50 animate-growX"></div>
 
-    <div className="lg:hidden absolute right-[-10px] top-[7px] w-[19.3rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
+    <div className="lg:hidden absolute right-[-10px] top-[7px] w-[19.3rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute lg:right-[10px] lg:top-[40px] left-[-50px] top-[7px] w-[33rem] border-b-[0.5px] border-black opacity-50  animate-growX"></div>
-    {/* <div className="absolute lg:right-[10px] lg:top-[40px] left-[-40px] top-[100px] w-[300px] border-b-[0.5px] border-black opacity-50  animate-growX"></div> */}
+    <div className="absolute lg:right-[10px] lg:top-[40px] left-0 lg:left-[-50px] xl:left-[10px] xl:w-[90%] 2xl:left-[10px] 2xl:w-[90%] top-[7px] w-[33rem] border-b-[1.5px] border-black opacity-50  animate-growX"></div>
+    {/* <div className="absolute lg:right-[10px] lg:top-[40px] left-0 lg:left-[-50px] top-[7px] w-[33rem] border-b-[1.5px] border-black opacity-50  animate-growX"></div> */}
+    
 
-    <div className="absolute lg:left-[-50px] left-[-55px] bottom-[105px] w-[35rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[10px] 2xl:w-[90%] bottom-[100px] lg:bottom-[125px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[40%] 2xl:w-[50%] bottom-[100px] lg:bottom-[110px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute left-[170px] bottom-[8px] w-[22rem] border-b-[0.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-[170px] 2xl:left-[370px] 2xl:w-[25rem] bottom-[8px] 2xl:bottom-[-10px] w-[22rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
 </>
 
 

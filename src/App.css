@@ -175,8 +175,8 @@ hr{
 gap: 150px;
 display: flex;
 justify-content: space-between;
-font-weight: 500;
-width: 100%;
+font-weight: 700;
+
 }
 .headerExtras .rightDiv{
   /* width: 25vw; */
@@ -640,6 +640,11 @@ right: 63.5%;
 
 .headerRow img{
   max-width: 100% !important;
+}
+
+.headerExtras .leftDiv{
+  width: 100%;
+  font-weight: 500;
 }
 
 .headerExtras {

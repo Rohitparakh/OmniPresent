@@ -44,9 +44,9 @@ const CasesHero = () => {
 
         {/* assets for text */}
         <>
-    <div className="hidden lg:block absolute top-[-30px] 2xl:left-[130px]  xl:left-[90px] lg:left-[10px] left-[-40px] h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="hidden lg:block absolute top-[-30px] 2xl:left-[130px]  xl:left-[90px] lg:left-[10px] left-[-40px] h-[calc(100%_+_30px)] border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute top-[-30px] lg:left-[185px] 2xl:left-[306px] xl:left-[275px] xl:h-[calc(100%_+_30px)] 2xl:h-[calc(100%_+_30px)] left-[35px] h-40 lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute top-[-30px] lg:left-[185px] 2xl:left-[306px] xl:left-[275px] h-[calc(100%_+_40px)] xl:h-[calc(100%_+_35px)] 2xl:h-[calc(100%_+_40px)] left-[35px] h-40 lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
     {/* <div className="absolute top-[-30px] lg:left-[185px] left-[240px] h-40 lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div> */}
 
 

@@ -3,6 +3,9 @@
     display: none !important;
 }
 }
+
+
+
 .group-container {
     display: flex;
     align-items: center;
@@ -14,6 +17,10 @@
     margin: 20px 0;
     background-color: #eefe05 !important;
     z-index: 100;
+  }
+  
+  .header-mobile{
+    z-index: 102;
   }
   
   .logo-frame {
@@ -93,7 +100,7 @@
     top:52px;
     width: 100vh;
     position: fixed;
-    z-index: 99;
+    z-index: 101;
     overflow-y: scroll;
   }
 

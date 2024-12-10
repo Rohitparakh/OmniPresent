@@ -14,6 +14,8 @@ import { NavLink } from "react-router-dom";
 import { motion } from 'framer-motion';
 import primaryBg from "../../assets/images/primaryBg.png";
 import gif from '../../assets/gif/OurServices.gif';
+import SectionHeader from "../home_project/SectionHeader";
+import MoreCTAFirst from "../home_project/MoreCtaFirst";
 
 const Card = ({ data, index }) => {
   return (
@@ -184,23 +186,24 @@ const CurrentProjects = () => {
     <div className="bg-black text-white relative pb-16">
       <div className="max-w-[90vw] mx-auto px-4 pt-16 flex flex-col items-center justify-start h-full">
         {/* Top divider */}
-        <div className="border-b border-white pb-1 w-full flex items-center justify-between">
+        {/* <div className="border-b border-white pb-1 w-full flex items-center justify-between">
           <p className="text-white font-semibold text-xs tracking-widest">
             current projects
           </p>
           <p className="text-white font-semibold text-xs tracking-widest w-44 lg:text-center text-end">
             ( 02 )
           </p>
-        </div>
+        </div> */}
+        <SectionHeader heading="current projects" index="02" />
 
-        <div className="w-full mx-auto mt-80 mb-96 xl:flex hidden justify-stretch gap-16 items-center">
-          <img src={gif} className="absolute left-0 top-[30%] z-20 hidden lg:block"/>
+        <div className="w-full mx-auto mt-96 mb-96 xl:flex hidden justify-stretch gap-16 items-center">
+          <img src={gif} className="absolute left-0 top-[30%] min-[1800px]:top-[25%] z-10 hidden lg:block w-screen"/>
           <div className="h-full w-max bg-black z-30">
             {menuData.map((item, index) => (
               <p
                 key={index}
                 onClick={() => setSelectedCard(index)} 
-                className={`border-b w-64 flex items-center gap-2 pb-2 cursor-pointer active:scale-95 transition-all duration-300 border-white  text-xs font-nohemi ${
+                className={`min-[1800px]:text-[18px] border-b w-64 flex items-center gap-2 pb-2 cursor-pointer active:scale-95 transition-all duration-300 border-white  text-xs font-nohemi ${
                   selectedCard === index ? "text-[#EEFE05]" : "text-white"
                 } ${
                   menuData.length === index+1 ? '' : 'mb-3'
@@ -229,7 +232,7 @@ const CurrentProjects = () => {
                 ? "z-40 scale-90 -translate-y-[150px] opacity-50 blur-[2px]"
                 : "z-40 scale-90 translate-y-[150px] opacity-50 blur-[2px]"
             }`}
-            animate={{ opacity: visibility === "active" ? 1 : 0.5 }}
+            animate={{ opacity: visibility === "active" ? 1 : 1 }}
             transition={{ duration: 0.3 }}
           >
             <Card data={card} index={index} />
@@ -246,19 +249,8 @@ const CurrentProjects = () => {
         </div>
       </div>
 
-      <div className="w-full py-16 mt-52 lg:mt-96 z-30 relative">
-      <MarqueeSection speed={200}>
-           <div className="flex items-center gap-8  px-7 font-nohemi text-white">
-                <p className="text-9xl font-[1000] font-nohemi-ext">sounds good?</p>
-                <Button text="schedule a call" />
-           </div>
-              </MarqueeSection>
-      <MarqueeSection speed={200} direction="left">
-      <div className="mt-16 flex items-center gap-8  px-7 font-nohemi text-white">
-                <p className="text-9xl font-bold font-nohemi-ext">sounds good?</p>
-                <Button text="schedule a call" />
-           </div>
-              </MarqueeSection>
+      <div className="w-full py-16 mt-52 lg:mt-10 xl:mt-80 2xl:mt-[34rem] z-30 relative">
+     <MoreCTAFirst/>
       </div>
     </div>
   );

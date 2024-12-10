@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import card1 from "../../assets/services/cardImg1.svg";
+import hand from "../../assets/services/hand.svg";
+import handDown from "../../assets/services/handDown.png";
 import card1Mobile from "../../assets/services/cardImg1Mobile.png";
 import downImg from "../../assets/services/downImg.svg";
 import cardImg2 from "../../assets/services/cardImg2.svg";
@@ -8,6 +10,8 @@ import card2Mobile from "../../assets/services/cardImg2Mobile.png";
 import circle from "../../assets/services/circle.svg";
 import star from "../../assets/services/start.svg";
 import { slideUp, slideUpDelay } from '../../animations';
+import SectionHeader from '../home_project/SectionHeader';
+import contactScroll from '../../assets/services/contactScroll.png';
 
 // const slideUp = {
 //   hidden: { opacity: 0, y: 20 },
@@ -16,28 +20,32 @@ import { slideUp, slideUpDelay } from '../../animations';
 
 const HowWeWork = () => {
   return (
-    <div className="min-h-screen w-full bg-primary px-4 relative pb-20">
-      <div className="max-w-7xl mx-auto pt-16 flex flex-col items-center justify-start">
-        <motion.div
-          className="border-b pb-1 w-full flex items-center justify-between"
+    <div className="min-h-screen w-full bg-primary px-4 relative pb-20 max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] mx-auto">
+  <motion.div
+          className="border-b pb-1 w-full flex items-center justify-between pt-16"
           style={{ borderBottom: '1px solid black' }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={slideUp}
         >
-          <p className="text-black font-bold text-[10px] tracking-widest">how we work</p>
-          <p className="text-black font-bold text-xs tracking-widest w-44 lg:text-center text-end">( 03 )</p>
+        <SectionHeader heading="how we work" index="03" isPrimary={true}/>
+
+          {/* <p className="text-black font-bold text-[10px] tracking-widest">how we work</p>
+          <p className="text-black font-bold text-xs tracking-widest w-44 lg:text-center text-end">( 03 )</p> */}
         </motion.div>
+      <div className="lg:max-w-[calc(100vw_-_250px)] mx-auto flex flex-col items-center justify-start">
+      
+        
 
         <motion.div
-          className="flex flex-col w-full justify-end mt-16 items-end lg:gap-3 gap-16"
+          className="flex flex-col w-full justify-end mt-16 items-end lg:gap-20 gap-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={slideUp}
         >
-          <p className="text-5xl leading-[64px] font-nohemi-ext lg:w-[70%] text-right">
+          <p className="text-5xl 2xl:text-7xl xl:text-6xl leading-[64px] font-nohemi-ext lg:w-[70%] text-right">
             We treat every project as if it’s our own. Knowing that one size doesn't fit all, we take vital steps to identify what works best for you.
           </p>
 
@@ -94,10 +102,29 @@ const HowWeWork = () => {
         </motion.div>
       </div>
 
-      <motion.img
-        src="../../assets/services/hand.svg"
+      {/* <motion.img
+        src={hand}
         alt=""
-        className="absolute right-0 bottom-[100px] lg:block hidden"
+        className="absolute right-0 bottom-[-32px] lg:block hidden h-[150px] w-[150px] z-99 bg-[#eefe05]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      /> */}
+      <motion.img
+        src={handDown}
+        alt=""
+        className="absolute right-[20px] bottom-[-100px] lg:block hidden h-[150px] w-[100px] z-[999]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      />
+
+      <motion.img
+        src={contactScroll}
+        alt=""
+        className="absolute right-[-70px] top-[80%] lg:block hidden h-[1000px] z-[999]"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

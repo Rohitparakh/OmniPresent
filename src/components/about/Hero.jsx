@@ -1,3 +1,6 @@
+import x from '../../assets/about/x.svg';
+import telegram from '../../assets/about/telegram.svg';
+import insta from '../../assets/about/insta.svg';
 import { Button, MarqueeSection } from '../common'
 import face1 from '../../assets/about/face1.svg';
 import face1Mobile from '../../assets/about/face1Mobile.png';
@@ -12,13 +15,14 @@ import right from "../../assets/services/right.svg"
 import { motion } from 'framer-motion';
 import { slideUp, slideUpDelay } from '../../animations';
 import blackSquare from '../../assets/images/blackSquare.png';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
 
   return (
     <div className=' w-screen font-nohemi-ext bg-primary '>
     <img src={top} alt=""  className='absolute lg:top-[-30px] top-[0px] lg:left-[14vw] left-0 lg:h-72 min-[1900px]:h-[320px] min-[1900px]:left-[16vw] h-36 hidden lg:block' style={{zIndex:1001}}/>
-    <div className=' max-w-[calc(100vw-20px)] lg:max-w-7xl overflow-x-clip mx-auto flex flex-col items-center justify-center  relative px-4'>
+    <div className=' max-w-[calc(100vw-20px)] lg:max-w-7xl clip mx-auto flex flex-col items-center justify-center  relative px-4'>
     <img src={top} alt=""  className='absolute top-[-70px] left-[40px] z-[9999] h-48 block lg:hidden'/>
         <div className='py-12 lg:py-20'>
 
@@ -72,7 +76,7 @@ const Hero = () => {
       {/* Center text area end */}
 
       {/* Bottom area start */}
-    <div className='w-full lg:py-10 relative flex lg:flex-row flex-col pt-16 items-baseline justify-center gap-2'>
+    <div className='w-full lg:py-10 relative flex lg:flex-row flex-col pt-16 lg:pt-24 items-baseline justify-center gap-2'>
         <div className='flex lg:flex-row flex-col lg:items-center items-start gap-2'>
         {/* <img src={face1} alt="" className='mix-blend-multiply lg:h-52 h-32 absolute top-[0px] left-[0px]'/> */}
         <p className=' lg:w-[28rem] leading-8 lg:leading-7 text-2xl font-[300] lg:text-xl font-nohemi lg:font-normal'>
@@ -93,12 +97,18 @@ const Hero = () => {
         </div>
     </div>
 
+    <div className='justify-end w-full px-32 mt-10 mb-10 items-center gap-4 sm-justify-center hidden md:flex w-[calc(100vw_-_40px)] lg:w-[calc(100vw_-_140px)] z-[9999]'>
+                <img src={telegram} alt="" className='h-12'/>
+                <NavLink to="https://x.com/Omnipresentcc" target="_blank"><img src={x} alt="" className='h-12'/></NavLink>
+                <img src={insta} alt="" className='h-12'/>
+            </div>
+
     {/* Bottom area end */}
 
     </div>
     {/* marquee start */}
     <div className=' w-full '>
-        <div className='max-w-7xl mx-auto border border-black'>
+        <div className='max-w-[calc(100vw-40px)] lg:max-w-[calc(100vw-140px)] mx-auto border border-black'>
 
         </div>
 

@@ -28,7 +28,7 @@ const CasesHero = () => {
          animate="visible" src={pen} alt="" className='absolute top-[-28px] left-[30px] lg:top-[-24px] lg:left-[-40px] mix-blend-multiply h-36 xl:left-[30px] xl:lg:top-[-50px] xl:h-44     2xl:left-[70px] 2xl:lg:top-[-50px] 2xl:h-44'/>
                                                                             
         <motion.h1 
-         variants={slideUp}
+         variants={slideUpDelay}
          initial="hidden"
          animate="visible"
         className='text-[10rem] xl:text-[12.5rem] 2xl:text-[14rem] z-10 flex items-end font-nohemi-ext text-black relative mb-5 lg:mb-0'>
@@ -103,7 +103,7 @@ const CasesHero = () => {
         </div>
 
         <div className='py-6  w-full'>
-        <MarqueeSection>
+        <MarqueeSection direction="left">
                 <h1 className=" text-2xl lg:text-4xl flex tracking-wide font-nohemi items-center gap-4  mx-6 select-none">
               <span className="text-black font-nohemi-ext">5M+</span> social followers
               <img src={right} className="h-16" alt="" />

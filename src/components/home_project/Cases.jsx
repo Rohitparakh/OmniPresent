@@ -34,7 +34,7 @@ const Cases = () => {
   }, []);
 
   return (
-    <div className='containerOld relative !pt-[200px] casesContainer'>
+    <div className='containerOld relative !pt-[100px] casesContainer'>
     <SectionHeader heading='case studies' index='02'/>
     <PortfolioSingle  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
     <PortfolioSingleLeft  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>

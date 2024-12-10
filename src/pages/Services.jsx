@@ -7,18 +7,20 @@ import HowWeWork from '../components/services/HowWeWork';
 import Header from '../components/home_project/Header';
 import Cases from '../components/home_project/Cases';
 import { Button, MarqueeSection } from '../components/common';
+import MoreCTAFirst from '../components/home_project/MoreCtaFirst';
 
 const Services = () => {
   return (
-    <div className='related overflow-x-hidden'>
+    <div className='related overflow-x-hidden servicesPage'>
       <Header/>
       <ServicesHero/>
       <ServicesSection/>
       <CurrentProjects/>
       <HowWeWork/>
       <Cases/>
-      <div className="w-full py-32 bg-black">
-      <MarqueeSection speed={200}>
+      <div className="w-full pt-32 pb-60 bg-black">
+      <MoreCTAFirst/>
+      {/* <MarqueeSection speed={200}>
            <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                 <p className="text-9xl font-[1000] font-nohemi-ext">sound good?</p>
                 <Button text="schedule a call" />
@@ -29,7 +31,7 @@ const Services = () => {
                 <p className="text-9xl font-bold font-nohemi-ext">sound good?</p>
                 <Button text="schedule a call" />
            </div>
-              </MarqueeSection>
+              </MarqueeSection> */}
       </div>
             
       <LetsConnect/>

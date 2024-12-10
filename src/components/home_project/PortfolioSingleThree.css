@@ -154,7 +154,10 @@
         overflow-x: clip;
     }
     .portfolio-single-four .title, .portfolio-single-three .title{
-        margin-top: 15px !important;
+        margin-top: 34px !important;
+    }
+    .portfolio-single-three .title{
+        margin-bottom: -10px !important;
     }
 }
 @media(max-width:1500px){

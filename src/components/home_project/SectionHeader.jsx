@@ -1,9 +1,9 @@
 import React from 'react';
 import './SectionHeader.css';
 
-function SectionHeader({heading, index}) {
+function SectionHeader({heading, index, isPrimary}) {
     return (
-        <div className="section-header" style={{zIndex:99, position:'relative'}}>
+        <div className="section-header" style={{zIndex:99, position:'relative',background:isPrimary?'#eefe05':"#000", color:isPrimary?'#000':"#fff", borderBottom:isPrimary? 'none' : '1px solid #fdfee8'}}>
             <span className="tagline">{heading}</span>
             <span className="tagline index">( {index} )</span>
         </div>

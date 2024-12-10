@@ -13,9 +13,9 @@ const Card = ({ img, title, para, url }) => {
     return (
         <NavLink to={url}>
             <div className='w-full min-h-[250px] flex flex-col gap-2 transform hover:scale-105 transition-transform duration-300'>
-                <img src={img} alt="" className='h-80 object-contain' />
+                <img src={img} alt="" className='h-80 object-cover' />
                 <p className='text-white font-semibold text-2xl font-nohemi'>{title}</p>
-                <p className='text-[#FFFFFF] font-nohemi text-sm'>{para}</p>
+                <p className='text-[#FFFFFF] font-nohemi text-sm mb-10 lg:mb-0'>{para}</p>
             </div>
         </NavLink>
     );
@@ -92,7 +92,7 @@ const filteredData = activeTab === null
 
     return (
         <div className="bg-black text-white relative">
-            <div className="max-w-7xl mx-auto pt-16 flex px-4 flex-col items-center justify-start min-h-screen">
+            <div className="max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] mx-auto pt-16 flex px-4 flex-col items-center justify-start min-h-screen">
                 {/* Top divider */}
                 {/* <div className="border-b border-white pb-1 w-full flex items-center justify-between">
                     <p className="text-white font-semibold text-[10px] tracking-widest">
@@ -112,7 +112,7 @@ const filteredData = activeTab === null
                     <div className={`filter-item z-50 `} style={activeTab === null ? {  flex: '1 0 200px', transition: 'all 0.6s ease-in-out' } : {transition: 'all 0.6s ease-in-out'}}>
                         <p
                         onClick={() => setActiveTab(null)}
-                        className={` text-[11px] px-4 py-2 cursor-pointer border rounded-full w-fit ${activeTab===null ? 'bg-primary text-black border-black' : 'bg-black border-white text-white'}`}
+                        className={` text-[11px] 2xl:text-[15px] lg:px-4 lg:py-2 px-6 py-3 cursor-pointer border border-[2px] rounded-full w-fit ${activeTab===null ? 'bg-primary text-black border-black' : 'bg-black border-white text-white'}`}
                     >
                         All
                     </p>
@@ -123,7 +123,7 @@ const filteredData = activeTab === null
                             style={{transition:'all .6s'}}
                             key={index}
                             onClick={() => handleTabClick(index + 1)}
-                            className={`text-[11px] w-fit px-2 py-2 cursor-pointer z-20 lg:z-50 border rounded-full ${activeTab === index + 1 ? 'bg-primary text-black border-black' : 'bg-black text-white border-white'}`}
+                            className={`text-[11px] 2xl:text-[15px] w-fit lg:px-2 lg:py-2 px-6 py-3 cursor-pointer z-20 lg:z-50 border border-[2px] rounded-full ${activeTab === index + 1 ? 'bg-primary text-black border-black' : 'bg-black text-white border-white'}`}
                         >
                             {item}
                         </p>
@@ -155,7 +155,7 @@ const filteredData = activeTab === null
                 </div>
 
                 {/* Cards Section */}
-                <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32'>
+                <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10 pb-32 lg:gap-y-24'>
                     {filteredData.map((i) => (
                         <Card img={i.img} title={i.title} para={i.desc} key={i.title} url={i.url} />
                     ))}
@@ -163,7 +163,7 @@ const filteredData = activeTab === null
 
                 {/* Schedule Call Button */}
                 <div className='w-full flex justify-center pb-32'>
-                    <Button text={"schedule a call"} />
+                    <Button text={"schedule a call"} fontSize={24} />
                 </div>
             </div>
         </div>

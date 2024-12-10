@@ -279,7 +279,7 @@ const SingleProject = () => {
     return <Navigate to="/cases" replace />;
   }
   return (
-    <div className='projectPage'>
+    <div className='projectPage relative overflow-hidden'>
       <Header/>
         {/* banner */}
         <SingleProjectBanner banner={caseStudy.mainBanner}/>

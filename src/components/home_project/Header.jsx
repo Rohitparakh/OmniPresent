@@ -10,8 +10,8 @@ function Header({index}) {
     useEffect(() => {
         const handleScroll = () => {
           // Check if the horizontal scroll position is greater than 50vw
-          // if (window.scrollY > window.innerWidth / 2) {
-          if (window.scrollY > 0) {
+          if (window.scrollY > window.innerWidth / 2) {
+          // if (window.scrollY > 0) {
             setIsFixed(true);
           } else {
             setIsFixed(false);

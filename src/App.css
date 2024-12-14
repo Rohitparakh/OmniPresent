@@ -1396,7 +1396,11 @@ margin-bottom: 40px !important;
     flex-direction: column-reverse !important;
     padding: 25px !important;
     gap: 10px !important;
+    margin-bottom: 200px;
+  }
 
+  .singleProjectLeft .approachTitle{
+    margin-top: 40px;
   }
 
   .scheduleCall .scheduleButton{

@@ -13,12 +13,12 @@ function SingleProjectLeft({index, heading, subHeading, objectives, objectiveIma
                 <h2 className="approachTitle text-center">{heading}</h2>
             </motion.div>
             <motion.div  variants={slideUp} initial="hidden" whileInView="visible" className="contentSection relative max-w-full px-10">
-                <motion.h3 variants={slideLeft} initial="hidden" whileInView="visible" className="headline">{subHeading}</motion.h3>
-                <motion.ul variants={slideLeft} initial="hidden" whileInView="visible" className="description">
+                <h3 variants={slideLeft} initial="hidden" whileInView="visible" className="headline">{subHeading}</h3>
+                <ul variants={slideLeft} initial="hidden" whileInView="visible" className="description">
                 {objectives?.map(obj=>{
                     return <li ><img style={{display: 'inline-block', marginRight:'5px', marginTop:'-3px'}} src={whiteSquare} height={20} width={20}/>{obj}</li>
                 })}
-                </motion.ul>
+                </ul>
                 <img src={objectiveImage} alt="Meltwater Design" className="designImage" />
     <div className="absolute left-0 top-[105%] w-[100%] border-b-[2px] border-white opacity-50 animate-growX md:hidden"></div>
 

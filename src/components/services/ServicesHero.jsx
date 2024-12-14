@@ -78,7 +78,7 @@ const ServicesHero = () => {
 
     <div className="absolute left-[96px] xl:left-[125px] xl:bottom-[156px] xl:w-[10rem] bottom-[125px] w-[8rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
 
-    {/* <div className="absolute right-[240px] xl:right-[1rem] xl:w-[35rem] xl:bottom-[0px] bottom-[92px] w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div> */}
+    <div className="absolute lg:block hidden right-[240px] xl:right-[1rem] xl:w-[35rem] xl:bottom-[0px] bottom-[92px] w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
     {/* <div className="absolute left-[240px] bottom-[13px] w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div> */}
 </>
 

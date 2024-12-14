@@ -27,7 +27,7 @@ const SingleProjectScheduleCall = () => {
         triggerOnce: false, // Trigger the `inView` state only once
       });
   return (
-    <div className='scheduleCall mb-20 w-full'>
+    <div className='scheduleCall mb-48 w-full'>
         <img src={gif} className='absolute top-[-15%] right-0 hidden lg:block' />
         <div className='leftSection'>
             <div ref={ref} class={`circle-section ${ inView ? 'inView': ''}`} onClick={()=>window.open('https://calendly.com/admin-omnipresent/30min', '_blank')}>

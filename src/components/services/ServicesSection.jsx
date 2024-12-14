@@ -35,7 +35,7 @@ const ServicesSection = () => {
           variants={slideUp}
           initial="hidden"
           animate={isInView1 ? "visible" : "hidden"}
-          className='text-6xl lg:text-7xl font-nohemi-ext font-bold lg:w-[80%] leading-[4.2rem] lg:ml-0 ml-auto lg:text-start text-end'
+          className='text-5xl lg:text-7xl font-nohemi-ext font-bold lg:w-[80%] leading-[4.2rem] lg:ml-0 ml-auto lg:text-start text-end'
         >
           Our work is driven by Web3’s greatest strength—its people and communities.
         </motion.p>

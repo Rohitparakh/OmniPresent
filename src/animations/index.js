@@ -47,6 +47,11 @@ export const slideRight = {
   visible: { x: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
+export const slideRight30 = {
+  hidden: { x: '-100%', zIndex:30 },
+  visible: { x: 0, zIndex:30, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
 export const slideRightDelay1 = {
   hidden: { x: '-100%' },
   visible: { x: 0, transition: { duration: 0.8, ease: "easeOut", delay:0.2 } },

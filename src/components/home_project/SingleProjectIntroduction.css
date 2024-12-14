@@ -2,7 +2,7 @@
     /* width: 1635px; */
     /* height: 564px; */
     color: #eaeaea;
-    padding: 70px 70px 100px 140px;
+    padding: 70px 70px 200px 140px;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
@@ -72,5 +72,5 @@
     letter-spacing: -1.28px;
     line-height: 64px;
     margin-top: 0;
-    text-align: center;
+    text-align: left;
 }

@@ -17,7 +17,7 @@ const CasesHero = () => {
     <div className=' w-screen flex flex-col justify-between font-nohemi-ext bg-primary px-4'>
     <div className='lg:mt-10 max-w-7xl w-full mx-auto flex flex-col items-center justify-center  relative'>
    
-        <div className='py-20'>
+        <div className='py-10 lg:py-20'>
 
         </div>
         {/* Center text area start */}
@@ -46,23 +46,29 @@ const CasesHero = () => {
         <>
     <div className="hidden lg:block absolute top-[-30px] 2xl:left-[130px]  xl:left-[90px] lg:left-[10px] left-[-40px] h-[calc(100%_+_30px)] border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute top-[-30px] lg:left-[185px] 2xl:left-[306px] xl:left-[275px] h-[calc(100%_+_40px)] xl:h-[calc(100%_+_35px)] 2xl:h-[calc(100%_+_40px)] left-[35px] h-40 lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute top-[-15px] lg:left-[185px] 2xl:left-[306px] xl:left-[275px] h-[8rem] lg:h-[calc(100%_+_40px)] xl:h-[calc(100%_+_35px)] 2xl:h-[calc(100%_+_40px)] left-[35px] lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute lg:hidden top-[-15px] h-[8rem] left-[270px] border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
     {/* <div className="absolute top-[-30px] lg:left-[185px] left-[240px] h-40 lg:h-60 border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div> */}
 
 
-    <div className="lg:hidden absolute left-0 top-[97px] lg:top-[103px] w-[16rem] lg:w-[19rem] border-b-[1.5px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="lg:hidden absolute left-0 top-[97px] lg:top-[103px] w-[19rem] lg:w-[19rem] border-b-[1.5px] border-black opacity-50 z-50 animate-growX"></div>
     <div className="lg:hidden absolute lg:right-[-10px] top-[97px] lg:top-[103px] w-[16rem] lg:w-[19rem] border-b-[1.5px] border-black opacity-50 z-50 animate-growX"></div>
 
-    <div className="lg:hidden absolute right-[-10px] top-[7px] w-[19.3rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="lg:hidden absolute lg:right-[-10px] top-[7px] w-[16rem] lg:w-[19.3rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute lg:right-[10px] lg:top-[40px] left-0 lg:left-[-50px] xl:left-[10px] xl:w-[90%] 2xl:left-[10px] 2xl:w-[90%] top-[7px] w-[33rem] border-b-[1.5px] border-black opacity-50  animate-growX"></div>
+    <div className="absolute lg:right-[10px] lg:top-[40px] left-0 lg:left-[-50px] xl:left-[10px] xl:w-[90%] 2xl:left-[10px] 2xl:w-[90%] top-[7px] lg:w-[33rem] w-[19rem] border-b-[1.5px] border-black opacity-50  animate-growX"></div>
     {/* <div className="absolute lg:right-[10px] lg:top-[40px] left-0 lg:left-[-50px] top-[7px] w-[33rem] border-b-[1.5px] border-black opacity-50  animate-growX"></div> */}
     
 
-    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[10px] 2xl:w-[90%] xl:left-[30px] xl:w-[90%] bottom-[100px] lg:bottom-[125px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
-    <div className="absolute lg:left-[-50px] left-[-10px] 2xl:left-[40%] 2xl:w-[50%] xl:left-[40%] xl:w-[50%] bottom-[100px] lg:bottom-[110px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute lg:left-[-50px] left-[20px] 2xl:left-[10px] 2xl:w-[90%] xl:left-[30px] xl:w-[90%] bottom-[100px] lg:bottom-[125px] w-[36rem] lg:w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute hidden lg:block lg:left-[-50px] left-[-10px] 2xl:left-[40%] 2xl:w-[50%] xl:left-[40%] xl:w-[50%] bottom-[100px] lg:bottom-[110px] w-[35rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute left-[170px] 2xl:left-[370px] 2xl:w-[25rem] xl:left-[300px] xl:w-[25rem] bottom-[8px] 2xl:bottom-[-10px] xl:bottom-[-3px] w-[22rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-[160px] lg:left-[170px] 2xl:left-[370px] 2xl:w-[25rem] xl:left-[300px] xl:w-[25rem] bottom-0 lg:bottom-[8px] 2xl:bottom-[-10px] xl:bottom-[-3px] w-[27.5rem] lg:w-[22rem] border-b-[1.5px] border-black opacity-50 animate-growX"></div>
+
+
+    <div className="absolute lg:hidden top-[135px] h-[9rem] left-[178px] border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute lg:hidden top-[135px] h-[9rem] left-[300px] border-r-[1.5px] border-black opacity-50 z-50 animate-growY"></div>
+
 </>
 
 

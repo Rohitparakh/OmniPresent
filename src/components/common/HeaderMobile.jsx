@@ -57,7 +57,7 @@ const HeaderMobile = () => {
   return (
     <>
     <div className="header-mobile group-container"
-                    style={{position:headerOpen?'fixed':'relative',justifyContent:headerOpen?'space-between':'space-between', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px',position:isFixed?"fixed":"relative", boxShadow: isFixed && !headerOpen ? "0 2px 5px rgba(0, 0, 0, 0.1)" : "none", margin:isFixed?0:"20px 0", padding:isFixed?"40px 20px":"20px"}}
+                    style={{backgroundColor:headerOpen?'#eefe05':isFixed?'#eefe05':'transparent', position:headerOpen || isFixed ?'fixed':'relative',justifyContent:headerOpen?'space-between':'space-between', top:headerOpen?'-20px':'0', paddingTop:headerOpen?'40px':'20px', boxShadow: isFixed && !headerOpen ? "0 2px 5px rgba(0, 0, 0, 0.1)" : "none", margin:isFixed?0:"20px 0", padding:isFixed?"40px 20px":"20px"}}
                     >
       <div className="logo-frame">
       <NavLink to="/" >
@@ -69,8 +69,8 @@ const HeaderMobile = () => {
         </NavLink>
         
       </div>
-      <div className="frame-container">
-        <div className="icon-frame" 
+      <div className="frame-container z-[1000]">
+        <div className="icon-frame z-[1000]" 
                     onClick={handleClick} 
                     style={{backgroundColor:headerOpen?'#000':'transparent'}}
             >
@@ -83,7 +83,7 @@ const HeaderMobile = () => {
         <div className="schedule-frame" 
                     style={{display:headerOpen?'none':'flex'}}
                     >
-                      <NavLink target='_blank' to="https://calendly.com/admin-omnipresent/30min">
+                      <NavLink target='_blank' to="https://calendly.com/admin-omnipresent-/30min">
                       <img src={headerContact} height={44} width={44}/>
                       </NavLink>
           {/* <div className="inner-frame">

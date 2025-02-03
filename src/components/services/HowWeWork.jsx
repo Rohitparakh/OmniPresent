@@ -22,8 +22,7 @@ const HowWeWork = () => {
   return (
     <div className="min-h-screen w-full bg-primary px-4 relative pb-20 max-w-[calc(100vw_-_40px)] lg:max-w-[calc(100vw_-_140px)] mx-auto">
   <motion.div
-          className="border-b pb-1 w-full flex items-center justify-between pt-16"
-          style={{ borderBottom: '1px solid black' }}
+          className="border-0 pb-1 w-full flex items-center justify-between pt-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

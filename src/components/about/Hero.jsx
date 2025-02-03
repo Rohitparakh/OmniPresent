@@ -6,7 +6,8 @@ import face1 from '../../assets/about/face1.svg';
 import face1Mobile from '../../assets/about/face1Mobile.png';
 // import face2 from '../../assets/about/face2.svg';
 import face2 from '../../assets/about/face2.png';
-import face4 from '../../assets/about/face4.svg'
+// import face4 from '../../assets/about/face4.svg'
+import face4 from '../../assets/about/face4.png'
 import top from '../../assets/about/1.png';
 import line from '../../assets/about/line.svg';
 import marLogo from '../../assets/about/marLogo.svg';
@@ -23,7 +24,7 @@ const Hero = () => {
     <div className=' w-screen font-nohemi-ext bg-primary '>
     <img src={top} alt=""  className='absolute lg:top-[-30px] top-[0px] lg:left-[14vw] left-0 lg:h-72 min-[1900px]:h-[320px] min-[1900px]:left-[16vw] h-36 hidden lg:block' style={{zIndex:1001}}/>
     <div className=' max-w-[calc(100vw-20px)] lg:max-w-7xl clip mx-auto flex flex-col items-center justify-center  relative px-4'>
-    <img src={top} alt=""  className='absolute top-[-70px] left-[40px] z-[9999] h-48 block lg:hidden'/>
+    <img src={top} alt=""  className='absolute top-[-70px] left-[40px] z-[999] h-48 block lg:hidden'/>
         <div className='py-12 lg:py-20'>
 
         </div>
@@ -33,8 +34,8 @@ const Hero = () => {
         variants={slideUp}
         initial="hidden"
         animate="visible"
-        className='text-[10rem] flex items-center font-nohemi-ext text-black relative lg:ml-[50px] w-full lg:w-auto justify-between lg:justify-normal'>
-         <span className='text-[10rem] font-[900] flex items-center w-min pt-9 swiggly lg:mr-6'>~</span>
+        className='text-[10rem] flex items-center font-nohemi-ext text-black relative lg:ml-[50px] w-full lg:w-auto justify-between lg:justify-normal lg:gap-[30px]'>
+         <span className='text-[10rem] font-[900] flex items-center w-min pt-9 lg:pt-12 swiggly lg:mr-6'>~</span>
          <div className='text-[10rem] flex items-center font-nohemi-ext text-black relative lg:ml-[50px]'> o<span className='font-[900] z-10'>u</span><span className='font-[900] z-30'>r</span></div>
          <span className=''></span>
          
@@ -49,19 +50,30 @@ const Hero = () => {
 
         {/* assets for text */}
         <>
-    <div className="absolute top-0 lg:top-[-30px] left-[7px]  lg:left-[77px] h-32 lg:h-52 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
+    {/* <div className="absolute top-0 lg:top-[-30px] left-[7px]  lg:left-[77px] h-32 lg:h-52 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div> */}
+    <div className="absolute top-[20px] lg:top-[26px] left-[0px]  lg:left-[47px] h-28 lg:h-24 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute top-0 lg:top-[-30px] left-[89px] lg:left-[195px]  h-32 lg:h-52 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
+    {/* <div className="absolute top-0 lg:top-[-30px] left-[89px] lg:left-[195px]  h-32 lg:h-52 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div> */}
+    <div className="absolute top-[20px] lg:top-[20px] left-[89px] lg:left-[165px]  h-28 lg:h-[104px] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
 
-    <div className="absolute right-[-5px] lg:right-[30px] top-[119px] lg:top-[113px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute left-[40px] top-[119px] w-[8.5rem] hidden lg:block border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute left-[40px] top-[32px]  w-[8.5rem] hidden lg:block border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
 
-    <div className="absolute right-[-5px] lg:right-[30px] top-[32px] lg:top-[26px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute lg:hidden top-[140px] left-[100px] h-[7.5rem] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
+
+
+    <div className="absolute hidden lg:block lg:top-[0px] lg:left-[220px] lg:h-[100%] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
+
+    {/* <div className="absolute right-[-5px] lg:right-[30px] top-[119px] lg:top-[113px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute right-[-5px] lg:right-[30px] top-[32px] lg:top-[26px] w-[36rem] lg:w-[30rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div> */}
+    <div className="absolute right-[-5px] lg:right-[30px] top-[119px] lg:top-[120px] w-[29rem] lg:w-[20rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
+    <div className="absolute right-[-5px] lg:right-[30px] top-[32px] lg:top-[30px] w-[29rem] lg:w-[20rem] border-b-[1px] border-black opacity-50 z-50 animate-growX"></div>
 
   
 
-    <div className="absolute left-0 lg:left-[190px] bottom-[96px] lg:bottom-[105px] w-[30rem] lg:w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-0 lg:left-[190px] bottom-[96px] lg:bottom-[105px] w-[27rem] lg:w-[20rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
 
-    <div className="absolute left-[170px] bottom-[8px] w-[30rem] lg:w-[22rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
+    <div className="absolute left-[50px] lg:left-[170px] bottom-[8px] w-[24rem] lg:w-[22rem] border-b-[1px] border-black opacity-50 animate-growX"></div>
 
     {/* Face 2 */}
     <img src={face2} alt="" className=" h-32 absolute top-[-80px] right-[60px] z-50 animate-fadeIn xl:h-24 xl:top-[-45px]" />
@@ -93,7 +105,7 @@ const Hero = () => {
 
         </div>
         <div className='absolute top-[-155px] xl:top-[-100px] right-12 lg:right-0 lg:block hidden'>
-            <img src={face4} className=' h-64 mix-blend-multiply' alt="" />
+            <img src={face4} className=' h-64' alt="" />
         </div>
     </div>
 

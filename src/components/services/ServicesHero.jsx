@@ -59,8 +59,8 @@ const ServicesHero = () => {
     <div className="absolute h-[8rem] lg:h-36 top-[-10px] lg:top-[-30px] xl:top-[-10px] left-[207px] xl:left-[270px] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
 
 
-    <div className="absolute lg:hidden h-[8rem] lg:h-36 top-[110px] lg:top-[-30px] xl:top-[-10px] left-[233px] xl:left-[142px] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
-    <div className="absolute lg:hidden h-[8rem] lg:h-36 top-[110px] lg:top-[-30px] xl:top-[-10px] left-[333px] xl:left-[142px] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute lg:hidden h-[9rem] lg:h-36 top-[110px] lg:top-[-30px] xl:top-[-10px] left-[150px] xl:left-[142px] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
+    <div className="absolute lg:hidden h-[9rem] lg:h-36 top-[110px] lg:top-[-30px] xl:top-[-10px] left-[270px] xl:left-[142px] border-r-[1px] border-black opacity-50 z-50 animate-growY"></div>
 
     {/* <div className="absolute top-[-30px] left-[207px] h-36 border-r-[1px] border-black opacity-50 z-50 animate-growY"></div> */}
 

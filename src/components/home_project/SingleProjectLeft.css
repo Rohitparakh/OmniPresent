@@ -38,6 +38,12 @@
     border-left: 1px solid #fff;
 }
 
+@media(max-width:800px){
+    .singleProjectLeft .contentSection{
+        padding-right: 70px;
+    }
+}
+
 .singleProjectLeft .headline {
     font-family: 'Nohemi', sans-serif;
     font-weight: 700;

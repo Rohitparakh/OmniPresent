@@ -11,13 +11,13 @@ function MoreCTAFirst() {
         <MarqueeSection speed={200}>
              <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                   <p className=" text-[150px] lg:text-[230px] font-[1000] font-nohemi-ext">sound good?</p>
-                  <Button text="schedule a call" fontSize={"39"}/>
+                  <Button text="schedule a call" fontSize="39"/>
              </div>
                 </MarqueeSection>
         <MarqueeSection speed={200} direction="left">
         <div className="flex items-center gap-8  px-7 font-nohemi text-white">
                   <p className=" text-[150px] lg:text-[230px] font-bold font-nohemi-ext">sound good?</p>
-                  <Button text="schedule a call" fontSize={"39"}/>
+                  <Button text="schedule a call" fontSize="39"/>
              </div>
                 </MarqueeSection>
         </div>

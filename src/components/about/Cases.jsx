@@ -1,7 +1,5 @@
 import React,{useState,useEffect} from 'react'
 import Button from './../common/Button';
-import p2p from "../../assets/about/p2p.svg";
-import seatlab from "../../assets/about/seatlab.svg";
 import share from "../../assets/about/share.svg";
 import { useNavigate } from 'react-router-dom';
 import gif from '../../assets/gif/SeeMoreCaseStudies.gif';
@@ -17,12 +15,10 @@ const Cases = ({case1, case2, case1URL, case2URL}) => {
 
   const handleMouseMove = (e) => {
     setCursorPosition({ x: e.clientX, y: e.clientY });
-    console.log(cursorPosition)
   };
 
   const handleMouseEnter = () => {
     setCursorVisible(true);
-    console.log(isCursorVisible)
   };
 
   const handleMouseLeave = () => {

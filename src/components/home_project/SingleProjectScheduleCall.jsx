@@ -11,7 +11,7 @@ import gif from '../../assets/gif/Cases.gif';
 
 function ScheduleButton() {
     return (
-        <NavLink target="_blank" to="https://calendly.com/admin-omnipresent/30min">
+        <NavLink target="_blank" to="https://calendly.com/admin-omnipresent-/30min">
 
         <div className="scheduleButton" >
             <span className="buttonText">schedule a call</span>
@@ -30,7 +30,7 @@ const SingleProjectScheduleCall = () => {
     <div className='scheduleCall mb-48 w-full'>
         <img src={gif} className='absolute top-[-15%] right-0 hidden lg:block' />
         <div className='leftSection'>
-            <div ref={ref} class={`circle-section ${ inView ? 'inView': ''}`} onClick={()=>window.open('https://calendly.com/admin-omnipresent/30min', '_blank')}>
+            <div ref={ref} class={`circle-section ${ inView ? 'inView': ''}`} onClick={()=>window.open('https://calendly.com/admin-omnipresent-/30min', '_blank')}>
                 <img src={thisCanBeYou} alt="Circle" className="circle" height={250}/>
             </div>
             <img className='mx-auto lg:mt-20 hidden lg:block' src={ArrowBigRight} width={350}/>
